@@ -38,9 +38,6 @@
 - Pundit profiles must be system-generated from analyzed content, not hand-written editorial assessments. Current profiles are unvalidated initial hypotheses.
 - Blog content is semi-automated: system generates drafts, human reviews and publishes.
 
-## Known Issues
-- API route (`src/app/api/analyze/route.ts` lines 67-106) duplicates bias scoring instead of calling `runAnalysis()` from the pipeline module. Fix this first.
-
 ## Roadmap
 See `docs/implementation-roadmap.md` for the full 6-phase plan:
 1. Database foundation (PostgreSQL/Neon + Drizzle ORM)

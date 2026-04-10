@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { analyzeText } from "../../../lib/logic-engine/engine";
-import { detectReframing } from "../../../lib/logic-engine/reframing";
-import { FALLACY_RULES } from "../../../lib/logic-engine/fallacies";
 import { extractVideoId, fetchTranscript, transcriptToText } from "../../../lib/scrapers/youtube";
 import { scrapeArticle } from "../../../lib/scrapers/article";
+import { runAnalysis } from "../../../lib/pipeline/analyzer";
+import type { ContentItem, ContentType } from "../../../lib/models/types";
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,15 +17,20 @@ export async function POST(req: NextRequest) {
     }
 
     let textToAnalyze = content;
+    let contentType: ContentType = "article";
+    let title = "Direct text input";
+    let url = "";
 
     // If URL, fetch the content first
     if (type === "url") {
+      url = content;
       const videoId = extractVideoId(content);
       if (videoId) {
-        // YouTube video
+        contentType = "youtube-video";
         try {
           const segments = await fetchTranscript(videoId);
           textToAnalyze = transcriptToText(segments);
+          title = `YouTube video ${videoId}`;
         } catch {
           return NextResponse.json(
             {
@@ -37,10 +41,10 @@ export async function POST(req: NextRequest) {
           );
         }
       } else {
-        // Article URL
         try {
           const article = await scrapeArticle(content);
           textToAnalyze = article.content;
+          title = article.title || "Untitled article";
         } catch {
           return NextResponse.json(
             { error: "Could not fetch article content from the provided URL." },
@@ -57,103 +61,44 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Run logic engine
-    const logicResult = analyzeText(textToAnalyze);
-
-    // Run reframing detection
-    const reframingResults = detectReframing(textToAnalyze);
-
-    // Run bias assessment (inline — same logic as pipeline/analyzer.ts)
-    const LEFT_TERMS = [
-      "progressive", "equity", "systemic", "marginalized", "inclusive",
-      "social justice", "privilege", "intersectional", "climate crisis",
-      "reproductive rights", "wealth gap", "corporate greed",
-    ];
-    const RIGHT_TERMS = [
-      "traditional values", "personal responsibility", "free market",
-      "limited government", "second amendment", "border security",
-      "law and order", "sanctity of life", "deregulation",
-      "religious freedom", "family values", "woke", "cancel culture",
-    ];
-
-    const lower = textToAnalyze.toLowerCase();
-    let leftScore = 0;
-    let rightScore = 0;
-
-    for (const term of LEFT_TERMS) {
-      const matches = lower.match(new RegExp(`\\b${term}\\b`, "g"));
-      if (matches) leftScore += matches.length;
-    }
-    for (const term of RIGHT_TERMS) {
-      const matches = lower.match(new RegExp(`\\b${term}\\b`, "g"));
-      if (matches) rightScore += matches.length;
-    }
-
-    const total = leftScore + rightScore;
-    const balanceScore = total === 0 ? 1 : 1 - Math.abs(leftScore - rightScore) / total;
-
-    let biasLeaning = "center";
-    if (total > 0) {
-      const ratio = (rightScore - leftScore) / total;
-      if (ratio > 0.6) biasLeaning = "far-right";
-      else if (ratio > 0.3) biasLeaning = "right";
-      else if (ratio > 0.1) biasLeaning = "center-right";
-      else if (ratio < -0.6) biasLeaning = "far-left";
-      else if (ratio < -0.3) biasLeaning = "left";
-      else if (ratio < -0.1) biasLeaning = "center-left";
-    }
-
-    const biasConfidence = Math.min(total / 20, 1);
-
-    // Compile response
-    const fallacies = logicResult.detections.map((d) => {
-      const rule = FALLACY_RULES.find((r) => r.id === d.fallacyId);
-      return {
-        fallacyName: rule?.name || d.fallacyId,
-        confidence: d.confidence,
-        excerpt: d.excerpt,
-        explanation: d.explanation,
-      };
-    });
-
-    const reframing = reframingResults.map((r) => ({
-      techniqueName: r.technique,
-      confidence: r.confidence,
-      excerpt: r.excerpt,
-      explanation: r.explanation,
-    }));
-
-    // Calculate manipulation score
-    const fallacyWeight = logicResult.overallManipulationScore * 40;
-    const reframingWeight = reframingResults.length > 0
-      ? Math.min(reframingResults.reduce((sum, r) => sum + r.confidence, 0) / 2, 1) * 30
-      : 0;
-    const biasWeight = (1 - balanceScore) * 30;
-    const manipulationScore = Math.round(fallacyWeight + reframingWeight + biasWeight);
-
-    // Generate assessment
-    let assessment = "";
-    if (manipulationScore >= 70) assessment = "This content shows significant signs of manipulation.";
-    else if (manipulationScore >= 40) assessment = "This content shows moderate signs of bias or manipulation.";
-    else if (manipulationScore >= 15) assessment = "This content shows mild signs of bias.";
-    else assessment = "This content appears relatively neutral and well-reasoned.";
-
-    if (fallacies.length > 0) {
-      assessment += ` Detected ${fallacies.length} logical fallacy/fallacies.`;
-    }
-    if (reframing.length > 0) {
-      assessment += ` Found ${reframing.length} reframing technique(s).`;
-    }
-
-    return NextResponse.json({
-      manipulationScore,
-      biasLeaning,
-      biasConfidence,
-      balanceScore,
-      fallacies,
-      reframing,
-      overallAssessment: assessment,
+    // Build a ContentItem for the pipeline
+    const contentItem: ContentItem = {
+      id: `content-${Date.now()}`,
+      title,
+      url,
+      contentType,
+      sourceId: "api-direct",
+      sourceName: "API Direct Input",
+      publishedAt: new Date().toISOString(),
+      ingestedAt: new Date().toISOString(),
+      rawText: textToAnalyze,
       wordCount: textToAnalyze.split(/\s+/).length,
+      metadata: {},
+    };
+
+    // Run the full analysis pipeline
+    const analysis = runAnalysis(contentItem);
+
+    // Map to API response shape
+    return NextResponse.json({
+      manipulationScore: analysis.manipulationScore,
+      biasLeaning: analysis.biasAssessment.overallLeaning,
+      biasConfidence: analysis.biasAssessment.confidence,
+      balanceScore: analysis.biasAssessment.balanceScore,
+      fallacies: analysis.fallacyDetections.map((f) => ({
+        fallacyName: f.fallacyName,
+        confidence: f.confidence,
+        excerpt: f.excerpt,
+        explanation: f.explanation,
+      })),
+      reframing: analysis.reframingDetections.map((r) => ({
+        techniqueName: r.techniqueName,
+        confidence: r.confidence,
+        excerpt: r.excerpt,
+        explanation: r.explanation,
+      })),
+      overallAssessment: analysis.overallAssessment,
+      wordCount: contentItem.wordCount,
     });
   } catch (err) {
     console.error("Analysis error:", err);
