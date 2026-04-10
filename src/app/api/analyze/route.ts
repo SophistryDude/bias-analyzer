@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { extractVideoId, fetchTranscript, transcriptToText } from "../../../lib/scrapers/youtube";
 import { scrapeArticle } from "../../../lib/scrapers/article";
 import { runAnalysis } from "../../../lib/pipeline/analyzer";
+import { saveAnalysis } from "../../../lib/db/repositories/analyses";
 import type { ContentItem, ContentType } from "../../../lib/models/types";
 
 export async function POST(req: NextRequest) {
@@ -67,7 +68,7 @@ export async function POST(req: NextRequest) {
       title,
       url,
       contentType,
-      sourceId: "api-direct",
+      sourceId: "",
       sourceName: "API Direct Input",
       publishedAt: new Date().toISOString(),
       ingestedAt: new Date().toISOString(),
@@ -78,6 +79,13 @@ export async function POST(req: NextRequest) {
 
     // Run the full analysis pipeline
     const analysis = runAnalysis(contentItem);
+
+    // Persist results (non-blocking — don't fail the request if DB is down)
+    try {
+      await saveAnalysis(contentItem, analysis);
+    } catch (dbErr) {
+      console.error("Failed to persist analysis (continuing):", dbErr);
+    }
 
     // Map to API response shape
     return NextResponse.json({

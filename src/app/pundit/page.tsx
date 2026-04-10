@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getAllPundits } from "../../lib/db/repositories/pundits";
 import { PUNDIT_REGISTRY } from "../../data/pundits/registry";
 
 const leaningColors: Record<string, string> = {
@@ -12,11 +13,22 @@ const leaningColors: Record<string, string> = {
   unclassified: "text-gray-500 bg-gray-800",
 };
 
-export default function PunditListPage() {
-  const individuals = PUNDIT_REGISTRY.filter(
+export default async function PunditListPage() {
+  // Try database first, fall back to static registry if DB unavailable
+  let allPundits;
+  try {
+    allPundits = await getAllPundits();
+    if (allPundits.length === 0) {
+      allPundits = PUNDIT_REGISTRY;
+    }
+  } catch {
+    allPundits = PUNDIT_REGISTRY;
+  }
+
+  const individuals = allPundits.filter(
     (p) => !p.tags.includes("organization")
   );
-  const organizations = PUNDIT_REGISTRY.filter((p) =>
+  const organizations = allPundits.filter((p) =>
     p.tags.includes("organization")
   );
 
