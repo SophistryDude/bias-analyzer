@@ -93,6 +93,7 @@ export const analyses = pgTable("analyses", {
   overallAssessment: text("overall_assessment").notNull(),
   humanReviewed: boolean("human_reviewed").notNull().default(false),
   humanReviewNotes: text("human_review_notes"),
+  llmEnhanced: boolean("llm_enhanced").notNull().default(false),
   // Bias assessment fields (flattened from BiasAssessment interface)
   biasLeaning: text("bias_leaning").notNull(),
   biasConfidence: real("bias_confidence").notNull(),

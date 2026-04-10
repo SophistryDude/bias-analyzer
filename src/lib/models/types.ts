@@ -104,6 +104,7 @@ export interface FullAnalysis {
   overallAssessment: string;
   humanReviewed: boolean;
   humanReviewNotes?: string;
+  llmEnhanced: boolean; // true if LLM layer ran on this analysis
 }
 
 export interface BiasAssessment {

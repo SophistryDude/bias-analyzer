@@ -43,6 +43,7 @@ export async function saveAnalysis(
     overallAssessment: analysis.overallAssessment,
     humanReviewed: analysis.humanReviewed,
     humanReviewNotes: analysis.humanReviewNotes,
+    llmEnhanced: analysis.llmEnhanced,
     biasLeaning: analysis.biasAssessment.overallLeaning,
     biasConfidence: analysis.biasAssessment.confidence,
     toneScore: analysis.biasAssessment.toneScore,
@@ -134,6 +135,7 @@ function toFullAnalysis(row: {
   overallAssessment: string;
   humanReviewed: boolean;
   humanReviewNotes: string | null;
+  llmEnhanced: boolean;
   biasLeaning: string;
   biasConfidence: number;
   toneScore: number;
@@ -172,6 +174,7 @@ function toFullAnalysis(row: {
     overallAssessment: row.overallAssessment,
     humanReviewed: row.humanReviewed,
     humanReviewNotes: row.humanReviewNotes ?? undefined,
+    llmEnhanced: row.llmEnhanced,
     biasAssessment: {
       overallLeaning: row.biasLeaning as FullAnalysis["biasAssessment"]["overallLeaning"],
       confidence: row.biasConfidence,

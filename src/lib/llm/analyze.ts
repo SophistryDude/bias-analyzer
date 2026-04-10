@@ -1,0 +1,111 @@
+/**
+ * LLM Analysis Orchestration
+ *
+ * High-level functions that the pipeline calls. Each one:
+ * 1. Checks the cache
+ * 2. Builds the prompt messages
+ * 3. Calls the LLM provider
+ * 4. Parses and validates the response
+ * 5. Caches the result
+ *
+ * If no LLM provider is configured, these functions return null
+ * and the pipeline falls back to rule-engine-only results.
+ */
+
+import type { LLMProvider } from "./provider";
+import { parseJSONResponse } from "./provider";
+import { getCached, setCache } from "./cache";
+import { buildToneAnalysisMessages } from "./prompts/tone-analysis";
+import { buildStructuralFallacyMessages } from "./prompts/structural-fallacy";
+import { buildNeutralReframingMessages } from "./prompts/neutral-reframing";
+import { buildAxisMappingMessages } from "./prompts/axis-mapping";
+import type {
+  ToneAnalysisInput,
+  ToneAnalysisOutput,
+  StructuralFallacyInput,
+  StructuralFallacyOutput,
+  ReframingSuggestionInput,
+  ReframingSuggestionOutput,
+  AxisMappingInput,
+  AxisMappingOutput,
+} from "./types";
+
+// Global provider — set via configureLLM() at app startup
+let provider: LLMProvider | null = null;
+
+export function configureLLM(p: LLMProvider): void {
+  provider = p;
+}
+
+export function isLLMConfigured(): boolean {
+  return provider !== null;
+}
+
+// ─── Tone/Sentiment Analysis ────────────────────────────────────────
+
+export async function analyzeTone(
+  input: ToneAnalysisInput
+): Promise<ToneAnalysisOutput | null> {
+  if (!provider) return null;
+
+  const cached = getCached(input.text, "tone-analysis");
+  if (cached) return parseJSONResponse<ToneAnalysisOutput>(cached);
+
+  const messages = buildToneAnalysisMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(input.text, "tone-analysis", response.content);
+  return parseJSONResponse<ToneAnalysisOutput>(response.content);
+}
+
+// ─── Structural Fallacy Detection ───────────────────────────────────
+
+export async function detectStructuralFallacies(
+  input: StructuralFallacyInput
+): Promise<StructuralFallacyOutput | null> {
+  if (!provider) return null;
+
+  const cached = getCached(input.text, "structural-fallacy");
+  if (cached) return parseJSONResponse<StructuralFallacyOutput>(cached);
+
+  const messages = buildStructuralFallacyMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(input.text, "structural-fallacy", response.content);
+  return parseJSONResponse<StructuralFallacyOutput>(response.content);
+}
+
+// ─── Neutral Reframing ──────────────────────────────────────────────
+
+export async function suggestNeutralReframing(
+  input: ReframingSuggestionInput
+): Promise<ReframingSuggestionOutput | null> {
+  if (!provider) return null;
+
+  // Cache on the excerpt, not full context
+  const cached = getCached(input.originalExcerpt, "neutral-reframing");
+  if (cached) return parseJSONResponse<ReframingSuggestionOutput>(cached);
+
+  const messages = buildNeutralReframingMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(input.originalExcerpt, "neutral-reframing", response.content);
+  return parseJSONResponse<ReframingSuggestionOutput>(response.content);
+}
+
+// ─── 5-Axis Bias Mapping ────────────────────────────────────────────
+
+export async function mapToAxes(
+  input: AxisMappingInput
+): Promise<AxisMappingOutput | null> {
+  if (!provider) return null;
+
+  const cached = getCached(input.text, "axis-mapping");
+  if (cached) return parseJSONResponse<AxisMappingOutput>(cached);
+
+  const messages = buildAxisMappingMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(input.text, "axis-mapping", response.content);
+  return parseJSONResponse<AxisMappingOutput>(response.content);
+}

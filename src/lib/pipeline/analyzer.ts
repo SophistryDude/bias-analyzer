@@ -20,6 +20,13 @@ import type {
   ReframingDetectionResult,
 } from "../models/types";
 import { FALLACY_RULES } from "../logic-engine/fallacies";
+import {
+  isLLMConfigured,
+  analyzeTone,
+  detectStructuralFallacies,
+  suggestNeutralReframing,
+  mapToAxes,
+} from "../llm/analyze";
 
 // ─── Bias Detection (keyword-based baseline) ────────────────────────
 
@@ -133,14 +140,14 @@ function extractContext(text: string, term: string): string {
 
 // ─── Full Pipeline ──────────────────────────────────────────────────
 
-export function runAnalysis(content: ContentItem): FullAnalysis {
+export async function runAnalysis(content: ContentItem): Promise<FullAnalysis> {
   // Step 1: Logic engine — fallacy detection
   const logicResult = analyzeText(content.rawText);
 
   // Step 2: Reframing detection
   const reframingResults = detectReframing(content.rawText);
 
-  // Step 3: Bias assessment
+  // Step 3: Bias assessment (keyword-based baseline)
   const biasAssessment = assessBias(content.rawText);
 
   // Step 4: Map results to output types
@@ -170,7 +177,84 @@ export function runAnalysis(content: ContentItem): FullAnalysis {
     })
   );
 
-  // Step 5: Calculate overall manipulation score (0-100)
+  // Step 5: LLM enhancement layer (if configured)
+  let llmEnhanced = false;
+
+  if (isLLMConfigured()) {
+    try {
+      llmEnhanced = true;
+
+      // 5a: Tone/sentiment analysis (replaces hardcoded toneScore: 0)
+      const toneResult = await analyzeTone({
+        text: content.rawText,
+        detectedFallacies: fallacyDetections.map((f) => f.fallacyName),
+        detectedReframing: reframingDetections.map((r) => r.techniqueName),
+      });
+      if (toneResult) {
+        biasAssessment.toneScore = toneResult.adjustedToneScore;
+      }
+
+      // 5b: Structural fallacy detection (catches what keywords miss)
+      const structuralResult = await detectStructuralFallacies({
+        text: content.rawText,
+        keywordDetections: fallacyDetections.map((f) => ({
+          fallacyId: f.fallacyId,
+          excerpt: f.excerpt,
+        })),
+      });
+      if (structuralResult) {
+        for (const s of structuralResult.detections) {
+          fallacyDetections.push({
+            fallacyId: s.fallacyId,
+            fallacyName: s.fallacyName,
+            confidence: s.confidence,
+            excerpt: s.excerpt,
+            explanation: s.explanation,
+            humanVerified: false,
+          });
+        }
+      }
+
+      // 5c: Neutral reframing suggestions
+      for (const r of reframingDetections) {
+        if (!r.suggestedNeutralFraming) {
+          const suggestion = await suggestNeutralReframing({
+            originalExcerpt: r.excerpt,
+            technique: r.technique,
+            techniqueName: r.techniqueName,
+            fullContext: content.rawText.slice(
+              Math.max(0, content.rawText.indexOf(r.excerpt) - 200),
+              content.rawText.indexOf(r.excerpt) + r.excerpt.length + 200
+            ),
+          });
+          if (suggestion) {
+            r.suggestedNeutralFraming = suggestion.neutralVersion;
+          }
+        }
+      }
+
+      // 5d: 5-axis bias mapping (replaces flat left/right keyword scoring)
+      const axisResult = await mapToAxes({
+        text: content.rawText,
+        biasIndicators: biasAssessment.indicators.map((i) => ({
+          direction: i.direction,
+          description: i.description,
+          excerpt: i.excerpt,
+        })),
+        detectedFallacies: fallacyDetections.map((f) => f.fallacyName),
+        detectedReframing: reframingDetections.map((r) => r.techniqueName),
+      });
+      if (axisResult) {
+        // Override the keyword-based leaning with the LLM's axis-informed assessment
+        biasAssessment.overallLeaning = axisResult.overallLeaning as BiasAssessment["overallLeaning"];
+      }
+    } catch (llmErr) {
+      console.error("LLM enhancement failed (continuing with rule-based results):", llmErr);
+      llmEnhanced = false;
+    }
+  }
+
+  // Step 6: Calculate overall manipulation score (0-100)
   const fallacyWeight = logicResult.overallManipulationScore * 40;
   const reframingWeight =
     reframingResults.length > 0
@@ -179,7 +263,7 @@ export function runAnalysis(content: ContentItem): FullAnalysis {
   const biasWeight = (1 - biasAssessment.balanceScore) * 30;
   const manipulationScore = Math.round(fallacyWeight + reframingWeight + biasWeight);
 
-  // Step 6: Generate overall assessment
+  // Step 7: Generate overall assessment
   const overallAssessment = generateOverallAssessment(
     fallacyDetections,
     reframingDetections,
@@ -197,6 +281,7 @@ export function runAnalysis(content: ContentItem): FullAnalysis {
     manipulationScore,
     overallAssessment,
     humanReviewed: false,
+    llmEnhanced,
   };
 }
 

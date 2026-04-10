@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
     };
 
     // Run the full analysis pipeline
-    const analysis = runAnalysis(contentItem);
+    const analysis = await runAnalysis(contentItem);
 
     // Persist results (non-blocking — don't fail the request if DB is down)
     try {
