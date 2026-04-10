@@ -32,6 +32,20 @@
 - Human-in-the-loop review loop — training schema exists but isn't wired to any UI or workflow
 
 ## Key Design Decisions
-- The logic engine is rule-based by design. This is a feature, not a limitation.
+- The logic engine is rule-based by design. LLMs augment it as an enhancement layer, they do not replace it.
 - Progressive ≠ liberal. The model explicitly distinguishes these as separate axes.
 - Coherence scoring tracks whether a pundit's positions are philosophy-driven or engagement-driven.
+- Pundit profiles must be system-generated from analyzed content, not hand-written editorial assessments. Current profiles are unvalidated initial hypotheses.
+- Blog content is semi-automated: system generates drafts, human reviews and publishes.
+
+## Known Issues
+- API route (`src/app/api/analyze/route.ts` lines 67-106) duplicates bias scoring instead of calling `runAnalysis()` from the pipeline module. Fix this first.
+
+## Roadmap
+See `docs/implementation-roadmap.md` for the full 6-phase plan:
+1. Database foundation (PostgreSQL/Neon + Drizzle ORM)
+2. LLM integration layer (Claude Sonnet, enhancement over rule engine)
+3. Automated content ingestion (node-cron + pg-boss, not Airflow)
+4. Blog content generation & pundit detail pages
+5. Production infrastructure (Vercel + Hetzner VPS, ~$74/mo)
+6. YouTube pipeline & training loop
