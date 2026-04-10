@@ -111,6 +111,77 @@ async function seed() {
   }
   console.log("  Done.\n");
 
+  // ─── Monitored Sources ──────────────────────────────────────────
+  const MONITORED_SOURCES = [
+    {
+      id: "yt-philip-defranco",
+      punditId: "philip-defranco",
+      type: "youtube-channel",
+      name: "Philip DeFranco (YouTube)",
+      url: "https://youtube.com/@PhilipDeFranco",
+    },
+    {
+      id: "yt-tim-pool",
+      punditId: "tim-pool",
+      type: "youtube-channel",
+      name: "Tim Pool (YouTube)",
+      url: "https://youtube.com/@Timcast",
+    },
+    {
+      id: "yt-breaking-points",
+      punditId: "breaking-points",
+      type: "youtube-channel",
+      name: "Breaking Points (YouTube)",
+      url: "https://youtube.com/@breakingpoints",
+    },
+    {
+      id: "yt-ben-shapiro",
+      punditId: "ben-shapiro",
+      type: "youtube-channel",
+      name: "Ben Shapiro (YouTube)",
+      url: "https://youtube.com/@BenShapiro",
+    },
+    {
+      id: "rss-nyt",
+      punditId: "nyt",
+      type: "rss",
+      name: "NYT Top Stories",
+      url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    },
+    {
+      id: "rss-cnn",
+      punditId: "cnn",
+      type: "rss",
+      name: "CNN Top Stories",
+      url: "http://rss.cnn.com/rss/cnn_topstories.rss",
+    },
+    {
+      id: "rss-fox",
+      punditId: "fox-news",
+      type: "rss",
+      name: "Fox News Latest",
+      url: "https://moxie.foxnews.com/google-publisher/latest.xml",
+    },
+  ];
+
+  console.log(`Seeding ${MONITORED_SOURCES.length} monitored sources...`);
+  for (const source of MONITORED_SOURCES) {
+    await db
+      .insert(schema.monitoredSources)
+      .values({
+        id: source.id,
+        punditId: source.punditId,
+        type: source.type,
+        name: source.name,
+        url: source.url,
+        enabled: true,
+        scrapeIntervalMinutes: 60,
+        metadata: {},
+      })
+      .onConflictDoNothing();
+  }
+  console.log("  Done.\n");
+
   console.log("Seed complete.");
   await client.end();
   process.exit(0);
