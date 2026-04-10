@@ -19,6 +19,16 @@ import { buildToneAnalysisMessages } from "./prompts/tone-analysis";
 import { buildStructuralFallacyMessages } from "./prompts/structural-fallacy";
 import { buildNeutralReframingMessages } from "./prompts/neutral-reframing";
 import { buildAxisMappingMessages } from "./prompts/axis-mapping";
+import {
+  buildClaimExtractionMessages,
+  type ClaimExtractionInput,
+  type ClaimExtractionOutput,
+} from "./prompts/claim-extraction";
+import {
+  buildOmissionDetectionMessages,
+  type OmissionDetectionInput,
+  type OmissionDetectionOutput,
+} from "./prompts/omission-detection";
 import type {
   ToneAnalysisInput,
   ToneAnalysisOutput,
@@ -108,4 +118,40 @@ export async function mapToAxes(
 
   setCache(input.text, "axis-mapping", response.content);
   return parseJSONResponse<AxisMappingOutput>(response.content);
+}
+
+// ─── Claim Extraction ───────────────────────────────────────────────
+
+export async function extractClaims(
+  input: ClaimExtractionInput
+): Promise<ClaimExtractionOutput | null> {
+  if (!provider) return null;
+
+  const cached = getCached(input.text, "claim-extraction");
+  if (cached) return parseJSONResponse<ClaimExtractionOutput>(cached);
+
+  const messages = buildClaimExtractionMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(input.text, "claim-extraction", response.content);
+  return parseJSONResponse<ClaimExtractionOutput>(response.content);
+}
+
+// ─── Omission Detection ─────────────────────────────────────────────
+
+export async function detectOmissions(
+  input: OmissionDetectionInput
+): Promise<OmissionDetectionOutput | null> {
+  if (!provider) return null;
+
+  // Cache key is source-specific since each source gets a different analysis
+  const cacheKey = `${input.sourceName}:${input.storyDescription}`;
+  const cached = getCached(cacheKey, "omission-detection");
+  if (cached) return parseJSONResponse<OmissionDetectionOutput>(cached);
+
+  const messages = buildOmissionDetectionMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(cacheKey, "omission-detection", response.content);
+  return parseJSONResponse<OmissionDetectionOutput>(response.content);
 }

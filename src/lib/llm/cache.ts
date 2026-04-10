@@ -15,7 +15,9 @@ export type PromptType =
   | "tone-analysis"
   | "structural-fallacy"
   | "neutral-reframing"
-  | "axis-mapping";
+  | "axis-mapping"
+  | "claim-extraction"
+  | "omission-detection";
 
 // In-memory cache (replaced with DB-backed cache in Phase 3+)
 const cache = new Map<string, { result: string; cachedAt: number }>();

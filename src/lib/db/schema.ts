@@ -369,6 +369,85 @@ export const storyCoveragesRelations = relations(
   })
 );
 
+// ─── Claims & Omission Tracking ─────────────────────────────────────
+
+/**
+ * A "claim" is a discrete factual assertion extracted from content.
+ * Claims are the atomic unit of truth-tracking. When multiple sources
+ * cover the same story, we extract claims from each and cross-reference
+ * to find what each source included vs omitted.
+ *
+ * Claims are NOT opinions or framing. "50 people were killed" is a claim.
+ * "This devastating attack..." is framing.
+ */
+export const claims = pgTable("claims", {
+  id: text("id").primaryKey(),
+  storyId: text("story_id")
+    .notNull()
+    .references(() => stories.id, { onDelete: "cascade" }),
+  /** The canonical/normalized statement of the claim */
+  statement: text("statement").notNull(),
+  /** What kind of claim this is */
+  claimType: text("claim_type").notNull(), // "event", "statistic", "quote", "attribution", "context", "denial"
+  /** How important is this claim to understanding the story? */
+  significance: text("significance").notNull(), // "critical", "important", "minor"
+  /** Can this claim be independently verified? */
+  verifiability: text("verifiability").notNull(), // "verifiable", "partially-verifiable", "unverifiable"
+  /** If verifiable, what type of source would verify it? */
+  verificationSource: text("verification_source"), // "government-data", "court-record", "official-statement", "eyewitness", "expert", "primary-document"
+  /** Has this claim been verified? */
+  verificationStatus: text("verification_status").notNull().default("unverified"), // "verified", "disputed", "debunked", "unverified"
+  verificationNotes: text("verification_notes"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export const claimsRelations = relations(claims, ({ one, many }) => ({
+  story: one(stories, {
+    fields: [claims.storyId],
+    references: [stories.id],
+  }),
+  sourceClaims: many(sourceClaims),
+}));
+
+/**
+ * Links a claim to the specific source that made it (or omitted it).
+ * This is the join table that powers omission detection.
+ *
+ * For each claim in a story, every source that covered the story
+ * gets an entry: either "included" (with their specific wording)
+ * or "omitted" (the claim was not present in their coverage).
+ */
+export const sourceClaims = pgTable("source_claims", {
+  id: text("id").primaryKey(),
+  claimId: text("claim_id")
+    .notNull()
+    .references(() => claims.id, { onDelete: "cascade" }),
+  coverageId: text("coverage_id")
+    .notNull()
+    .references(() => storyCoverages.id, { onDelete: "cascade" }),
+  /** Did this source include or omit this claim? */
+  status: text("status").notNull(), // "included", "omitted", "partial", "distorted"
+  /** If included, the source's exact wording (may differ from canonical) */
+  sourceWording: text("source_wording"),
+  /** If the wording differs meaningfully from the canonical claim */
+  wordingDivergence: text("wording_divergence"), // null, "minor" (synonym), "significant" (different framing), "contradicts"
+  /** If the source cited a specific number or source that differs from others */
+  divergentDetail: text("divergent_detail"),
+  /** The source this claim was attributed to in the article (e.g., "MSF", "Pentagon") */
+  attributedTo: text("attributed_to"),
+});
+
+export const sourceClaimsRelations = relations(sourceClaims, ({ one }) => ({
+  claim: one(claims, {
+    fields: [sourceClaims.claimId],
+    references: [claims.id],
+  }),
+  coverage: one(storyCoverages, {
+    fields: [sourceClaims.coverageId],
+    references: [storyCoverages.id],
+  }),
+}));
+
 // ─── Training Examples ──────────────────────────────────────────────
 
 export const trainingExamples = pgTable("training_examples", {
