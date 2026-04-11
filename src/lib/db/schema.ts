@@ -369,6 +369,27 @@ export const storyCoveragesRelations = relations(
   })
 );
 
+// ─── Blog Posts ─────────────────────────────────────────────────────
+
+export const blogPosts = pgTable("blog_posts", {
+  id: text("id").primaryKey(),
+  title: text("title").notNull(),
+  slug: text("slug").notNull().unique(),
+  content: text("content").notNull(), // markdown
+  excerpt: text("excerpt").notNull().default(""),
+  status: text("status").notNull().default("draft"), // "draft", "published", "archived"
+  postType: text("post_type").notNull(), // "individual-analysis", "trend-report", "comparison", "story-comparison"
+  /** Related analysis IDs (for individual analysis posts) */
+  relatedAnalysisIds: jsonb("related_analysis_ids").$type<string[]>().notNull().default([]),
+  /** Related pundit IDs */
+  relatedPunditIds: jsonb("related_pundit_ids").$type<string[]>().notNull().default([]),
+  /** Related story ID (for story comparison posts) */
+  relatedStoryId: text("related_story_id"),
+  publishedAt: timestamp("published_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+});
+
 // ─── Claims & Omission Tracking ─────────────────────────────────────
 
 /**
