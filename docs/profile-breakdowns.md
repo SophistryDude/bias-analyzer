@@ -310,6 +310,109 @@ Pool's self-labeling behavior ("I'm a centrist liberal who just happens to agree
 
 ---
 
+### Hasan Piker
+
+**Platform:** Twitch, YouTube
+**Current Leaning:** Far-Left
+**Ideological Coherence:** 0.60 (mixed)
+**Driver:** Mixed — genuine ideological framework (Marxism) but engagement incentives amplify the most provocative expressions of it
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2018 | Left | Young Turks producer/host. Progressive commentary within the mainstream left framework. |
+| ~2020 | Far-Left | Built massive Twitch audience with explicitly socialist/Marxist commentary. Broke from mainstream Democratic positions. Refused to endorse Biden. |
+| ~2023 | Far-Left | October 7 commentary generated significant controversy. Called Hamas attack a "direct consequence" of Israeli/US policy. Doubled down on most provocative positions. |
+| ~2025 | Far-Left | Emerged as one of the most-watched political streamers criticizing the Trump administration. Democratic candidates both courted and distanced from him. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.85 | Strong Socialist | Stable | 90% |
+| Speech | -0.30 | Leaning Free Speech | Unstable | 45% |
+| Progressive | -0.90 | Strong Progressive (Equity) | Stable | 90% |
+| Liberal/Conservative | -0.80 | Strong Liberal | Stable | 85% |
+| Foreign Policy | -0.80 | Strong Non-Interventionist | Stable | 80% |
+
+#### Notes
+
+Piker is the furthest left profile in the dataset by a significant margin. His economic and progressive scores are the most extreme in either direction — genuinely Marxist economics combined with strong equity-framework progressivism. This is a coherent ideological package, which is why his coherence is moderate rather than low despite the provocative presentation.
+
+**Economic:** Strong socialist. This is not performative — Piker advocates for abolition of the real estate market, government-provided healthcare, strict economic regulation, and fundamental restructuring of capitalist systems. He's read Marx (his uncle is Cenk Uygur, but his economic positions go significantly further left than TYT). The internal tension: he's a millionaire who bought a $2.7M house in West Hollywood, which his critics use to charge hypocrisy. Whether personal wealth invalidates systemic critique is itself an interesting epistemological question for the system.
+
+**Speech:** Leaning free speech but unstable. This is his most incoherent axis. He broadly supports free expression and has been critical of platform censorship when it targets the left. But he's also dismissive of speech he considers harmful (particularly around Israel/Palestine discourse) and has made comments that selectively apply speech principles. His position is "free speech for political dissent, but some positions are morally beyond the pale" — which is a common left position but contradicts absolutism. Confidence is low because his stated principles and his behavior diverge.
+
+**Progressive/Equity:** Strong progressive. His strongest and most consistent axis. Every issue is filtered through a systemic equity lens — class, race, imperialism. This is genuine and has been consistent from his TYT days through the present. When he analyzes any political event, the first question is always "who has structural power and who doesn't?"
+
+**Liberal/Conservative:** Strong liberal. Wants fundamental change to existing systems — not reform, transformation. This is coherent with his Marxist economics. He's not trying to preserve or incrementally improve existing institutions; he wants to replace them.
+
+**Foreign Policy:** Strong non-interventionist. Consistently anti-US military intervention, anti-imperialist framework. His Israel/Palestine position — which is his most controversial — flows directly from this axis: he views Israel as a US-backed imperial project. Whether you agree or not, the position is internally consistent with his anti-interventionist framework. The October 7 commentary (calling it a "direct consequence" of Israeli/US policy) is the most extreme expression of this axis and the one that generates the most controversy.
+
+**Key analytical note:** Piker's primary rhetorical technique is **moral certainty at high volume**. He presents positions with absolute confidence and emotional intensity, which is engaging but epistemologically dangerous — it leaves no room for uncertainty or nuance. The system should track the gap between his confidence level and the actual epistemic warrant for his claims. "This is obviously what's happening" is a claim about the speaker's certainty, not about the evidence. His engagement metrics reward this certainty — equivocation doesn't generate clips. This is where the engagement-driven component of his score comes from.
+
+The Piker-Destiny split is one of the most analytically useful case studies in the dataset. Two people who started in similar positions, diverged dramatically, and now represent two fundamentally different approaches to left-of-center politics. Comparing their coverage of the same events would be a high-value story comparison post.
+
+---
+
+### Destiny (Steven Bonnell II)
+
+**Platform:** YouTube, Kick (formerly Twitch)
+**Current Leaning:** Center-Left
+**Ideological Coherence:** 0.70 (moderately high)
+**Driver:** Philosophy-driven — positions derive from self-described "rules-based utilitarianism," though willingness to follow arguments wherever they lead creates friction with all political tribes
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2012 | Center-Right | Self-described libertarian with right-of-center social views. Gaming content, not political. |
+| ~2016 | Center-Left | Political shift triggered by social awareness. Began debating right-wing figures on stream. Became known for dismantling conservative arguments. |
+| ~2020 | Center-Left | Established as a liberal/social democrat. Broke with the online left over socialist economics and rhetoric. Fell out with Hasan Piker. |
+| ~2023 | Center-Left | Pro-Israel position on Gaza war put him at odds with most of the online left. Debated Norman Finkelstein on Lex Fridman. Banned from Twitch (2022, permanent). |
+| ~2024 | Center-Left | Endorsed Kamala Harris. Organized canvassing for Sherrod Brown in Ohio. Actively working within the Democratic Party framework despite criticizing it. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.20 | Leaning Social Democrat | Stable | 70% |
+| Speech | -0.60 | Moderate Free Speech | Stable | 65% |
+| Progressive | -0.20 | Leaning Progressive | Stable | 55% |
+| Liberal/Conservative | -0.40 | Leaning Liberal | Stable | 65% |
+| Foreign Policy | +0.10 | Centrist | Stable | 50% |
+
+#### Notes
+
+Destiny is the hardest profile in the dataset to place on any spectrum because he genuinely follows his stated methodology — "rules-based utilitarianism" — wherever it leads, even when it puts him at odds with his own audience and political allies. This is why his coherence is moderately high despite having positions that don't cluster neatly into any political tribe.
+
+**Economic:** Leaning social democrat. Supports capitalist markets with robust social safety nets, universal healthcare, and progressive taxation. Not socialist — he's explicitly and repeatedly broken with socialist economics, which is what caused the Piker split. He argues for regulated capitalism as the best available system, not as an ideal. This is a stable, well-examined position.
+
+**Speech:** Moderate free speech. Supports broad speech protections but accepts some limits. His Twitch ban (for calling certain trans activists "subhuman" during a heated debate) illustrates the tension — he pushes boundaries in real-time debate and sometimes crosses lines he'd probably redraw in retrospect. He's more free-speech than the institutional left but less absolute than the right. This position has been relatively stable.
+
+**Progressive/Equity:** Leaning progressive, but barely. This is where he's most interesting. He supports some equity-oriented policies but is deeply skeptical of progressive rhetoric, activist culture, and identity-first framing. He's willing to push back on progressive orthodoxy on issues like trans athlete policy, crime statistics, and racial discourse — which is what earned him the "debate bro" label and alienated much of the online left. His progressivism is utilitarian (does this policy produce better outcomes?) rather than justice-framed (is this the right thing to do?). Low confidence because his position is genuinely nuanced and hard to score.
+
+**Liberal/Conservative:** Leaning liberal. Wants change, supports reform, skeptical of existing institutions. But not a revolutionary — he works within the Democratic Party system (canvassing, endorsements) rather than trying to overthrow it. This is a pragmatic liberalism, not an ideological one.
+
+**Foreign Policy:** Centrist. His pro-Israel position is the most visible foreign policy stance and is a significant outlier for someone on the online left. He frames it as consistent with his utilitarian ethics — evaluating the conflict based on outcomes and international law rather than anti-imperialist ideology. This put him in direct conflict with Piker and most of the online left. Whether this position is genuinely derived from his framework or is partly contrarian is debatable — but it has been consistent and he's defended it in long-form debate against serious interlocutors (Finkelstein, Rabbani on Lex Fridman). Low confidence because foreign policy is his least-developed framework.
+
+**Key analytical note:** Destiny's primary rhetorical technique is **Socratic stress-testing** — he debates positions in real-time, often taking unpopular stances specifically to test their logical foundations. This is epistemologically valuable (it's how you find weak arguments) but creates a presentation problem: it's hard to distinguish "I'm exploring this idea" from "I endorse this position" when you're watching a live stream. The system should track whether his stated positions in prepared content (videos, essays) differ from positions explored in live debate — that gap reveals the difference between his actual framework and his debate methodology.
+
+His coherence score (0.70) is notable because it's high despite having positions that cross partisan lines. Most high-coherence profiles achieve it by clustering within a single political tribe (Shapiro on the right, Maddow on the left). Destiny achieves it by genuinely deriving positions from a consistent methodology even when that methodology produces politically inconvenient results. This is the rarest type of coherence in the dataset — method-coherence rather than position-coherence.
+
+The Piker-Destiny comparison is analytically rich:
+- Same starting point (~2018 online left)
+- Same platform (Twitch/YouTube)
+- Opposite trajectories (Piker went further left, Destiny held center-left)
+- Opposite coherence drivers (Piker's engagement incentives amplify extremity, Destiny's debate methodology resists tribal capture)
+- Opposite Israel positions (the breaking point)
+- Both have been deplatformed (Piker from Twitch temporarily, Destiny permanently)
+
+Tracking how they cover the same events would produce some of the most revealing cross-source comparisons in the system.
+
+---
+
 ### Breaking Points (Krystal Ball & Saagar Enjeti)
 
 **Platform:** YouTube, Podcast
