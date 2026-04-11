@@ -443,6 +443,55 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 
 ---
 
+### Jordan Peterson
+
+**Platform:** YouTube, Podcast, Daily Wire, Substack
+**Current Leaning:** Right
+**Ideological Coherence:** 0.55 (mixed)
+**Driver:** Mixed — began philosophy-driven (clinical psychology + Jungian archetypes), trending toward engagement-driven on political topics outside his domain expertise
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2013 | Center | Academic clinical psychologist at University of Toronto. Published on personality psychology and meaning. Not publicly political. |
+| ~2016 | Center-Right | Bill C-16 opposition launched his public career. Positioned as a free speech defender, not a partisan. Attracted cross-partisan audience. |
+| ~2018 | Center-Right | "12 Rules for Life" era. Self-help + critique of postmodernism/neo-Marxism. Still largely non-partisan but culturally conservative. Audience skewed right but content was genuinely cross-spectrum. |
+| ~2021 | Right | Post-health crisis. Returned more combative, more explicitly political. Climate skepticism, increasing culture war engagement. |
+| ~2023 | Right | Joined Daily Wire. Content shifted heavily toward political commentary. Endorsed Trump/DeSantis. Ukraine/Russia takes drew significant criticism. Climate denial became a recurring theme. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | -0.50 | Moderate Capitalist | Stable | 65% |
+| Speech | -0.85 | Strong Free Speech | Stable | 95% |
+| Progressive | +0.70 | Strong Non-Progressive | Moving right → | 80% |
+| Liberal/Conservative | +0.50 | Moderate Conservative | Moving right → | 70% |
+| Foreign Policy | -0.30 | Leaning Non-Interventionist | Unstable | 40% |
+
+#### Notes
+
+Peterson's profile is the most interesting trajectory study in the dataset because it captures a real-time coherence decline. His early work (Maps of Meaning, 12 Rules) was genuinely philosophy-driven — positions derived from clinical psychology, Jungian archetypes, and existentialist philosophy. His current political commentary increasingly operates outside this framework, which is why coherence has dropped from what would have been ~0.80 in 2018 to 0.55 now.
+
+**Economic:** Moderate capitalist. Peterson cites Price's Law and Pareto distributions to argue that economic inequality is natural and inevitable — similar to Nicholas's position on the Pareto principle, though Peterson draws different conclusions. He's "capitalism is the worst system except all the others" — pragmatic pro-market, not ideological libertarian. This axis has been stable because it's genuinely derived from his understanding of complex systems.
+
+**Speech:** Strong free speech. This is his founding axis — the Bill C-16 controversy is what created his public persona. His free speech position is the most authentic and stable element of his profile. It's rooted in clinical psychology (the therapeutic importance of articulating difficult truths) and political philosophy (tyranny begins with compelled speech). Confidence is extremely high because this position has been tested under significant personal cost and hasn't moved.
+
+**Progressive/Equity:** Strong non-progressive, trending further right. Peterson's critique of equity frameworks was initially nuanced — he argued that equality of outcome was impossible without tyranny, while supporting equality of opportunity. This was a defensible philosophical position. More recently, his anti-progressive stance has become less nuanced and more reflexive — opposing progressive positions as a category rather than engaging with specific proposals. The trend line here is the clearest indicator of audience capture influencing his positioning.
+
+**Liberal/Conservative:** Moderate conservative, trending rightward. His early work was genuinely liberal in the classical sense — he wanted to change how people thought about meaning, responsibility, and suffering. He was challenging the status quo of nihilism and postmodernism. Since joining Daily Wire and endorsing Trump, his positioning has become more conventionally conservative — defending existing power structures rather than challenging intellectual orthodoxies. The shift from "challenge all orthodoxies" to "defend this particular set of orthodoxies" is a coherence signal worth tracking.
+
+**Foreign Policy:** Leaning non-interventionist, but this is his weakest and least coherent axis. His Russia/Ukraine commentary drew significant criticism for repeating Kremlin talking points — blaming NATO expansion for Russian aggression, framing Putin as forced into war by Western cultural degeneracy. This is a sharp departure from his other positions: a free speech absolutist defending a regime that imprisons journalists is an internal contradiction. His foreign policy positions appear less derived from his philosophical framework and more from contrarian anti-establishment instinct, which is a different driver than the rest of his profile. Confidence is very low because this axis doesn't fit with the others.
+
+**Key analytical note:** Peterson's primary rhetorical technique is **domain transfer** — applying psychological frameworks to political questions. When the transfer is legitimate (individual responsibility → policy design), it produces genuine insight. When it's not (Jungian archetypes → climate policy), it produces confident-sounding nonsense. The system should track *which domain* Peterson is speaking from: clinical psychology (high credibility), political philosophy (moderate credibility), climate science (low credibility, outside his expertise), or geopolitics (low credibility, contradicts his own framework).
+
+The coherence score (0.55) is the most analytically significant number in this profile. It was higher before ~2021 and has been declining. This maps precisely to the coherence framework's prediction: when a philosophy-driven thinker begins responding to audience incentives (Daily Wire platform, engagement metrics, political endorsements), coherence drops because the new positions are generated by a different driver than the original framework. Peterson is the clearest example in the dataset of a philosophy-driven profile transitioning toward mixed/engagement-driven.
+
+The Pareto principle connection to Nicholas's own framework is worth noting: both Peterson and Nicholas cite the Pareto distribution as foundational. Peterson uses it to argue inequality is natural and therefore acceptable. Nicholas uses it to argue libertarianism is indefensible because the distribution is *mathematically inevitable*, not the product of fair competition. Same evidence, opposite conclusions — a perfect case study for the epistemological classification system.
+
+---
+
 ### Victor Davis Hanson
 
 **Platform:** Syndicated Column, YouTube, Podcast, Fox News
