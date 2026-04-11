@@ -121,3 +121,193 @@ The contrast with Wilson works: Wilson's argument by definition is *reasonable* 
 - "The masses are generally dumb" is a category error — value judgment presented as observation.
 - Claims 1 and 4 appear to contradict unless the reader catches the subtle distinction between "define terms precisely" (good) and "define terms to presuppose your conclusion" (bad).
 - The argument is dense and assumes the reader follows formal logic — effective for a debate-literate audience, less effective for a general audience.
+
+---
+
+## Entry 2: Extended Debate — Self-Ownership, Moral Objectivity, and Theistic Ethics
+
+### Context
+Continuation of the Andrew Wilson debate. Nicholas's opponent (hereafter "Opponent") defends Wilson's theistic moral framework and argues that moral objectivity requires God. The exchange escalates across metaethics, game theory, Nietzsche, Camus, and the nature of self-ownership.
+
+### Full Argument Map
+
+Nicholas makes approximately 17 distinct substantive moves in this exchange. Evaluated individually:
+
+---
+
+### Move 1: Defining ownership as a social construct goes beyond neutral definition-setting
+
+**Nicholas:** "Saying 'I am going to define a garblegob as a pink elephant' is fine. Declaring ownership is a social construct requires way more justification."
+
+**Assessment: Strong (0.85)** — Correct distinction. There's a difference between defining a *term* for clarity and smuggling a *contested philosophical conclusion* into a premise. The epistemological taxonomy flags Wilson's move as tacit understanding presented as known truth.
+
+---
+
+### Move 2: Dave accepted because of style, not agreement
+
+**Nicholas:** "Rewatch that portion. Dave accepts because he's not going to quibble over terms."
+
+**Assessment: Moderate (0.65)** — Model-dependent interpretation of Dave's internal motivation. Neither side can prove why Dave accepted. Stronger version: "Whether Dave agreed substantively or just didn't push back, the argument by definition stands on its structural merits regardless."
+
+---
+
+### Move 3: "Bullshit"
+
+**Assessment: 0.10 — Weakest move in the entire exchange.** Bare assertion with no argument. The game theory argument that follows is strong enough that the "Bullshit" actually weakens the presentation — it makes the reader expect an emotional response, then gets a rigorous one. Wasted space.
+
+---
+
+### Move 4: Game-theoretic grounding of self-ownership
+
+**Nicholas:** Self-ownership emerges as a rational equilibrium in repeated interactions between agents who value their own continued agency. The NAP follows: offensive force destabilizes equilibrium, defensive force preserves it.
+
+**Assessment: Very strong (0.90)** — The strongest move in the entire exchange. Breaking it down:
+
+1. *Premise:* Two agents in a state of nature both prefer survival. (Minimal, defensible.)
+2. *Game theory:* In repeated encounters, mutual recognition of bodily autonomy is the stable equilibrium. (Formally demonstrable — iterated prisoner's dilemma.)
+3. *Biological analog:* Predator spatial/temporal partitioning. (Supporting evidence.)
+4. *Conclusion:* Self-ownership is a rational precondition, not a preference.
+
+The Logic System classifies this as a **logical derivation from minimal premises** — the strongest epistemological category. The argument doesn't presuppose its conclusion; it derives self-ownership from premises even the opponent would accept. The opponent later accuses Nicholas of circular reasoning — this accusation is incorrect (see Move 11).
+
+---
+
+### Move 5: "Just because you need sky daddy to get over your existential dread"
+
+**Assessment: 0.20 — Ad hominem.** Contradicts Nicholas's later claim of being "fairly charitable toward Christian belief." The opponent's *motivation* for believing in God is irrelevant to whether God-grounded morality is logically sound. This gives the opponent ammunition to dismiss the entire exchange as "angry atheist" — which is exactly what the opponent does later.
+
+---
+
+### Move 6: Andrew concedes subjectivity, then claims gravitas
+
+**Nicholas:** "He says God's will is subjective, so he doesn't have to argue about who has an objective position. He then asserts his framework has more gravitas."
+
+**Assessment: Strong (0.85)** — Precise observation of Wilson's having-it-both-ways move. Either morality is subjective (in which case "gravitas" is just preference) or it's objective (in which case defend why yours is right). You can't concede subjectivity and then claim special authority for your subjective framework.
+
+---
+
+### Move 7: The self-contradiction in universal moral subjectivism
+
+**Nicholas:** "Andrew (and you) are claiming that all moral claims are subjective. That claim is either objectively true (contradiction), or it's subjectively true (no reason to accept it)."
+
+**Assessment: Excellent (0.95)** — Textbook performative contradiction. If "all moral claims are subjective" is objectively true, then not all claims are subjective. If it's subjectively true, it carries no argumentative weight. This is the strongest single logical move in the entire exchange.
+
+---
+
+### Move 8: Self-ownership as precondition for moral agency (transcendental argument)
+
+**Nicholas's syllogism:**
+1. Moral responsibility presupposes agency
+2. Agency presupposes control over one's body
+3. Moral rules must apply universally to agents
+4. Therefore self-ownership is an objective precondition of morality
+
+**Assessment: Very strong (0.90)** — Valid transcendental argument. Self-ownership is not a *moral claim* but a *precondition for any moral claim*. Deny self-ownership → deny agency → deny responsibility → moral system collapses (including theistic ones). The key insight: "Self-ownership isn't even a moral position, it's an objective reality."
+
+The Euthyphro reference shows restraint — Nicholas mentions he *hasn't* deployed this argument yet, signaling reserves.
+
+---
+
+### Move 9: Conceding the burden of proof error
+
+**Nicholas:** "You're right, this is a meta-ethical request, or burden of proof challenge."
+
+**Assessment: Strong (0.85)** — Concedes an error from Entry 1 (calling it "law of double negation"). This is epistemological integrity — the Logic System's self-correction principle. Conceding errors strengthens credibility. The reframe is sharper: "If you deny self-ownership, the burden is on you to show who does have rightful control over my body and why that claim isn't arbitrary."
+
+---
+
+### Move 10: Responding to the slavery utilitarian argument
+
+**Nicholas:** Dismantles on three grounds: (1) slavery fails utilitarianism's own premise, (2) no innovation incentive — productivity declined under chattel slavery, (3) post-Civil War productivity increased 20-60%.
+
+**Assessment: Strong (0.85)** — Meets the opponent on their chosen ground and beats them there. Historical data (verifiable observations) is the strongest epistemological category. Minor weakness: specific numbers should be sourced.
+
+---
+
+### Move 11: Transcendental arguments vs. circular reasoning
+
+**Nicholas:** "You don't understand what a transcendental argument is... I'm using proof by contradiction, reductio ad absurdum."
+
+**Assessment: Strong (0.80)** — Correctly identifies the opponent's confusion. Circular: "X because X." Transcendental: "If not-X, then absurdity, therefore X." These are structurally different. The opponent doesn't have the vocabulary to follow, which limits effectiveness but doesn't reduce correctness.
+
+---
+
+### Move 12: Nietzsche and Camus corrections
+
+**Nicholas:** Nietzsche didn't argue morality *requires* God — he argued European civilization *built its morality on* God. Camus viewed religion as "philosophical suicide."
+
+**Assessment: Strong (0.85)** — The Nietzsche correction is precise and important. The opponent used him as evidence morality requires God; his actual position is descriptive, not prescriptive. Nicholas also admits he "read into Camus a bit for this conversation" — honest about the limits of his expertise.
+
+---
+
+### Move 13: Materialists don't deny metaphysics
+
+**Nicholas:** "Materialists don't deny metaphysics, they deny supernatural ontology. Materialism IS a metaphysical position."
+
+**Assessment: Excellent (0.95)** — Technically precise. Catches a common error even philosophy-literate people make. Materialism is a specific metaphysical position, not anti-metaphysics. The opponent conflates "metaphysics" with "supernatural."
+
+---
+
+### Move 14: "God is the necessary being" is presupposition, not argument
+
+**Nicholas:** "That's the claim, not the argument. Also, saying no one can escape God's commands is just force doctrine."
+
+**Assessment: Very strong (0.90)** — Catches the opponent presupposing their conclusion while accusing Nicholas of presupposing his. The force doctrine observation is correct: "No subject can escape it" is an argument from power, not morality. "God's morality is objective because you can't escape it" is structurally identical to "the king's law is objective because you can't escape it."
+
+---
+
+### Move 15: Secular framework superiority — God literally commands genocide
+
+**Nicholas:** The theistic framework is actually more vulnerable to "anything goes with rational justification" because God commands genocide in scripture (Canaanites, Amalekites, Saul, the Flood).
+
+**Assessment: Strong (0.85)** — Uses the opponent's own standard against them. Scriptural examples are verifiable observations. The math analogy ("Humans define morality therefore it's subjective" is like "math is subjective because humans do math") is excellent.
+
+---
+
+### Move 16: Fallacy is structural, not about debate outcome
+
+**Nicholas:** "Whether an argument contains a fallacy is about the structure of the argument itself, not about whether the opponent catches it."
+
+**Assessment: Excellent (0.95)** — One of the most important meta-logical points in the exchange. Validity is a property of the argument, not the debate outcome. The opponent conflates "Dave didn't push back" with "the argument was valid."
+
+---
+
+### Move 17: Responding to ad hominem — the irony counter
+
+**Nicholas:** "I haven't mentioned Dawkins or Harris. You assigning their opinions to me is ironic considering you're defending Andrew's framework verbatim. If one of us is regurgitating, it isn't me."
+
+**Assessment: Strong (0.85)** — Clean counter. The closing paragraph is the best rhetorical moment: Nicholas accurately observes he's been charitable while the opponent has been dismissive. The only vulnerability: the "sky daddy" comment earlier partially undermines this claim.
+
+---
+
+### Overall Assessment — Entry 2
+
+| Metric | Score | Notes |
+|--------|-------|-------|
+| Logical rigor | 0.90 | Game theory, transcendental argument, performative contradiction — all technically sound |
+| Internal consistency | 0.85 | "Sky daddy" contradicts claimed charity; otherwise highly consistent |
+| Epistemological awareness | 0.95 | Correctly identifies category errors, burden of proof, presupposition vs derivation |
+| Rhetorical discipline | 0.60 | "Bullshit" and "sky daddy" are unforced errors |
+| Domain expertise | 0.90 | Metaethics, game theory, Nietzsche/Camus corrections demonstrate genuine knowledge |
+| Charity toward opponent | 0.65 | Mostly charitable but punctuated with dismissive comments |
+| **Overall** | **0.82** | Philosophically rigorous with rhetorical discipline problems |
+
+### Strongest Moves
+1. **Performative contradiction catch** (0.95) — "All morality is subjective" is self-defeating
+2. **Materialism IS metaphysics** (0.95) — technically precise, catches common error
+3. **Fallacy is structural** (0.95) — key meta-logical point the opponent misses
+4. **Game theory grounding** (0.90) — derives self-ownership from minimal premises
+5. **Transcendental argument** (0.90) — self-ownership is a precondition, not a claim
+
+### Weakest Moves
+1. **"Bullshit"** (0.10) — bare assertion, wasted space
+2. **"Sky daddy"** (0.20) — ad hominem, contradicts claimed charity
+3. **Dave's motivation** (0.65) — asserting internal state without evidence
+
+### Pattern Observation
+
+Nicholas has a recurring problem: **his logical analysis is significantly stronger than his rhetorical discipline.** The philosophical arguments are genuinely rigorous — the game theory grounding, the performative contradiction, the transcendental argument, the Nietzsche/Camus corrections are all correct and well-deployed. But interspersed are emotional jabs ("bullshit," "sky daddy," "out of your depth") that give the opponent permission to dismiss the substance.
+
+This is the same pattern from Entry 1 with "the masses are generally dumb." The analytical content is strong; the presentation periodically undermines it. From the Logic System's perspective, the emotional jabs are **category errors in rhetoric** — they present psychological reactions as logical rebuttals.
+
+**Recommendation:** The arguments are strong enough to win without the jabs. Remove them and the overall score jumps to 0.90+. The opponent can't dismiss game theory, transcendental arguments, and performative contradictions — but they can (and did) dismiss "sky daddy."
