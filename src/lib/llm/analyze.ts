@@ -29,6 +29,11 @@ import {
   type OmissionDetectionInput,
   type OmissionDetectionOutput,
 } from "./prompts/omission-detection";
+import {
+  buildEpistemologicalRefinementMessages,
+  type EpistemologicalRefinementInput,
+  type EpistemologicalRefinementOutput,
+} from "./prompts/epistemological-classification";
 import type {
   ToneAnalysisInput,
   ToneAnalysisOutput,
@@ -154,4 +159,23 @@ export async function detectOmissions(
 
   setCache(cacheKey, "omission-detection", response.content);
   return parseJSONResponse<OmissionDetectionOutput>(response.content);
+}
+
+// ─── Epistemological Classification (LLM Refinement) ────────────────
+
+export async function refineEpistemologicalClassification(
+  input: EpistemologicalRefinementInput
+): Promise<EpistemologicalRefinementOutput | null> {
+  if (!provider) return null;
+
+  const cacheKey = `${input.sourceName}:${input.articleTitle}:epist`;
+  const cached = getCached(cacheKey, "epistemological-classification");
+  if (cached)
+    return parseJSONResponse<EpistemologicalRefinementOutput>(cached);
+
+  const messages = buildEpistemologicalRefinementMessages(input);
+  const response = await provider.complete(messages);
+
+  setCache(cacheKey, "epistemological-classification", response.content);
+  return parseJSONResponse<EpistemologicalRefinementOutput>(response.content);
 }

@@ -17,7 +17,8 @@ export type PromptType =
   | "neutral-reframing"
   | "axis-mapping"
   | "claim-extraction"
-  | "omission-detection";
+  | "omission-detection"
+  | "epistemological-classification";
 
 // In-memory cache (replaced with DB-backed cache in Phase 3+)
 const cache = new Map<string, { result: string; cachedAt: number }>();

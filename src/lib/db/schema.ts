@@ -419,6 +419,13 @@ export const claims = pgTable("claims", {
   /** Has this claim been verified? */
   verificationStatus: text("verification_status").notNull().default("unverified"), // "verified", "disputed", "debunked", "unverified"
   verificationNotes: text("verification_notes"),
+  /** Epistemological classification from Logic System taxonomy */
+  epistemologicalStatus: text("epistemological_status"), // "verifiable-observation", "statistical-claim", "tacit-consensus", "causal-claim", "model-dependent", "value-judgment"
+  epistemologicalConfidence: real("epistemological_confidence"),
+  /** True if this claim presents one truth-status as another (the core bias mechanism) */
+  categoryError: boolean("category_error").default(false),
+  /** What the claim disguises itself as, if categoryError is true */
+  disguisedAs: text("disguised_as"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 

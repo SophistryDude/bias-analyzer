@@ -14,7 +14,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
 
-import { getNYTArchiveMonth, type } from "../src/lib/scrapers/nyt-api";
+import { getNYTArchiveMonth } from "../src/lib/scrapers/nyt-api";
 import { Readability } from "@mozilla/readability";
 import { JSDOM } from "jsdom";
 import * as fs from "fs";
