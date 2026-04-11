@@ -136,32 +136,33 @@ Seed with the 14 pundits/orgs already in the registry — add YouTube channel ID
 
 ## Phase 5: Production Infrastructure
 
-**Goal:** Harden for production deployment.
+**Goal:** Containerize and deploy to GKE Autopilot.
 
-### Hosting
+See `docs/infrastructure.md` for full architecture details.
+
+### Target: GKE Autopilot (shared cluster)
 
 | Component | Service | Cost |
 |-----------|---------|------|
-| Website | Vercel (free tier) | $0 |
-| Database | Neon PostgreSQL (paid) | $19/mo |
-| Pipeline worker | Hetzner VPS (CX22) | $5/mo |
-| Object storage | Cloudflare R2 | $0 (free tier) |
-| LLM API | Claude Sonnet | ~$50/mo |
-| YouTube Data API | Google | $0 (free quota) |
-| **Total** | | **~$74/mo** |
+| Web + Worker pods | GKE Autopilot | $15-25/mo |
+| Database | Cloud SQL PostgreSQL 17 | $10/mo |
+| Object storage | Cloud Storage | $1/mo |
+| Container registry | Artifact Registry | $1/mo |
+| Ingress/LB | GKE managed | $5/mo |
+| **Total** | | **~$30-40/mo** |
 
 ### Deliverables
-1. Vercel deployment with env vars and preview deploys
-2. Hetzner VPS running pipeline worker as systemd service
-3. Cloudflare R2 for raw content and assets
-4. Sentry error tracking
-5. GitHub Actions CI/CD: lint, typecheck, build, deploy
+1. Dockerfile (multi-stage build)
+2. Kubernetes manifests (deployments, services, CronJobs, ingress)
+3. GitHub Actions CI/CD: lint → typecheck → build → push image → deploy
+4. Cloud SQL migration from local PostgreSQL
+5. Secret Manager integration for API keys
+6. Namespace isolation (shared cluster with PokerForge website)
 
-### When to upgrade to Dagster
-- 50+ monitored sources
-- 10+ pipeline steps
-- Need backfill/replay
-- Need visual DAG debugging
+### Migration phases
+1. **Containerize** — Dockerfile + k8s manifests, test locally
+2. **GKE setup** — cluster, Cloud SQL, Artifact Registry, CI/CD
+3. **Production hardening** — SSL, WAF, monitoring, alerting
 
 ---
 
