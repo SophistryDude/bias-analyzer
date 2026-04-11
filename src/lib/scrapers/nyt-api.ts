@@ -89,10 +89,13 @@ export async function searchNYTArticles(
     throw new Error(`NYT API error: ${res.status} ${res.statusText}`);
   }
 
-  const data: NYTSearchResponse = await res.json();
+  const data = await res.json();
+  const response = data.response || {};
+  // NYT API returns 'meta' or 'metadata' depending on the endpoint version
+  const meta = response.meta || response.metadata || {};
   return {
-    articles: data.response.docs,
-    totalHits: data.response.meta.hits,
+    articles: (response.docs || []) as NYTArticle[],
+    totalHits: meta.hits ?? (response.docs || []).length,
   };
 }
 
