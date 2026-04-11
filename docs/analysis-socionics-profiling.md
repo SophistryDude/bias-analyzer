@@ -162,11 +162,15 @@ The function stack explains the *mechanism*, not the morality:
 
 3. **The profiles are editorial anyway.** The profile-breakdowns.md document is hand-written analysis, not system output. Adding "likely Ti-dominant based on argumentation patterns" is the same kind of analytical note as "coherence 0.80, philosophy-driven."
 
-### Recommendation
+### Decision: Do Not Use
 
-**Use socionics as an explanatory note in profiles, not as a formal system feature.** Add function-based analysis to the Notes section of profiles where it explains patterns the other metrics detect. Don't build a typing engine, don't add function fields to the database, don't let the system auto-type pundits. Keep it as analyst commentary — the same epistemological status as the current profile notes.
+**Socionics is not integrated into BiasAnalyzer in any capacity — not as a system feature, not as profile notes, not as analyst commentary.**
 
-If Model C reaches the validation stage described in the book roadmap (empirical testing of +/- definitions, PoLR validation, Big Five integration), revisit this decision.
+The decisive reason is #2: **we're typing the character, not the person.** Media content is a performance filtered through audience incentives, platform constraints, editorial strategy, and deliberate persona construction. Socionics types are about cognitive preference in the person, not patterns in the performance. Applying type labels to public content conflates the map with the territory — exactly the category error the Logic System exists to prevent.
+
+The typing reliability problem (#1) is real but secondary. Even if we could type reliably, we'd still be typing a performance, which invalidates the exercise regardless.
+
+This analysis document is retained as reference for understanding the framework's potential if the typing-from-content problem is ever solved (e.g., through direct assessment rather than content inference). It is not a design document for BiasAnalyzer.
 
 ---
 
