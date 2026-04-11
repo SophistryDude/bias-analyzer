@@ -138,6 +138,22 @@ Every significant architectural, technical, and product decision made during dev
 **Decision:** Treat BiasAnalyzer and the Theory of Everything Logic System as one intellectual program, not two separate projects.
 **Why:** The structural mappings are direct, not metaphorical. Dimensional reduction → why single-spectrum bias ratings fail. Constraint reduction → the omission framework. Model vs reality → we don't decide truth. The epistemological taxonomy (known truth / tacit understanding / formal truth) maps directly to bias detection: bias is presenting tacit understanding as known truth. The rule-based engine preserves auditability as epistemological integrity. See `docs/logic_system_integration.md` for the full analysis.
 
+### Event-centric architecture for evolving partisan scores
+**Decision:** Stories (events) are the primary unit of analysis, not articles or pundits. Each event gets linked to all contributor articles covering it, with meta tags for the event. Partisan scores for contributors evolve over time as more event coverage accumulates.
+**Why:** A pundit's bias isn't a static number — it's a trajectory. By linking contributors to events over time, we can watch how their coverage patterns shift. The event table becomes the ground truth reference; contributor scores are derived from their accumulated event coverage. This is the constraint reduction principle applied longitudinally — more data points = more constraints = more accurate profile.
+
+### Ownership and financial interests stored per-contributor
+**Decision:** Add ownership/financial interest data as rows in the contributor (pundit) table, not a separate system.
+**Why:** Ownership is a structural constraint on coverage. It belongs with the contributor data because it's a property of the source, not the story. CNN's corporate parent affects all their coverage, not just specific events.
+
+### Coverage distribution is a time-series object on the story
+**Decision:** Track which outlets covered a story and when as time-stamped objects, not just presence/absence.
+**Why:** When an outlet covers a story matters as much as whether they covered it. First-mover vs late-coverage vs never-covered are three different signals. The time dimension on coverage captures narrative evolution — who set the frame, who followed, who ignored.
+
+### International axis calibration is an unsolved problem
+**Decision:** Acknowledge that the 5-axis model needs regional calibration for international sources but don't solve it yet.
+**Why:** The US speech axis is nearly unique globally — absolute free speech is not the norm. A US "center" on speech would be "strong free speech" in most countries. Foreign policy axis is inherently perspective-dependent — "interventionist" from the US means something different from France or Qatar. Options: (1) normalize per-country, (2) keep US scale and annotate divergence, (3) create a "favorability toward American intervention" reframe for international comparability. Decision deferred until international analysis is prioritized.
+
 ### Add epistemological classification layer (LLM task #12)
 **Decision:** Classify each extracted claim by its truth-status type, not just whether it contains a fallacy.
 **Why:** Falls directly out of the Logic System's epistemological taxonomy. No competitor does this. Output would show: "This article contains 12 claims. 3 are verifiable observations, 4 are model-dependent interpretations presented as facts, 2 are value judgments, 3 are tacit consensus." This is the deepest integration of the ToE framework into the product.
