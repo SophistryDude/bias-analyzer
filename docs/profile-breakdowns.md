@@ -310,6 +310,86 @@ Pool's self-labeling behavior ("I'm a centrist liberal who just happens to agree
 
 ---
 
+### Cenk Uygur
+
+**Platform:** YouTube, Podcast (The Young Turks)
+**Current Leaning:** Left
+**Ideological Coherence:** 0.55 (mixed)
+**Driver:** Mixed — genuine progressive framework but increasingly reactive. Presidential campaign and Ana Kasparian's departure revealed internal tensions between ideology and institution-building.
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~1990s | Center-Right | Self-described Republican early in career. |
+| ~2002 | Left | Founded The Young Turks. Broke sharply from Republican Party. Progressive positioning from the start of TYT. |
+| ~2016 | Left | Endorsed Bernie Sanders. Co-founded Justice Democrats with Kyle Kulinski. Anti-establishment progressive. |
+| ~2020 | Left | Continued progressive advocacy. Increasingly critical of Democratic establishment ("corporate Democrats"). |
+| ~2024 | Left | Ran in Democratic presidential primary to push Biden out. Critical of both parties but working within the Democratic framework. Lost TYT co-host Ana Kasparian to political realignment. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.60 | Moderate Socialist | Stable | 80% |
+| Speech | -0.50 | Moderate Free Speech | Stable | 60% |
+| Progressive | -0.70 | Strong Progressive (Equity) | Stable | 75% |
+| Liberal/Conservative | -0.60 | Moderate Liberal | Stable | 70% |
+| Foreign Policy | -0.40 | Leaning Non-Interventionist | Stable | 65% |
+
+#### Notes
+
+Cenk Uygur is the institutional left's online pioneer — TYT launched in 2002, predating most political YouTube by nearly a decade. His positions have been remarkably stable for someone who started as a Republican: once he moved left, the framework stuck. The coherence score (0.55) is lower than it should be for someone this consistent, and that's because of *presentation* inconsistency rather than *positional* inconsistency — he'll hold the same position but argue it with wildly different intensity depending on the news cycle and emotional state.
+
+**Economic:** Moderate socialist. Supports Medicare for All, strong unions, wealth taxes, and breaking up corporate monopolies. Further left than mainstream Democrats but not Marxist — he works within a capitalist reform framework, not a revolutionary one. His economic positions are his most stable axis.
+
+**Speech:** Moderate free speech. Has been generally supportive of platform speech rights and critical of government censorship, but TYT has also advocated for content moderation of right-wing "misinformation." His position is pragmatic rather than principled — supports free speech as a tool for progressive politics rather than as an absolute.
+
+**Progressive/Equity:** Strong progressive. Equity framing is default across TYT coverage. Healthcare as a right, criminal justice reform, immigration reform — all through an equity lens. This has been consistent since TYT's founding.
+
+**Foreign Policy:** Leaning non-interventionist. Critical of US military interventionism, Iraq War opposition was a founding TYT position. His Turkish-American background adds complexity — he's been criticized for historical positions on the Armenian genocide (initially denied, later acknowledged).
+
+**Key analytical note:** The Ana Kasparian split is the most significant event in TYT's history and is a live case study in how media institutions handle internal ideological divergence. Kasparian's public departure — moving from progressive co-host to joining a conservative-leaning show — mirrors the Tim Pool trajectory in reverse but is rarer and more analytically interesting because she articulated *why* she shifted (crime policy, identity politics, homelessness) rather than just drifting.
+
+---
+
+### Ana Kasparian
+
+**Platform:** YouTube (formerly TYT), Podcast, independent
+**Current Leaning:** Center (in transition)
+**Ideological Coherence:** 0.40 (low — actively in transition)
+**Driver:** Appears philosophy-driven in a new direction — positions are shifting because her framework changed, not because audience incentives changed. This is the opposite of Tim Pool.
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2007 | Left | Joined TYT as a producer. Progressive alignment with the show's framework. |
+| ~2016 | Left | Co-host of TYT. Strong progressive positions on healthcare, immigration, social issues. |
+| ~2023 | Center-Left | Began publicly questioning progressive orthodoxy on crime, homelessness, identity politics. Described herself as "politically homeless." |
+| ~2024 | Center | Declared herself "unaligned." Called Newsom "worst governor in the country." Criticized progressive climate and homelessness policies. Critical of identity politics. |
+| ~2025 | Center | Joined "Her Take," a conservative-leaning panel show. Completed departure from the progressive media ecosystem. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.30 | Leaning Social Democrat | Moving right → | 50% |
+| Speech | -0.40 | Leaning Free Speech | Moving left ← (toward absolutism) | 55% |
+| Progressive | +0.20 | Leaning Non-Progressive | Moving right → rapidly | 45% |
+| Liberal/Conservative | -0.10 | Centrist | Moving right → | 40% |
+| Foreign Policy | -0.20 | Leaning Non-Interventionist | Stable | 45% |
+
+#### Notes
+
+Kasparian is the most dynamic profile in the dataset — every axis is in motion. Her coherence score (0.40) is low not because she lacks a framework, but because she's *building a new one in public*. This is genuinely rare: most trajectory shifts are gradual drift or audience capture. Kasparian is explicitly articulating why she's changing ("I woke up," "I'm done with identitarian garbage") and naming the specific issues that moved her (crime, homelessness, identity politics, gender-affirming care for minors).
+
+All axis scores have low confidence because she's actively moving. By the time the system has enough data to score her reliably, her positions may have settled into a new equilibrium. The most productive analysis is tracking the *trajectory* rather than the current position.
+
+**The epistemological classification system should watch her closely.** Her stated reason for shifting is that progressive positions she held were "tacit understanding presented as known truth" — she believed things about crime, homelessness policy, and identity politics that she says turned out to be wrong when she examined the evidence. Whether that's accurate or whether new tacit understanding (from a different tribe) is replacing the old one is exactly what our system is designed to detect.
+
+---
+
 ### Hasan Piker
 
 **Platform:** Twitch, YouTube
@@ -638,6 +718,219 @@ VDH is the clearest example in the dataset of a philosophy-driven conservative i
 **Key analytical note:** Hanson's primary rhetorical technique is historical analogy. He consistently maps current events onto classical precedents — Trump as Themistocles, Biden's border policy as Rome's late-empire immigration, progressive academia as Athenian decadence. This is powerful when the analogies are apt and misleading when they're forced. The strength is that it provides genuine analytical depth that most commentators lack. The risk is that historical analogies can be cherry-picked — Rome's fall can be attributed to immigration, or to inequality, or to military overextension, depending on which evidence you select. Tracking which historical precedents Hanson chooses and which he omits would be a productive analysis for the system.
 
 His coherence score (0.85) is the highest in the dataset alongside Shapiro (0.80). The difference: Shapiro's coherence comes from religious-conservative first principles applied deductively. Hanson's comes from historical pattern recognition applied inductively. Both are philosophy-driven, but from opposite epistemological directions — one reasons from axioms down, the other from evidence up. This distinction maps directly onto the Logic System's taxonomy of knowledge types.
+
+---
+
+### Steven Crowder
+
+**Platform:** YouTube, Mug Club (independent streaming)
+**Current Leaning:** Right
+**Ideological Coherence:** 0.50 (mixed)
+**Driver:** Mixed — genuine conservative framework exists but engagement incentives (comedy, provocation, audience retention) increasingly dominate content selection and presentation
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2012 | Right | Conservative comedian and commentator. Fox News contributor. Conventional conservative positions. |
+| ~2018 | Right | "Change My Mind" segments went viral. Combined comedy with political debate. Grew YouTube to massive scale. |
+| ~2023 | Right | Public feud with Daily Wire over $50M contract. Launched "Stop Big Con" attack on conservative media establishment. Accused conservative outlets of kowtowing to Big Tech. Went independent with Mug Club. |
+| ~2024 | Right | Independent operation. More combative, less structured. Divorce controversy and workplace behavior allegations introduced personal credibility questions. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | -0.50 | Moderate Capitalist | Stable | 65% |
+| Speech | -0.70 | Strong Free Speech | Stable | 75% |
+| Progressive | +0.70 | Strong Non-Progressive | Stable | 75% |
+| Liberal/Conservative | +0.60 | Moderate Conservative | Stable | 70% |
+| Foreign Policy | +0.20 | Leaning Interventionist | Stable | 45% |
+
+#### Notes
+
+Crowder's profile is interesting because the coherence issue isn't about *positions* shifting — his actual political positions have been relatively stable. The issue is about the gap between his *analytical content* and his *entertainment content*. The "Change My Mind" segments represent genuine engagement with opposing views — structured, patient, willing to hear the other side. His daily show content is much more partisan, combative, and engagement-optimized. This is a presentation coherence problem, not a positional one.
+
+**Economic:** Moderate capitalist. Standard conservative pro-market, anti-regulation, anti-tax positions. Not as deeply engaged with economic theory as Shapiro or Peterson — economics is a supporting argument for his cultural positions, not a primary framework.
+
+**Speech:** Strong free speech. His Daily Wire dispute was explicitly about refusing contract terms that would let Big Tech content policies affect his compensation. This is his most authentic position — he's genuinely committed to saying what he wants regardless of platform consequences. He's been demonetized and restricted on YouTube multiple times and treats it as validation.
+
+**Progressive/Equity:** Strong non-progressive. Culture war content is his bread and butter. Anti-DEI, anti-identity politics, anti-progressive cultural norms. His "Change My Mind" segments on gender, gun control, and race were his highest-performing content — they work because he picks progressive positions he's well-prepared to challenge in a structured format.
+
+**Key analytical note:** Crowder's primary rhetorical technique is **comedy-wrapped argumentation** — presenting conservative arguments through comedic sketches, characters, and provocative setups. The humor detection system needs to handle this: his content frequently uses observational humor and satire to package political positions. The question is whether the comedy is serving the argument (using humor to make a point accessible) or the argument is serving the comedy (using politics to generate entertainment). His coherence score (0.50) reflects this ambiguity — when he's doing "Change My Mind," he's philosophy-driven; when he's doing daily show bits, he's engagement-driven.
+
+The Crowder-Shapiro comparison is useful: both started at the Daily Wire ecosystem, both are right-wing, both use rapid-fire argumentation. But Shapiro's coherence (0.80) dwarfs Crowder's (0.50) because Shapiro's positions are framework-derived even when they're wrong, while Crowder's are increasingly content-format-derived.
+
+---
+
+## Political Figures
+
+---
+
+### Donald Trump
+
+**Platform:** Truth Social, Rally speeches, Fox News (frequent)
+**Current Leaning:** Right (populist)
+**Ideological Coherence:** 0.35 (low)
+**Driver:** Engagement-driven — positions are instrumentally selected for maximum audience response rather than derived from a consistent framework
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2000 | Center | Considered running as Reform Party candidate. Donated to both parties. Supported universal healthcare, abortion rights. |
+| ~2011 | Center-Right | Birtherism launched political brand. Shifted toward right-wing populist positioning. |
+| ~2016 | Right | "America First" populist campaign. Anti-immigration, anti-trade, anti-establishment. Won presidency. |
+| ~2020 | Right | First term governance: tax cuts (traditional conservative), trade wars (populist), immigration hardline (nationalist). |
+| ~2025 | Right | Second term: 47% average tariff rate, NATO 5% GDP demand, Iran confrontation, DOGE government restructuring. More aggressive execution of first-term themes. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | -0.30 | Leaning Capitalist (protectionist) | Unstable | 40% |
+| Speech | -0.50 | Moderate Free Speech | Unstable | 35% |
+| Progressive | +0.60 | Moderate Non-Progressive | Stable | 65% |
+| Liberal/Conservative | +0.30 | Leaning Conservative | Unstable | 35% |
+| Foreign Policy | -0.20 | Leaning Non-Interventionist | Unstable | 30% |
+
+#### Notes
+
+Trump is the lowest-coherence profile in the dataset alongside Tim Pool (0.35). But the *reason* for low coherence is different: Pool's incoherence comes from audience capture shifting him rightward over time. Trump's comes from genuine ideological flexibility — he doesn't have a framework, he has instincts. His positions on any given issue are determined by a mix of personal loyalty dynamics, crowd response, deal-making calculation, and gut reaction.
+
+**Economic:** Leaning capitalist but deeply protectionist — a combination that doesn't fit neatly on any spectrum. He cut corporate taxes (right-coded) while imposing the highest tariffs in a century (historically left-coded). He's pro-business for businesses that support him and punitive toward those that don't. Confidence is very low because his economic positions are instrumentally chosen, not framework-derived.
+
+**Speech:** Moderate free speech in rhetoric, inconsistent in practice. Champions free speech when it benefits him (social media deplatforming, campus speech), threatens it when it doesn't (revoking broadcast licenses of critical media, attacking journalists). This axis is scored on stated position, not behavior — the behavior would score lower.
+
+**Progressive/Equity:** Moderate non-progressive. Consistently anti-DEI, anti-identity politics, anti-"woke." This is his most stable axis because it aligns with his base's strongest sentiment. He doesn't engage with equity arguments — he dismisses the frame entirely.
+
+**Liberal/Conservative:** Leaning conservative but not deeply so. He doesn't invoke tradition, accumulated wisdom, or Burkean caution. He invokes strength, winning, and loyalty. His "conservatism" is cultural and aesthetic (traditional gender roles, national symbols, military displays) rather than philosophical.
+
+**Foreign Policy:** Nominally non-interventionist ("end endless wars") but his actual record is mixed — killed Soleimani, nearly struck Iran in first term, currently confronting Iran in second term. His foreign policy is transactional: relationships with nations are personal relationships with their leaders. This produces unpredictable results that don't track on any axis.
+
+**Key analytical note:** Trump is the ultimate test case for the coherence framework. A coherence score of 0.35 doesn't mean he's wrong — it means you can't predict his position on a new issue from his existing positions. This is because his positions aren't generated by a framework; they're generated by a different system entirely (loyalty dynamics, crowd feedback, deal logic). The epistemological classification system would tag most of his claims as a mix of value judgments and tacit consensus presented as verifiable observations — "everyone knows," "many people are saying," "believe me" are epistemic markers of unverified assertion packaged as common knowledge.
+
+---
+
+### Barack Obama
+
+**Platform:** Speeches, Memoirs, Podcast (formerly), Public appearances
+**Current Leaning:** Center-Left
+**Ideological Coherence:** 0.75 (moderately high)
+**Driver:** Philosophy-driven — positions derive from a pragmatic progressive framework rooted in constitutional law, community organizing, and incremental institutional reform
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2004 | Center-Left | DNC keynote speech established "no red states, no blue states" unifying brand. Illinois Senate. |
+| ~2008 | Center-Left | Presidential campaign on "Hope and Change." Positioned as transformational but governed as incremental. |
+| ~2012 | Center-Left | First sitting president to support same-sex marriage. ACA implemented. Criticized from left as too corporate, from right as socialist. |
+| ~2016 | Center-Left | Post-presidency: maintained measured, institutional tone. Criticized by progressive left for drone warfare, deportation record, bank bailouts. |
+| ~2024 | Center-Left | Continued public commentary. Positioned as an elder statesman of the moderate-progressive wing. Critiqued identity politics excesses while maintaining progressive values. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.20 | Leaning Social Democrat | Stable | 75% |
+| Speech | +0.10 | Centrist | Stable | 60% |
+| Progressive | -0.40 | Leaning Progressive | Stable | 70% |
+| Liberal/Conservative | -0.40 | Leaning Liberal | Stable | 75% |
+| Foreign Policy | +0.30 | Leaning Interventionist | Stable | 70% |
+
+#### Notes
+
+Obama is the most methodologically interesting political figure in the dataset because the gap between how he's *perceived* and where he actually *scores* reveals the Overton window itself. The right perceives him as far-left. The progressive left perceives him as center-right. His actual positions are consistently center-left — the perception gap on both sides tells you more about the perceivers than about Obama.
+
+**Economic:** Leaning social democrat. ACA was his signature — expansion of the welfare state within the existing system, not a replacement of it. Cenk Uygur called him "conservative in his bones" because he didn't push for single-payer. The progressive critique is legitimate: Obama's economic policies were reformist, not transformative. But reformist is still left of center.
+
+**Speech:** Centrist. Defended free speech broadly but didn't champion it as a cause. Didn't push for content regulation or against it. His most notable speech-related intervention was warning Democrats about "purity tests" and "call-out culture" — positioning him to the right of the progressive left on speech norms, but not in free-speech-absolutist territory.
+
+**Progressive/Equity:** Leaning progressive. Supported affirmative action, same-sex marriage, criminal justice reform, DREAM Act. But his progressivism was incremental and institutionalist — working within existing systems rather than restructuring them. The progressive left's critique that he was "too moderate" is accurate in *degree* but wrong in *direction* — he was progressive, just not as progressive as they wanted.
+
+**Liberal/Conservative:** Leaning liberal. Wanted change (ACA, marriage equality, Iran deal, Paris climate accord) but through institutional channels. His constitutionalist background is visible — he believes in the system and wants to improve it, not replace it. This is genuine philosophical liberalism, not radicalism.
+
+**Foreign Policy:** Leaning interventionist. Expanded drone warfare dramatically, intervened in Libya, supported Syrian rebels, killed bin Laden, negotiated Iran deal. The "leading from behind" label stuck because his interventionism was less visible than Bush's, but the actual record is clearly interventionist. The progressive left's strongest critique of Obama (deportation record, drone strikes, Libya) all lives on this axis.
+
+**Key analytical note:** Obama's coherence (0.75) is high because his positions are genuinely framework-derived — constitutional law + pragmatic incrementalism + institutional reform. You can predict his take on most issues if you know this framework. The single biggest tension in his profile is between his progressive instincts (equity, social justice) and his institutional conservatism (work within the system, don't break things). This tension is itself philosophically coherent — it's the liberal position: change is worth pursuing, but through institutions rather than revolution.
+
+The Obama-Trump comparison is the dataset's starkest coherence contrast: Obama at 0.75 (framework-derived, predictable, stable) vs Trump at 0.35 (instinct-derived, unpredictable, flexible). Their policy positions are less different than their epistemological methods — Obama reasons from principles to positions, Trump reasons from situations to responses.
+
+---
+
+### David Pakman
+
+**Platform:** YouTube, Podcast
+**Current Leaning:** Left
+**Ideological Coherence:** 0.75 (moderately high)
+**Driver:** Philosophy-driven — calm, methodical analysis from a consistent social-democratic framework. Often cited as the most measured progressive commentator online.
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2010 | Center-Left | Launched The David Pakman Show. Progressive but measured. Academic presentation style. |
+| ~2016 | Left | Sanders supporter. Positioned firmly in the progressive wing but maintained analytical tone. |
+| ~2020 | Left | Endorsed Biden as pragmatic choice despite progressive preferences. Distinguished from further-left commentators by willingness to work within the system. |
+| ~2024 | Left | Continued consistent progressive commentary. Maintained measured tone through highly polarized period. Grew audience significantly. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.50 | Moderate Socialist | Stable | 75% |
+| Speech | -0.30 | Leaning Free Speech | Stable | 60% |
+| Progressive | -0.60 | Moderate Progressive (Equity) | Stable | 75% |
+| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 70% |
+| Foreign Policy | -0.20 | Leaning Non-Interventionist | Stable | 55% |
+
+#### Notes
+
+Pakman is often cited as the "most respected" left-wing online commentator, and the reason is presentation rather than position — his actual positions aren't far from Cenk Uygur's, but his tone is analytical rather than combative. This matters for the system because it demonstrates that *how* someone communicates is independent of *what* they communicate. The epistemological classification system should track this: same claim, same truth-status, but different rhetorical packaging produces different audience perception of credibility.
+
+His coherence score (0.75) is among the highest for left-leaning commentators because his positions are genuinely framework-derived (social democracy + evidence-based policy) and he rarely breaks from this framework for engagement purposes. He's the left's equivalent of VDH in terms of consistency, though from a completely different ideological direction.
+
+---
+
+### Jon Stewart
+
+**Platform:** Comedy Central (The Daily Show), Apple TV+, Podcast
+**Current Leaning:** Center-Left
+**Ideological Coherence:** 0.65 (moderate)
+**Driver:** Philosophy-driven but with a satirist's flexibility — positions derive from anti-hypocrisy and anti-institutional-failure framework rather than a fixed political ideology
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~1999 | Center-Left | Took over The Daily Show. Satirized media and politics from a broadly liberal perspective. |
+| ~2004 | Center-Left | Crossfire appearance ("stop hurting America") established him as a media critic, not just a comedian. Became the most trusted news source for young Americans — by accident. |
+| ~2010 | Center-Left | Rally to Restore Sanity. Anti-polarization, anti-media-hysteria positioning. Not a partisan — a process critic. |
+| ~2015 | Center-Left | Left The Daily Show. Advocacy shifted to veterans' healthcare and 9/11 first responders — non-partisan causes. |
+| ~2024 | Center-Left | Returned to Daily Show part-time. Criticized both Biden (age) and Trump (authoritarianism). Maintained anti-hypocrisy framework rather than partisan alignment. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | +0.30 | Leaning Social Democrat | Stable | 55% |
+| Speech | -0.40 | Leaning Free Speech | Stable | 60% |
+| Progressive | -0.40 | Leaning Progressive | Stable | 55% |
+| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 65% |
+| Foreign Policy | -0.30 | Leaning Non-Interventionist | Stable | 50% |
+
+#### Notes
+
+Stewart is the most culturally influential political commentator of the past 25 years, and yet his actual policy positions are moderate and hard to pin down. That's because his framework isn't ideological — it's *procedural*. He doesn't say "this policy is wrong," he says "you're being hypocritical" or "the system failed these people." His criticism targets *process failures* and *institutional dishonesty* more than policy outcomes.
+
+This makes him the ideal case study for the epistemological classification system. His primary move is exposing category errors — showing that something presented as one type of knowledge is actually another. When he plays a clip of a politician saying X, then plays a clip of the same politician saying not-X, he's doing exactly what our system does: tracking internal consistency over time. The Daily Show was, in effect, a manual coherence score calculator aired as comedy.
+
+The humor detection system must handle Stewart carefully. His satire is sophisticated — he uses observational humor to establish premises, then uses irony to invert them. The adjustedToneScore will often differ significantly from the literal toneScore because virtually everything he says is filtered through comedic framing. A naive sentiment analyzer would misread him constantly.
+
+Stewart's coherence (0.65) is moderate because his anti-hypocrisy framework occasionally produces positions that cross partisan lines (criticizing Democrats on veterans' issues, criticizing media on both sides) which makes him look inconsistent by partisan standards but is actually consistent by his own framework.
+
+**On the "most respected left-wing commentator" question:** There's no consensus equivalent to Shapiro or VDH on the right. The candidates are Maddow (institutional credibility), Pakman (methodological rigor), Stewart (cultural authority), and Mehdi Hasan (confrontational journalism). The lack of consensus itself is analytically interesting — the left's media ecosystem is more fragmented than the right's, which may reflect the progressive ≠ liberal distinction playing out in practice.
 
 ---
 
