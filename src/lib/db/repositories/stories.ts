@@ -1,6 +1,6 @@
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, notInArray, sql } from "drizzle-orm";
 import { db } from "../client";
-import { stories, storyCoverages } from "../schema";
+import { stories, storyCoverages, pundits } from "../schema";
 
 // ─── Types ──────────────────────────────────────────────────────────
 
@@ -266,5 +266,223 @@ export async function buildStoryComparison(
     uniqueTermsBySource,
     toneRange,
     axisRanges,
+  };
+}
+
+// ─── Blindspot Detection ────────────────────────────────────────────
+
+export interface Blindspot {
+  storyId: string;
+  storyTitle: string;
+  occurredAt: string;
+  /** Sources that covered the story */
+  coveredBy: { id: string; name: string; leaning: string }[];
+  /** Sources that did NOT cover the story */
+  missedBy: { id: string; name: string; leaning: string }[];
+  /** Coverage distribution: how many left/center/right sources covered it */
+  coverageDistribution: {
+    left: number;
+    center: number;
+    right: number;
+    total: number;
+  };
+  /** Is this a left blindspot (mostly right covered) or right blindspot (mostly left covered)? */
+  blindspotDirection: "left-blindspot" | "right-blindspot" | "balanced" | "low-coverage";
+}
+
+/**
+ * Detect blindspots for a story — which monitored sources didn't cover it.
+ *
+ * A blindspot is when a story is disproportionately covered by one side
+ * of the political spectrum. From the Logic System: absence of constraints
+ * (coverage) is itself informative — a source that doesn't cover a story
+ * is leaving its audience with a less-constrained narrative space.
+ */
+export async function detectBlindspots(
+  storyId: string
+): Promise<Blindspot | null> {
+  const story = await db.query.stories.findFirst({
+    where: eq(stories.id, storyId),
+  });
+  if (!story) return null;
+
+  // Get all sources that covered this story
+  const coverages = await db.query.storyCoverages.findMany({
+    where: eq(storyCoverages.storyId, storyId),
+    with: { source: true },
+  });
+
+  const coveredSourceIds = new Set(
+    coverages.map((c) => c.sourceId).filter(Boolean)
+  );
+
+  // Get all monitored pundits/orgs that SHOULD have covered it
+  // (organizations and major outlets, not individual pundits)
+  const allSources = await db.query.pundits.findMany();
+
+  const coveredBy: Blindspot["coveredBy"] = [];
+  const missedBy: Blindspot["missedBy"] = [];
+
+  for (const source of allSources) {
+    const entry = {
+      id: source.id,
+      name: source.name,
+      leaning: source.currentLeaning,
+    };
+
+    if (coveredSourceIds.has(source.id)) {
+      coveredBy.push(entry);
+    } else {
+      missedBy.push(entry);
+    }
+  }
+
+  // Compute distribution
+  const leaningToSide = (leaning: string): "left" | "center" | "right" => {
+    if (["far-left", "left", "center-left"].includes(leaning)) return "left";
+    if (["far-right", "right", "center-right"].includes(leaning)) return "right";
+    return "center";
+  };
+
+  const distribution = { left: 0, center: 0, right: 0, total: coveredBy.length };
+  for (const source of coveredBy) {
+    distribution[leaningToSide(source.leaning)]++;
+  }
+
+  // Determine blindspot direction
+  let blindspotDirection: Blindspot["blindspotDirection"] = "balanced";
+  if (distribution.total < 3) {
+    blindspotDirection = "low-coverage";
+  } else {
+    const leftRatio = distribution.left / distribution.total;
+    const rightRatio = distribution.right / distribution.total;
+    // If >70% of coverage comes from one side, it's a blindspot for the other
+    if (leftRatio > 0.7) {
+      blindspotDirection = "right-blindspot"; // right isn't covering it
+    } else if (rightRatio > 0.7) {
+      blindspotDirection = "left-blindspot"; // left isn't covering it
+    }
+  }
+
+  return {
+    storyId: story.id,
+    storyTitle: story.title,
+    occurredAt: story.occurredAt.toISOString(),
+    coveredBy,
+    missedBy,
+    coverageDistribution: distribution,
+    blindspotDirection,
+  };
+}
+
+/**
+ * Find all stories with significant blindspots.
+ * Returns stories where coverage is disproportionately from one side.
+ */
+export async function findBlindspotStories(
+  options?: { limit?: number; direction?: "left-blindspot" | "right-blindspot" }
+): Promise<Blindspot[]> {
+  const allStories = await db.query.stories.findMany({
+    orderBy: [desc(stories.occurredAt)],
+    limit: options?.limit ?? 50,
+  });
+
+  const blindspots: Blindspot[] = [];
+
+  for (const story of allStories) {
+    const blindspot = await detectBlindspots(story.id);
+    if (!blindspot) continue;
+
+    if (blindspot.blindspotDirection === "balanced" || blindspot.blindspotDirection === "low-coverage") {
+      continue;
+    }
+
+    if (options?.direction && blindspot.blindspotDirection !== options.direction) {
+      continue;
+    }
+
+    blindspots.push(blindspot);
+  }
+
+  return blindspots;
+}
+
+// ─── Coverage Timeline ──────────────────────────────────────────────
+
+export interface CoverageTimeline {
+  storyId: string;
+  storyTitle: string;
+  /** Ordered list of when each source first covered the story */
+  timeline: {
+    sourceId: string | null;
+    sourceName: string;
+    leaning: string;
+    firstPublishedAt: string | null;
+    coverageOrder: string | null;
+    headline: string;
+    toneScore: number | null;
+    framingType: string | null;
+  }[];
+  /** Who set the initial frame? */
+  firstMover: string | null;
+  /** How long between first and last coverage? */
+  spreadHours: number | null;
+}
+
+/**
+ * Build a timeline showing when each source covered a story.
+ * Reveals who set the frame and who followed.
+ */
+export async function getCoverageTimeline(
+  storyId: string
+): Promise<CoverageTimeline | null> {
+  const story = await db.query.stories.findFirst({
+    where: eq(stories.id, storyId),
+  });
+  if (!story) return null;
+
+  const coverages = await db.query.storyCoverages.findMany({
+    where: eq(storyCoverages.storyId, storyId),
+    with: { source: true },
+  });
+
+  // Sort by firstPublishedAt
+  const sorted = coverages
+    .map((c) => ({
+      sourceId: c.sourceId,
+      sourceName: (c.source as { name: string } | null)?.name ?? "Unknown",
+      leaning: (c.source as { currentLeaning: string } | null)?.currentLeaning ?? "unclassified",
+      firstPublishedAt: c.firstPublishedAt?.toISOString() ?? null,
+      coverageOrder: c.coverageOrder,
+      headline: c.headline,
+      toneScore: c.toneScore,
+      framingType: c.framingType,
+    }))
+    .sort((a, b) => {
+      if (!a.firstPublishedAt) return 1;
+      if (!b.firstPublishedAt) return -1;
+      return new Date(a.firstPublishedAt).getTime() - new Date(b.firstPublishedAt).getTime();
+    });
+
+  const firstMover = sorted[0]?.sourceName ?? null;
+
+  let spreadHours: number | null = null;
+  if (sorted.length >= 2) {
+    const first = sorted.find((s) => s.firstPublishedAt);
+    const last = [...sorted].reverse().find((s) => s.firstPublishedAt);
+    if (first?.firstPublishedAt && last?.firstPublishedAt) {
+      spreadHours =
+        (new Date(last.firstPublishedAt).getTime() -
+          new Date(first.firstPublishedAt).getTime()) /
+        (1000 * 60 * 60);
+    }
+  }
+
+  return {
+    storyId: story.id,
+    storyTitle: story.title,
+    timeline: sorted,
+    firstMover,
+    spreadHours,
   };
 }

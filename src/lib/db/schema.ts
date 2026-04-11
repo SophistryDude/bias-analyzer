@@ -25,6 +25,13 @@ export const pundits = pgTable("pundits", {
     .notNull()
     .default([]),
   tags: jsonb("tags").$type<string[]>().notNull().default([]),
+  /** Ownership / financial interest tracking */
+  corporateParent: text("corporate_parent"), // e.g., "Warner Bros. Discovery", "Fox Corporation"
+  ownershipType: text("ownership_type"), // "corporate", "independent", "nonprofit", "state-funded", "private-equity"
+  financialInterests: jsonb("financial_interests").$type<string[]>().default([]), // known conflicts of interest
+  fundingSources: jsonb("funding_sources").$type<string[]>().default([]), // e.g., "advertising", "subscription", "donations", "government"
+  /** Geographic context for international axis calibration */
+  country: text("country").default("US"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
@@ -343,6 +350,14 @@ export const storyCoverages = pgTable("story_coverages", {
   axisProgressive: real("axis_progressive"),
   axisLiberalConservative: real("axis_liberal_conservative"),
   axisForeignPolicy: real("axis_foreign_policy"),
+
+  // ─── Timing ────────────────────────────────────────────────────
+  /** When this source first published their coverage */
+  firstPublishedAt: timestamp("first_published_at"),
+  /** When the coverage was last updated (if tracked) */
+  lastUpdatedAt: timestamp("last_updated_at"),
+  /** Position in the coverage timeline: who set the frame? */
+  coverageOrder: text("coverage_order"), // "first-mover", "early", "mainstream", "late", "never" (used for blindspot)
 
   // ─── Comparison metadata ────────────────────────────────────────
   /** Auto-generated or human notes on how this coverage differs from others */
