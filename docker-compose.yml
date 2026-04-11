@@ -7,6 +7,8 @@ services:
       POSTGRES_USER: bias_analyzer
       POSTGRES_PASSWORD: bias_analyzer_dev
       POSTGRES_DB: bias_analyzer
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_INITDB_ARGS: "--auth-host=trust"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
