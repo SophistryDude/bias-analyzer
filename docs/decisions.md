@@ -133,3 +133,11 @@ Every significant architectural, technical, and product decision made during dev
 ### Completeness score = reliability axis
 **Decision:** The reliability axis is derived from accumulated omission data, not a separate assessment.
 **Why:** A source that consistently includes 90% of significant claims across multiple stories is demonstrably more reliable than one that includes 60%, regardless of political leaning. This is objective, measurable, and doesn't require us to be the arbiter of truth. It measures journalistic rigor as a proxy for accuracy.
+
+### BiasAnalyzer is the Logic System applied to media
+**Decision:** Treat BiasAnalyzer and the Theory of Everything Logic System as one intellectual program, not two separate projects.
+**Why:** The structural mappings are direct, not metaphorical. Dimensional reduction → why single-spectrum bias ratings fail. Constraint reduction → the omission framework. Model vs reality → we don't decide truth. The epistemological taxonomy (known truth / tacit understanding / formal truth) maps directly to bias detection: bias is presenting tacit understanding as known truth. The rule-based engine preserves auditability as epistemological integrity. See `docs/logic_system_integration.md` for the full analysis.
+
+### Add epistemological classification layer (LLM task #12)
+**Decision:** Classify each extracted claim by its truth-status type, not just whether it contains a fallacy.
+**Why:** Falls directly out of the Logic System's epistemological taxonomy. No competitor does this. Output would show: "This article contains 12 claims. 3 are verifiable observations, 4 are model-dependent interpretations presented as facts, 2 are value judgments, 3 are tacit consensus." This is the deepest integration of the ToE framework into the product.

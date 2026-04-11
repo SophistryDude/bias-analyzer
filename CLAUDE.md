@@ -122,12 +122,22 @@
 - See `docs/infrastructure.md` for full architecture
 - Alphabreak is NOT on this cluster — standalone, too large
 
-## LLM Tasks (11 total)
+## LLM Tasks (12 total)
 
 Phase 2 (analysis): tone/sentiment, structural fallacy, neutral reframing, axis mapping
-Cross-source: claim extraction, omission detection
+Cross-source: claim extraction, omission detection, epistemological classification
 Phase 4 (blog): individual analysis post, trend report, comparison, story comparison
 Phase 6 (YouTube): video script generation, research packet compilation
+
+### Epistemological Classification (Task #12)
+Classifies each claim by truth-status type, derived from the Logic System's epistemological taxonomy:
+- Verifiable observation (known truth)
+- Model-dependent interpretation (effective truth)
+- Expert/institutional consensus (tacit understanding)
+- Causal claim (model — may or may not be fundamental)
+- Value judgment presented as fact (category error: tacit → known)
+- Statistical claim (effective truth, methodology-dependent)
+See `docs/logic_system_integration.md` for the full framework mapping.
 
 ## Key Files
 
@@ -142,6 +152,8 @@ Phase 6 (YouTube): video script generation, research packet compilation
 | Political axes model | `src/lib/models/political-axes.ts` |
 | Pundit registry (static seed) | `src/data/pundits/registry.ts` |
 | Blog post templates | `src/lib/blog/templates.ts` |
+| Logic System integration analysis | `docs/logic_system_integration.md` |
+| Logic System source documents | `docs/logic-system/` |
 | Profile breakdowns (editorial) | `docs/profile-breakdowns.md` |
 | 200 pundit target list | `docs/pundit-list-200.md` |
 | Infrastructure architecture | `docs/infrastructure.md` |
