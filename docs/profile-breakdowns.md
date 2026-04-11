@@ -443,6 +443,52 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 
 ---
 
+### Victor Davis Hanson
+
+**Platform:** Syndicated Column, YouTube, Podcast, Fox News
+**Current Leaning:** Right
+**Ideological Coherence:** 0.85 (high)
+**Driver:** Philosophy-driven — positions derive from classical history, military scholarship, and agrarian conservatism. One of the most intellectually consistent profiles in the dataset.
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2000 | Center-Right | Academic classical historian. Published on ancient warfare and agrarian life. Conservative but within mainstream academic bounds. |
+| ~2007 | Right | Supported Iraq War from a classical military perspective. Received National Humanities Medal from Bush. Increasingly engaged in political commentary. |
+| ~2016 | Right | Early and prominent intellectual supporter of Trump. Framed Trump through classical historical lens — comparing to Themistocles, Jacksonian populism. |
+| ~2020 | Right | "The Dying Citizen" thesis. Positioned the Trump movement as a counter-revolution against institutional decay. Became one of the most prominent intellectual voices defending MAGA from a classical conservative framework. |
+
+#### Multi-Axis Position
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | -0.40 | Leaning Capitalist | Stable | 70% |
+| Speech | -0.80 | Strong Free Speech | Stable | 90% |
+| Progressive | +0.70 | Strong Non-Progressive | Stable | 85% |
+| Liberal/Conservative | +0.70 | Strong Conservative | Stable | 90% |
+| Foreign Policy | +0.40 | Leaning Interventionist | Stable | 75% |
+
+#### Notes
+
+VDH is the clearest example in the dataset of a philosophy-driven conservative intellectual. His positions are derived from classical history and don't shift with media winds — the same framework he uses to analyze Thucydides he applies to Trump. This gives him exceptionally high coherence but also makes him predictable: if you know his framework (classical history + agrarian conservatism + American exceptionalism), you can predict his take on any new issue with high accuracy.
+
+**Economic:** Leaning capitalist. Supports free markets and private enterprise, but from an agrarian perspective — he's critical of corporate globalism and Wall Street financialization, not from a populist-left position but from a Jeffersonian small-producer perspective. He sees the destruction of family farms and small businesses as a failure of the system, but the solution is less regulation and more local economic autonomy, not redistribution.
+
+**Speech:** Strong free speech. This is one of his most firmly held positions. He's been consistently vocal against Big Tech censorship, university speech codes, and government-adjacent content moderation. His classical background informs this — Athenian democracy's reliance on open debate (parrhesia) is a recurring reference. He frames speech restriction as a marker of declining civilization, not a policy disagreement.
+
+**Progressive/Equity:** Strong non-progressive. Hanson consistently argues that equity interventions create perverse incentives and institutional decay. His "Dying Citizen" thesis centers on how identity-based politics erodes civic virtue and shared citizenship. This is his deepest conviction — he sees progressive equity frameworks as fundamentally incompatible with the classical model of citizenship based on shared obligations rather than group identity. His experience growing up in the San Joaquin Valley among immigrant farm communities grounds this in personal experience, not just theory.
+
+**Liberal/Conservative:** Strong conservative. This is temperamental and intellectual, not just political. Hanson genuinely believes the accumulated wisdom of Western civilization — from Greek democracy through the American founding — represents a tested framework that should be changed only with extreme caution. He doesn't oppose change because he fears it; he opposes it because he's studied what happens when civilizations abandon their foundational principles. This makes his conservatism deeper than most — it's rooted in historical pattern recognition, not partisan loyalty.
+
+**Foreign Policy:** Leaning interventionist, but conditionally. Hanson supports American military strength and strategic engagement (he's a military historian — deterrence through strength is his core principle). But he's critical of nation-building, which he sees as historically naive — you can't export democracy to cultures that haven't developed it organically. He supported the Iraq War initially but has been critical of its execution and the broader neoconservative project. On China, he's hawkish — views the US-China confrontation as the defining geopolitical struggle and criticizes the assumption that economic engagement would democratize China.
+
+**Key analytical note:** Hanson's primary rhetorical technique is historical analogy. He consistently maps current events onto classical precedents — Trump as Themistocles, Biden's border policy as Rome's late-empire immigration, progressive academia as Athenian decadence. This is powerful when the analogies are apt and misleading when they're forced. The strength is that it provides genuine analytical depth that most commentators lack. The risk is that historical analogies can be cherry-picked — Rome's fall can be attributed to immigration, or to inequality, or to military overextension, depending on which evidence you select. Tracking which historical precedents Hanson chooses and which he omits would be a productive analysis for the system.
+
+His coherence score (0.85) is the highest in the dataset alongside Shapiro (0.80). The difference: Shapiro's coherence comes from religious-conservative first principles applied deductively. Hanson's comes from historical pattern recognition applied inductively. Both are philosophy-driven, but from opposite epistemological directions — one reasons from axioms down, the other from evidence up. This distinction maps directly onto the Logic System's taxonomy of knowledge types.
+
+---
+
 ## Project Author
 
 ---
