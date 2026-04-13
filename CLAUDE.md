@@ -76,17 +76,33 @@ BiasAnalyzer is the Logic System's epistemological framework applied to media an
 ### Not Yet Implemented
 - LLM provider wiring (all 7 prompt templates exist, no live API calls)
 - Human-in-the-loop training UI
-- YouTube transcript bulk ingestion for individual pundits
-- Ownership data population for pundits/orgs
-- Breitbart not in pundits table (needs adding)
+- YouTube API key (slot exists in `.env.local`, real key still pending)
+- Ownership data not yet APPLIED to DB (script written, needs `npm run db:seed-ownership`)
 - Phase 5: Production deployment (GKE Autopilot) — see `docs/infrastructure.md`
 - Phase 6: YouTube video pipeline, training loop, fine-tuning
 
+### Completed April 12-13, 2026 (uncommitted)
+- **`docs/x-political-figures-500.md`** — 500 profiles of most-discussed political figures on X, organized in 15 batches, ~12,894 lines. Same format as `profile-breakdowns.md`.
+- **`docs/x-500-continuation-plan.md`** — progress tracker and resume instructions for the 500-profile work.
+- **`docs/revised_profile_breakdown.md`** — methodological revision of `profile-breakdowns.md`. All 26 profiles rewritten clinically with cited verifiable events for each axis score (no fabricated sample sizes; lower confidence rather than guess).
+- **Elon Musk** added to `docs/profile-breakdowns.md` between Trump and Obama (full deep-format profile).
+- **Easy wins #2, 4, 5, 6, 7, 8, 9, 10, 11** completed:
+  - #2: `YOUTUBE_API_KEY` slot added to `.env.local`
+  - #4: 7 new RSS feeds added to `seed.ts` (WaPo, Breitbart, Politico, The Hill, AP, Reuters, Daily Wire); Breitbart org added to `seed-200.ts`
+  - #5: **No migration drift** — verified via column-name diff of `schema.ts` vs combined migrations 0000+0001. Schema is in sync. Cannot run `drizzle-kit generate` from WSL (Windows binary issue) — run from PowerShell if future schema changes are needed.
+  - #6: New npm scripts: `db:seed-remaining`, `db:seed-ownership`, `test:youtube-channels`, `ingest:yt-transcripts`
+  - #7: Landing/analysis/pundit pages now use shared `<Header />` component
+  - #8: `scripts/test-youtube-channels.ts` (smoke-test 4 seeded channels; `--deep` fetches transcripts)
+  - #9: `scripts/ingest-youtube-transcripts.ts` (18 channel targets, 25 videos/channel, resumable via `.yt-transcript-progress.json`)
+  - #10/#11: `scripts/seed-ownership.ts` populates 35 organizations + 42 pundits with corporate parent, ownership type, financial interests, funding sources
+
 ### Next Session Priorities
-1. Check bulk ingestion progress (how many articles ingested)
-2. Re-evaluate all 26 profiles through Logic System epistemological lens
-3. Tune epistemological classifier rules (target 60%+ from current 27%)
-4. Add Breitbart to pundits table
+1. Commit and push the April 12-13 work
+2. Get real YouTube API key into `.env.local` (Google Cloud Console)
+3. Run `npm run db:seed-200` (picks up Breitbart) → `npm run db:seed` (picks up new RSS feeds) → `npm run db:seed-ownership` (populates ownership data)
+4. Smoke test: `npm run test:youtube-channels --deep`
+5. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
+6. Tune epistemological classifier rules (target 60%+ from current 27%)
 
 ## Key Design Decisions
 
@@ -184,7 +200,13 @@ BiasAnalyzer is the Logic System's epistemological framework applied to media an
 | Blog post templates | `src/lib/blog/templates.ts` |
 | Logic System integration | `docs/logic_system_integration.md` |
 | Logic System source documents | `docs/logic-system/` |
-| Profile breakdowns (26 profiles) | `docs/profile-breakdowns.md` |
+| Profile breakdowns (27 profiles, incl. Musk) | `docs/profile-breakdowns.md` |
+| Profile breakdowns — clinical revision | `docs/revised_profile_breakdown.md` |
+| 500 most-discussed political figures on X | `docs/x-political-figures-500.md` |
+| 500-figure continuation plan | `docs/x-500-continuation-plan.md` |
+| Ownership seed script (orgs + pundits) | `scripts/seed-ownership.ts` |
+| YouTube channel test script | `scripts/test-youtube-channels.ts` |
+| YouTube transcript bulk ingestion | `scripts/ingest-youtube-transcripts.ts` |
 | Decision log | `docs/decisions.md` |
 | Infrastructure architecture | `docs/infrastructure.md` |
 | Easy wins (prioritized) | `docs/easy-wins.md` |
@@ -208,6 +230,10 @@ BiasAnalyzer is the Logic System's epistemological framework applied to media an
 | `npm run db:studio` | Drizzle Studio database browser |
 | `npm run ingest:history` | Single-pundit historical ingestion CLI |
 | `npm run ingest:bulk` | Bulk historical ingestion (NYT Archive sweep) |
+| `npm run db:seed-remaining` | Seed extended pundits beyond seed-200 |
+| `npm run db:seed-ownership` | Populate corporate parent / ownership type / financial interests for orgs + pundits |
+| `npm run test:youtube-channels` | Smoke-test the 4 seeded YouTube channels (add `-- --deep` to fetch transcripts) |
+| `npm run ingest:yt-transcripts` | Bulk YouTube transcript ingestion (18 channels, resumable) |
 
 ## Project Context
 
