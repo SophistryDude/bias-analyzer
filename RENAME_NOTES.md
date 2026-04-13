@@ -2,6 +2,7 @@
 
 **Date:** April 13, 2026
 **Commit:** `01706d2` (rename in code) + this file
+**Owner:** GitHub username changed from `SophistryDude` → `Arkanisbot` (April 13, 2026). Repo now at https://github.com/Arkanisbot/MediaSentinel. Historical references to `SophistryDude` below are preserved as record of prior state but URLs have been updated to the current canonical location.
 
 This document captures the rebrand from `BiasAnalyzer` to `MediaSentinel` for future reference. If you (or a future Claude session) encounter old `bias-analyzer` references, this file explains where they could still legitimately appear and which steps still need to be done outside the running session.
 
@@ -15,7 +16,7 @@ This document captures the rebrand from `BiasAnalyzer` to `MediaSentinel` for fu
 | npm/slug | `bias-analyzer` | `mediasentinel` | package.json `"name"`, package-lock.json, scraper user-agent strings, comments |
 | Postgres ident | `bias_analyzer` | `mediasentinel` | docker-compose.yml, drizzle.config.ts, `.env.local` `DATABASE_URL` |
 | Folder | `bias-analyzer` | `MediaSentinel` | Local filesystem (Windows) |
-| GitHub repo | `bias-analyzer` | `MediaSentinel` | https://github.com/SophistryDude/MediaSentinel |
+| GitHub repo | `bias-analyzer` | `MediaSentinel` | https://github.com/Arkanisbot/MediaSentinel |
 
 The analytical word **"bias"** (as in "political bias detection") is intentionally **preserved** everywhere it appears as a concept rather than as the brand. Examples that should NOT be renamed:
 - `src/app/page.tsx` feature card "Political Bias"
@@ -82,7 +83,7 @@ These cannot be done from inside a running Claude session sitting in the directo
 ### 1. Rename the GitHub repo
 
 Web UI is easiest:
-1. Go to https://github.com/SophistryDude/bias-analyzer/settings
+1. Go to https://github.com/Arkanisbot/MediaSentinel/settings (was `SophistryDude/bias-analyzer/settings` before the rename)
 2. Repository name → `MediaSentinel` → Rename
 3. GitHub auto-creates redirects from the old URL
 
@@ -104,7 +105,7 @@ cd MediaSentinel
 
 After the GitHub rename in step 1:
 ```powershell
-git remote set-url origin https://github.com/SophistryDude/MediaSentinel.git
+git remote set-url origin https://github.com/Arkanisbot/MediaSentinel.git
 git remote -v   # verify
 ```
 

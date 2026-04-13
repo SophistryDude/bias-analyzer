@@ -11,7 +11,7 @@ const parser = new Parser({
   timeout: 15000,
   headers: {
     "User-Agent":
-      "Mozilla/5.0 (compatible; MediaSentinel/1.0; +https://github.com/SophistryDude/mediasentinel)",
+      "Mozilla/5.0 (compatible; MediaSentinel/1.0; +https://github.com/Arkanisbot/MediaSentinel)",
   },
 });
 
