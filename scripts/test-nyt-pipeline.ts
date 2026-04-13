@@ -66,7 +66,7 @@ async function test() {
 
       const archiveUrl = `https://web.archive.org/web/${ts}/${origUrl}`;
       const pageRes = await fetch(archiveUrl, {
-        headers: { "User-Agent": "BiasAnalyzer/1.0" },
+        headers: { "User-Agent": "MediaSentinel/1.0" },
         redirect: "follow",
       });
 

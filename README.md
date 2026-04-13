@@ -1,4 +1,4 @@
-# BiasAnalyzer
+# MediaSentinel
 
 A media bias analysis tool that uses rule-based logic to detect fallacies, reframing techniques, and political bias in media content. Built with Next.js 16, React 19, and TypeScript.
 

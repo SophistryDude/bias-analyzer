@@ -1,4 +1,4 @@
-# BiasAnalyzer — Easy Wins (Ordered by Dependencies)
+# MediaSentinel — Easy Wins (Ordered by Dependencies)
 
 Tasks that are small lifts with high value. Ordered so that if task B depends on task A, A comes first.
 

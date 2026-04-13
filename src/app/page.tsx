@@ -176,7 +176,7 @@ export default function HomePage() {
       <footer className="border-t border-gray-800 py-8 mt-16">
         <div className="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
           <p>
-            BiasAnalyzer — Independent media analysis. No political allegiance.
+            MediaSentinel — Independent media analysis. No political allegiance.
           </p>
           <p className="mt-2">
             Built on a rule-based logic engine with human-in-the-loop training.

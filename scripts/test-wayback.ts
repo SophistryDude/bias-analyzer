@@ -30,7 +30,7 @@ async function testWayback() {
   console.log(`Fetching: ${archiveUrl}`);
 
   const pageRes = await fetch(archiveUrl, {
-    headers: { "User-Agent": "BiasAnalyzer/1.0 (academic research)" },
+    headers: { "User-Agent": "MediaSentinel/1.0 (academic research)" },
     redirect: "follow",
   });
 
@@ -80,7 +80,7 @@ async function testWayback() {
     const foxPageRes = await fetch(
       `https://web.archive.org/web/${foxTs}/${foxUrl}`,
       {
-        headers: { "User-Agent": "BiasAnalyzer/1.0 (academic research)" },
+        headers: { "User-Agent": "MediaSentinel/1.0 (academic research)" },
         redirect: "follow",
       }
     );

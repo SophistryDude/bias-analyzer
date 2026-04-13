@@ -1,8 +1,8 @@
-# BiasAnalyzer — Implementation Roadmap
+# MediaSentinel — Implementation Roadmap
 
 ## Context
 
-BiasAnalyzer is currently a working prototype: rule-based logic engine, keyword bias scoring, scrapers, and a basic UI. The end product is a **free blog-style website** that continuously monitors media channels, analyzes content for bias/fallacies/reframing, and publishes findings. Monetized via **YouTube videos** covering the analysis results.
+MediaSentinel is currently a working prototype: rule-based logic engine, keyword bias scoring, scrapers, and a basic UI. The end product is a **free blog-style website** that continuously monitors media channels, analyzes content for bias/fallacies/reframing, and publishes findings. Monetized via **YouTube videos** covering the analysis results.
 
 The current app is stateless (no database), manual (paste a URL to analyze), and has several stubbed features (tone scoring, semantic detection, pundit detail pages). The goal is to transform this into an automated pipeline that ingests, analyzes, stores, and publishes — with LLMs layered in correctly over time.
 

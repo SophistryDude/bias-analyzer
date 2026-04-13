@@ -1,8 +1,8 @@
-# BiasAnalyzer — Infrastructure Architecture
+# MediaSentinel — Infrastructure Architecture
 
 ## Overview
 
-BiasAnalyzer runs on Google Kubernetes Engine (GKE) Autopilot as part of a shared cluster that also hosts PokerForge website. Autopilot manages nodes automatically — we only pay for pod resources consumed.
+MediaSentinel runs on Google Kubernetes Engine (GKE) Autopilot as part of a shared cluster that also hosts PokerForge website. Autopilot manages nodes automatically — we only pay for pod resources consumed.
 
 ## Target Architecture
 
@@ -13,16 +13,16 @@ BiasAnalyzer runs on Google Kubernetes Engine (GKE) Autopilot as part of a share
                     │                                  │
   Internet ──────▶  │  ┌─── Ingress (GKE managed) ──┐ │
                     │  │                              │ │
-                    │  │  bias-analyzer-web            │ │
+                    │  │  mediasentinel-web            │ │
                     │  │  (Next.js, 1+ pod)            │ │
                     │  │                              │ │
                     │  │  pokerforge-web (future)      │ │
                     │  └──────────────────────────────┘ │
                     │                                  │
-                    │  bias-analyzer-worker             │
+                    │  mediasentinel-worker             │
                     │  (ingestion/analysis, 1 pod)      │
                     │                                  │
-                    │  bias-analyzer-cron               │
+                    │  mediasentinel-cron               │
                     │  (scheduled jobs, CronJob)        │
                     │                                  │
                     └───────────┬──────────────────────┘
@@ -39,20 +39,20 @@ BiasAnalyzer runs on Google Kubernetes Engine (GKE) Autopilot as part of a share
 
 ## Components
 
-### bias-analyzer-web
+### mediasentinel-web
 - **What:** Next.js 16 app serving the website
 - **Image:** Built from project root Dockerfile
 - **Resources:** 256Mi-512Mi memory, 250m-500m CPU
 - **Scaling:** 1-3 pods based on traffic
 - **Health check:** HTTP GET /api/health
 
-### bias-analyzer-worker
+### mediasentinel-worker
 - **What:** Long-running process that monitors sources, runs the ingestion pipeline, executes analysis jobs, and processes the pg-boss queue
 - **Image:** Same image as web, different entrypoint
 - **Resources:** 512Mi-1Gi memory, 500m-1000m CPU
 - **Scaling:** 1 pod (singleton — queue ensures no duplicate processing)
 
-### bias-analyzer-cron
+### mediasentinel-cron
 - **What:** Kubernetes CronJob that triggers periodic tasks
 - **Jobs:**
   - Source check: every 5 minutes (check monitored sources for new content)
@@ -67,13 +67,13 @@ BiasAnalyzer runs on Google Kubernetes Engine (GKE) Autopilot as part of a share
 - **Migration:** pg_dump from local → Cloud SQL import
 
 ### Cloud Storage
-- **Bucket:** bias-analyzer-content
+- **Bucket:** mediasentinel-content
 - **Contents:** Raw scraped HTML, archived article text, analysis artifacts, blog post assets
 - **Lifecycle:** Move to Nearline after 90 days for cost savings
 
 ### Artifact Registry
-- **Repository:** bias-analyzer
-- **Images:** bias-analyzer:latest, bias-analyzer:sha-<commit>
+- **Repository:** mediasentinel
+- **Images:** mediasentinel:latest, mediasentinel:sha-<commit>
 - **CI/CD:** GitHub Actions builds and pushes on merge to main
 
 ## Kubernetes Manifests
@@ -151,11 +151,11 @@ Scales up naturally as ingestion and traffic grow. Autopilot means no idle node 
 
 ## Shared Cluster Notes
 
-BiasAnalyzer and PokerForge website share the GKE cluster but are isolated by namespace:
+MediaSentinel and PokerForge website share the GKE cluster but are isolated by namespace:
 
 ```
 Namespaces:
-  bias-analyzer/    ← BiasAnalyzer pods, services, config
+  mediasentinel/    ← MediaSentinel pods, services, config
   pokerforge/       ← PokerForge website pods (future)
 ```
 

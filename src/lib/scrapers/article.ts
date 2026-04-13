@@ -60,7 +60,7 @@ export async function scrapeArticle(url: string): Promise<ScrapedArticle> {
   const res = await fetch(url, {
     headers: {
       "User-Agent":
-        "Mozilla/5.0 (compatible; BiasAnalyzer/1.0; +https://github.com/SophistryDude/bias-analyzer)",
+        "Mozilla/5.0 (compatible; MediaSentinel/1.0; +https://github.com/SophistryDude/mediasentinel)",
     },
   });
 

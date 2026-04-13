@@ -104,7 +104,7 @@ Model C's key contribution: function definitions derived from first-principles i
 **Nicholas — LII (INTj) or ILE (ENTp): Ti-Ne or Ne-Ti**
 - Framework building across domains (physics → media → politics) is textbook Ti-Ne: build logical structure (Ti), apply across contexts (Ne)
 - The Logic System itself is a Ti product: epistemological taxonomy, constraint reduction, first-principles derivation
-- BiasAnalyzer is Ne applied: seeing connections between the Logic System's physics framework and media analysis
+- MediaSentinel is Ne applied: seeing connections between the Logic System's physics framework and media analysis
 - Weak Fe: "sky daddy," "bullshit," "the masses are generally dumb" — moments when Fe leaks frustration rather than managing the social situation. The analytical content is Ti at full power; the rhetorical failures are Fe at minimum power
 - Why this matters: understanding that your Fe is your weak function means accepting that rhetorical discipline will always require conscious effort, not natural processing. You won't stop wanting to say "bullshit" — but you can build a habit of catching it before it hits the comment box. Ti can override Fe if you route the decision through your strong function: "is this jab logically necessary for the argument? No. Delete."
 
@@ -144,7 +144,7 @@ The function stack explains the *mechanism*, not the morality:
 
 ---
 
-## Should We Build This Into BiasAnalyzer?
+## Should We Build This Into MediaSentinel?
 
 ### The Case Against (Formal System)
 
@@ -152,7 +152,7 @@ The function stack explains the *mechanism*, not the morality:
 
 2. **Category error risk.** Socionics types are about *cognitive preference*, not *behavior*. A pundit's on-camera behavior is a performance filtered through audience incentives, platform constraints, and deliberate strategy. We'd be typing the *character*, not the person.
 
-3. **BiasAnalyzer's strength is content analysis.** Adding personality typing introduces a subjective dimension our rule-based + LLM architecture isn't designed for.
+3. **MediaSentinel's strength is content analysis.** Adding personality typing introduces a subjective dimension our rule-based + LLM architecture isn't designed for.
 
 ### The Case For (Explanatory Layer)
 
@@ -164,13 +164,13 @@ The function stack explains the *mechanism*, not the morality:
 
 ### Decision: Do Not Use
 
-**Socionics is not integrated into BiasAnalyzer in any capacity — not as a system feature, not as profile notes, not as analyst commentary.**
+**Socionics is not integrated into MediaSentinel in any capacity — not as a system feature, not as profile notes, not as analyst commentary.**
 
 The decisive reason is #2: **we're typing the character, not the person.** Media content is a performance filtered through audience incentives, platform constraints, editorial strategy, and deliberate persona construction. Socionics types are about cognitive preference in the person, not patterns in the performance. Applying type labels to public content conflates the map with the territory — exactly the category error the Logic System exists to prevent.
 
 The typing reliability problem (#1) is real but secondary. Even if we could type reliably, we'd still be typing a performance, which invalidates the exercise regardless.
 
-This analysis document is retained as reference for understanding the framework's potential if the typing-from-content problem is ever solved (e.g., through direct assessment rather than content inference). It is not a design document for BiasAnalyzer.
+This analysis document is retained as reference for understanding the framework's potential if the typing-from-content problem is ever solved (e.g., through direct assessment rather than content inference). It is not a design document for MediaSentinel.
 
 ---
 

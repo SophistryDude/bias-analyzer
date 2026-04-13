@@ -118,7 +118,7 @@ The causal chain is: Obama's presidency → increased racial discourse → insti
 
 ---
 
-## Implications for BiasAnalyzer
+## Implications for MediaSentinel
 
 This analysis demonstrates three capabilities the system should have:
 

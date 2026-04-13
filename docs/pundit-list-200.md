@@ -1,4 +1,4 @@
-# BiasAnalyzer — Target Pundit & Organization List (200)
+# MediaSentinel — Target Pundit & Organization List (200)
 
 Compiled April 2026. Ranked roughly by audience reach within each category.
 Audience figures are approximate and based on available 2024-2025 data.

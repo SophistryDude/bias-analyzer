@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BiasAnalyzer — Media Bias Analysis",
+  title: "MediaSentinel — Media Bias Analysis",
   description:
     "Rule-based and LLM-enhanced media bias analysis. Multi-axis political positioning, fallacy detection, cross-source comparison, and omission tracking.",
 };

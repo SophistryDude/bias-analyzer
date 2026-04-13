@@ -4,9 +4,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: bias_analyzer
-      POSTGRES_PASSWORD: bias_analyzer_dev
-      POSTGRES_DB: bias_analyzer
+      POSTGRES_USER: mediasentinel
+      POSTGRES_PASSWORD: mediasentinel_dev
+      POSTGRES_DB: mediasentinel
       POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--auth-host=trust"
     volumes:

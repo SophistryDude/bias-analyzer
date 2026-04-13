@@ -89,7 +89,7 @@ async function fetchFromWayback(
   try {
     const archiveUrl = `https://web.archive.org/web/${timestamp}/${originalUrl}`;
     const res = await fetch(archiveUrl, {
-      headers: { "User-Agent": "BiasAnalyzer/1.0 (academic research)" },
+      headers: { "User-Agent": "MediaSentinel/1.0 (academic research)" },
       redirect: "follow",
     });
     if (!res.ok) return null;
@@ -270,7 +270,7 @@ async function main() {
 
   const progress = loadProgress();
 
-  console.log("=== BiasAnalyzer Bulk Ingestion ===");
+  console.log("=== MediaSentinel Bulk Ingestion ===");
   console.log(`Range: ${startYear}-${endYear}`);
   console.log(`Previous progress: ${progress.totalIngested} articles ingested`);
   console.log("");

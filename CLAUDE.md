@@ -1,8 +1,8 @@
 @AGENTS.md
 
-# BiasAnalyzer
+# MediaSentinel
 
-BiasAnalyzer is the Logic System's epistemological framework applied to media analysis. It is NOT a separate project — it operationalizes the same principles (constraint reduction, model vs reality, dimensional preservation, epistemological taxonomy) against journalism instead of physics. See `docs/logic_system_integration.md` for the full mapping.
+MediaSentinel is the Logic System's epistemological framework applied to media analysis. It is NOT a separate project — it operationalizes the same principles (constraint reduction, model vs reality, dimensional preservation, epistemological taxonomy) against journalism instead of physics. See `docs/logic_system_integration.md` for the full mapping.
 
 ## Architecture
 
@@ -21,7 +21,7 @@ BiasAnalyzer is the Logic System's epistemological framework applied to media an
 ### Completed (Phases 1-4 + extensions)
 
 **Database (Phase 1):**
-- PostgreSQL 17 local (user: bias_analyzer, pass: bias_analyzer_dev, db: bias_analyzer)
+- PostgreSQL 17 local (user: mediasentinel, pass: mediasentinel_dev, db: mediasentinel)
 - Drizzle ORM, 19 tables, 2 migrations applied (0000 initial + 0001 ownership/timing/epistemology/blog)
 - 197 pundits/organizations seeded across 3 seed scripts + 1 manual insert (VDH)
 - DB client is lazy-initialized via Proxy (won't crash scripts that don't need DB)

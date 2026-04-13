@@ -57,7 +57,7 @@ async function cdxSearch(
     `https://web.archive.org/cdx/search/cdx?${params}`,
     {
       headers: {
-        "User-Agent": "BiasAnalyzer/1.0 (academic research; media bias analysis)",
+        "User-Agent": "MediaSentinel/1.0 (academic research; media bias analysis)",
       },
     }
   );
@@ -92,7 +92,7 @@ async function fetchArchivedArticle(
   try {
     const res = await fetch(archiveUrl, {
       headers: {
-        "User-Agent": "BiasAnalyzer/1.0 (academic research)",
+        "User-Agent": "MediaSentinel/1.0 (academic research)",
       },
       redirect: "follow",
     });
@@ -458,7 +458,7 @@ export async function discoverArticles(
   try {
     const res = await fetch(feedUrl, {
       headers: {
-        "User-Agent": "BiasAnalyzer/1.0 (academic research)",
+        "User-Agent": "MediaSentinel/1.0 (academic research)",
       },
     });
 

@@ -54,7 +54,7 @@ export async function searchArchive(
     {
       headers: {
         "User-Agent":
-          "BiasAnalyzer/1.0 (academic research; media bias analysis)",
+          "MediaSentinel/1.0 (academic research; media bias analysis)",
       },
     }
   );

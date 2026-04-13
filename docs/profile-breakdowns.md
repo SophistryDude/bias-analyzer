@@ -1,4 +1,4 @@
-# BiasAnalyzer — Profile Breakdowns
+# MediaSentinel — Profile Breakdowns
 
 All profiles assessed as of January 2024. Scores on each axis range from -1.0 to +1.0. Axis definitions are at the bottom of this document.
 

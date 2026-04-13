@@ -414,9 +414,9 @@ Step 6 is the failure mode, and it's worth understanding *why* it happens. Three
 
 All three are probably partially true. The Logic System's recommendation is clear regardless of cause: **the jabs reduce the epistemic quality of the exchange without improving the rhetorical quality.** The opponent was never going to be persuaded — they don't have the vocabulary to engage with transcendental arguments. The *audience* might be persuaded, and the audience is more likely to be persuaded by consistent rigor than by rigor punctuated with insults.
 
-### 5. What the BiasAnalyzer Engine Would Detect
+### 5. What the MediaSentinel Engine Would Detect
 
-If we ran this debate through the full BiasAnalyzer pipeline:
+If we ran this debate through the full MediaSentinel pipeline:
 
 **Fallacy detection (rule engine):**
 - Opponent: appeal to authority (Nietzsche, Camus, ChatGPT), ad hominem (multiple), strawman (assigning Dawkins/Harris positions), argument from ignorance ("you can't disprove God")
@@ -438,7 +438,7 @@ If we ran this debate through the full BiasAnalyzer pipeline:
 
 ### 6. The Meta-Observation
 
-The most interesting thing about this debate is that Nicholas is *already doing what BiasAnalyzer does* — analyzing argumentative structure, identifying fallacies, tracking omissions, classifying claims by epistemological type — but doing it manually in a YouTube comment section. The tool he's building would automate the exact cognitive process he's deploying in this exchange.
+The most interesting thing about this debate is that Nicholas is *already doing what MediaSentinel does* — analyzing argumentative structure, identifying fallacies, tracking omissions, classifying claims by epistemological type — but doing it manually in a YouTube comment section. The tool he's building would automate the exact cognitive process he's deploying in this exchange.
 
 This is the integration thesis from `logic_system_integration.md` in action: the same mind that built an epistemological framework for physics, deployed it against media bias, is now deploying it in personal argumentation. The framework is consistent across all three domains because it's the same underlying cognitive architecture.
 

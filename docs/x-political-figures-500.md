@@ -1,4 +1,4 @@
-# BiasAnalyzer — 500 Most Discussed Political Figures on X
+# MediaSentinel — 500 Most Discussed Political Figures on X
 
 All profiles assessed as of April 2026. Scores on each axis range from -1.0 to +1.0. These are initial hypotheses — must be replaced by system-generated assessments as data accumulates.
 
@@ -332,7 +332,7 @@ His speech axis is notable: the architect of warrantless surveillance and "enhan
 
 Gore is epistemologically significant because *An Inconvenient Truth* is a case study in **effective truth presentation**. Climate science is the paradigmatic effective truth — models with strong predictive power, broad expert consensus, but still model-dependent. Gore presented climate science with certainty language ("the science is settled") that slightly exceeded what the models technically support. This is a mild category error — the science IS strong, but "settled" implies known-truth status for what is technically model-dependent.
 
-This matters for the BiasAnalyzer because it demonstrates that category errors aren't only committed by bad actors. Gore's presentation was well-intentioned and largely accurate, but the epistemological framing (effective truth → known truth) is the same structural move we flag when Fox News does it with different content. The system must treat the epistemological structure consistently regardless of whether we agree with the conclusion.
+This matters for the MediaSentinel because it demonstrates that category errors aren't only committed by bad actors. Gore's presentation was well-intentioned and largely accurate, but the epistemological framing (effective truth → known truth) is the same structural move we flag when Fox News does it with different content. The system must treat the epistemological structure consistently regardless of whether we agree with the conclusion.
 
 ---
 
@@ -5192,7 +5192,7 @@ Von der Leyen's most significant epistemological contribution is the Digital Ser
 
 #### Notes
 
-Jaishankar's "Europe's problems are not the world's problems" framing is the most discussed non-Western epistemological challenge to the West on X. He's explicitly arguing that the Western framework for classifying international events (which places Ukraine at the center) is model-dependent, not universal. In Logic System terms, he's pointing out that the Western perspective is an effective truth (true within the Western framework) being presented as a known truth (universally obvious). This is epistemological critique applied to geopolitics — and it's exactly what the BiasAnalyzer does to domestic media.
+Jaishankar's "Europe's problems are not the world's problems" framing is the most discussed non-Western epistemological challenge to the West on X. He's explicitly arguing that the Western framework for classifying international events (which places Ukraine at the center) is model-dependent, not universal. In Logic System terms, he's pointing out that the Western perspective is an effective truth (true within the Western framework) being presented as a known truth (universally obvious). This is epistemological critique applied to geopolitics — and it's exactly what the MediaSentinel does to domestic media.
 
 ---
 
@@ -6359,7 +6359,7 @@ Oliver's deep-dive format is epistemologically distinctive: his 20-minute segmen
 
 #### Notes
 
-Hasan is the most confrontational interviewer on the left — his technique of pressing subjects with their own prior statements (playing video clips of contradictions) is a manual coherence-assessment process that mirrors what the BiasAnalyzer does computationally. His Muslim identity gives him a distinctive perspective on foreign policy that produces positions aligned with the anti-interventionist left but from a different experiential basis. His MSNBC departure and independent launch via Zeteo follows the institutional-to-independent pipeline that characterizes the current media landscape.
+Hasan is the most confrontational interviewer on the left — his technique of pressing subjects with their own prior statements (playing video clips of contradictions) is a manual coherence-assessment process that mirrors what the MediaSentinel does computationally. His Muslim identity gives him a distinctive perspective on foreign policy that produces positions aligned with the anti-interventionist left but from a different experiential basis. His MSNBC departure and independent launch via Zeteo follows the institutional-to-independent pipeline that characterizes the current media landscape.
 
 ---
 

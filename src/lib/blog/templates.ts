@@ -38,7 +38,7 @@ export function buildIndividualAnalysisPrompt(data: IndividualAnalysisData): LLM
   return [
     {
       role: "system",
-      content: `You write blog posts for BiasAnalyzer, a media bias analysis site. Write in a direct, analytical tone — not academic, not sensational. Show the data, explain what it means, let the reader draw conclusions. Use markdown formatting.
+      content: `You write blog posts for MediaSentinel, a media bias analysis site. Write in a direct, analytical tone — not academic, not sensational. Show the data, explain what it means, let the reader draw conclusions. Use markdown formatting.
 
 Structure:
 1. Brief intro — what content was analyzed and why it matters
@@ -98,7 +98,7 @@ export function buildTrendReportPrompt(data: TrendReportData): LLMMessage[] {
   return [
     {
       role: "system",
-      content: `You write trend analysis blog posts for BiasAnalyzer. Identify patterns over time — what's changing, what's consistent, what's notable. Use markdown formatting. Keep it under 1200 words. Be analytical, not sensational.`,
+      content: `You write trend analysis blog posts for MediaSentinel. Identify patterns over time — what's changing, what's consistent, what's notable. Use markdown formatting. Keep it under 1200 words. Be analytical, not sensational.`,
     },
     {
       role: "user",
@@ -148,7 +148,7 @@ export function buildComparisonPrompt(data: ComparisonData): LLMMessage[] {
   return [
     {
       role: "system",
-      content: `You write comparison blog posts for BiasAnalyzer. Compare sources side-by-side on multiple dimensions. Highlight where they agree, where they diverge, and what the differences reveal. Use markdown tables where appropriate. Keep it under 1500 words.`,
+      content: `You write comparison blog posts for MediaSentinel. Compare sources side-by-side on multiple dimensions. Highlight where they agree, where they diverge, and what the differences reveal. Use markdown tables where appropriate. Keep it under 1500 words.`,
     },
     {
       role: "user",
@@ -195,7 +195,7 @@ export function buildStoryComparisonPrompt(data: StoryComparisonData): LLMMessag
   return [
     {
       role: "system",
-      content: `You write story comparison blog posts for BiasAnalyzer. These are the most important posts — they show how different outlets covered the SAME event differently. Focus on:
+      content: `You write story comparison blog posts for MediaSentinel. These are the most important posts — they show how different outlets covered the SAME event differently. Focus on:
 1. What happened (the cross-validated facts)
 2. How each source framed it (verbiage, tone, emphasis)
 3. What each source omitted (this is where bias lives)

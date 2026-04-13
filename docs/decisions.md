@@ -1,4 +1,4 @@
-# BiasAnalyzer — Decision Log
+# MediaSentinel — Decision Log
 
 Every significant architectural, technical, and product decision made during development, with the reasoning behind each.
 
@@ -7,7 +7,7 @@ Every significant architectural, technical, and product decision made during dev
 ## Product Decisions
 
 ### The product is a free blog + YouTube monetization
-**Decision:** BiasAnalyzer is a free blog-style website. Revenue comes from YouTube videos covering the analysis findings.
+**Decision:** MediaSentinel is a free blog-style website. Revenue comes from YouTube videos covering the analysis findings.
 **Why:** The analysis is the content. The site builds credibility and provides source material; YouTube is where the audience and money are. Nicholas's personality and commentary are the monetization vehicle — the system generates research and scripts, not videos.
 
 ### Multi-axis model over single left-right spectrum
@@ -95,8 +95,8 @@ Every significant architectural, technical, and product decision made during dev
 **Why:** Nicholas wants to migrate to k8s eventually. GKE Autopilot manages nodes automatically — we only pay for pod resources consumed. Cheaper at small scale than EKS Fargate. Google invented k8s so conformance is best. One free cluster, estimated $30-40/mo total. The original Vercel + Hetzner plan was ~$74/mo and would require a separate migration to k8s later.
 
 ### Shared cluster with PokerForge, not Alphabreak
-**Decision:** BiasAnalyzer and PokerForge website share a GKE cluster. Alphabreak is standalone.
-**Why:** Alphabreak is too large for shared infrastructure. BiasAnalyzer and PokerForge are both web apps with modest resource needs — sharing a cluster reduces per-project cost. Namespace isolation keeps them separated (resource quotas, network policies, separate secrets).
+**Decision:** MediaSentinel and PokerForge website share a GKE cluster. Alphabreak is standalone.
+**Why:** Alphabreak is too large for shared infrastructure. MediaSentinel and PokerForge are both web apps with modest resource needs — sharing a cluster reduces per-project cost. Namespace isolation keeps them separated (resource quotas, network policies, separate secrets).
 
 ### Cloud SQL over self-managed PostgreSQL in k8s
 **Decision:** Use managed Cloud SQL for PostgreSQL rather than running Postgres as a k8s pod.
@@ -134,8 +134,8 @@ Every significant architectural, technical, and product decision made during dev
 **Decision:** The reliability axis is derived from accumulated omission data, not a separate assessment.
 **Why:** A source that consistently includes 90% of significant claims across multiple stories is demonstrably more reliable than one that includes 60%, regardless of political leaning. This is objective, measurable, and doesn't require us to be the arbiter of truth. It measures journalistic rigor as a proxy for accuracy.
 
-### BiasAnalyzer is the Logic System applied to media
-**Decision:** Treat BiasAnalyzer and the Theory of Everything Logic System as one intellectual program, not two separate projects.
+### MediaSentinel is the Logic System applied to media
+**Decision:** Treat MediaSentinel and the Theory of Everything Logic System as one intellectual program, not two separate projects.
 **Why:** The structural mappings are direct, not metaphorical. Dimensional reduction → why single-spectrum bias ratings fail. Constraint reduction → the omission framework. Model vs reality → we don't decide truth. The epistemological taxonomy (known truth / tacit understanding / formal truth) maps directly to bias detection: bias is presenting tacit understanding as known truth. The rule-based engine preserves auditability as epistemological integrity. See `docs/logic_system_integration.md` for the full analysis.
 
 ### Event-centric architecture for evolving partisan scores
