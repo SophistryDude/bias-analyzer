@@ -2,6 +2,8 @@
 
 Tasks that are small lifts with high value. Ordered so that if task B depends on task A, A comes first.
 
+**Status as of April 13, 2026:** Tasks #2, #4, #5, #6, #7, #8, #9, #10, #11 are complete (uncommitted). See "Completed April 12-13" in `CLAUDE.md` for details. Remaining tasks: #1 (rotate NYT key), #3 (run bulk ingestion for more years), #12-#23.
+
 ---
 
 ## No Dependencies (can do right now)

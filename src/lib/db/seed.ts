@@ -163,6 +163,57 @@ async function seed() {
       name: "Fox News Latest",
       url: "https://moxie.foxnews.com/google-publisher/latest.xml",
     },
+    // Added via easy-wins #4. These orgs are seeded by seed-200.ts, so run
+    // `npm run db:seed-200` before `npm run db:seed` if they're missing.
+    {
+      id: "rss-wapo",
+      punditId: "washington-post",
+      type: "rss",
+      name: "Washington Post — Politics",
+      url: "https://feeds.washingtonpost.com/rss/politics",
+    },
+    {
+      id: "rss-breitbart",
+      punditId: "breitbart",
+      type: "rss",
+      name: "Breitbart — Latest",
+      url: "https://feeds.feedburner.com/breitbart",
+    },
+    {
+      id: "rss-politico",
+      punditId: "politico",
+      type: "rss",
+      name: "Politico — Politics",
+      url: "https://rss.politico.com/politics-news.xml",
+    },
+    {
+      id: "rss-the-hill",
+      punditId: "the-hill",
+      type: "rss",
+      name: "The Hill — Homenews",
+      url: "https://thehill.com/homenews/feed/",
+    },
+    {
+      id: "rss-ap-top",
+      punditId: "ap-news",
+      type: "rss",
+      name: "AP News — Top News",
+      url: "https://feeds.apnews.com/rss/apf-topnews",
+    },
+    {
+      id: "rss-reuters-world",
+      punditId: "reuters",
+      type: "rss",
+      name: "Reuters — World News",
+      url: "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
+    },
+    {
+      id: "rss-daily-wire",
+      punditId: "daily-wire",
+      type: "rss",
+      name: "Daily Wire — News",
+      url: "https://www.dailywire.com/feeds/rss.xml",
+    },
   ];
 
   console.log(`Seeding ${MONITORED_SOURCES.length} monitored sources...`);

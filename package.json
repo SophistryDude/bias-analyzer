@@ -12,6 +12,10 @@
     "db:push": "drizzle-kit push",
     "db:seed": "tsx src/lib/db/seed.ts",
     "db:seed-200": "tsx src/lib/db/seed-200.ts",
+    "db:seed-remaining": "tsx src/lib/db/seed-remaining.ts",
+    "db:seed-ownership": "tsx scripts/seed-ownership.ts",
+    "test:youtube-channels": "tsx scripts/test-youtube-channels.ts",
+    "ingest:yt-transcripts": "tsx scripts/ingest-youtube-transcripts.ts",
     "ingest:history": "tsx scripts/ingest-history.ts",
     "ingest:bulk": "tsx scripts/bulk-ingest.ts",
     "db:studio": "drizzle-kit studio"

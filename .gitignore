@@ -40,3 +40,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# script progress files (resumable ingests)
+scripts/.ingest-progress.json
+scripts/.yt-transcript-progress.json
+
+# MS Office lock files
+~$*

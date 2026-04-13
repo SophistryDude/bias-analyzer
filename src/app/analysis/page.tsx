@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Header from "../../components/Header";
 
 interface FallacyResult {
   fallacyName: string;
@@ -65,28 +65,7 @@ export default function AnalysisPage() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
-      {/* Header */}
-      <header className="border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-white">
-            Bias<span className="text-red-500">Analyzer</span>
-          </Link>
-          <nav className="flex gap-6 text-sm">
-            <Link
-              href="/analysis"
-              className="text-white font-medium"
-            >
-              Analyze
-            </Link>
-            <Link
-              href="/pundit"
-              className="text-gray-400 hover:text-white transition"
-            >
-              Pundits
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-3xl font-bold mb-8">Analyze Content</h1>
