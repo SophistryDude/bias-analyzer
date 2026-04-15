@@ -64,9 +64,9 @@ DeFranco's coverage mix shifted observably between 2015 and 2021 toward progress
 ### Tucker Carlson
 
 **Platform:** Tucker Carlson Network (independent), X, formerly Fox News
-**Current Leaning:** Right
-**Ideological Coherence:** 0.50 (mixed)
-**Driver:** Mixed
+**Current Leaning:** Populist-Nationalist Right (paleoconservative cluster)
+**Ideological Coherence:** 0.78 (high — see Logic System note)
+**Driver:** Philosophy-driven
 
 #### Bias Trajectory
 
@@ -78,27 +78,43 @@ DeFranco's coverage mix shifted observably between 2015 and 2021 toward progress
 | ~2023 | Right | Fired by Fox News in April 2023. Launched Tucker Carlson Network as independent platform. Conducted interview with Vladimir Putin (February 2024). |
 | ~2024 | Right | Continued independent operation. Interview subjects included Bashar al-Assad family members, Aleksandr Dugin, and Trump administration officials. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.30 | Leaning Capitalist | Stable | 60% |
-| Speech | -0.70 | Strong Free Speech | Stable | 80% |
-| Progressive | +0.60 | Moderate Non-Progressive | Stable | 70% |
+| Economic | −0.30 | Leaning Capitalist | Stable | 60% |
+| Speech | −0.70 | Strong Free Speech | Stable | 80% |
+| Causation Analysis | −0.50 | Structural | Stable | 70% |
+| Equality Model | +0.70 | Strong Opportunity | Stable | 75% |
 | Liberal/Conservative | +0.50 | Moderate Conservative | Stable | 70% |
-| Foreign Policy | -0.70 | Strong Isolationist | Moving left ← | 80% |
+| Foreign Policy | −0.70 | Strong Isolationist | Stable (intensified post-Fox) | 80% |
+| Populism | −0.80 | Strong Populist | Stable | 85% |
+| Nationalism | −0.70 | Strong Nationalist | Stable | 80% |
+| Authority — Speech | −0.80 | Libertarian | Stable | 85% |
+| Authority — Health/Bodily | −0.70 | Libertarian | Stable (intensified post-2020) | 75% |
+| Authority — Commerce/Platform | −0.50 | Libertarian | Stable | 65% |
+| Authority — Immigration | +0.60 | Authoritarian | Stable | 75% |
+| Authority — Culture/Family | +0.40 | Leaning Authoritarian | Stable | 60% |
 
 #### Axis Justifications
 
-- **Economic (-0.30):** Supports private markets but has criticized specific corporate actors (BlackRock, pharmaceutical companies, Big Tech). Has supported tariffs and industrial policy. Has not advocated nationalization. Position is pro-market with populist exceptions.
-- **Speech (-0.70):** Repeatedly opposes platform deplatforming, content moderation, and government pressure on social media. Defended speech for figures across the political spectrum. Position has been stable across his Fox News and post-Fox tenure.
-- **Progressive (+0.60):** Opposes DEI programs, affirmative action, and equity-based policy frameworks. Has framed these as actively harmful in monologues across his Fox tenure and independent platform.
-- **Liberal/Conservative (+0.50):** Defends traditional family structures, criticizes rapid social change. Has cited declining birth rates and changes in gender norms as policy concerns. Conservative on social and cultural questions; less so on economic structure.
-- **Foreign Policy (-0.70):** Opposes Ukraine military aid (documented in monologues from 2022 onward). Opposed continued Afghanistan presence. Conducted interview with Putin in Moscow (2024). Has criticized neoconservative interventionism. Position has been stable since 2016; intensity has increased post-Fox.
+- **Economic (−0.30):** Pro-market baseline with specific corporate targets (BlackRock ESG segments 2022–2023; pharmaceutical pricing monologues 2020–2022; Big Tech antitrust advocacy). Supported Trump-era tariffs and industrial policy. Has not advocated nationalization. Position: regulated capitalism with populist carve-outs.
+- **Speech (−0.70):** Consistent opposition to platform deplatforming, content-moderation expansion, and government pressure on social media (Twitter Files coverage, 2022–2023). Defended speech for figures across the spectrum on the principle; application is uneven. Most stable axis across his career.
+- **Causation Analysis (−0.50):** Dominant framing is structural: "the regime," managerial class, elite capture of institutions, pharmaceutical/intelligence/media apparatus as causal agents of outcomes. Individual-causation framing appears in crime and family-structure segments but is secondary. This is the axis most commonly miscategorized — structural reasoning is assumed to be a left frame, but Carlson's output is textbook right-structural.
+- **Equality Model (+0.70):** Direct and repeated opposition to DEI, affirmative action, and equity-based policy frameworks. Frames these as actively harmful. Consistent from 2016 Fox tenure through independent platform.
+- **Liberal/Conservative (+0.50):** Defends traditional family structures, cites declining birth rates and gender-norm changes as policy concerns. Conservative on social/cultural questions; not reactionary (does not advocate broad rollback of mid-20th-century social settlements).
+- **Foreign Policy (−0.70):** Opposes Ukraine military aid (monologues from February 2022 onward). Opposed continued Afghanistan presence. Moscow interview with Putin (February 2024); interview with Aleksandr Dugin (2024). Has explicitly criticized neoconservative interventionism by name. Stable since ~2016; intensified post-Fox.
+- **Populism (−0.80):** Treats institutions (CIA, FDA, NIH, major media, academia, Fortune 500, international bodies) as captured or illegitimate custodians of expertise. Frames "the people" and "normal Americans" as the legitimate authority source. High confidence — this is the most defining feature of his post-2016 content.
+- **Nationalism (−0.70):** Nation-state as primary unit of political obligation: immigration restriction framed as civic/economic defense, trade framed through national-interest lens, skepticism of supranational institutions (WHO, WEF coverage 2020–2022). Distinct from foreign-policy score — he is nationalist+isolationist (paleoconservative), not nationalist+hawk (neoconservative).
+- **Authority (domain-split, no net):** Libertarian on speech, health/bodily autonomy (COVID vaccine mandate coverage 2021–2022), and commerce/platform (opposition to platform moderation power). Authoritarian on immigration enforcement and culture/family policy. The domain pattern itself is the finding: Carlson is not a "libertarian" or "authoritarian" — he applies libertarian framing to individual-state conflicts and authoritarian framing to civic/cultural cohesion questions. This combination is characteristic of the paleoconservative cluster and should not be averaged to a net score.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Carlson at 0.50 coherence (mixed) because "pro-market but anti-corporate" and "conservative but isolationist" read as contradictions. The 9-axis model dissolves those apparent contradictions: they collapse into a single coherent populist-nationalist paleoconservative rule set — nation-state primacy + elite-capture thesis + traditional culture + non-intervention + structural causation directed upward at institutions rather than downward at individuals. Under dimensional preservation (Logic System principle), coherence is **0.78**, not 0.50. The old score was a measurement artifact of axis bundling, not a property of Carlson. This is a central test case for why the April 2026 expansion was necessary.
 
 #### Notes
 
-Carlson's economic positions include both pro-market statements and criticism of specific corporate actors. The combination is observably consistent across his Fox tenure and independent platform. His foreign policy position became more publicly prominent after his Fox departure and includes interview subjects (Putin, Dugin) that other US media outlets have generally not booked. The speech axis is the most consistent across his career in terms of stated principle. Post-Fox business arrangements include reported funding sources from Dubai-based investors; the funding structure of TCN is not fully public.
+Carlson's economic positions include both pro-market statements and criticism of specific corporate actors. The combination is observably consistent across his Fox tenure and independent platform. His foreign policy position became more publicly prominent after his Fox departure and includes interview subjects (Putin, Dugin) that other US media outlets have generally not booked. Post-Fox business arrangements include reported funding sources from Dubai-based investors; the funding structure of TCN is not fully public. The funding-source question is a separate concern about motive, not ideology — it should be tracked on the omission-analysis side rather than folded into the axis scores.
 
 ---
 

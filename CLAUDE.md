@@ -8,7 +8,7 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 
 - Next.js 16, React 19, TypeScript, Tailwind 4
 - Rule-based logic engine — deliberately non-LLM for fallacy/reframing detection. Do not suggest replacing with LLM reasoning.
-- Multi-axis political model (5 axes: economic, speech, progressive/equity, liberal/conservative, foreign policy). Do not flatten to single left-right spectrum.
+- Multi-axis political model (9 axes: economic, speech, causation-analysis, equality-model, liberal/conservative, foreign-policy, populism, nationalism, authority). Expanded from 5 in April 2026 — old "progressive" axis decomposed into causation-analysis + equality-model, and populism/nationalism/authority added as orthogonal cross-cutting dimensions. Do not flatten to single left-right spectrum. Do not re-bundle. The 9 axes are independent by design; bundling them (e.g., calling populism "a kind of conservatism") produces the measurement artifacts the expansion was built to eliminate.
 - Pipeline: text → scraper → logic engine → reframing detector → bias scorer → LLM enhancement layer → combined assessment
 - Weights: fallacies (40%), reframing (30%), bias imbalance (30%)
 - PostgreSQL 17 (local dev on Windows, port 5432), Drizzle ORM, 19 tables
@@ -22,22 +22,24 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 
 **Database (Phase 1):**
 - PostgreSQL 17 local (user: mediasentinel, pass: mediasentinel_dev, db: mediasentinel)
-- Drizzle ORM, 19 tables, 2 migrations applied (0000 initial + 0001 ownership/timing/epistemology/blog)
+- Drizzle ORM, 19 tables, 3 migrations applied (0000 initial + 0001 ownership/timing/epistemology/blog + 0002 multi-axis expansion adding causation-analysis/equality-model/populism/nationalism/authority columns to story_coverages; old `axis_progressive` kept nullable for historical rows)
 - 197 pundits/organizations seeded across 3 seed scripts + 1 manual insert (VDH)
 - DB client is lazy-initialized via Proxy (won't crash scripts that don't need DB)
 - Drizzle Kit config uses explicit host/credentials, not URL (Windows pg driver workaround)
 
 **LLM Layer (Phase 2 + extensions):**
 - Provider abstraction at `src/lib/llm/provider.ts` — pluggable, no SDK dependency
-- 7 prompt templates built, none wired to live API calls yet:
+- Anthropic provider implemented at `src/lib/llm/providers/anthropic.ts` (fetch-based, no SDK). `configureLLMFromEnv()` in `analyze.ts` auto-wires from `ANTHROPIC_API_KEY`.
+- 7 prompt templates built:
   1. Tone/sentiment with humor detection (satire + observational critical)
   2. Structural fallacy detection (straw man, gish gallop, false equivalence)
   3. Neutral reframing suggestions
-  4. 5-axis bias mapping
+  4. **9-axis bias mapping** (updated April 2026 — prompt at `src/lib/llm/prompts/axis-mapping.ts`)
   5. Claim extraction (cross-source fact tracking)
   6. Omission detection (compares what each source included/excluded)
   7. Epistemological refinement (classifies ambiguous claims the rule engine can't handle)
 - Content-hash cache with 7-day TTL at `src/lib/llm/cache.ts`
+- Smoke test: `scripts/smoke-llm-pipeline.ts` runs end-to-end on Aleppo case study
 - Pipeline is async; graceful fallback if LLM not configured
 
 **Ingestion Pipeline (Phase 3):**
@@ -62,22 +64,24 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 - Shared Header component
 - No auth on admin (easy win #23)
 
-**Profile Breakdowns (26 profiles):**
-- Individuals: DeFranco, Carlson, Owens, Fuentes, Shapiro, Maddow, Lemon, Pool, Cenk Uygur, Ana Kasparian, Hasan Piker, Destiny, Krystal Ball, Saagar Enjeti, Crowder, Pakman, Jon Stewart, Jordan Peterson, Victor Davis Hanson, Trump, Obama, Nicholas
+**Profile Breakdowns (~31 profiles):**
+- Individuals: DeFranco, Carlson, Owens, Fuentes, Shapiro, Maddow, Lemon, Pool, Cenk Uygur, Ana Kasparian, Hasan Piker, Destiny, Krystal Ball, Saagar Enjeti, Crowder, Pakman, Jon Stewart, Jordan Peterson, Victor Davis Hanson, Trump, Musk, Obama, Nicholas
 - Organizations: CNN, Fox News, MSNBC, NYT
 - Profiles are unvalidated initial hypotheses — must be replaced by system-generated assessments
+- **Profile docs still use 5-axis format as of 2026-04-15.** 9-axis rewrite of `docs/revised_profile_breakdown.md` is in progress; `SEED_PROFILES` in `political-axes.ts` has 2/31 profiles populated with 9-axis scores (DeFranco, Carlson).
 
 **Ownership tracking:** Schema fields added (corporateParent, ownershipType, financialInterests, fundingSources, country). Not yet populated.
 
 ### In Progress
+- **9-axis profile rewrite** — `docs/revised_profile_breakdown.md` being upgraded from 5 to 9 axes with Logic System coherence notes and event-sourced justifications. Carlson template approved 2026-04-15; batch of remaining 30 profiles pending. After markdown rewrite, backfill `SEED_PROFILES` in `political-axes.ts`.
 - Bulk historical ingestion running (NYT Archive sweep via Wayback Machine)
 - Progress saved to `scripts/.ingest-progress.json` — resumes with `npm run ingest:bulk`
 
 ### Not Yet Implemented
-- LLM provider wiring (all 7 prompt templates exist, no live API calls)
 - Human-in-the-loop training UI
 - YouTube API key (slot exists in `.env.local`, real key still pending)
 - Ownership data not yet APPLIED to DB (script written, needs `npm run db:seed-ownership`)
+- UI display of 9-axis profiles (radar chart currently renders 5 axes)
 - Phase 5: Production deployment (GKE Autopilot) — see `docs/infrastructure.md`
 - Phase 6: YouTube video pipeline, training loop, fine-tuning
 
@@ -97,18 +101,22 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
   - #10/#11: `scripts/seed-ownership.ts` populates 35 organizations + 42 pundits with corporate parent, ownership type, financial interests, funding sources
 
 ### Next Session Priorities
-1. Commit and push the April 12-13 work
-2. Get real YouTube API key into `.env.local` (Google Cloud Console)
-3. Run `npm run db:seed-200` (picks up Breitbart) → `npm run db:seed` (picks up new RSS feeds) → `npm run db:seed-ownership` (populates ownership data)
-4. Smoke test: `npm run test:youtube-channels --deep`
-5. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
-6. Tune epistemological classifier rules (target 60%+ from current 27%)
+1. Finish 9-axis rewrite of `docs/revised_profile_breakdown.md` (Carlson template approved; batch remaining 30)
+2. Backfill `SEED_PROFILES` in `src/lib/models/political-axes.ts` from rewritten markdown
+3. Update `PunditRadarChart` to render 9 axes
+4. Commit and push accumulated April work
+5. Get real YouTube API key into `.env.local` (Google Cloud Console)
+6. Run `npm run db:seed-200` → `npm run db:seed` → `npm run db:seed-ownership`
+7. Smoke test: `npm run test:youtube-channels --deep`
+8. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
+9. Tune epistemological classifier rules (target 60%+ from current 27%)
 
 ## Key Design Decisions
 
 **Architecture:**
 - Logic engine is rule-based by design. LLMs augment, never replace. New analysis features MUST follow hybrid pattern: rule-based first, LLM refinement second. This is both the architectural pattern and the epistemological principle.
-- Progressive ≠ liberal. Load-bearing distinction derived from the Logic System's effective vs fundamental truth separation.
+- Progressive ≠ liberal. Load-bearing distinction — and as of April 2026, "progressive" is no longer a single axis. It decomposed into causation-analysis (structural vs individual) and equality-model (outcome vs opportunity) because those two dimensions are orthogonal: a right-populist can be structural-causation + opportunity-equality, and a left-progressive can be individual-causation + outcome-equality.
+- Populism, nationalism, and authority are independent axes that cut across left/right. Ignoring them produces measurement artifacts: figures like Tucker Carlson or Bernie Sanders score as "mixed/incoherent" in a 5-axis model when they are actually highly coherent populist-nationalist-isolationist (or populist-globalist-interventionist) rule sets. Low coherence in the 5-axis model was often an artifact of axis bundling, not a property of the figure. This is the central Logic System argument for the expansion.
 - `runAnalysis()` in `src/lib/pipeline/analyzer.ts` is the single source of truth. Never duplicate analysis logic.
 - Event-centric architecture: stories (events) are the primary unit of analysis. Contributor scores evolve from accumulated event coverage over time.
 
@@ -144,6 +152,9 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 
 - Don't duplicate analysis logic outside `src/lib/pipeline/analyzer.ts`
 - Don't flatten bias to single left-right spectrum
+- Don't re-bundle the 9 axes. "Populism is just a kind of conservatism" or "nationalism is just isolationism" are category errors — they collapse the independent dimensions the April 2026 expansion was built to preserve.
+- Don't score the `authority` axis as a single net number. It is domain-split (speech/health/commerce/immigration/culture) and must be scored per sub-domain. A net score masks the real pattern.
+- Don't use the legacy `progressive` axis in new writes. It's kept nullable for historical rows only.
 - Don't use Anthropic SDK — LLM calls are provider-agnostic
 - Don't use Wayback Machine CDX wildcard queries (403) — exact URL lookups only
 - Don't run Docker Postgres on port 5432 — conflicts with local PG17
@@ -173,7 +184,7 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 | 1 | Tone/sentiment (humor detection) | 2 | Prompt built |
 | 2 | Structural fallacy detection | 2 | Prompt built |
 | 3 | Neutral reframing suggestions | 2 | Prompt built |
-| 4 | 5-axis bias mapping | 2 | Prompt built |
+| 4 | 9-axis bias mapping | 2 | Prompt built (updated April 2026 from 5 to 9 axes) |
 | 5 | Claim extraction | Cross-source | Prompt built |
 | 6 | Omission detection | Cross-source | Prompt built |
 | 7 | Individual analysis blog post | 4 | Template built |
@@ -194,7 +205,9 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 | Epistemological classifier (rule-based) | `src/lib/logic-engine/epistemology.ts` |
 | LLM prompt templates | `src/lib/llm/prompts/*.ts` |
 | LLM orchestration | `src/lib/llm/analyze.ts` |
-| Political axes model | `src/lib/models/political-axes.ts` |
+| Political axes model (9 axes + seed profiles) | `src/lib/models/political-axes.ts` |
+| Anthropic LLM provider (fetch-based, no SDK) | `src/lib/llm/providers/anthropic.ts` |
+| LLM smoke test (end-to-end Aleppo) | `scripts/smoke-llm-pipeline.ts` |
 | Blindspot detection + coverage timeline | `src/lib/db/repositories/stories.ts` |
 | Claims + omission reports | `src/lib/db/repositories/claims.ts` |
 | Blog post templates | `src/lib/blog/templates.ts` |

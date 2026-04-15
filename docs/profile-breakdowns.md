@@ -71,6 +71,27 @@ Unusual profile that defies simple left-right categorization. Populist economics
 
 Post-Fox trajectory introduces serious questions about foreign interest alignment. His isolationist score is his strongest axis, but the specific pattern of isolationism (softness on certain authoritarian regimes, Dubai connections) raises questions about whether this is principled non-interventionism or something else. This tension is the single most important thing to track in his profile going forward.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.50 (mixed) → 0.78 (high). The original "mixed/defies categorization" framing is a measurement artifact of the 5-axis model, not a property of Carlson. Under 9 axes, he is a textbook populist-nationalist paleoconservative: every apparent contradiction (pro-market but anti-corporate; conservative but isolationist; free-speech but traditionalist) resolves into a single coherent rule set once populism, nationalism, and sub-domain authority are scored independently.
+
+**Category errors in the original profile:**
+- *"Populist economics (left-coded)"* — no. Populism is not left-coded; it is an orthogonal axis about the source of legitimate authority. Calling Carlson's anti-corporate structural framing "left" bundles causation-analysis + equality-model + economics into a tribal read and reproduces the exact collapse the 9-axis expansion was built to prevent.
+- *"Free speech (traditionally left, now right-coded)"* — this is describing partisan drift on the axis, but presenting it as if the axis itself is tribal. Speech-libertarianism is historically bipartisan (ACLU left; religious right); Carlson's position is stable on the axis, only his tribal valence changed.
+- *"Doesn't fit the standard conservative mold"* — there is no "standard conservative mold." The 5-axis model flattens paleoconservatives, neoconservatives, libertarians, and traditionalists into one bucket because it lacks the axes (populism, nationalism, authority) that distinguish them. The old profile is identifying the model's blind spot as anomaly in the subject.
+
+**Epistemological flags:**
+- *"Dubai connections raise questions about whether this is principled non-interventionism or something else"* — this is a causal claim (funding → editorial position) presented as observation. The **factual** component (reported Dubai-based investors in TCN) is verifiable. The **causal** component (that this explains his isolationism) is model-dependent and should be flagged as a hypothesis, not a finding. The Logic System forbids presenting model-dependent interpretations as known truths. As currently written, the profile commits that category error.
+- *"Softness on certain authoritarian regimes"* — value-judgment ("softness") layered on top of a factual claim (booked interviews with Putin, Dugin, Assad-connected figures). The factual claim is sourceable; the value-judgment should be either separated or removed, because it pre-decides the question the omission-analysis layer is supposed to answer.
+- *"The single most important thing to track"* — editorial framing, not assessment. Replaceable with a concrete tracking rule: *if Carlson's isolationism is principled, his coverage of non-funding-aligned authoritarian actions (Chinese Uyghur policy, Venezuelan politics) should be symmetric with his coverage of US interventions; asymmetry would be evidence for interest-alignment.* That is a testable prediction; the current framing is a suspicion.
+
+**Omissions in the profile's own frame:**
+- No mention of populism, nationalism, or authority as separate axes — the three dimensions that define Carlson. The profile is trying to describe a paleoconservative with vocabulary that doesn't contain the word "paleoconservative."
+- No per-event sourcing. Every axis score is an assertion; none is traceable to a specific monologue, interview, or segment. The revised doc fixes this; the original is unauditable.
+- No distinction between principled isolationism and interest-aligned isolationism as separately testable hypotheses. The profile conflates them, then flags the conflation as "tension."
+
+**Logic System verdict:** This profile is a clean illustration of why the 9-axis expansion was necessary. Every interpretive problem it identifies in Carlson ("defies categorization," "doesn't fit the mold," "raises questions") is actually a problem with the 5-axis model staring back at its author. The subject is coherent; the instrument was not. Replace with the entry in `revised_profile_breakdown.md`.
+
 ---
 
 ### Candace Owens

@@ -1,13 +1,28 @@
 /**
- * Multi-Axis Political Positioning Model
+ * Multi-Axis Political Positioning Model (9 axes)
  *
- * People are not simply "left" or "right." This model places individuals
- * and organizations on multiple independent axes, each representing a
- * genuine ideological spectrum with clearly defined poles.
+ * People and outlets are not simply "left" or "right." This model places
+ * content on multiple INDEPENDENT axes, each representing a genuine
+ * analytical dimension with clearly defined poles that a critic from
+ * either side would recognize as fair.
+ *
+ * History: The first version used 5 axes: economic, speech, progressive,
+ * liberal-conservative, foreign-policy. The "progressive" axis was the
+ * most confused — it conflated two separable questions (which analytical
+ * frame the content uses, and which equality model it reaches for) and
+ * its naming privileged one side's vocabulary. In the April 2026 revision
+ * it was decomposed into CAUSATION-ANALYSIS and EQUALITY-MODEL. Three new
+ * axes were added — POPULISM, NATIONALISM, and AUTHORITY — which are all
+ * load-bearing in the current US media environment and were previously
+ * invisible to the model (making a populist-right look identical to a
+ * traditional-right).
  *
  * IMPORTANT: These axes are INDEPENDENT. A person can be a free-speech
- * capitalist progressive isolationist. The axes don't bundle together
- * the way party affiliation implies.
+ * capitalist structural-analysis isolationist populist authoritarian.
+ * The axes don't bundle together the way party affiliation implies, and
+ * the clusters that DO appear (traditional-conservative, populist-right,
+ * progressive-left, etc.) are emergent patterns of the axes, not built
+ * into them.
  *
  * ═══════════════════════════════════════════════════════════════════════
  *
@@ -41,35 +56,54 @@
  *
  * ═══════════════════════════════════════════════════════════════════════
  *
- * AXIS 3: Progressive ←→ Non-Progressive
+ * AXIS 3: Causation Analysis — Structural ←→ Individual
  *
- *   HISTORICAL CONTEXT: Progressivism originates in the late 1800s
- *   (Progressive Era, ~1890s-1920s). The core thread: society has
- *   structural inequities that disadvantage certain groups, and
- *   government/institutional intervention should create EQUITY —
- *   targeted support that offsets individual deficits (poverty,
- *   discrimination, disability, geography, etc.).
+ *   Structural: Outcomes are explained primarily through institutions,
+ *   history, incentives, and distributions of power. Disparities reflect
+ *   how the system is set up. Crime, poverty, and success all have
+ *   system-level drivers that dwarf individual variance.
  *
- *   Progressive: People start from unequal positions due to factors
- *   beyond their control. A just system provides equity — differential
- *   support calibrated to individual disadvantage — to produce more
- *   equal outcomes. The Pareto distribution, when applied to human
- *   wellbeing, is a market failure that policy should correct.
+ *   Individual: Outcomes are explained primarily through choices,
+ *   character, effort, and merit. Systemic factors exist but are secondary
+ *   to individual agency. Explanations that dissolve agency are seen as
+ *   excuse-making.
  *
- *   Non-Progressive: Equity interventions introduce friction, perverse
- *   incentives, and bureaucratic overhead that reduce total system
- *   output. The Pareto distribution is a natural emergent property of
- *   complex systems — attempting to flatten it doesn't uplift the
- *   bottom, it degrades the whole. Equality of opportunity (not
- *   outcome) is the achievable and desirable goal.
- *
- *   THIS IS NOT THE SAME AS LIBERAL/CONSERVATIVE. A conservative can
- *   support progressive policies (e.g., Teddy Roosevelt was a
- *   progressive Republican). A liberal can oppose equity mandates.
+ *   Neither frame is inherently correct. Real causal explanations almost
+ *   always require both levels. This axis measures WHICH FRAME the content
+ *   defaults to, not whether the frame's conclusion is left or right. A
+ *   right-populist critique of "globalist elites" is structural reasoning.
+ *   A progressive framing of a specific crime as personal culpability is
+ *   individual reasoning. The frame is not tribal.
  *
  * ═══════════════════════════════════════════════════════════════════════
  *
- * AXIS 4: Liberal ←→ Conservative
+ * AXIS 4: Equality Model — Outcome ←→ Opportunity
+ *
+ *   Outcome Equality: The endpoint distribution should be more equal.
+ *   Equity interventions, redistribution, and representation targets are
+ *   legitimate tools for achieving this. A society with large outcome
+ *   disparities is a failed one regardless of how the disparities arose.
+ *
+ *   Opportunity Equality: The starting conditions should be equal; the
+ *   endpoint should reflect individual choice and merit. Equity
+ *   interventions that alter endpoints distort the signal value of effort
+ *   and produce perverse incentives.
+ *
+ *   Neither is inherently more compassionate or more realistic. This axis
+ *   measures the TARGET of fairness claims, not whether fairness matters.
+ *   A classical liberal can favor outcome equality in specific domains
+ *   (healthcare, K-12 education) while favoring opportunity equality
+ *   elsewhere — that's a legitimate mid-axis profile.
+ *
+ *   THIS IS NOT THE SAME AS CAUSATION ANALYSIS. A structural analyst can
+ *   favor opportunity equality (the system distorts opportunity — fix the
+ *   system so opportunity is real). An individual analyst can favor
+ *   outcome equality (some problems require intervention regardless of
+ *   individual choice). The two axes are orthogonal.
+ *
+ * ═══════════════════════════════════════════════════════════════════════
+ *
+ * AXIS 5: Liberal ←→ Conservative
  *
  *   Liberal: Wants to maximize equality of opportunity and individual
  *   freedom regardless of existing systems. Willing to change the status
@@ -83,17 +117,18 @@
  *   rapid change — and the burden of proof is on those proposing it.
  *   Stability and continuity have inherent value.
  *
- *   KEY DISTINCTION FROM PROGRESSIVE:
+ *   KEY DISTINCTIONS:
  *   - Liberal/conservative is about PACE AND RISK TOLERANCE for change.
- *   - Progressive/non-progressive is about WHETHER EQUITY INTERVENTIONS
- *     are the right mechanism for change.
- *   - A liberal might want change through deregulation (not progressive).
- *   - A progressive might want equity programs preserved (conservative
- *     in the sense of maintaining existing programs).
+ *   - Causation-analysis is about the explanatory frame.
+ *   - Equality-model is about the target of fairness claims.
+ *   - A liberal might want change through deregulation (individual-causation,
+ *     opportunity-equality).
+ *   - A conservative might defend existing redistribution programs
+ *     (status quo preservation + outcome-equality).
  *
  * ═══════════════════════════════════════════════════════════════════════
  *
- * AXIS 5: Foreign Policy — Isolationist ←→ War Hawk
+ * AXIS 6: Foreign Policy — Isolationist ←→ War Hawk
  *
  *   Isolationist: Prioritize domestic affairs. Avoid foreign entanglements,
  *   military interventions, and alliance obligations that don't directly
@@ -108,6 +143,65 @@
  *   diplomatic pressure without military action.
  *
  * ═══════════════════════════════════════════════════════════════════════
+ *
+ * AXIS 7: Populism ←→ Institutionalism
+ *
+ *   Populist: "The people" are the legitimate source of authority.
+ *   Institutions (media, academia, courts, agencies, international
+ *   bodies, corporate elites) are treated as corrupt or captured —
+ *   their claims to expertise are presumptively suspect.
+ *
+ *   Institutionalist: Institutions are legitimate custodians of
+ *   expertise and process. Populist appeals are threats to rule-of-law
+ *   stability. Errors are corrected from within the institutional
+ *   framework, not by bypassing it.
+ *
+ *   This axis cuts across left/right cleanly. Bernie Sanders and
+ *   Donald Trump are both populists. Bill Kristol and Rachel Maddow
+ *   are both institutionalists. A model without this axis cannot
+ *   distinguish a populist-right from a traditional-right, or a
+ *   populist-left from an establishment-liberal.
+ *
+ * ═══════════════════════════════════════════════════════════════════════
+ *
+ * AXIS 8: Nationalism ←→ Globalism
+ *
+ *   Nationalist: The nation-state is the primary unit of political,
+ *   economic, and moral obligation. Trade, immigration, identity, and
+ *   policy are judged by national interest.
+ *
+ *   Globalist: Cross-national institutions, global markets, and
+ *   universalist obligations are legitimate constraints on national
+ *   decision-making.
+ *
+ *   Distinct from foreign policy. The four combinations all exist:
+ *   nationalist+hawk (neocon), nationalist+isolationist (paleocon),
+ *   globalist+hawk (liberal internationalist), globalist+isolationist
+ *   (progressive non-interventionist). Nationalist is not a slur;
+ *   globalist is not a slur. Both describe stable positions held
+ *   across the political spectrum.
+ *
+ * ═══════════════════════════════════════════════════════════════════════
+ *
+ * AXIS 9: Authority ←→ Liberty
+ *
+ *   Libertarian: Default to individual autonomy. State intervention in
+ *   behavior requires strong justification. This applies across domains
+ *   (speech, commerce, sexuality, religion, association).
+ *
+ *   Authoritarian: Default to institutional authority. Individual
+ *   behavior should be shaped toward collective ends. Does NOT mean
+ *   fascist — social-democratic welfare states score moderately
+ *   authoritarian by this definition.
+ *
+ *   Orthogonal to economic freedom. A progressive can be libertarian
+ *   on speech and sexuality while being interventionist on commerce.
+ *   A traditional conservative can be libertarian on commerce while
+ *   being authoritarian on culture. Most people are SELECTIVELY
+ *   libertarian or authoritarian depending on the domain — a consistent
+ *   cross-domain position is rare.
+ *
+ * ═══════════════════════════════════════════════════════════════════════
  */
 
 // ─── Core Types ─────────────────────────────────────────────────────
@@ -115,9 +209,20 @@
 export type AxisId =
   | "economic"
   | "speech"
-  | "progressive"
+  | "causation-analysis"   // replaces half of the old "progressive" axis
+  | "equality-model"       // replaces the other half of the old "progressive" axis
   | "liberal-conservative"
-  | "foreign-policy";
+  | "foreign-policy"
+  | "populism"
+  | "nationalism"
+  | "authority";
+
+/**
+ * DEPRECATED axis ids kept as a string union for backward compatibility
+ * with rows already written before the April 2026 multi-axis expansion.
+ * Do not use for new code — use AxisId instead.
+ */
+export type LegacyAxisId = "progressive";
 
 export interface PoliticalAxis {
   id: AxisId;
@@ -131,9 +236,37 @@ export interface PoliticalAxis {
   independenceNotes: string;
 }
 
+/**
+ * Authority sub-domains. The authority axis (libertarian ↔ authoritarian)
+ * is the one axis where almost no real-world subject holds a consistent
+ * position across domains — most are libertarian in some spheres and
+ * authoritarian in others. Averaging to a net number destroys the signal
+ * (the pattern IS the finding). When domain-split is present, consumers
+ * should read the sub-domains, not the aggregate value.
+ */
+export type AuthoritySubDomain =
+  | "speech"
+  | "health-bodily"
+  | "commerce-platform"
+  | "immigration"
+  | "culture-family";
+
+export interface SubDomainPosition {
+  domain: AuthoritySubDomain;
+  /** -1.0 (libertarian) to 1.0 (authoritarian) for this domain specifically */
+  value: number;
+  confidence: number;
+  evidence: string;
+  trend?: "moving-left" | "stable" | "moving-right";
+}
+
 export interface AxisPosition {
   axisId: AxisId;
-  /** -1.0 to 1.0. Negative = left label, positive = right label, 0 = center */
+  /**
+   * -1.0 to 1.0. Negative = left label, positive = right label, 0 = center.
+   * For the authority axis when subDomains is present, this is a weighted
+   * aggregate ONLY and should not be displayed without the sub-domain breakdown.
+   */
   value: number;
   /** Confidence in this assessment (0-1) */
   confidence: number;
@@ -141,6 +274,13 @@ export interface AxisPosition {
   evidence: string;
   /** Has this position shifted over time? */
   trend?: "moving-left" | "stable" | "moving-right";
+  /**
+   * Sub-domain breakdown. Currently only meaningful for the authority axis,
+   * where it is the primary representation — the aggregate `value` is a
+   * placeholder and the sub-domains carry the real information. If omitted,
+   * the subject has a uniform position on this axis across domains.
+   */
+  subDomains?: SubDomainPosition[];
 }
 
 export interface PoliticalProfile {
@@ -189,25 +329,40 @@ export const POLITICAL_AXES: PoliticalAxis[] = [
       "Free speech absolutism ≠ endorsing bad speech. It's about who holds the power to restrict.",
       "Reasonable censorship ≠ authoritarianism. It's about harm prevention.",
       "This is about INSTITUTIONAL power over speech, not social consequences.",
+      "People rarely hold a stable position here — they defend speech they agree with and restrict speech they don't. The axis measures the position AS APPLIED TO THE SPECIFIC CONTENT BEING ANALYZED, not a standing ideological stance.",
     ],
     independenceNotes:
       "Historically bipartisan. The ACLU (left) used to be free-speech absolutist. The religious right (right) used to favor censorship of obscenity. The alignment of these positions with left/right has flipped in the last decade.",
   },
   {
-    id: "progressive",
-    name: "Equity Approach",
-    leftLabel: "Progressive (Equity)",
-    rightLabel: "Non-Progressive (Efficiency)",
+    id: "causation-analysis",
+    name: "Causation Framework",
+    leftLabel: "Structural Causation",
+    rightLabel: "Individual Causation",
     description:
-      "Should society provide targeted equity interventions to offset individual disadvantages, or do such interventions reduce overall system efficiency? Rooted in the Progressive Era (1890s-1920s).",
+      "When explaining an outcome (disparity, success, failure, crime, poverty), does the content attribute it to structural/systemic factors (institutions, history, incentives, distributions of power) or individual factors (choices, character, effort, merit)? Neither framework is inherently correct — they are different analytical frames, and real explanations usually require both.",
     misconceptions: [
-      "Progressive ≠ liberal. Teddy Roosevelt was a progressive REPUBLICAN.",
-      "Non-progressive ≠ heartless. The argument is about system-level effects, not individual compassion.",
-      "This is about EQUITY (targeted support) vs. EQUALITY (same rules for all), not about whether inequality exists.",
-      "The Pareto principle is central: progressives see it as a problem to correct; non-progressives see it as an emergent property of complex systems.",
+      "Structural ≠ left, individual ≠ right. A right-populist critique of 'the establishment' or 'globalist elites' is structural reasoning. A left-progressive framing of a specific crime as a matter of personal culpability is individual reasoning. The frame is not tribal.",
+      "This axis measures WHICH FRAME the content uses, not whether the frame's conclusion is left or right.",
+      "Content can cite both — it's scored on the DOMINANT framing, with mid-range values for balanced analysis.",
     ],
     independenceNotes:
-      "This is the most commonly confused axis. People conflate progressive with liberal, but they measure different things. Progressive is about WHETHER equity interventions work. Liberal/conservative is about the PACE of change and risk tolerance.",
+      "Independent from equality-model. A structural-causation analyst can believe in equality of opportunity (the system distorts opportunity and must be fixed structurally so opportunity is real). An individual-causation analyst can favor equality of outcome (some problems require intervention regardless of individual choice). The two axes are orthogonal.",
+  },
+  {
+    id: "equality-model",
+    name: "Equality Model",
+    leftLabel: "Outcome Equality",
+    rightLabel: "Opportunity Equality",
+    description:
+      "When the content invokes 'equality' or 'fairness,' which model is it reaching for? Outcome equality: the endpoint distribution should be more equal (equity, representation, redistribution). Opportunity equality: the starting conditions should be equal and the endpoint should reflect individual choice and merit.",
+    misconceptions: [
+      "Neither position is inherently more compassionate or more realistic. They are different theories of what a 'fair' society looks like.",
+      "Outcome equality ≠ communism. A classical liberal can favor outcome equality in specific domains (healthcare, K-12 education) while favoring opportunity equality elsewhere.",
+      "Opportunity equality ≠ social Darwinism. It usually includes a floor (basic education, infrastructure, rule of law) — the disagreement is about how much beyond the floor.",
+    ],
+    independenceNotes:
+      "Independent from causation-analysis. Also independent from economic axis: both communists and libertarians can favor opportunity equality (they just disagree about what generates opportunity). Both social democrats and populist nationalists can favor outcome equality (they just disagree about which outcomes to equalize).",
   },
   {
     id: "liberal-conservative",
@@ -218,12 +373,12 @@ export const POLITICAL_AXES: PoliticalAxis[] = [
       "Liberal: maximize equality and freedom by changing systems that produce unequal outcomes. Conservative: preserve the status quo of the previous 1-2 generations; stability and continuity have inherent value; the burden of proof is on those proposing change.",
     misconceptions: [
       "Conservative ≠ regressive. Conserving what works is different from rolling things back.",
-      "Liberal ≠ progressive. A liberal might want change through deregulation (anti-progressive).",
+      "Liberal ≠ progressive. A liberal might want change through deregulation.",
       "What is 'conservative' changes over time — today's status quo was yesterday's radical change.",
-      "A progressive who wants to PRESERVE existing equity programs is being conservative about those programs.",
+      "Someone who wants to PRESERVE an existing program (regardless of that program's content) is being conservative about it.",
     ],
     independenceNotes:
-      "Measures PACE AND RISK TOLERANCE for change, not the direction. Independent from the progressive axis: a liberal might want rapid deregulation (change, but non-progressive). A conservative might defend existing social programs (status quo preservation of progressive policies).",
+      "Measures PACE AND RISK TOLERANCE for change, not the direction. Independent from causation-analysis and equality-model: a liberal might want rapid deregulation (structural change + opportunity equality). A conservative might defend existing redistribution (status quo preservation + outcome equality).",
   },
   {
     id: "foreign-policy",
@@ -239,6 +394,51 @@ export const POLITICAL_AXES: PoliticalAxis[] = [
     ],
     independenceNotes:
       "Highly independent from other axes. The progressive left and populist right often share isolationist tendencies. Neoconservatives (right) and liberal interventionists (left) share hawkish tendencies. This axis frequently cuts across all others.",
+  },
+  {
+    id: "populism",
+    name: "Populism vs Institutionalism",
+    leftLabel: "Populist",
+    rightLabel: "Institutionalist",
+    description:
+      "Does the content treat 'the people' as the legitimate source of authority and portray institutions (media, academia, courts, agencies, international bodies, corporate elites) as corrupt or captured? Or does it treat institutions as legitimate custodians of expertise and process, and populist appeals as threats to rule-of-law stability?",
+    misconceptions: [
+      "Populist ≠ right-wing. Bernie Sanders and Donald Trump are both populists — they disagree about who 'the elite' is (Wall Street vs. academic/media), not about whether elites are captured.",
+      "Institutionalist ≠ liberal. A traditional conservative defending the Constitution and the Fed is an institutionalist. A progressive defending peer-reviewed science and the administrative state is too.",
+      "This is about WHO HAS LEGITIMATE AUTHORITY, not about specific policy positions.",
+    ],
+    independenceNotes:
+      "The single axis that most cleanly cuts across left and right in the current US media environment. Tucker Carlson (right) and Krystal Ball (left) are both populists. Bill Kristol (right) and Rachel Maddow (left) are both institutionalists. A model that ignores this axis cannot distinguish populist-right from traditional-right, or populist-left from establishment-liberal.",
+  },
+  {
+    id: "nationalism",
+    name: "Nationalism vs Globalism",
+    leftLabel: "Nationalist",
+    rightLabel: "Globalist",
+    description:
+      "Does the content treat the nation-state as the primary unit of political/economic/moral obligation (trade, immigration, identity, policy all judged by national interest)? Or does it treat cross-national institutions, global markets, and universalist obligations as legitimate constraints on national decision-making?",
+    misconceptions: [
+      "Nationalist ≠ xenophobic. Economic nationalism can coexist with civic pluralism. Lincoln and FDR were nationalists by this definition.",
+      "Globalist is not a slur in this model. It describes a position — that cross-national institutions and cooperation are legitimate constraints. It is a stable position held by people across the political spectrum.",
+      "This axis is SEPARATE from foreign-policy interventionism. A nationalist can be interventionist (project national power) or isolationist (don't waste national resources abroad). A globalist can be interventionist (uphold international order) or isolationist (let institutions handle it).",
+    ],
+    independenceNotes:
+      "Distinct from foreign-policy. The four combinations (nationalist+hawk, nationalist+isolationist, globalist+hawk, globalist+isolationist) all exist and are politically meaningful. Neoconservatives are nationalist+hawk. Paleoconservatives are nationalist+isolationist. Liberal internationalists are globalist+hawk. Progressive non-interventionists are globalist+isolationist.",
+  },
+  {
+    id: "authority",
+    name: "Authority vs Liberty",
+    leftLabel: "Libertarian",
+    rightLabel: "Authoritarian",
+    description:
+      "How much power should the state / institutions have over individual behavior? The vertical of the classic political compass. Libertarian: default to individual autonomy, state intervention requires strong justification. Authoritarian: default to institutional authority, individual behavior should be shaped toward collective ends.",
+    misconceptions: [
+      "This is NOT the same as economic freedom. A progressive can be libertarian on speech and sexuality while being interventionist on commerce. A traditional conservative can be libertarian on commerce while being authoritarian on culture.",
+      "Authoritarian ≠ fascist. Social-democratic welfare states can score moderately authoritarian (high state capacity, paternalist nudges). That doesn't make them fascist.",
+      "Score the content's ATTITUDE toward state power, not its party label.",
+    ],
+    independenceNotes:
+      "Orthogonal to everything else. The political compass treats this as a full second dimension for a reason. A consistent position on this axis (e.g., 'I'm libertarian on everything') is rare — most people are selectively libertarian or authoritarian depending on which domain. Our classifier should flag the cross-domain CONSISTENCY separately when we have enough data.",
   },
 ];
 
@@ -266,12 +466,19 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         trend: "moving-right",
       },
       {
-        axisId: "progressive",
+        axisId: "causation-analysis",
         value: -0.5,
-        confidence: 0.6,
+        confidence: 0.5,
         evidence:
-          "Consistently frames stories through an equity lens. Supports targeted interventions for disadvantaged groups.",
+          "Tends toward structural framing of social issues (police reform, healthcare access, income inequality). Individual-responsibility framing appears primarily in stories about public figures, not systemic topics.",
         trend: "moving-left",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.4,
+        confidence: 0.5,
+        evidence:
+          "Mixed. Usually invokes opportunity language explicitly but segments on identity-based representation and outcome disparities lean toward outcome-equality framing.",
       },
       {
         axisId: "liberal-conservative",
@@ -288,10 +495,31 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         evidence:
           "Rarely covers foreign policy in depth. No strong signal.",
       },
+      {
+        axisId: "populism",
+        value: 0.1,
+        confidence: 0.3,
+        evidence:
+          "Neither strongly anti-establishment nor a defender of institutions. Criticizes specific institutions case-by-case rather than from a consistent stance.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.3,
+        confidence: 0.3,
+        evidence:
+          "Mild globalist lean — treats international cooperation as default good, but doesn't make it a theme.",
+      },
+      {
+        axisId: "authority",
+        value: -0.1,
+        confidence: 0.3,
+        evidence:
+          "Insufficient signal. Defers to platform decisions on speech (mild authoritarian), defers to individual choice on personal matters (mild libertarian).",
+      },
     ],
     ideologicalCoherence: 0.6,
     notes:
-      "Profile has shifted notably leftward over the past decade. Early content showed more ideological diversity. Current content clusters on the progressive-liberal side with less engagement with opposing views.",
+      "Profile has shifted notably leftward over the past decade. Early content showed more ideological diversity. Current content clusters on the liberal side with less engagement with opposing views. Populism, nationalism, and authority scores are low-confidence — DeFranco's format (news recap) doesn't foreground these questions.",
   },
   {
     entityId: "tucker-carlson",
@@ -313,11 +541,18 @@ export const SEED_PROFILES: PoliticalProfile[] = [
           "Strong free-speech advocate. Opposes platform censorship and government involvement in content moderation.",
       },
       {
-        axisId: "progressive",
+        axisId: "causation-analysis",
+        value: -0.2,
+        confidence: 0.6,
+        evidence:
+          "Frequently uses structural/systemic framing — against 'the ruling class,' 'managerial elites,' 'woke capital,' and legacy institutions. Individual-responsibility framing is used selectively (e.g., against political opponents). Net: structural-leaning, applied asymmetrically.",
+      },
+      {
+        axisId: "equality-model",
         value: 0.6,
         confidence: 0.7,
         evidence:
-          "Opposes equity mandates and DEI. Frames progressive interventions as eroding meritocracy and efficiency.",
+          "Strongly opposes outcome-equality framings and DEI. Invokes opportunity-equality language explicitly and frequently. Attacks equity mandates as punishment of merit.",
       },
       {
         axisId: "liberal-conservative",
@@ -334,10 +569,73 @@ export const SEED_PROFILES: PoliticalProfile[] = [
           "Strongly isolationist. Opposes Ukraine aid, Middle East intervention. However, post-Fox content raises questions about alignment with specific foreign interests (Dubai, Russia interviews).",
         trend: "moving-left",
       },
+      {
+        axisId: "populism",
+        value: -0.8,
+        confidence: 0.9,
+        evidence:
+          "Defining example of populist positioning. Frames 'the ruling class,' 'the regime,' 'legacy media,' and 'the establishment' as illegitimate captors. Treats folk wisdom and ordinary-people skepticism as the authentic source of authority.",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.7,
+        confidence: 0.8,
+        evidence:
+          "Strong nationalist — defines American interest as primary obligation, treats international institutions (WHO, NATO, UN) as constraints to be pushed back against. This is distinct from his isolationism — he is nationalist + isolationist (paleoconservative profile).",
+      },
+      {
+        axisId: "authority",
+        value: -0.1,
+        confidence: 0.3,
+        evidence:
+          "Domain-split; the aggregate is a placeholder, read subDomains. Libertarian on speech/health/commerce, authoritarian on immigration/culture. The pattern (libertarian on individual-state conflicts; authoritarian on civic cohesion questions) is characteristic of the paleoconservative cluster and is the finding, not the average.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.8,
+            confidence: 0.85,
+            evidence:
+              "Consistent opposition to platform deplatforming, content-moderation expansion, Twitter Files coverage 2022–2023.",
+            trend: "stable",
+          },
+          {
+            domain: "health-bodily",
+            value: -0.7,
+            confidence: 0.75,
+            evidence:
+              "Opposed COVID vaccine mandates and lockdown enforcement 2021–2022. Frames bodily autonomy as state-overreach threshold.",
+            trend: "stable",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.5,
+            confidence: 0.65,
+            evidence:
+              "Opposes platform moderation power and ESG-driven corporate governance. Not a pure-market libertarian — supports tariffs and industrial policy.",
+            trend: "stable",
+          },
+          {
+            domain: "immigration",
+            value: 0.6,
+            confidence: 0.75,
+            evidence:
+              "Repeated advocacy for immigration restriction and enforcement expansion. Frames enforcement as civic/economic defense.",
+            trend: "stable",
+          },
+          {
+            domain: "culture-family",
+            value: 0.4,
+            confidence: 0.6,
+            evidence:
+              "Advocates policy support for traditional family structures, declining birth rate as policy concern. Authoritarian-leaning but stops short of legal reversal of social changes.",
+            trend: "stable",
+          },
+        ],
+      },
     ],
-    ideologicalCoherence: 0.5,
+    ideologicalCoherence: 0.78,
     notes:
-      "Unusual profile: populist economics (left-coded), strong free speech (traditionally left, now right-coded), anti-progressive, conservative, but strongly isolationist. Post-Fox trajectory adds foreign interest questions that don't fit neatly on any axis.",
+      "With the expanded axis set, Carlson's profile becomes MORE coherent, not less (old 5-axis coherence: 0.50, apparent contradictions; 9-axis: 0.78, textbook paleoconservative cluster). Central test case for the April 2026 expansion: every apparent contradiction in the 5-axis model (pro-market + anti-corporate; conservative + isolationist; free-speech + traditionalist) resolves under the 9-axis lens into a single rule set: nation-state primacy + elite-capture thesis + traditional culture + non-intervention + structural causation directed upward at institutions. The old 5-axis model could not distinguish him from a traditional-conservative (Shapiro) without mislabeling something. Post-Fox foreign-interest questions (Dubai funding, Putin/Dugin interviews) are a separate motive concern, not an ideology concern, and belong in omission-analysis rather than axis scoring.",
   },
   {
     entityId: "candace-owens",
@@ -359,11 +657,18 @@ export const SEED_PROFILES: PoliticalProfile[] = [
           "Pro-free-speech, anti-censorship. But primarily frames this in terms of conservative speech being censored.",
       },
       {
-        axisId: "progressive",
+        axisId: "causation-analysis",
+        value: 0.3,
+        confidence: 0.5,
+        evidence:
+          "Mixed. Individual-responsibility framing on race, poverty, and personal choices. But also uses structural framing against 'the globalists' and specific institutional targets. Not a consistent individual-causation voice.",
+      },
+      {
+        axisId: "equality-model",
         value: 0.7,
         confidence: 0.7,
         evidence:
-          "Strongly anti-equity, anti-DEI. Frames progressive policies as harmful to the communities they claim to help.",
+          "Strongly opposes outcome-equality framings. DEI and affirmative action are consistent targets. Argues for opportunity-equality frame, especially in content aimed at minority audiences.",
       },
       {
         axisId: "liberal-conservative",
@@ -380,10 +685,31 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         evidence:
           "Leans isolationist but inconsistently. Positions seem driven by contrarianism rather than a coherent foreign policy philosophy.",
       },
+      {
+        axisId: "populism",
+        value: -0.5,
+        confidence: 0.6,
+        evidence:
+          "Strongly anti-establishment on media, medicine (vaccine skepticism), and finance. Treats elite consensus as prima facie suspect. But will defer to authority figures she agrees with — not a pure populist.",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.4,
+        confidence: 0.5,
+        evidence:
+          "American nationalist rhetoric in earlier content; anti-Zionist and anti-Israel positions in recent content cut against a simple nationalist reading. Signal is ideologically inconsistent.",
+      },
+      {
+        axisId: "authority",
+        value: 0.0,
+        confidence: 0.3,
+        evidence:
+          "Insufficient signal. Libertarian on speech and bodily autonomy; authoritarian on cultural conformity and in-group discipline.",
+      },
     ],
     ideologicalCoherence: 0.4,
     notes:
-      "Started as a coherent conservative voice. Ideological coherence has declined as positions increasingly driven by engagement/controversy rather than consistent philosophy. Conspiracy content doesn't map to any axis — it's orthogonal to political ideology.",
+      "Started as a coherent conservative voice. Ideological coherence has declined as positions increasingly driven by engagement/controversy rather than consistent philosophy. Conspiracy content doesn't map to any axis — it's orthogonal to political ideology. Low populism confidence reflects inconsistency, not absence.",
   },
   {
     entityId: "nick-fuentes",
@@ -405,11 +731,18 @@ export const SEED_PROFILES: PoliticalProfile[] = [
           "Advocates free speech, but primarily instrumentally — as protection for his own speech. Less principled defense of speech he disagrees with.",
       },
       {
-        axisId: "progressive",
-        value: 0.9,
+        axisId: "causation-analysis",
+        value: -0.6,
+        confidence: 0.6,
+        evidence:
+          "Heavy structural-causation framing — explains virtually every outcome in terms of elite conspiracy, demographic change, or institutional capture. Individual agency rarely invoked except for in-group heroes. Despite being right-coded, his reasoning style is almost entirely structural.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.8,
         confidence: 0.8,
         evidence:
-          "Strongly anti-equity, anti-progressive. Views progressive policies as actively destructive.",
+          "Strongly opposes outcome-equality framings. Argues opportunity-equality is already too generous — explicitly favors hierarchical / merit-based outcomes without equity interventions.",
       },
       {
         axisId: "liberal-conservative",
@@ -425,10 +758,31 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         evidence:
           "America First isolationism. Opposes most foreign intervention and aid.",
       },
+      {
+        axisId: "populism",
+        value: -0.9,
+        confidence: 0.9,
+        evidence:
+          "Extreme populist positioning. All legitimate authority sits with 'the groyper base'; every institution is cast as an illegitimate captor. One of the clearest populism signals in the seed set.",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.9,
+        confidence: 0.9,
+        evidence:
+          "Defining nationalist voice. National/ethnic identity is the primary unit of analysis. All globalist frameworks rejected explicitly.",
+      },
+      {
+        axisId: "authority",
+        value: 0.7,
+        confidence: 0.7,
+        evidence:
+          "Authoritarian-leaning. Explicitly favors hierarchical social order, centralized enforcement of cultural norms, and punishment of out-groups. Libertarian only on speech for the in-group.",
+      },
     ],
-    ideologicalCoherence: 0.7,
+    ideologicalCoherence: 0.8,
     notes:
-      "CRITICAL: This profile has a known PERSONA DIVERGENCE. Public-facing content is moderated; personal streaming content is significantly more extreme. Scores here represent the blended assessment. The private persona would score more extreme on every axis. This divergence is itself a data point — it suggests strategic positioning relative to the Overton window.",
+      "CRITICAL: This profile has a known PERSONA DIVERGENCE. Public-facing content is moderated; personal streaming content is significantly more extreme. Scores here represent the blended assessment. The private persona would score more extreme on every axis. Coherence is higher in the expanded model — reactionary + populist + nationalist + authoritarian is a textbook integralist-right profile.",
   },
   {
     entityId: "ben-shapiro",
@@ -450,11 +804,18 @@ export const SEED_PROFILES: PoliticalProfile[] = [
           "Pro-free-speech. Opposes campus speech codes and platform censorship. Has spoken at university free speech events.",
       },
       {
-        axisId: "progressive",
-        value: 0.6,
-        confidence: 0.7,
+        axisId: "causation-analysis",
+        value: 0.7,
+        confidence: 0.8,
         evidence:
-          "Opposes equity mandates, DEI, affirmative action. Argues for equality of opportunity over equality of outcome.",
+          "Strong individual-causation framing. Explains outcomes through individual choices, effort, and values. Explicitly rejects structural explanations in most domains. Uses 'personal responsibility' as a recurring organizing principle.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.8,
+        confidence: 0.8,
+        evidence:
+          "Defining opportunity-equality voice. Argues explicitly against outcome-equality mandates, DEI, and affirmative action from a principled position, not a reactive one.",
       },
       {
         axisId: "liberal-conservative",
@@ -470,10 +831,31 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         evidence:
           "Interventionist, particularly regarding Israel and Middle East policy. Supports strong military posture.",
       },
+      {
+        axisId: "populism",
+        value: 0.5,
+        confidence: 0.7,
+        evidence:
+          "Institutionalist-leaning. Defends the courts, the Constitution, the rule of law, and institutional process as legitimate sources of authority. Criticizes specific institutions (academia, media) but from within a broader institutionalist framework.",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.2,
+        confidence: 0.5,
+        evidence:
+          "Mild nationalist. Favors American primacy and a pro-Israel alliance frame, but supports international trade and alliance structures — not a pure nationalist.",
+      },
+      {
+        axisId: "authority",
+        value: 0.1,
+        confidence: 0.5,
+        evidence:
+          "Mild authoritarian-leaning on cultural questions (favors institutional enforcement of traditional norms); libertarian on economics. Net position sits near center.",
+      },
     ],
-    ideologicalCoherence: 0.8,
+    ideologicalCoherence: 0.85,
     notes:
-      "Highly coherent ideological profile — positions are internally consistent and predictable. Uses rapid debate style that can itself be a vector for fallacies (particularly gish gallop). Coherence doesn't mean correctness, but it does mean positions are philosophy-driven rather than engagement-driven.",
+      "Highly coherent ideological profile — positions are internally consistent and predictable across the expanded axis set. Traditional conservative + opportunity-equality + institutionalist + interventionist. Uses rapid debate style that can itself be a vector for fallacies (particularly gish gallop). Coherence doesn't mean correctness, but it does mean positions are philosophy-driven rather than engagement-driven.",
   },
 ];
 
