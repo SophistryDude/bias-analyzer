@@ -641,9 +641,10 @@ Piker's coverage of the Israel-Hamas conflict from October 2023 onward correlate
 ### Destiny (Steven Bonnell II)
 
 **Platform:** YouTube, Kick (post-Twitch ban), X
-**Current Leaning:** Center-Left
-**Ideological Coherence:** 0.55 (mixed)
-**Driver:** Philosophy-driven
+**Current Leaning:** Institutionalist Center-Left (method-coherent)
+**Ideological Coherence:** 0.80 (high — see Logic System note)
+**Rhetorical Style Variance:** 0.75 (very high — real-time debate, Socratic stress-testing, takes provisional positions)
+**Driver:** Philosophy-driven (method-coherent, not position-coherent — see Logic System note)
 
 #### Bias Trajectory
 
@@ -652,38 +653,77 @@ Piker's coverage of the Israel-Hamas conflict from October 2023 onward correlate
 | ~2013 | Center-Left | Began political streaming on Twitch. Debate-format content with interlocutors across the political spectrum. |
 | ~2020 | Center-Left | Supported Biden in 2020 election. Distanced from progressive left over disputes about debate norms and specific positions. |
 | ~2023 | Center-Left | Banned from Twitch in late 2023 for stated terms-of-service violations. Moved to Kick and YouTube. |
-| ~2024 | Center-Left | Coverage of Israel-Hamas war generated public disputes with progressive figures including Hasan Piker. Strong stated support for Israel in conflict coverage. |
+| ~2024 | Center-Left | Coverage of Israel-Hamas war generated public disputes with progressive figures including Hasan Piker. Strong stated support for Israel. Endorsed Kamala Harris, organized canvassing for Sherrod Brown in Ohio. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.30 | Leaning Social Democrat | Stable | 60% |
-| Speech | -0.50 | Moderate Free Speech | Stable | 70% |
-| Progressive | -0.30 | Leaning Progressive | Stable | 55% |
-| Liberal/Conservative | -0.30 | Leaning Liberal | Stable | 60% |
-| Foreign Policy | +0.40 | Leaning Interventionist | Moving right → | 65% |
+| Economic | +0.30 | Leaning Social Democrat (regulated capitalism) | Stable | 70% |
+| Speech | −0.60 | Strong Free Speech | Stable | 75% |
+| Causation Analysis | +0.10 | Near-center (framework-switching by topic) | Stable | 50% |
+| Equality Model | +0.30 | Leaning Opportunity (utilitarian) | Stable | 60% |
+| Liberal/Conservative | −0.30 | Leaning Liberal (pragmatic) | Stable | 65% |
+| Foreign Policy | +0.40 | Leaning Interventionist | Moving right → | 70% |
+| Populism | +0.60 | Moderate Institutionalist | Stable | 75% |
+| Nationalism | +0.30 | Leaning Globalist (alliance-framed) | Stable | 55% |
+| Authority — Speech | −0.60 | Libertarian | Stable | 70% |
+| Authority — Culture/Family | −0.40 | Libertarian (utilitarian) | Stable | 55% |
+| Authority — Commerce/Platform | +0.10 | Near-center | Stable | 45% |
 
 #### Axis Justifications
 
-- **Economic (+0.30):** Supports universal healthcare and progressive taxation. Has not advocated nationalization or restructuring of property rights. Position aligns with center-left Democratic mainstream.
-- **Speech (-0.50):** Free-speech position is stated explicitly and has been consistent. Critical of deplatforming. Has continued to debate with figures across the political spectrum including those banned from major platforms.
-- **Progressive (-0.30):** Supports civil rights frameworks but has criticized specific progressive positions on gender, debate norms, and equity policy implementation. Position is mixed.
-- **Liberal/Conservative (-0.30):** Supports institutional reform on healthcare, voting rights, and criminal justice. Position is left-leaning but not radical.
-- **Foreign Policy (+0.40):** Strong stated support for Ukraine aid. Strong stated support for Israel in Israel-Hamas conflict. Position represents interventionist liberal framework. Position has become more explicit since 2022.
+- **Economic (+0.30):** Supports regulated capitalism with robust social safety nets, universal healthcare, progressive taxation. Has *explicitly and repeatedly* broken with socialist economics — this is what caused the Piker split. Argues for regulated capitalism as the best available system, not as an ideal. Stable, well-examined position.
+- **Speech (−0.60):** Strong free-speech position; continues to debate figures banned from major platforms. The 2023 Twitch permanent ban (for calling certain trans activists "subhuman" during a heated debate) illustrates a pattern: he pushes debate-format boundaries in real time and occasionally crosses lines he would redraw in retrospect. The stated position is more free-speech than institutional-left; the observed behavior is more bounded. Confidence is high on the position, moderate on the principled-vs-pushed-boundary application.
+- **Causation Analysis (+0.10):** **Near-center, framework-switching by topic.** His "rules-based utilitarianism" explicitly treats causation-frame as a tool rather than a tribal marker — he uses structural framing when evaluating structural outcomes (healthcare systems, criminal-justice outcomes) and individual framing when evaluating individual responsibility cases. This is unusual in the dataset and the 5-axis model has no way to score it. The low confidence reflects genuine frame-switching, not instability.
+- **Equality Model (+0.30):** Leaning opportunity-equality from a utilitarian framework — "does this policy produce better outcomes?" rather than "is this distribution just?" Willing to push back on progressive orthodoxy (trans athlete policy, crime statistics, specific racial-discourse claims). Not right-coded on this axis but distinctly less outcome-equality than Maddow or Uygur.
+- **Liberal/Conservative (−0.30):** Pragmatic liberal. Change-oriented on healthcare, voting rights, criminal justice, **but works within institutions** (canvassing, Harris endorsement, Sherrod Brown organizing). Not revolutionary.
+- **Foreign Policy (+0.40):** Strong stated support for Ukraine aid. Strong pro-Israel position through October 7 and Gaza war coverage — defended in long-form against Finkelstein, Rabbani on Lex Fridman. Frames as consistent with utilitarian ethics (outcomes + international law). This is the position most responsible for his break with the online left; whether it is genuinely derived from the framework or is partially contrarian is debatable, but it has survived sustained debate-format pressure.
+- **Populism (+0.60):** **Moderate institutionalist.** This is a key and often-missed feature. Destiny explicitly defends institutional process — works within the Democratic Party, canvasses for candidates, critiques the online left for being anti-institutional. The Piker break is populism-axis more than economic-axis: Piker is anti-establishment, Destiny is establishment-critical-but-working-within. The 5-axis model bundled both into "left" and missed the structural distinction that drives the split.
+- **Nationalism (+0.30):** Globalist-leaning within an alliance-based framework. Pro-Ukraine, pro-Israel positions are embedded in a liberal-internationalist / alliance-maintenance framework rather than nationalist framing.
+- **Authority (domain-split):** Libertarian on speech and culture/family (utilitarian civil-liberties framing). Near-center on commerce/platform. Authority profile is more uniform than most — his utilitarian framework produces moderate positions across domains rather than a split pattern.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Destiny at 0.55-0.70 (mixed-to-moderate) because his positions don't cluster neatly into any political tribe. Under 9-axis, coherence rises to **0.80**. This rehabilitation is important for a specific reason: Destiny is the cleanest case in the dataset of **method-coherence rather than position-coherence**. Most high-coherence profiles achieve their scores by clustering within a single political tribe (Shapiro right-conservative-institutionalist, Maddow establishment-left, Piker Marxist-internationalist). Destiny achieves it by consistently applying a meta-methodology (rules-based utilitarianism) to each question independently, producing positions that look scattered from any tribal vantage point but form a recognizable rule set when you score the methodology rather than the conclusions.
+
+**Method-coherence is a distinct coherence type** that `assessCoherenceType()` does not currently recognize. It is characterized by:
+1. Explicit meta-methodology the subject can articulate and defend
+2. Willingness to hold positions that conflict with available audiences/allies
+3. Framework-switching on causation-analysis by topic (the frame is instrumental, not tribal)
+4. High rhetorical-style variance (debate-format, real-time exploration) that gets conflated with ideological incoherence in 5-axis models
+
+Destiny is to method-coherence what Shapiro is to position-coherence and Kasparian is to evidence-responsive-updating. All three are philosophy-driven; they differ in what the philosophy is driving (a first-principle framework, a rule set for applying it, and a meta-framework for updating it respectively).
+
+**Cross-reference — Kasparian observation:** The user observation that Kasparian appears to have low coherence in her debates with Destiny but is actually updating her internal model is a Batch 2/Batch 3 convergence finding. Kasparian's meta-framework-stable domain-specific updating looks incoherent *to a method-coherent interlocutor* because the method-coherent interlocutor sees her as violating the meta-methodology (applying different frames to different topics) when in fact she is using the **same** meta-methodology Destiny uses (apply the frame that fits the evidence on each topic independently) — she just doesn't articulate the meta-methodology explicitly. These are two forms of philosophy-driven coherence that look like incoherence from a traditional position-coherence vantage point.
+
+**The Piker-Destiny comparison** is the single richest cross-source case in the dataset:
+- Same starting point (~2018 online left), same platform
+- Opposite trajectories (Piker far-left, Destiny held center-left)
+- Piker: Marxist position-coherence + engagement-optimized presentation (0.82 coherence, 0.85 variance)
+- Destiny: rules-based utilitarian method-coherence + real-time debate presentation (0.80 coherence, 0.75 variance)
+- Both high-coherence by 9-axis, via different coherence types
+- Separated on populism (+0.60 Destiny institutionalist vs −0.80 Piker populist — 1.4 gap)
+- Separated on causation-analysis (+0.10 vs −0.90 — 1.0 gap)
+- Separated on foreign-policy/nationalism cluster
+- The Israel/Palestine divergence is the event that made the axis split visible; the underlying structural split is much older
+
+Track their coverage of shared events as the prototype cross-source comparison for the omission/story system.
 
 #### Notes
 
-Destiny's debate format brings him into recorded discussions with figures across the political spectrum, including some he opposes. The Twitch ban in late 2023 followed a TOS dispute; Twitch and Destiny made public statements describing different aspects of the dispute. His foreign policy positions on Israel and Ukraine have generated documented disputes with other left-aligned commentators. Coherence score is moderate because his progressive axis position contains internal variation across topics. He has stated explicitly that his framework prioritizes consistent application of principles over alignment with any political coalition.
+Destiny's Socratic stress-testing rhetorical technique creates a specific measurement problem: it is hard to distinguish "I'm exploring this idea to test its logical foundation" from "I endorse this position" when watching live. The `rhetoricalStyleVariance` score (0.75) captures this — his presentation is highly variable across contexts (prepared essays vs. live debate, allied audiences vs. opposed interlocutors). The **prepared-vs-live** gap should be tracked by the rule engine as a meta-signal: positions held in both modes are first-principle positions; positions held only in live debate are exploratory and should be flagged accordingly. His `ideologicalCoherence` score (0.80) applies to his first-principle positions; the higher variance captures the exploratory behavior without contaminating the coherence measurement.
 
 ---
 
 ### Breaking Points (Krystal Ball & Saagar Enjeti)
 
 **Platform:** Independent (post-Hill Rising), YouTube, podcast
-**Current Leaning:** Mixed (left+right populist co-hosts)
-**Ideological Coherence:** N/A (two distinct co-hosts)
+**Current Leaning:** Populist Cross-Partisan (left-populist + right-populist co-hosts)
+**Ideological Coherence:** Krystal 0.78 | Saagar 0.78 (both high — see Logic System note)
 **Driver:** Philosophy-driven (both)
+
+This entry is a two-host profile. The show's thesis — that populist-left and populist-right have more in common with each other than with their respective establishments — is *literally* the populism-axis finding, and Breaking Points is the cleanest empirical test of that claim in the dataset. Each host is scored individually below; the show's structural properties are scored separately in the Logic System note.
 
 #### Bias Trajectory
 
@@ -694,45 +734,76 @@ Destiny's debate format brings him into recorded discussions with figures across
 | ~2021 | Mixed | Both departed The Hill in June 2021 to launch independent Breaking Points subscription show. |
 | ~2024 | Mixed | Continued daily independent operation. Coverage of 2024 election emphasized populist themes from both directions. |
 
-#### Multi-Axis Position (Krystal Ball)
+#### Multi-Axis Position — Krystal Ball (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.60 | Moderate Socialist | Stable | 75% |
-| Speech | -0.30 | Leaning Free Speech | Stable | 60% |
-| Progressive | -0.60 | Moderate Progressive | Stable | 70% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 65% |
-| Foreign Policy | -0.50 | Moderate Isolationist | Stable | 70% |
+| Economic | +0.60 | Moderate Socialist | Stable | 80% |
+| Speech | −0.40 | Leaning Free Speech | Stable | 65% |
+| Causation Analysis | −0.60 | Structural (class analysis) | Stable | 75% |
+| Equality Model | −0.50 | Moderate Outcome (willing to break with identity framing) | Stable | 65% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Stable | 70% |
+| Foreign Policy | −0.60 | Strong Non-Interventionist | Stable | 80% |
+| Populism | **−0.80** | **Strong Populist** | Stable | 90% |
+| Nationalism | −0.10 | Near-center | Stable | 55% |
+| Authority — Speech | −0.50 | Libertarian | Stable | 65% |
+| Authority — Commerce/Platform | +0.50 | Authoritarian (regulation-supportive) | Stable | 75% |
+| Authority — Culture/Family | −0.40 | Libertarian | Stable | 60% |
 
-#### Multi-Axis Position (Saagar Enjeti)
+#### Multi-Axis Position — Saagar Enjeti (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.10 | Centrist (populist) | Stable | 65% |
-| Speech | -0.50 | Moderate Free Speech | Stable | 65% |
-| Progressive | +0.50 | Moderate Non-Progressive | Stable | 65% |
-| Liberal/Conservative | +0.40 | Leaning Conservative | Stable | 65% |
-| Foreign Policy | -0.60 | Moderate Isolationist | Stable | 75% |
+| Economic | −0.10 | Near-center (industrial-policy populist) | Stable | 65% |
+| Speech | −0.50 | Moderate Free Speech | Stable | 65% |
+| Causation Analysis | −0.30 | Leaning Structural (on elite capture) | Stable | 60% |
+| Equality Model | +0.50 | Moderate Opportunity | Stable | 65% |
+| Liberal/Conservative | +0.40 | Leaning Conservative | Stable | 70% |
+| Foreign Policy | −0.60 | Strong Non-Interventionist | Stable | 80% |
+| Populism | **−0.80** | **Strong Populist** | Stable | 90% |
+| Nationalism | **−0.70** | **Strong Nationalist** | Stable | 80% |
+| Authority — Speech | −0.50 | Libertarian | Stable | 65% |
+| Authority — Immigration | +0.50 | Authoritarian | Stable | 65% |
+| Authority — Culture/Family | +0.30 | Leaning Authoritarian | Stable | 55% |
+| Authority — Commerce/Platform | +0.30 | Leaning Authoritarian (tariffs, industrial policy) | Stable | 60% |
 
-#### Axis Justifications (Krystal Ball)
+#### Axis Justifications — Krystal Ball
 
-- **Economic (+0.60):** Supports Medicare for All, $20 minimum wage, and progressive taxation. Former MSNBC contributor with consistent left-economic positions. Authored book on populism from a left perspective.
-- **Speech (-0.30):** Supports speech protections in general. Has criticized specific deplatforming decisions.
-- **Progressive (-0.60):** Supports race- and gender-equity policy frameworks.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on healthcare, finance, and electoral systems.
-- **Foreign Policy (-0.50):** Critical of Iraq War, Libya intervention, and Ukraine military aid escalation. Position has been stable.
+- **Economic (+0.60):** Medicare for All, $20 minimum wage, progressive taxation, pro-union, critical of corporate power. Authored book on left populism. Consistent left-economic framework.
+- **Speech (−0.40):** Supports speech protections. Critical of specific deplatforming decisions. More free-speech-leaning than institutional left — part of what makes the show format work.
+- **Causation Analysis (−0.60):** Class analysis is the dominant frame. Elite-capture framework applied to corporate media, donor politics, Democratic establishment.
+- **Equality Model (−0.50):** Outcome-equality but willing to break with identity-first framing when it conflicts with her economic populism. Distinct from Piker (pure outcome-equality) and Uygur (identity-and-class aligned).
+- **Liberal/Conservative (−0.50):** Change-oriented on healthcare, finance, electoral systems.
+- **Foreign Policy (−0.60):** Strong non-interventionist. Critical of Iraq, Libya, Ukraine escalation. One of the more principled non-interventionist positions in the left cluster.
+- **Populism (−0.80):** **Defining axis.** Left-populist — treats corporate Democrats, donor politics, institutional media as captured. Same populism score as Saagar. This is the entire thesis of the show.
+- **Nationalism (−0.10):** Near-center. Mild economic-nationalism inflection (pro-American-worker framing) but not a primary theme. **This is the key structural difference from Saagar (−0.70).**
+- **Authority (domain-split):** Libertarian on speech and culture/family; authoritarian on commerce/platform (regulation-supportive, break-up-corporations framing).
 
-#### Axis Justifications (Saagar Enjeti)
+#### Axis Justifications — Saagar Enjeti
 
-- **Economic (-0.10):** Supports tariffs, industrial policy, and worker protections. Critical of free-trade framework. Has expressed support for some social safety net programs. Position is non-doctrinaire on economic axis.
-- **Speech (-0.50):** Supports speech protections. Critical of corporate content moderation.
-- **Progressive (+0.50):** Opposes DEI and equity-based policy frameworks. Position has been stable.
-- **Liberal/Conservative (+0.40):** Supports preservation of cultural and institutional frameworks. Has criticized rapid social change.
-- **Foreign Policy (-0.60):** Opposed Iraq War in retrospect. Opposed Ukraine military aid escalation. Critical of US foreign military intervention generally.
+- **Economic (−0.10):** **Non-doctrinaire — the most interesting economic position in the right cluster.** Supports tariffs, industrial policy, worker protections. Critical of free-trade orthodoxy and libertarian-right economics. Sympathetic to targeted government intervention when it serves national interests. This is the "new right" / national-conservative economic position and sits at near-center on the capitalist-socialist axis while being clearly right on other axes. Illustrates that economic axis is independent from left-right identity.
+- **Speech (−0.50):** Supports speech protections; critical of corporate content moderation.
+- **Causation Analysis (−0.30):** Leaning structural — uses elite-capture framing when criticizing managerial class, donor politics, corporate media. Not as extreme as Carlson (−0.50) or Fuentes (−0.80).
+- **Equality Model (+0.50):** Opposes DEI and equity-based policy frameworks. Moderate — not reactionary.
+- **Liberal/Conservative (+0.40):** Traditionalist on culture; supports preservation of cultural and institutional frameworks. Less extreme than Shapiro or Carlson.
+- **Foreign Policy (−0.60):** Strong non-interventionist; opposed Iraq in retrospect, opposed Ukraine military aid escalation. Consistent with Carlson but less interview-subject-extreme.
+- **Populism (−0.80):** **Defining axis.** Right-populist — same populism score as Krystal. Treats Washington establishment, donor politics, mainstream media as captured by consensus interests.
+- **Nationalism (−0.70):** **Strong nationalist** — this is the primary structural difference from Krystal. Nation-state as primary unit of political/economic/moral obligation. His economic populism is nationalist-economic (tariffs, industrial policy, America-first trade). Places him in the paleoconservative / America First nationalism quadrant alongside Carlson and (in different form) Fuentes.
+- **Authority (domain-split):** Libertarian on speech; authoritarian on immigration, culture/family, and commerce (tariffs + industrial policy count as authoritarian-on-commerce sub-domain positions).
+
+#### Logic System Note on Coherence
+
+**The Breaking Points finding is the single cleanest empirical test of the populism-axis expansion in the dataset.** Krystal and Saagar score *identically* on populism (−0.80 / −0.80), identically on foreign policy (−0.60 / −0.60), and nearly identically on speech (−0.40 / −0.50). They separate cleanly on economic (+0.60 vs −0.10), equality-model (−0.50 vs +0.50), liberal-conservative (−0.50 vs +0.40), and especially **nationalism (−0.10 vs −0.70)**. Under the 5-axis model, these two co-hosts were "center-left" and "center-right" — related-but-opposite. Under the 9-axis model, they are **the same cluster on populism and foreign-policy, and opposite clusters on the traditional policy axes**.
+
+This is the show's thesis rendered as a measurement: the populist-left and populist-right genuinely share an axis position (on populism itself, and on foreign-policy + speech) that is invisible in the 5-axis model, and that shared position is what sustains the cross-partisan format. Krystal and Saagar are not "meeting in the middle" on any traditional policy axis — they disagree profoundly on economics, equity, culture, and nationalism. What they share is **the populist frame itself**: treating institutional media, Washington consensus, and donor politics as captured. That shared frame is a load-bearing axis the 5-axis model could not represent.
+
+**The show's structural bias finding** from the original profile ("stories that make institutions look bad get more coverage and more charitable framing; stories that complicate the anti-establishment narrative get less coverage") is the directly-predicted consequence of co-hosts who share an extreme populism-axis position. It is an **omission pattern**, not a policy bias — and it is the single strongest case in the dataset for tracking omissions separately from axis positions, because no amount of axis-scoring on individual stories would surface the shared-populism blindspot. Track at the story-coverage layer.
+
+**Individual coherence scores:** Both Krystal (0.78) and Saagar (0.78) are philosophy-driven with stable populist frameworks from opposite tribal directions. The 5-axis model implicitly scored them as "mixed" because the show looked cross-partisan; the 9-axis model reveals that each individual host is as coherent as Shapiro or Maddow within their own cluster, and that the show's apparent ideological incoherence is an artifact of axis-bundling (collapsing populism into the left-right dimension).
 
 #### Notes
 
-Breaking Points operates as a two-host show with formally distinct political positions. The cohosts agree on multiple axes (foreign policy isolationism, free speech, populism on specific issues) and disagree on others (economic structure, progressive axis). This is documented in the show format itself. Both have stated that the partnership is based on shared opposition to "establishment" media framing rather than agreement on policy outcomes. Both worked previously at The Hill's "Rising" before launching the independent operation in 2021.
+Both hosts worked previously at The Hill's "Rising" before launching the independent operation in 2021. The partnership is based on shared populism and foreign-policy axes, not on agreement on domestic policy. Both have stated this explicitly. The Breaking Points format is the cleanest existing production-test of whether cross-partisan populist alignment can sustain a functioning media operation — early evidence is that it can, with the specific blindspot (anti-establishment-prior overweighting) being the measurable cost.
 
 ---
 
@@ -1183,8 +1254,9 @@ Obama's coherence score is high because his stated framework (constitutional law
 ### David Pakman
 
 **Platform:** The David Pakman Show, YouTube, podcast
-**Current Leaning:** Left
-**Ideological Coherence:** 0.75 (moderately high)
+**Current Leaning:** Establishment-Critical Social-Democratic Institutionalist
+**Ideological Coherence:** 0.84 (high — see Logic System note)
+**Rhetorical Style Variance:** 0.15 (very low — measured, analytical, stable across contexts)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -1197,27 +1269,47 @@ Obama's coherence score is high because his stated framework (constitutional law
 | ~2020 | Left | Endorsed Biden in 2020 general election after supporting Sanders in primary. |
 | ~2024 | Left | Continued daily show. Coverage of 2024 election aligned with Democratic positioning while maintaining critical coverage of specific Democratic positions. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.50 | Moderate Socialist | Stable | 75% |
-| Speech | -0.30 | Leaning Free Speech | Stable | 60% |
-| Progressive | -0.60 | Moderate Progressive (Equity) | Stable | 75% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 70% |
-| Foreign Policy | -0.20 | Leaning Non-Interventionist | Stable | 55% |
+| Economic | +0.50 | Moderate Socialist (social democratic) | Stable | 80% |
+| Speech | −0.30 | Leaning Free Speech | Stable | 65% |
+| Causation Analysis | −0.60 | Structural (evidence-based) | Stable | 75% |
+| Equality Model | −0.60 | Moderate Outcome Equality | Stable | 75% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Stable | 75% |
+| Foreign Policy | −0.20 | Leaning Non-Interventionist (mixed) | Stable | 55% |
+| Populism | +0.60 | Moderate Institutionalist (establishment-critical-insider) | Stable | 80% |
+| Nationalism | +0.20 | Near-center (alliance-framed) | Stable | 55% |
+| Authority — Speech | −0.50 | Libertarian | Stable | 65% |
+| Authority — Commerce/Platform | +0.40 | Leaning Authoritarian (regulation-supportive) | Stable | 70% |
+| Authority — Culture/Family | −0.40 | Libertarian | Stable | 65% |
 
 #### Axis Justifications
 
-- **Economic (+0.50):** Supports Medicare for All, $20 minimum wage, progressive taxation. Position has been consistent across his career.
-- **Speech (-0.30):** Has criticized specific deplatforming decisions. Has not advocated for content moderation expansion. Has interviewed figures from across the political spectrum including those banned from major platforms.
-- **Progressive (-0.60):** Supports race- and gender-equity policy. Position has been consistent.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on healthcare, electoral systems, and criminal justice.
-- **Foreign Policy (-0.20):** Critical of US foreign military intervention. Supports Ukraine aid. Critical of Israeli military action in Gaza. Position is mixed within a generally non-interventionist framework.
+- **Economic (+0.50):** Medicare for All, $20 minimum wage, progressive taxation, stronger labor protections. Sanders supporter in 2016. Substantively identical to Uygur's economic framework. Consistent across ~two decades.
+- **Speech (−0.30):** Has criticized specific deplatforming decisions. Has not advocated content-moderation expansion. Interviews figures across the spectrum including platform-banned individuals. Position is principled but moderate.
+- **Causation Analysis (−0.60):** Structural framing is dominant but evidence-based — he cites data, policy studies, comparative international outcomes. Less rhetorical than Uygur or Maddow's structural framing; more empirical.
+- **Equality Model (−0.60):** Outcome-equality on healthcare, education, criminal justice. Consistent with Democratic-progressive mainstream.
+- **Liberal/Conservative (−0.50):** Change-oriented on healthcare, electoral systems, criminal justice. Works within institutional process — endorsed Biden as pragmatic choice despite Sanders preferences.
+- **Foreign Policy (−0.20):** **Mixed within a generally non-interventionist framework.** Supports Ukraine aid (interventionist direction). Critical of Israeli military action in Gaza (non-interventionist direction). Not a single orientation — framework is case-by-case evidence-based rather than isolationist-absolute or interventionist-absolute. Lower confidence reflects the mixed-but-internally-consistent pattern.
+- **Populism (+0.60):** **Establishment-critical institutionalist.** Supports institutional process (elections, courts, peer-reviewed expertise, Democratic Party mechanisms) but criticizes specific Democratic positions from within. Works within the party while calling out specific failures. Not a populist (does not treat institutions as captured); not a Maddow-style pure institutionalist (willing to criticize institutional failures explicitly). Third position: **establishment-critical-insider**.
+- **Nationalism (+0.20):** Near-center. Alliance-framed on foreign policy (Ukraine support embedded in NATO framework; Gaza criticism embedded in international-law framework). Not a primary theme.
+- **Authority (domain-split):** Libertarian on speech and culture/family. Leaning authoritarian on commerce/platform (pro-regulation). Consistent social-democratic pattern.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Pakman at 0.75 (moderately high). Under 9-axis, coherence rises to **0.84** — he is one of the highest-coherence profiles in the dataset and the cleanest left-cluster case in Batch 3. The 9-axis expansion surfaces two findings about Pakman that the 5-axis model could not represent:
+
+1. **The substantive-identity / rhetorical-variance distinction between Pakman and Uygur.** Pakman and Uygur hold nearly identical positions on economic (+0.50 vs +0.60), equality-model (−0.60 vs −0.60), causation (−0.60 vs −0.70), and liberal-conservative (−0.50 vs −0.50). They differ sharply on **populism** (+0.60 vs −0.70 = 1.3 gap) and on **rhetorical-style variance** (0.15 vs ~0.65). The substantive position overlap is near-complete; the structural-populist-vs-institutionalist split is real; and the rhetorical style is genuinely different. *Same policy positions, different populism-axis quadrant, different rhetorical-style variance.* This is the cleanest case in the dataset for the new `rhetoricalStyleVariance` field — without it, the 5-axis model was using the tone difference to push their coherence scores apart when the substantive positions were nearly identical.
+
+2. **The "establishment-critical-insider" position on the populism axis.** Pakman is not pure-institutionalist like Maddow (+0.80), not populist-establishment-critic like Uygur (−0.70), and not method-coherent institutionalist like Destiny (+0.60). He is something closer to: *institutionalist on process, critical of specific institutional outputs*. This pattern is not currently in the populism-axis description but is load-bearing for distinguishing reformist-progressives from populist-progressives. Flag for the axis-mapping prompt's examples section.
+
+**Summary of the "same policy, different populism-axis" quartet** now visible in the left cluster: Maddow (+0.80), Pakman (+0.60), Destiny (+0.60), Uygur (−0.70), Piker (−0.80), and Krystal Ball (−0.80). All six hold recognizably left policy positions; they span the entire populism axis from pure-institutionalist to extreme populist. The 5-axis model could not distinguish these six positions from each other except by rhetorical intensity and foreign-policy specifics. This is the full demonstration of why populism is load-bearing — the left cluster is not a single cluster, it is a six-point range along an axis that did not exist in the old model.
 
 #### Notes
 
-Pakman's coherence score is high because his positions are stable across his documented career and have not shown major reversals. His tone is measured relative to other left commentators in the dataset; this is a presentation pattern documented in his content. Coverage of 2024 election included direct criticism of specific Democratic positions while supporting Democratic candidates against Republican alternatives. Foreign policy axis confidence is reduced because his positions on Ukraine (supportive) and Israel-Gaza (critical) reflect a mixed framework rather than a single interventionism/isolationism orientation.
+Coverage of 2024 election included direct criticism of specific Democratic positions while supporting Democratic candidates against Republican alternatives — this is the canonical establishment-critical-insider pattern. Foreign-policy confidence is reduced because his positions on Ukraine (supportive) and Israel-Gaza (critical) reflect a mixed framework rather than a single orientation; the mixed framework is internally consistent (evidence-based case evaluation) but produces an axis score with genuine uncertainty. His presentation style (measured, calm, analytical) is the defining feature for audience perception but has no effect on his axis scores — same positions as Uygur, different `rhetoricalStyleVariance`. The Pakman-Uygur comparison is the single cleanest demonstration in the dataset that presentation is independent of ideology.
 
 ---
 
