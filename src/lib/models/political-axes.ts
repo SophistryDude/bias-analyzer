@@ -292,6 +292,11 @@ export interface PoliticalProfile {
    * Overall IDEOLOGICAL coherence — do the positions form a consistent rule
    * set across axes? 0 = scattered, 1 = highly consistent.
    *
+   * For most subjects this is the aggregate coherence score and is the
+   * primary measurement. For subjects who exhibit axial-vs-content split
+   * (see axialCoherence / contentCoherence below), this should be a
+   * weighted blend of the two.
+   *
    * IMPORTANT: This is a measurement of rule-set consistency only. Do NOT
    * lower this score because a subject's PRESENTATION style is variable
    * (high-volume vs. measured, structured vs. engagement-optimized,
@@ -302,6 +307,52 @@ export interface PoliticalProfile {
    * axis positions).
    */
   ideologicalCoherence: number;
+  /**
+   * AXIAL coherence — does the subject's rule set produce consistent
+   * DIRECTIONS on the 9 axes? 0 = scattered, 1 = highly predictable.
+   *
+   * Subjects with high axial coherence can be scored on the axis model
+   * with high confidence: their positions cluster into a recognizable
+   * rule set that predicts the DIRECTION of their take on a new issue.
+   *
+   * Surfaced in Batch 4 by the Trump profile, which exhibits axial
+   * coherence (0.65 — the 2016-2024 framework directionally predicts
+   * tariffs, mass deportation, DOGE, NATO pressure, anti-DEI EOs) while
+   * having much lower content coherence (specific claims, people,
+   * countries, rates are not predictable).
+   *
+   * Leave undefined if the subject has not been scored on the
+   * axial-vs-content dichotomy. For philosophy-driven profiles, axial
+   * and content coherence are typically similar and the split may not
+   * need to be explicitly tracked.
+   *
+   * TODO: Review all profiles after Batch 5 to identify which other
+   * subjects exhibit the Trump-pattern (axial without content). Candidates
+   * to check: Musk (partial — tenets predict direction but cultural-issue
+   * variants are content-specific), Pool (partial — stable axes predict
+   * direction), Owens (post-2024 rupture — likely similar to Trump), all
+   * engagement-driven profiles generally.
+   */
+  axialCoherence?: number;
+  /**
+   * CONTENT coherence — does the subject produce consistent SPECIFIC
+   * CLAIMS within their axis positions? 0 = claim-level-unpredictable,
+   * 1 = claim-level-predictable.
+   *
+   * Philosophy-driven profiles (Shapiro, Maddow, Obama, Hanson) have high
+   * content coherence: once you know the framework, you can predict not
+   * just the direction of their position on a new issue but the specific
+   * claims they will make about it. Engagement-driven profiles have low
+   * content coherence regardless of axial coherence.
+   *
+   * Trump exhibits the cleanest axial-without-content pattern in the
+   * dataset (2016-2024 framework: axial 0.65, content ~0.35). The
+   * framework predicts direction but loyalty-dynamic + deal-logic +
+   * crowd-feedback generate the specific claims.
+   *
+   * Leave undefined if the subject has not been scored on this dichotomy.
+   */
+  contentCoherence?: number;
   /**
    * How much does the subject's presentation style vary across contexts
    * (formats, topics, emotional state, audience)? 0 = stable presentation,
@@ -2595,10 +2646,12 @@ export const SEED_PROFILES: PoliticalProfile[] = [
         ],
       },
     ],
-    ideologicalCoherence: 0.65,
+    ideologicalCoherence: 0.50,
+    axialCoherence: 0.65,
+    contentCoherence: 0.35,
     rhetoricalStyleVariance: 0.8,
     notes:
-      "Added April 2026. DUAL-PROFILE METHODOLOGY — Profile B of two. Covers the populist-nationalist-right political brand established 2015-2024. Higher than 5-axis aggregate (0.35) because the 9-axis view scopes out the incoherence that came from blending with pre-2015 positions. Framework is internally more coherent than 5-axis captured: populist + nationalist + opportunity-equality + cultural-aesthetic-conservative + non-interventionist-rhetoric + leader-centered-authority forms a recognizable rule set. Moderate rather than high because specific positions remain inconsistent (rhetoric vs action, speech principles vs application, tax-cuts vs tariffs) and framework is loyalty-dynamic + crowd-feedback + deal-logic generated rather than explicitly philosophical. TRAJECTORY FROM PRE-2015: biggest axis moves are populism (-0.40 → -0.90, extreme intensification), equality-model (+0.20 → +0.70, anti-DEI reflex), and liberal-conservative (0.00 → +0.40, cultural-aesthetic positioning). Smallest moves: foreign-policy (stable -0.40, ~38-year through-line) and nationalism (stable-strong, intensified slightly). TWO-LEVEL COHERENCE FINDING: Trump exhibits AXIAL coherence (direction predictable from axis scores) WITHOUT CONTENT coherence (specific claims not predictable). Philosophy-driven profiles have both; engagement-driven profiles have neither; Trump has axial without content. This distinction is not currently formalized in assessCoherenceType() — flag for Open Model Questions. 2025/26 PREDICTIVE ANALYSIS: tariffs, mass deportation, DOGE, NATO pressure, anti-DEI EOs, media lawsuits all PREDICTED by this framework. Iran confrontation is ambiguous (predicted by action-record, contradicted by rhetoric). Specific personnel/countries/rates are NOT predicted (loyalty-dynamic + deal-logic driven). Framework predicts direction not content.",
+      "Added April 2026. DUAL-PROFILE METHODOLOGY — Profile B of two. CANONICAL AXIAL-WITHOUT-CONTENT COHERENCE CASE: axialCoherence 0.65 (framework directionally predicts tariffs, mass deportation, DOGE, NATO pressure, anti-DEI EOs) while contentCoherence 0.35 (specific people, countries, rates, claims are not predictable). Aggregate ideologicalCoherence is a blend of both. Covers the populist-nationalist-right political brand established 2015-2024. Higher axial coherence than 5-axis aggregate (0.35) because the 9-axis view scopes out the incoherence that came from blending with pre-2015 positions. Framework is internally more coherent than 5-axis captured: populist + nationalist + opportunity-equality + cultural-aesthetic-conservative + non-interventionist-rhetoric + leader-centered-authority forms a recognizable rule set. Moderate rather than high because specific positions remain inconsistent (rhetoric vs action, speech principles vs application, tax-cuts vs tariffs) and framework is loyalty-dynamic + crowd-feedback + deal-logic generated rather than explicitly philosophical. TRAJECTORY FROM PRE-2015: biggest axis moves are populism (-0.40 → -0.90, extreme intensification), equality-model (+0.20 → +0.70, anti-DEI reflex), and liberal-conservative (0.00 → +0.40, cultural-aesthetic positioning). Smallest moves: foreign-policy (stable -0.40, ~38-year through-line) and nationalism (stable-strong, intensified slightly). TWO-LEVEL COHERENCE FINDING: Trump exhibits AXIAL coherence (direction predictable from axis scores) WITHOUT CONTENT coherence (specific claims not predictable). Philosophy-driven profiles have both; engagement-driven profiles have neither; Trump has axial without content. This distinction is not currently formalized in assessCoherenceType() — flag for Open Model Questions. 2025/26 PREDICTIVE ANALYSIS: tariffs, mass deportation, DOGE, NATO pressure, anti-DEI EOs, media lawsuits all PREDICTED by this framework. Iran confrontation is ambiguous (predicted by action-record, contradicted by rhetoric). Specific personnel/countries/rates are NOT predicted (loyalty-dynamic + deal-logic driven). Framework predicts direction not content.",
   },
   {
     entityId: "elon-musk",
