@@ -161,6 +161,17 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 - Don't add socionics/personality type annotations to profiles or the system
 - Don't present model-dependent interpretations as known truths (the Logic System's core principle)
 
+## Open Model Questions (9-axis expansion, April 2026)
+
+These are known gaps surfaced during the profile rewrite. Not blockers for the rewrite, but they should be resolved before the axis model ships to the public UI.
+
+- **Reactionary axis extension.** The liberal-conservative axis is about *change tolerance* (pace and risk). It runs from "willing to change the status quo" (−1) to "preserve the last 1–2 generations" (+1). It has no representation for **negative change tolerance** — subjects who want to roll back multiple generations of changes (Fuentes is the canonical case; he pushes past the +1 ceiling). Options: (a) extend the axis past ±1 with a "reactionary" label, (b) treat "reactionary" as a separate axial extension, (c) add it as a boolean flag on high-conservative profiles. Decide before the radar chart is wired.
+- **Contrarian as a coherence type.** Jordan Peterson's contrarian tendencies should be evaluated during batch 4. Open question: is contrarianism *reactionary from a different framing* (negative change tolerance on whatever the dominant narrative is — meaning the axis position is stable but looks scattered because "the dominant narrative" moves), or is it a **distinct coherence type** the `assessCoherenceType()` function should recognize alongside "philosophy-driven," "engagement-driven," and "mixed"? A contrarian is philosophy-driven *about the meta-level* (always-against-consensus) while appearing engagement-driven on individual axes because the positions flip as consensus flips. If it's a distinct type, the radar chart is the wrong visualization for it and we need a different one.
+- **Persona divergence as a separate signal.** Fuentes operates two content modes (measured AFPAC, explicit Cozy.tv). The current seed entry blends both. This is an Overton-window manipulation pattern, not an axial one, and should be scored separately from the axis positions — flagged as a standing signal on the profile, not folded into the coherence score.
+- **Principled-vs-instrumental speech flag.** The speech axis currently conflates "what position does the subject hold" with "do they apply it to speech they disagree with." Owens, Fuentes, Crowder, and Pool all hold free-speech positions in principle but apply them selectively. Needs a separate confidence flag or a sub-field on the speech axis.
+- **Intra-right populism pattern.** Crowder's Stop Big Con, Carlson post-Fox, Owens post-2024 — populist in form, conservative-cluster in substance. The populism axis scores the form correctly, but the pattern of "populist against your own cluster" is diagnostically novel and should be added to the axis-mapping prompt's misconception list so the LLM recognizes it.
+- **Stable-vs-moving axes diagnostic.** Pool surfaced this: true audience capture moves every axis toward the paying audience, while partial principled drift holds cluster-anchoring positions and moves cross-cutting ones. This should be formalized in `assessCoherenceType()` — currently the function only looks at aggregate shift ratio, not which axes moved.
+
 ## Active Blockers
 
 - **ProQuest API**: Need credentials from WGU library. Biggest content unlock (40 years full text).

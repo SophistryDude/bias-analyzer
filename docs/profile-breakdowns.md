@@ -292,6 +292,24 @@ Maddow is notable for being openly progressive from the start — no hidden bias
 
 **Key analytical note:** Maddow's primary rhetorical technique is narrative construction. She builds long, detailed stories that connect disparate facts into a coherent arc. This is compelling journalism when the connections are real, but it's also a vector for the **false cause** and **correlation/causation** fallacies — the narrative structure itself implies causal links that may not exist. The Trump-Russia coverage is the paradigmatic example: many individual facts were accurate, but the overarching narrative implied connections and conclusions that were not fully supported by the evidence. Tracking her content for narrative-driven reasoning vs. evidence-driven reasoning is the most important analytical lens for this profile.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.75 (high) → 0.82 (high). The 9-axis view raises her score modestly but makes a much larger diagnostic point: **Maddow is the structural mirror of Ben Shapiro on the left.** Both are institutionalist (+0.80 vs +0.40), alliance-based globalist (+0.50 vs +0.20), philosophy-driven, and change-oriented on domestic policy while defending institutional rule-of-law norms. In the 5-axis model they looked completely opposite; in the 9-axis model they are methodologically more similar to each other than either is to the populist wings of their own clusters. This symmetry was invisible in 5 axes.
+
+**Category errors in the original profile:**
+- *"Institutional loyalty introduces some inconsistency" / "liberal + defending institutional norms = structurally conservative behavior"* — close to correct but framed as a tension rather than as the defining feature of the profile. The Logic System correction: Maddow is not "liberal *with* institutionalism"; she is **institutionalist-first, liberal-second**. Her liberalism is about changing policy outputs through legitimate institutional processes. When the institutional processes themselves are under threat (Trump era), she shifts rhetorical weight to defending them — that is coherent institutionalist behavior, not inconsistency.
+- *"Advocacy journalism"* framed as more honest than outlets claiming neutrality — this observation is correct but should be separated from axis scoring. Openness about bias is a **disclosure** property, not a coherence or accuracy property. The original profile implicitly treats openness as a partial defense; the Logic System position is that openness matters epistemologically (the audience knows what they're getting) but doesn't by itself reduce the need to track narrative-construction, omission, or causation-frame bias.
+
+**Epistemological flags:**
+- *"Many individual facts were accurate, but the overarching narrative implied connections and conclusions that were not fully supported by the evidence"* — this is **exactly** the Logic System's bias-as-category-error definition, applied correctly. Each individual fact is a verifiable observation; the narrative arc that connects them is a model-dependent claim that is being presented as a known truth. This is the clearest statement of the Logic System's core principle in the original profile set and should be promoted as a standing rule engine detection ("narrative-arc-overreach").
+- *"Narrative construction is a vector for false-cause fallacies"* — correct and should be linked to the existing rule engine's fallacy detector.
+
+**Omissions in the profile's own frame:**
+- **The populism axis.** Maddow's institutionalism is her defining feature and the 5-axis model cannot name it. The profile talks around it ("institutional loyalty," "defending DOJ independence") but lacks the axis word to capture the pattern.
+- **The Maddow-Shapiro methodological symmetry.** Invisible in 5 axes; the strongest single argument for adding the populism axis.
+
+**Logic System verdict:** Keep, augment. The original Maddow profile is one of the most substantively accurate in the dataset — the narrative-construction observation is the best single Logic-System-aligned insight in the original set. The 9-axis rewrite in `revised_profile_breakdown.md` adds the populism/institutionalism vocabulary to crystallize what the original profile already saw. Use this as a training reference alongside Shapiro.
+
 ---
 
 ### Don Lemon
@@ -334,6 +352,24 @@ Lemon's key issue is the blending of editorial commentary with news presentation
 **Foreign Policy:** Effectively absent. Lemon rarely engages with foreign policy in any substantive way. When he does, he mirrors Democratic establishment positions. Confidence is extremely low — there isn't enough signal to score this axis meaningfully.
 
 **Key analytical note:** Lemon's low coherence score is the defining feature of this profile. Unlike Maddow (who has a genuine framework) or Shapiro (who has a rigorous one), Lemon's positions appear to be largely absorbed from his institutional environment rather than derived from first principles. The test: can you predict his take on a novel issue? With Shapiro, yes. With Maddow, usually. With Lemon, you'd need to know CNN's editorial line first, because that's what he'd reflect. Post-CNN, the question is whether his positions stabilize around a genuine framework or simply track a new audience's expectations. Early evidence from his YouTube content suggests the latter.
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.45 (low) → 0.52 (moderate). Unlike almost every other Batch-1/Batch-2 profile, the 9-axis view does **not** rehabilitate Lemon — it sharpens the diagnosis. He is neither philosophy-driven (no stable first-principle framework) nor engagement-driven (doesn't track audience incentives in the Pool sense) — he is **institution-absorbed**: his positions track the editorial consensus of whichever institution currently employs him. This is a third coherence pattern the current `assessCoherenceType()` function does not recognize.
+
+**Category errors in the original profile:**
+- None of consequence. The original profile's diagnosis ("you'd need to know CNN's editorial line first") is **substantively correct**. The only Logic-System-level reframing is to promote that test from a narrative observation to a formal coherence type.
+- The observation that *"post-CNN the question is whether his positions stabilize around a genuine framework or simply track a new audience's expectations"* is Logic-System-aligned and generates a testable prediction: if Lemon's positions on a novel topic change systematically as he moves through successive institutional environments, he is institution-absorbed; if they stabilize, he has emerging first-principle content. Track over time.
+
+**Epistemological flags:**
+- Lemon is a special case where the epistemological classifier should be applied to his *meta-position*, not his content. His actual claims are generally within mainstream-Dem factual norms; the interesting question is whether he is *treating* institutional editorial consensus as known truth (the Logic System's core bias definition applied to positioning itself rather than content). If yes, then even when his specific claims are accurate, the positioning-as-known-truth is a category error of its own kind.
+- The March 2024 Musk dispute over editorial terms is his **first documented principled stance in the record** — he refused content restrictions on the X show. If that stance holds after future institutional contexts shift, it becomes evidence for emerging first-principle content. Track as a single-event data point with high weight.
+
+**Omissions in the profile's own frame:**
+- **Institution-absorbed as a formal coherence type.** The original profile identifies the pattern brilliantly but treats it as "low coherence" rather than as a distinct pattern with its own predictive behavior. Subjects who are institution-absorbed are predictable given institutional context but unpredictable absent it — they are deterministic, not chaotic. Scoring them as "low coherence" bundles them with Owens-style drift, which is a different thing.
+- **The question of whether institution-absorbed is epistemologically worse than philosophy-driven.** Not asked in the original profile. Logic System position: not necessarily — an institution-absorbed subject with a well-functioning institutional environment may produce more epistemologically sound output than a philosophy-driven subject with a poorly-functioning first-principle framework. The institution-absorbed pattern is a **dependence**, not a defect. The defect appears when the institutional environment itself is epistemologically corrupt and the subject cannot detect it.
+
+**Logic System verdict:** Revise, not replace. The original profile's test and diagnosis are substantively correct. The 9-axis rewrite in `revised_profile_breakdown.md` formalizes the institution-absorbed pattern, lowers the authority sub-domain scoring (insufficient signal to split) as a diagnostic of the pattern, and promotes the Musk-dispute speech stance as the first principled data point in his record.
 
 ---
 
@@ -443,6 +479,24 @@ Cenk Uygur is the institutional left's online pioneer — TYT launched in 2002, 
 
 **Key analytical note:** The Ana Kasparian split is the most significant event in TYT's history and is a live case study in how media institutions handle internal ideological divergence. Kasparian's public departure — moving from progressive co-host to joining a conservative-leaning show — mirrors the Tim Pool trajectory in reverse but is rarer and more analytically interesting because she articulated *why* she shifted (crime policy, identity politics, homelessness) rather than just drifting.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.55 (mixed) → 0.72 (moderate-high). The 9-axis view rehabilitates Uygur significantly. The 5-axis "mixed driver" diagnosis conflated presentational inconsistency (Uygur holds the same position with wildly different intensity depending on emotional state) with ideological coherence — the same category error the 5-axis model made on Crowder and Piker. Uygur's actual axis positions are stable; only his tone varies.
+
+**Category errors in the original profile:**
+- *"Mixed — genuine progressive framework but increasingly reactive"* — the "increasingly reactive" part is a presentation observation misread as ideology drift. The 9-axis view shows his actual framework is stable; the reactivity is in how he argues, not what he argues.
+- *"Presentation inconsistency rather than positional inconsistency — he'll hold the same position but argue it with wildly different intensity"* — the original profile **correctly identifies** the distinction and then **still lowers his coherence score for it**. This is the clearest example in the dataset of the 5-axis model's format-vs-ideology conflation. The Logic-System correction: separate measurements, separate scores.
+
+**Epistemological flags:**
+- *"Has been criticized for historical positions on the Armenian genocide (initially denied, later acknowledged)"* — this is a **concrete Logic System case study**. The initial denial is an instance of tacit-cultural-understanding presented as known truth; the later acknowledgment is a direct update on evidence. Should be tracked as a training example for the epistemological classifier: the same subject demonstrating both the bias category error and the evidence-responsive correction on the same topic over time.
+
+**Omissions in the profile's own frame:**
+- **The populism axis.** Uygur is arguably the cleanest populist-left score in the dataset — Justice Democrats is literally a populist-left organization — and the 5-axis model cannot name this. The profile talks about "anti-establishment progressive" but lacks the axis to capture the through-line.
+- **The Uygur-vs-Maddow distinguishability problem.** Same as Shapiro-vs-Carlson on the right. The 5-axis model could not distinguish establishment-left from populist-left; the 9-axis model separates them cleanly on populism. This is the second half of the left symmetry test and confirms that the expansion was necessary symmetrically on both sides of the spectrum.
+- **The 1999 college-era reversal.** Treated correctly by the original profile as historical context but should be flagged as a training example for the ideologically-reversed-subject pattern (along with Nicholas's self-reported profile and Candace Owens's 2015→2017 reversal).
+
+**Logic System verdict:** Revise. The original profile correctly identifies the presentation-vs-position distinction but then commits the very conflation it names by letting presentation inconsistency lower the coherence score. The 9-axis rewrite in `revised_profile_breakdown.md` separates the measurements and surfaces his populism as the defining axis.
+
 ---
 
 ### Ana Kasparian
@@ -479,6 +533,25 @@ Kasparian is the most dynamic profile in the dataset — every axis is in motion
 All axis scores have low confidence because she's actively moving. By the time the system has enough data to score her reliably, her positions may have settled into a new equilibrium. The most productive analysis is tracking the *trajectory* rather than the current position.
 
 **The epistemological classification system should watch her closely.** Her stated reason for shifting is that progressive positions she held were "tacit understanding presented as known truth" — she believed things about crime, homelessness policy, and identity politics that she says turned out to be wrong when she examined the evidence. Whether that's accurate or whether new tacit understanding (from a different tribe) is replacing the old one is exactly what our system is designed to detect.
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.40 (low, "actively transitioning") → 0.62 (moderate). The 9-axis view changes the diagnosis fundamentally. Kasparian is not drifting; she is **meta-framework stable, domain-specific updating on evidence**. This is a fifth coherence pattern that `assessCoherenceType()` does not currently recognize, and it is arguably the *healthiest* pattern — the subject is treating political positions as updatable hypotheses rather than tribal identity markers.
+
+**Category errors in the original profile:**
+- *"Low coherence"* as the primary score — misleading. Her populism, economic, and foreign-policy axes are stable; her causation-frame and equality-model are updating on specific domains. This is **selective reassessment**, not generalized instability. The 5-axis model had no way to distinguish whole-person drift from per-domain update, and defaulted to scoring her as "in transition."
+- *"Every axis is in motion"* — factually wrong under 9-axis. Three of her axes are invariant (populism, economic, foreign-policy) and three are updating on specific topics. The original profile couldn't see this because it lacked the axes that were stable.
+
+**Epistemological flags (the most important part of this profile):**
+- Kasparian is the **cleanest case in the dataset of the Logic System's core bias definition applied reflexively**. Her stated reason for shifting — "I believed things that turned out to be tacit understanding presented as known truth" — is a verbatim instantiation of the Logic System's bias-as-category-error formulation. She is literally doing epistemological classification on her own past positions.
+- The open epistemological question (raised correctly by the original profile): *is her new framework tacit understanding from a different tribe, or is it genuinely evidence-responsive?* This is exactly the kind of case the epistemological classifier should be trained on. **Strong recommendation:** use Kasparian's documented position updates (on homelessness, crime, gender-affirming care) as a training set for the classifier. Each position has: a prior claim, a stated reason for the update, and the evidence she cites. These are rare, clean data points.
+- *"Positions are shifting because her framework changed, not because audience incentives changed. This is the opposite of Tim Pool."* — **this is the most Logic-System-aligned single sentence in the original profile set.** It names the correct distinction (framework-update vs. audience-capture) and applies it correctly. Should be promoted to a standing diagnostic criterion for the `assessCoherenceType()` function.
+
+**Omissions in the profile's own frame:**
+- **Domain-specific updating as a coherence pattern.** The original profile identifies the phenomenon correctly but files it under "mixed / in transition" instead of naming it as a distinct type. The 9-axis rewrite formalizes it.
+- **The populist-left meta-framework that remains stable.** The original profile calls her "in transition" but doesn't name what is NOT in transition. Her populist-left populism-axis position (inherited from the TYT framework) is one of her most stable features — she has not abandoned anti-corporate-Dem framing, she has added an intra-left critique of progressive movement organizations applied in the same mode.
+
+**Logic System verdict:** Revise, augment, and promote. The original profile's diagnosis of Kasparian is among the most Logic-System-aligned in the dataset — it correctly identifies that she's updating a framework rather than tracking incentives, and it correctly names the epistemological stakes. What it gets wrong is the coherence score (too low) and the implicit comparison to drift-style subjects (wrong reference class). The 9-axis rewrite in `revised_profile_breakdown.md` raises her score, names the pattern, and flags her content as a candidate training set for the epistemological classifier. **This profile should be used as a design target for what Logic-System-aligned political reasoning looks like in practice.**
 
 ---
 
@@ -525,6 +598,25 @@ Piker is the furthest left profile in the dataset by a significant margin. His e
 **Key analytical note:** Piker's primary rhetorical technique is **moral certainty at high volume**. He presents positions with absolute confidence and emotional intensity, which is engaging but epistemologically dangerous — it leaves no room for uncertainty or nuance. The system should track the gap between his confidence level and the actual epistemic warrant for his claims. "This is obviously what's happening" is a claim about the speaker's certainty, not about the evidence. His engagement metrics reward this certainty — equivocation doesn't generate clips. This is where the engagement-driven component of his score comes from.
 
 The Piker-Destiny split is one of the most analytically useful case studies in the dataset. Two people who started in similar positions, diverged dramatically, and now represent two fundamentally different approaches to left-of-center politics. Comparing their coverage of the same events would be a high-value story comparison post.
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.60 (mixed, "Marxism + engagement incentives") → 0.82 (high). Piker is the **inverse Crowder case**: the 5-axis model conflated engagement-optimized presentation ("moral certainty at high volume") with ideological coherence, and scored him lower because of it. His actual axis positions are extremely consistent — a Marxist rule set generates every position he takes. Format is engagement-optimized; ideology is philosophy-driven. These are separate measurements.
+
+**Category errors in the original profile:**
+- *"Mixed — genuine ideological framework (Marxism) but engagement incentives amplify the most provocative expressions of it"* — correct observation, wrong conclusion. Engagement-optimized expression of a stable framework is **not** a coherence problem. It is a presentation strategy. A framework-driven subject who picks engagement-friendly examples is still framework-driven; their coherence score should not drop because the examples are provocative.
+- *"He's read Marx... economic positions go significantly further left than TYT"* — this correctly identifies the sub-cluster distinction (Marxist vs. social-democratic) that the 5-axis model then immediately collapses back into "left." The 9-axis model preserves the distinction via the economic score delta (+0.85 vs Uygur +0.60) and the causation-analysis delta (−0.90 vs Uygur −0.70).
+
+**Epistemological flags:**
+- *"Moral certainty at high volume... leaves no room for uncertainty or nuance. This is epistemologically dangerous."* — this is correct Logic-System-aligned observation. High-certainty framing is a form of **presenting model-dependent interpretation as known truth** — the bias-as-category-error definition applied to presentational style. Should be promoted to a standing rule engine detection pattern ("confidence-asymmetry-flag"): detect when stated confidence exceeds available epistemic warrant, regardless of political direction.
+- *"The millionaire-who-bought-a-$2.7M-house tension — whether personal wealth invalidates systemic critique is itself an interesting epistemological question"* — correct framing. The axis model measures what the content DOES (advocates redistribution), not what the speaker personally consumes. Conflating them would be a genetic-fallacy-style error. Original profile gets this right.
+- *"October 7 commentary — calling it a 'direct consequence' of Israeli/US policy"* — the word "consequence" is a causal claim embedded in an analytical frame. The specific framing is internally consistent with Piker's anti-imperialist framework (causation axis −0.90); whether the causal claim is accurate is a separate question the epistemological classifier should assess independently of the axis scoring. This is a good test case for the classifier because the factual content (dates, policies, actions) is verifiable while the causal connection is model-dependent.
+
+**Omissions in the profile's own frame:**
+- **Nationalism counterintuitive finding.** Piker is globalist-leaning on the nationalism axis (internationalist class-solidarity framework) — he scores in the same nationalism quadrant as Shapiro despite being opposite everywhere else. The 5-axis model cannot surface this; the 9-axis model does, and it's a clean illustration of nationalism axis independence.
+- **The Piker-vs-Fuentes causation-axis equivalence.** Both score extreme structural (−0.90 / −0.80) with opposite content inside the frame. The 5-axis model could not see that they were using the same analytical apparatus to reach opposite conclusions. This is arguably the single strongest demonstration that causation-analysis is a frame, not a tribal marker.
+
+**Logic System verdict:** Revise. The original profile's Marxism-is-real observation is correct and its moral-certainty-at-high-volume observation is one of the best Logic-System-aligned analytical notes in the dataset. The coherence score is wrong (too low — conflated with presentation style). The 9-axis rewrite in `revised_profile_breakdown.md` raises the score, preserves the presentation-style observation as a separate signal, and surfaces the causation-axis equivalence with Fuentes as the strongest single demonstration of axis independence.
 
 ---
 

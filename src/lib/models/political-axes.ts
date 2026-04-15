@@ -1125,6 +1125,482 @@ export const SEED_PROFILES: PoliticalProfile[] = [
     notes:
       "Added April 2026. 9-axis revises 5-axis 0.50 ('presentation coherence problem') to 0.65. The 5-axis model conflated FORMAT consistency (structured Change-My-Mind vs engagement-optimized daily show) with IDEOLOGICAL coherence. Crowder's actual axis positions are stable across both formats — the format varies, the positions don't. Format-consistency is a separate measurement (rhetorical-style variance) and should not depress ideological coherence. NOVEL FEATURE: intra-right populism (Stop Big Con campaign). Populist in form, conservative-cluster in substance — a pattern the 5-axis model has no vocabulary for. Carlson, Crowder, and Owens (post-2024) all share versions of this.",
   },
+  {
+    entityId: "rachel-maddow",
+    entityName: "Rachel Maddow",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.3,
+        confidence: 0.65,
+        evidence:
+          "Universal healthcare, minimum wage increases, stronger finance regulation. Center-left Democratic consensus. No nationalization advocacy.",
+      },
+      {
+        axisId: "speech",
+        value: 0.3,
+        confidence: 0.5,
+        evidence:
+          "Supported specific deplatforming and content-moderation categories. Institutional journalism background gives some resistance to outright censorship; position is harm-prevention-oriented.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.6,
+        confidence: 0.75,
+        evidence:
+          "Structural framing dominates: voting rights, court capture, DOJ independence, institutional corruption, historical-fascism frameworks. 'Prequel' (1930s-40s American fascist movements) is explicit structural-political analysis.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.6,
+        confidence: 0.75,
+        evidence:
+          "Outcome-equality framing on civil rights, affirmative action, disparate-impact coverage. Supports market mechanisms with regulatory correction.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "Change-oriented on voting rights, court reform, healthcare. Tension: institutional-defense content (DOJ, Fed, election integrity) is structurally conservative behavior in service of liberal goals. The tension is authentic but the rule set is stable.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.3,
+        confidence: 0.6,
+        evidence:
+          "NATO, Ukraine aid, Libya intervention support. Iraq War critical (2003 onward). Mainstream Democratic foreign-policy consensus.",
+      },
+      {
+        axisId: "populism",
+        value: 0.8,
+        confidence: 0.85,
+        evidence:
+          "DEFINING AXIS. Textbook institutionalist — defends DOJ, courts, Constitution, peer-reviewed expertise, rule-of-law norms. Critical of populist appeals from both right (Trump) and left (Sanders). One of the most institutionalist figures in the dataset.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.5,
+        confidence: 0.65,
+        evidence:
+          "Globalist-leaning. Supports international institutions, NATO, multilateral frameworks. Liberal-internationalist framework on foreign policy.",
+      },
+      {
+        axisId: "authority",
+        value: 0.0,
+        confidence: 0.55,
+        evidence:
+          "Domain-split; aggregate is placeholder. Authoritarian-leaning on commerce/platform (pro-regulation) and mildly on speech (harm-prevention). Libertarian on culture/family and health/bodily (strong privacy and bodily-autonomy framing). Classic progressive-liberal split.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: 0.3,
+            confidence: 0.5,
+            evidence:
+              "Harm-prevention framework on content moderation.",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.4,
+            confidence: 0.65,
+            evidence:
+              "Pro-regulation of finance, Big Tech, platforms.",
+          },
+          {
+            domain: "culture-family",
+            value: -0.3,
+            confidence: 0.65,
+            evidence:
+              "Libertarian framing on social/cultural topics.",
+          },
+          {
+            domain: "health-bodily",
+            value: -0.5,
+            confidence: 0.7,
+            evidence:
+              "Strong privacy and bodily-autonomy framing.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.82,
+    notes:
+      "Added April 2026. LEFT SYMMETRY FINDING: Maddow is the structural mirror of Ben Shapiro — both are high-institutionalist, alliance-based globalist, philosophy-driven establishment profiles (one religious-conservative, one progressive-liberal). They are methodologically more similar to each other than either is to the populist wings of their own clusters. The 5-axis model could not see this because it lacked the populism axis on which both score institutionalist (+0.80 and +0.40) while Carlson/Piker/Uygur score populist (-0.7 to -0.9). Maddow-vs-Uygur separate on populism (+0.80 vs -0.70) the same way Shapiro-vs-Carlson do, confirming the populism-axis expansion is load-bearing on both sides. Narrative-construction rhetorical technique (correctly identified in original profile as a vector for false-cause and correlation/causation fallacies) should be tracked in the rule engine separately from axis scores.",
+  },
+  {
+    entityId: "don-lemon",
+    entityName: "Don Lemon",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.2,
+        confidence: 0.45,
+        evidence:
+          "Mainstream Democratic positioning. Limited specific economic policy. LOW CONFIDENCE throughout — positions are absorbed from institutional environment, not derived.",
+      },
+      {
+        axisId: "speech",
+        value: 0.1,
+        confidence: 0.4,
+        evidence:
+          "Supported deplatforming in CNN era; but March 2024 Musk dispute over editorial terms was a defensive free-speech stance. Position is institutionally-determined. The Musk dispute is arguably his first principled stance in the record.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.5,
+        confidence: 0.6,
+        evidence:
+          "Structural framing dominates on race/identity topics. Less rigorous than Maddow; more often invoked as default than argued.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.6,
+        confidence: 0.65,
+        evidence:
+          "Outcome-equality framing aligned with progressive movement organizations.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.5,
+        confidence: 0.55,
+        evidence:
+          "Change-oriented. Frames conservative positions as the side requiring justification.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.1,
+        confidence: 0.3,
+        evidence:
+          "Effectively absent. Insufficient material to score with high confidence.",
+      },
+      {
+        axisId: "populism",
+        value: 0.4,
+        confidence: 0.55,
+        evidence:
+          "Institutionalist-leaning but less principled than Maddow. Institutional-defense tracks whichever institution employs him.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.3,
+        confidence: 0.45,
+        evidence:
+          "Globalist-leaning within mainstream Democratic framing. Not a primary theme.",
+      },
+      {
+        axisId: "authority",
+        value: 0.0,
+        confidence: 0.3,
+        evidence:
+          "Insufficient signal across domains to justify sub-domain scoring. The lack of differentiable domain positions is itself diagnostic of the institution-absorbed pattern: subjects with developed frameworks produce differentiable domain positions; subjects without frameworks do not.",
+      },
+    ],
+    ideologicalCoherence: 0.52,
+    notes:
+      "Added April 2026. NEW COHERENCE TYPE IDENTIFIED: institution-absorbed. Lemon is neither philosophy-driven (no stable first-principle framework) nor engagement-driven (doesn't track audience incentives like Pool or Owens) — his positions track the editorial consensus of whichever institution currently employs him. This is a third pattern the current assessCoherenceType() function does not recognize. Institution-absorbed subjects are PREDICTABLE given institutional context but unpredictable absent it. Test from original profile ('you'd need to know CNN's editorial line first') is correct and should be formalized. PREDICTIVE EXPERIMENT: the March 2024 Musk dispute over editorial terms is his first documented principled stance. If that stance holds after institutional context shifts again, it becomes evidence for emerging first-principle content. Track as single-event high-weight data point.",
+  },
+  {
+    entityId: "cenk-uygur",
+    entityName: "Cenk Uygur",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.6,
+        confidence: 0.75,
+        evidence:
+          "Medicare for All, $20 minimum wage, free public college, wealth taxes, corporate break-ups. Consistent since at least 2010. Capitalist reform framework, not Marxist revolution.",
+      },
+      {
+        axisId: "speech",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Opposed specific deplatforming decisions. Criticized cancel culture from the left. Pragmatic (free speech as tool for progressive politics) rather than absolutist.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.7,
+        confidence: 0.8,
+        evidence:
+          "Strong structural. Corporate capture, class struggle, institutional-capture-by-billionaires is the dominant frame. Consistent across TYT career.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.6,
+        confidence: 0.7,
+        evidence:
+          "Outcome equality on healthcare, education, criminal justice. Consistent.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.5,
+        confidence: 0.65,
+        evidence:
+          "Change-oriented institutionally. Justice Democrats explicitly recruits primary challengers to incumbent Democrats — liberal position directed at the Democratic Party itself.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: -0.4,
+        confidence: 0.7,
+        evidence:
+          "Iraq War opposition is a founding TYT position. Critical of US Saudi/Israel support. Historical note: early TYT contained Armenian-genocide denial later acknowledged and retracted — tracked as separate epistemological case study.",
+      },
+      {
+        axisId: "populism",
+        value: -0.7,
+        confidence: 0.85,
+        evidence:
+          "DEFINING AXIS. Justice Democrats is literally a populist-left organization. Anti-corporate-Democrat framing is the single most consistent content theme from 2010 to present. Strongest candidate for the left mirror of Carlson.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.1,
+        confidence: 0.45,
+        evidence:
+          "Near-center. Not a primary theme.",
+      },
+      {
+        axisId: "authority",
+        value: 0.0,
+        confidence: 0.55,
+        evidence:
+          "Domain-split; aggregate is placeholder. Libertarian on speech and culture/family. Strongly authoritarian on commerce/platform (regulation-heavy framework — corporate break-ups, wealth taxes, campaign finance limits as state interventions). Classic populist-left split.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.5,
+            confidence: 0.65,
+            evidence:
+              "Opposed specific deplatforming on principle.",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.5,
+            confidence: 0.7,
+            evidence:
+              "Regulation-heavy — corporate break-ups, wealth taxes, platform regulation.",
+          },
+          {
+            domain: "culture-family",
+            value: -0.4,
+            confidence: 0.6,
+            evidence:
+              "Progressive civil-liberties framing.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.72,
+    notes:
+      "Added April 2026. LEFT-SYMMETRY SECOND HALF: Uygur is to Maddow what Carlson is to Shapiro. Same-cluster in 5-axis, separate sharply on populism (-0.7 vs +0.8 = 1.5 gap, almost identical to Shapiro/Carlson 1.2 gap). The populist-left / establishment-left divide is structurally identical to the populist-right / establishment-right divide, and neither could be represented in 5 axes. 5-axis coherence 0.55-0.60 was conflating presentation inconsistency (same position, wildly different intensity depending on emotional state) with ideological coherence — same error as Crowder/Piker. Ideologically-reversed subject: pre-2002 Republican positions are publicly acknowledged and distinct from current framework. Coherence score applies to post-2002 framework.",
+  },
+  {
+    entityId: "ana-kasparian",
+    entityName: "Ana Kasparian",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.5,
+        confidence: 0.75,
+        evidence:
+          "Medicare for All, stronger labor protections, progressive taxation. Stable across TYT tenure. Kasparian has stated her economic framework has NOT changed.",
+        trend: "stable",
+      },
+      {
+        axisId: "speech",
+        value: -0.4,
+        confidence: 0.6,
+        evidence:
+          "Has criticized deplatforming with increased emphasis since 2022. Moving toward principled free-speech absolutism, not away from it.",
+        trend: "moving-left",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.2,
+        confidence: 0.5,
+        evidence:
+          "Domain-dependent. Structural on economic and foreign-policy. Moved toward individual-causation on homelessness, crime, and identity-politics based on stated empirical updates. One of the cleaner cases of per-domain causation assessment that updates on evidence.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.3,
+        confidence: 0.45,
+        evidence:
+          "Outcome equality on economic domains; opportunity equality on specific public-safety/cultural topics where she has revised her view.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.4,
+        confidence: 0.55,
+        evidence:
+          "Still change-oriented on healthcare and electoral systems; less change-oriented on criminal-justice and homelessness policy where she now defends some status-quo approaches. Selective re-evaluation, not drift.",
+        trend: "moving-right",
+      },
+      {
+        axisId: "foreign-policy",
+        value: -0.4,
+        confidence: 0.65,
+        evidence:
+          "Stable anti-interventionist. Critical of US support for Saudi Arabia, Israel military action in Gaza, NATO expansion.",
+        trend: "stable",
+      },
+      {
+        axisId: "populism",
+        value: -0.5,
+        confidence: 0.7,
+        evidence:
+          "Inherited TYT populist-left framework (anti-corporate-Dem, anti-institutional-capture) and has NOT abandoned it. Intra-left critiques are in the same populist-left mode — treats progressive movement organizations as captured by identity-politics orthodoxy the same way TYT treats the Democratic establishment as captured by corporate donors.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.0,
+        confidence: 0.4,
+        evidence:
+          "Not a primary theme.",
+      },
+      {
+        axisId: "authority",
+        value: 0.0,
+        confidence: 0.55,
+        evidence:
+          "Domain-split; aggregate is placeholder. Libertarian on speech (increasing), culture/family (updating). Leaning authoritarian on commerce/platform (regulation-supportive) and some public-safety topics.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.6,
+            confidence: 0.7,
+            evidence:
+              "Intensifying free-speech framing post-2022.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.2,
+            confidence: 0.55,
+            evidence:
+              "Leaning authoritarian on specific topics where she revised her view (gender-affirming care for minors, some public-safety questions).",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.3,
+            confidence: 0.55,
+            evidence:
+              "Regulation-supportive from TYT framework.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.62,
+    notes:
+      "Added April 2026. NEW COHERENCE TYPE IDENTIFIED: meta-framework stable, domain-specific update on evidence. Kasparian holds her populist-left meta-framework stable (populism, economic, foreign-policy anchoring) while updating specific domain conclusions (causation on homelessness/crime; equality-model on gender/public-safety) based on stated empirical reassessment. This is neither audience capture (Pool-style: tracking paying audience) nor institution absorption (Lemon-style: tracking employer) nor drift without framework (Owens-style) nor philosophy-driven stasis (Shapiro-style). It is a fifth pattern that assessCoherenceType() does not currently recognize — arguably the HEALTHIEST coherence pattern in the dataset: subject treats political positions as updatable hypotheses rather than tribal identity markers. EPISTEMOLOGICAL HOOK: her stated reason for shifting ('I believed things that were tacit understanding presented as known truth') is a verbatim instantiation of the Logic System's bias-as-category-error formulation. Strong training-set candidate for the epistemological classifier.",
+  },
+  {
+    entityId: "hasan-piker",
+    entityName: "Hasan Piker",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.85,
+        confidence: 0.9,
+        evidence:
+          "Marxist framework. Abolition of real-estate market, fully-government-provided healthcare, fundamental restructuring of capitalist systems. Explicitly read-Marx, not social-democratic. Furthest-left economic score in the dataset.",
+      },
+      {
+        axisId: "speech",
+        value: -0.3,
+        confidence: 0.45,
+        evidence:
+          "Broadly supports free expression; criticizes platform censorship targeting the left. But dismisses speech he considers harmful (Israel/Palestine discourse) and selectively applies principles. Stated principles and observed behavior diverge.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.9,
+        confidence: 0.9,
+        evidence:
+          "EXTREME STRUCTURAL. Marxist class analysis is the dominant frame. Every outcome filtered through 'who has structural power and who doesn't?' Tied with Fuentes for most structural figure in the dataset — opposite directions on every other axis, nearly identical on causation-frame. Strongest possible demonstration that causation-analysis is a frame, not a tribal marker.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.8,
+        confidence: 0.85,
+        evidence:
+          "Strong outcome equality. Healthcare, housing, wealth — all framed as outcome-equality questions.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.8,
+        confidence: 0.85,
+        evidence:
+          "Strong liberal; wants transformation not reform. Coherent with Marxist economics — not preserving or improving institutions, wants to replace them.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: -0.8,
+        confidence: 0.85,
+        evidence:
+          "Strong non-interventionist, anti-imperialist framework. Israel/Palestine position (views Israel as US-backed imperial project) flows directly from this axis. October 7 'direct consequence' commentary is the most extreme expression and internally consistent with the framework.",
+      },
+      {
+        axisId: "populism",
+        value: -0.8,
+        confidence: 0.85,
+        evidence:
+          "Strong populist. Treats Democratic establishment, corporate media, state department, think-tank expertise as captured by class/imperial interests. Refused to endorse Biden 2020.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.5,
+        confidence: 0.7,
+        evidence:
+          "COUNTERINTUITIVE: Piker is globalist-leaning. Internationalist class-solidarity framework, critical of nation-state as primary obligation unit, treats national borders as artifacts of capital. Same nationalism-quadrant as Shapiro despite being opposite on everything else. Illustrates that nationalism is genuinely independent from left/right cluster assignment.",
+      },
+      {
+        axisId: "authority",
+        value: 0.1,
+        confidence: 0.55,
+        evidence:
+          "Domain-split; aggregate is placeholder. Libertarian on speech (in principle; selective in practice), culture/family, and health/bodily. Strongly authoritarian on commerce/platform — Marxist economic framework advocates for substantial state control over production, property, markets. Strongest single authoritarian sub-domain position in the dataset because position is explicit and framework-derived.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.5,
+            confidence: 0.4,
+            evidence:
+              "Libertarian in principle, selective in application. Low confidence due to divergence between stated and observed.",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.8,
+            confidence: 0.85,
+            evidence:
+              "STRONGEST authoritarian sub-domain in the dataset. Advocates for substantial state control over production, property, markets.",
+          },
+          {
+            domain: "culture-family",
+            value: -0.6,
+            confidence: 0.65,
+            evidence:
+              "Progressive libertarian framing on social/cultural topics.",
+          },
+          {
+            domain: "health-bodily",
+            value: -0.6,
+            confidence: 0.65,
+            evidence:
+              "Libertarian framing on bodily autonomy.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.82,
+    notes:
+      "Added April 2026. INVERSE CROWDER CASE: 5-axis model scored 0.60-0.70 by conflating engagement-optimized presentation ('moral certainty at high volume') with ideological coherence. Actual axis positions are extremely consistent — a Marxist rule set generates every position. Format is engagement-optimized; ideology is philosophy-driven. Separate measurements. BATCH 2 FINDINGS converged in Piker's profile: (1) he and Uygur are BOTH populist-left but separate on economic/causation/equality-model — distinct sub-clusters, same populism score; (2) he and Fuentes share nearly identical causation-analysis scores (-0.90 / -0.80) with opposite content — strongest demonstration that causation-frame is independent of tribal assignment; (3) counterintuitive nationalism finding: globalist-leaning internationalist class-solidarity framework puts him in the same nationalism quadrant as Shapiro despite being opposite everywhere else. Moral-certainty-at-high-volume rhetorical pattern (correctly named in original profile) should be promoted to standing rule-engine detection as 'confidence-asymmetry-flag' — detects when stated confidence exceeds epistemic warrant, politically neutral.",
+  },
 ];
 
 // ─── Analysis Functions ─────────────────────────────────────────────

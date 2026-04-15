@@ -112,6 +112,8 @@ DeFranco's coverage mix shifted observably between 2015 and 2021 toward progress
 
 The 5-axis model scored Carlson at 0.50 coherence (mixed) because "pro-market but anti-corporate" and "conservative but isolationist" read as contradictions. The 9-axis model dissolves those apparent contradictions: they collapse into a single coherent populist-nationalist paleoconservative rule set — nation-state primacy + elite-capture thesis + traditional culture + non-intervention + structural causation directed upward at institutions rather than downward at individuals. Under dimensional preservation (Logic System principle), coherence is **0.78**, not 0.50. The old score was a measurement artifact of axis bundling, not a property of Carlson. This is a central test case for why the April 2026 expansion was necessary.
 
+**Cross-reference — the Carlson/Shapiro distinguishability problem.** Shapiro and Carlson are virtually identical on the five axes the old model measured (economic, speech, liberal-conservative, equality-model, causation-analysis). They separate on populism (+0.40 vs −0.80) and nationalism (+0.20 vs −0.70) — a 1.9-point gap across exactly the two axes the old model didn't have. In the 5-axis world, the model could not distinguish religious-conservative from populist-nationalist right. This is arguably the single strongest case for the expansion: not that any individual subject was mis-scored, but that two structurally distinct clusters of the American right were collapsing into one representation. See Shapiro's profile for the mirror-image framing.
+
 #### Notes
 
 Carlson's economic positions include both pro-market statements and criticism of specific corporate actors. The combination is observably consistent across his Fox tenure and independent platform. His foreign policy position became more publicly prominent after his Fox departure and includes interview subjects (Putin, Dugin) that other US media outlets have generally not booked. Post-Fox business arrangements include reported funding sources from Dubai-based investors; the funding structure of TCN is not fully public. The funding-source question is a separate concern about motive, not ideology — it should be tracked on the omission-analysis side rather than folded into the axis scores.
@@ -288,8 +290,8 @@ Shapiro's positions across the core axes have remained internally consistent ove
 ### Rachel Maddow
 
 **Platform:** MSNBC (Monday show only since 2022)
-**Current Leaning:** Left
-**Ideological Coherence:** 0.70 (moderate)
+**Current Leaning:** Establishment-Left Institutionalist
+**Ideological Coherence:** 0.82 (high — see Logic System note)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -301,36 +303,53 @@ Shapiro's positions across the core axes have remained internally consistent ove
 | ~2020 | Left | Continued nightly coverage emphasis on Trump administration. Authored "Bag Man" and "Blowout" books on political corruption topics. |
 | ~2022 | Left | Reduced to Monday-only schedule. Continued podcast and book projects (including "Prequel" on 1930s-40s American fascist movements). |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | +0.30 | Leaning Social Democrat | Stable | 65% |
-| Speech | +0.20 | Leaning Reasonable Censorship | Stable | 50% |
-| Progressive | -0.60 | Moderate Progressive | Stable | 75% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 75% |
+| Speech | +0.30 | Leaning Pro-Moderation | Stable | 50% |
+| Causation Analysis | −0.60 | Structural | Stable | 75% |
+| Equality Model | −0.60 | Moderate Outcome Equality | Stable | 75% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Stable | 75% |
 | Foreign Policy | +0.30 | Leaning Interventionist | Stable | 60% |
+| Populism | +0.80 | Strong Institutionalist | Stable | 85% |
+| Nationalism | +0.50 | Moderate Globalist | Stable | 65% |
+| Authority — Speech | +0.30 | Leaning Authoritarian (harm-prevention) | Stable | 50% |
+| Authority — Commerce/Platform | +0.40 | Leaning Authoritarian (regulation-supportive) | Stable | 65% |
+| Authority — Culture/Family | −0.30 | Libertarian | Stable | 65% |
+| Authority — Health/Bodily | −0.50 | Libertarian | Stable | 70% |
 
 #### Axis Justifications
 
-- **Economic (+0.30):** Supports universal healthcare, minimum wage increases, and stronger regulation of finance. Has not advocated nationalization or restructuring of property rights. Position aligns with Democratic Party center-left consensus.
-- **Speech (+0.20):** Has supported deplatforming of specific figures and content categories. Has not articulated a general position on speech regulation. Has criticized "both sides" framings of speech debates.
-- **Progressive (-0.60):** Advocates for racial and gender equity policies. Supports affirmative action. Coverage of equity-related stories consistently aligned with progressive framing.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on multiple issues (voting rights, court reform, healthcare). Has framed conservative positions as obstacles to needed reform.
-- **Foreign Policy (+0.30):** Supports NATO and Ukraine aid. Supported intervention in Libya (2011). Critical of Iraq War (2003 onward). Position reflects mainstream Democratic foreign policy consensus.
+- **Economic (+0.30):** Universal healthcare, minimum-wage increases, stronger finance regulation. Has not advocated nationalization or property-rights restructuring. Center-left Democratic consensus position.
+- **Speech (+0.30):** Supported specific deplatforming decisions and content-moderation categories. Has not articulated a general principle. Institutional journalism background gives some resistance to outright censorship; position is pro-moderation for harm-prevention, not pro-moderation absolutist.
+- **Causation Analysis (−0.60):** Dominant framing is structural — voting rights, court capture, DOJ independence, institutional corruption, historical fascism (her "Prequel" book frames 1930s-40s movements through structural-political analysis). Explicitly treats systemic/institutional factors as primary explanatory variables. Consistent across nightly coverage and books.
+- **Equality Model (−0.60):** Outcome-equality framing on civil rights, affirmative action, and disparate-impact coverage. Not extreme — she supports market mechanisms with regulatory corrections rather than outcome-imposition. Distinct from Piker's stronger outcome-equality position.
+- **Liberal/Conservative (−0.50):** Change-oriented on voting rights, court reform, healthcare. **Important tension:** simultaneously liberal (change the system) AND institutionalist (defend specific institutions — DOJ, Fed, election integrity, rule-of-law norms) against Republican threats. The Trump era amplified this tension; her institutional-defense content is structurally conservative behavior in service of liberal goals. The tension is authentic and produces occasional incoherence, but the rule set generating both positions (institutional rule-of-law + liberal change agenda) is stable.
+- **Foreign Policy (+0.30):** NATO, Ukraine aid, Libya intervention (2011), Iraq War critical (2003 onward). Mainstream Democratic foreign-policy consensus. Less developed than her domestic framework — positions feel derived from alliance-maintenance framework rather than first principles.
+- **Populism (+0.80):** **Defining axis.** Textbook institutionalist — defends DOJ, courts, Constitution, peer-reviewed expertise, institutional-media standards, election administration, rule-of-law norms. Treats populist appeals (from both right and left — she has been critical of Sanders populism and strongly critical of Trump populism) as destabilizing to institutional rule-of-law. One of the most institutionalist figures in the dataset. This axis, more than any other, defines the Maddow-Piker divide within the broader "left."
+- **Nationalism (+0.50):** Globalist-leaning. Supports international institutions, NATO, multilateral frameworks. Her pro-Ukraine and pro-NATO coverage is embedded in a liberal-internationalist framework, not a nationalist one. Not extreme globalist — still frames policy through US national-interest lens on some domestic questions.
+- **Authority (domain-split):** Leaning authoritarian on commerce/platform (pro-regulation of finance, Big Tech, platforms) and mildly on speech (harm-prevention framework). Libertarian on culture/family and health/bodily (strong privacy and bodily-autonomy framing). Classic progressive-liberal split.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Maddow at 0.70 (moderate). Under 9-axis, coherence rises to 0.82. The 9-axis view reveals that Maddow is the **structural mirror of Ben Shapiro on the left**: high-institutionalist, philosophy-driven, alliance-based globalist, change-oriented on domestic policy while defending institutional rule-of-law norms. Shapiro and Maddow are the two canonical philosophy-driven establishment profiles in the dataset — one religious-conservative-institutionalist, one progressive-liberal-institutionalist — and they are methodologically more similar to each other than either is to the populist wings of their own clusters. The 5-axis model could not see this symmetry because it lacked the populism axis on which both score extreme (+0.40 Shapiro, +0.80 Maddow) relative to Carlson (−0.80) and Piker/Uygur (−0.70/−0.80).
+
+**Left symmetry test (Batch 2 finding):** Maddow and Uygur are both "left" in the 5-axis model. In the 9-axis model, they separate on populism (+0.80 vs −0.70) — a 1.5-point gap, almost identical to the Shapiro/Carlson 1.9-point gap on the right. The establishment-left / populist-left divide is structurally identical to the religious-right / populist-nationalist-right divide, and neither was representable in 5 axes. The 9-axis expansion surfaces this divide cleanly on both sides.
 
 #### Notes
 
-Maddow's coverage from 2017-2019 focused heavily on the Trump-Russia investigation, with documented nightly attention to Mueller probe developments. The 2022 schedule reduction was announced as a contractual change to allow other projects. Her speech axis confidence is moderate because she has supported specific content moderation decisions but has not articulated a general principle. Her foreign policy positions are interventionist within the Democratic mainstream and have been stable across the documented period. Her published books focus on historical political corruption and 20th-century American political movements.
+Her coverage of the Trump-Russia investigation (2017-2019) is the most-discussed analytical question in her profile. The **narrative-construction** rhetorical technique noted in the original profile-breakdowns.md is real and should be tracked in the rule engine separately from the axis scores — it is a presentation-mode observation that runs in parallel to the ideology scores, not a coherence depressant. Her "Prequel" work on 1930s-40s American fascist movements is a structural-causation historical framework and is consistent with her causation-axis score.
 
 ---
 
 ### Don Lemon
 
 **Platform:** Independent (post-CNN), YouTube show
-**Current Leaning:** Left
-**Ideological Coherence:** 0.55 (mixed)
-**Driver:** Mixed
+**Current Leaning:** Establishment-Left (institutionally absorbed)
+**Ideological Coherence:** 0.52 (moderate — see Logic System note)
+**Driver:** Institution-absorbed (not philosophy-driven, not engagement-driven — a third pattern)
 
 #### Bias Trajectory
 
@@ -341,27 +360,41 @@ Maddow's coverage from 2017-2019 focused heavily on the Trump-Russia investigati
 | ~2023 | Left | Departed CNN in April 2023 following on-air comments about Nikki Haley's age and other internal disputes. |
 | ~2024 | Left | Launched independent show on X. Dispute with Elon Musk over content terms led to deal cancellation in March 2024. Continued independent operation on YouTube and other platforms. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.20 | Leaning Social Democrat | Stable | 50% |
-| Speech | +0.20 | Leaning Reasonable Censorship | Stable | 45% |
-| Progressive | -0.60 | Moderate Progressive | Stable | 65% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 60% |
+| Economic | +0.20 | Leaning Social Democrat | Stable | 45% |
+| Speech | +0.10 | Near-center (mixed signals) | Stable | 40% |
+| Causation Analysis | −0.50 | Structural | Stable | 60% |
+| Equality Model | −0.60 | Moderate Outcome Equality | Stable | 65% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Stable | 55% |
 | Foreign Policy | +0.10 | Centrist | Stable | 30% |
+| Populism | +0.40 | Leaning Institutionalist | Stable | 55% |
+| Nationalism | +0.30 | Leaning Globalist | Stable | 45% |
+| Authority | 0.00 | Insufficient signal for sub-domain split | Stable | 30% |
 
 #### Axis Justifications
 
-- **Economic (+0.20):** Supports targeted social programs. Limited specific economic policy advocacy on record. Score reflects mainstream Democratic positioning with limited content for higher confidence.
-- **Speech (+0.20):** Supported deplatforming of specific figures. The 2024 dispute with Musk over the X show concerned content control terms; Lemon publicly stated he would not accept editorial restrictions, which is a free-speech position in that specific context.
-- **Progressive (-0.60):** Coverage of equity-related stories consistently aligned with progressive framing across CNN tenure. Has stated positions on racial justice, immigration, and trans rights aligned with progressive movements.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on civil rights and electoral systems. Coverage frames conservative positions as the side requiring justification more often than progressive positions.
-- **Foreign Policy (+0.10):** Foreign policy is a small portion of his coverage. Insufficient material to assign high confidence. Stated positions align with Democratic mainstream when expressed.
+- **Economic (+0.20):** Supports targeted social programs. Limited specific economic policy on record. Mainstream Democratic positioning without developed framework. **Low confidence throughout this profile — Lemon's positions are absorbed from institutional environment, not derived.**
+- **Speech (+0.10):** Supported deplatforming of specific figures in CNN era. BUT: the March 2024 Musk dispute over editorial terms for the X show is a free-speech position in the specific context of refusing editorial restrictions. His speech position is institutionally determined: he takes the position of whichever institution he is currently aligned with. The Musk dispute is arguably the first instance of a principled speech stance in his record, and it was defensive.
+- **Causation Analysis (−0.50):** Structural framing is the dominant frame on race/identity topics. Less rigorous than Maddow; more often invoked as default rather than argued.
+- **Equality Model (−0.60):** Outcome-equality framing aligned with progressive movement organizations. Consistent with his most memorable on-air moments (Ferguson, George Floyd, Haley-age comment).
+- **Liberal/Conservative (−0.50):** Change-oriented; frames conservative positions as the side requiring justification. Less developed ideological framework than Maddow or Uygur.
+- **Foreign Policy (+0.10):** Effectively absent. Insufficient material to score with high confidence.
+- **Populism (+0.40):** Institutionalist-leaning but less principled than Maddow. Defends institutional media, mainstream-Dem institutional framings, but the defense tracks whichever institution employs him. Post-CNN content shows slight populist-drift (the "media betrayed me" framing) but this is self-interested institutional critique, not a populism rotation on principle.
+- **Nationalism (+0.30):** Globalist-leaning within mainstream Democratic framing. Not a primary theme.
+- **Authority:** Insufficient signal across domains to justify sub-domain scoring. Mixed institutional-alignment signals.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Lemon at 0.45 (low, engagement-driven). Under 9-axis, coherence is essentially unchanged at 0.52. Unlike the other batch-2 subjects, the 9-axis view does NOT rehabilitate Lemon — it sharpens the diagnosis. He is neither philosophy-driven (no stable first-principle framework) nor engagement-driven (doesn't track audience incentives like Pool or Owens) — he is **institution-absorbed**: his positions track the editorial consensus of whichever institution currently employs him (CNN → X → independent YouTube). This is a third pattern the current `assessCoherenceType()` function doesn't recognize, and it matters: institution-absorbed subjects are predictable given institutional context but unpredictable absent it. The test from the original profile ("you'd need to know CNN's editorial line first") is correct and should be formalized as an institution-absorbed coherence type.
+
+**Predictive consequence:** Lemon is the canonical test case for whether a subject has a framework independent of institutional employer. His post-CNN trajectory is an ongoing natural experiment — does he stabilize around a framework or drift through successive institutional environments? As of April 2026, the evidence is that he is re-absorbing to the independent-left YouTube ecosystem. Track his Musk-dispute speech stance as the first principled data point in his record; if that stance holds after institutional context shifts again, it becomes evidence for emerging first-principle content.
 
 #### Notes
 
-Lemon's CNN departure in April 2023 followed multiple documented internal incidents, including the on-air statement about Nikki Haley. CNN cited the on-air statement as part of the basis for the termination. The 2024 X show with Musk was announced in January and cancelled in March; both parties made public statements describing the dispute, with Lemon stating that Musk had requested editorial restrictions and Musk stating that the deal terms were not acceptable. Foreign policy confidence is low because the visible record contains limited foreign policy content.
+The April 2023 CNN departure followed multiple documented internal incidents. The 2024 X show was announced January, cancelled March; both parties made public statements describing the dispute. Foreign-policy confidence is low throughout. Authority axis is not sub-domain-scored because there is insufficient signal to distinguish domains; this is itself diagnostic of the institution-absorbed pattern — subjects with developed frameworks produce differentiable domain positions, subjects without frameworks do not.
 
 ---
 
@@ -425,9 +458,9 @@ The Tenet Media indictment (US v. Kostiantyn Kalashnikov and Elena Afanasyeva, S
 ### Cenk Uygur
 
 **Platform:** The Young Turks (co-founder)
-**Current Leaning:** Left
-**Ideological Coherence:** 0.60 (moderate)
-**Driver:** Mixed
+**Current Leaning:** Populist-Left Social Democrat
+**Ideological Coherence:** 0.72 (moderate-high — see Logic System note)
+**Driver:** Philosophy-driven (post-2002)
 
 #### Bias Trajectory
 
@@ -439,36 +472,54 @@ The Tenet Media indictment (US v. Kostiantyn Kalashnikov and Elena Afanasyeva, S
 | ~2016 | Left | Co-founded Justice Democrats organization, which recruited progressive primary challengers including AOC. |
 | ~2024 | Left | Ran in 2024 Democratic presidential primary as protest candidate against Biden. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | +0.60 | Moderate Socialist | Stable | 75% |
-| Speech | -0.30 | Leaning Free Speech | Stable | 60% |
-| Progressive | -0.60 | Moderate Progressive | Stable | 70% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 65% |
-| Foreign Policy | -0.40 | Leaning Isolationist | Stable | 65% |
+| Speech | −0.30 | Leaning Free Speech | Stable | 60% |
+| Causation Analysis | −0.70 | Strong Structural | Stable | 80% |
+| Equality Model | −0.60 | Moderate Outcome Equality | Stable | 70% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Stable | 65% |
+| Foreign Policy | −0.40 | Leaning Non-Interventionist | Stable | 70% |
+| Populism | −0.70 | Strong Populist (anti-corporate-Dem) | Stable | 85% |
+| Nationalism | +0.10 | Near-center | Stable | 45% |
+| Authority — Speech | −0.50 | Libertarian | Stable | 65% |
+| Authority — Commerce/Platform | +0.50 | Authoritarian (regulation-heavy) | Stable | 70% |
+| Authority — Culture/Family | −0.40 | Libertarian | Stable | 60% |
 
 #### Axis Justifications
 
-- **Economic (+0.60):** Supports Medicare for All, $20 minimum wage, free public college, and stronger regulation of finance. Has advocated for these positions consistently since at least 2010.
-- **Speech (-0.30):** Has opposed specific deplatforming decisions on principle. Has criticized "cancel culture" framings from a left position. Position is leaning-free-speech but with some support for limits on harassment.
-- **Progressive (-0.60):** Supports race- and gender-equity policy. Position has been consistent since the early 2010s.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on healthcare, electoral systems, and criminal justice. Justice Democrats organization explicitly recruits primary challengers to incumbent Democrats.
-- **Foreign Policy (-0.40):** Opposed Iraq War. Critical of US support for Saudi Arabia. Critical of Israeli military action in Gaza. Position has been stable.
+- **Economic (+0.60):** Medicare for All, $20 minimum wage, free public college, wealth taxes, strong labor protections, break-up-corporations framing. Consistent since at least 2010. Works within a capitalist reform framework, not Marxist revolution. Further left than Maddow; not as far as Piker.
+- **Speech (−0.30):** Has opposed specific deplatforming decisions on principle. Has criticized "cancel culture" from the left. Supports free-speech instrumentally (tool for progressive politics) rather than absolutely — pragmatic, not principled.
+- **Causation Analysis (−0.70):** Strong structural framing. Corporate capture, class-struggle, institutional-capture-by-billionaires is the dominant analytical frame. Consistent across TYT career. One of the most structural-causation figures in the left cluster.
+- **Equality Model (−0.60):** Outcome-equality on healthcare, education, criminal justice. Consistent.
+- **Liberal/Conservative (−0.50):** Change-oriented institutionally. Justice Democrats explicitly recruits primary challengers to incumbent Democrats — this is a liberal (change-the-system) position directed at the Democratic Party itself.
+- **Foreign Policy (−0.40):** Iraq War opposition is a founding TYT position. Critical of US support for Saudi Arabia, Israeli military action in Gaza. Historical note: early TYT content contained Armenian-genocide denial that was later acknowledged and retracted; tracked in the record as a separate epistemological concern.
+- **Populism (−0.70):** **Defining axis.** Justice Democrats is literally a populist-left organization. Anti-corporate-Democrat framing is his most consistent content theme from 2010 to present. Treats the Democratic establishment, corporate media, and institutional political actors as captured by monied interests. Form of populism: treat named institutions as captured by identified elites (donors, corporations, consultants). This is the cleanest populist-left score in the dataset and the strongest candidate for the left mirror of Carlson.
+- **Nationalism (+0.10):** Near-center. Not a primary theme; occasional internationalist framing but no strong globalist or nationalist signal.
+- **Authority (domain-split):** Libertarian on speech and culture/family (progressive civil-liberties framing). Strongly authoritarian on commerce/platform (supports regulation-heavy framework — corporate break-ups, wealth taxes, campaign finance limits as state interventions). Classic populist-left split.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Uygur at 0.55-0.60 (moderate, "mixed driver"). Under 9-axis, coherence rises to 0.72. The 5-axis model treated him as moderate because his presentation style is inconsistent (same position, wildly different intensity depending on news cycle) — **conflating rhetorical consistency with ideological coherence, the same error the 5-axis model made on Crowder**. Uygur's actual axis positions are stable; only his tone varies.
+
+**Left symmetry test finding:** Uygur is to Maddow what Carlson is to Shapiro. Both pairs are "same cluster" in the 5-axis model and separate sharply on populism (Uygur −0.70 vs Maddow +0.80 = 1.5 gap; Carlson −0.80 vs Shapiro +0.40 = 1.2 gap). The populist-left / establishment-left divide and the populist-right / establishment-right divide are structurally identical and neither could be represented in 5 axes. The 9-axis model surfaces this symmetry cleanly on both sides. This, combined with the Shapiro-Carlson finding, is the strongest joint argument for the expansion.
+
+**Pre-2002 reversal caveat:** Uygur is the cleanest case in the dataset of an **ideologically-reversed subject**. His college-era Republican positions are distinct from his current framework; the shift happened around 2002 and is publicly acknowledged. Coherence score applies to the post-2002 framework; pre-2002 content should be assessed separately and should not depress the current coherence score.
 
 #### Notes
 
-Uygur's college-era writings showed positions distinct from his current framework. The shift is publicly acknowledged by him and is documented in his own content. His 2024 primary challenge against Biden generated debate about constitutional eligibility (he was born in Turkey); he proceeded with the campaign as a protest run. His coherence score is moderate because his current positions are stable but the pre-2002 reversal is significant in his record. TYT operates as a member-supported network; he is the largest individual stakeholder.
+The 2024 Democratic primary run against Biden generated debate about constitutional eligibility (Uygur was born in Turkey); he proceeded as a protest candidate. TYT operates as a member-supported network; Uygur is the largest individual stakeholder. The Ana Kasparian split is a documented intra-TYT event that should be tracked as a case study in selective-reassessment (see Kasparian's profile).
 
 ---
 
 ### Ana Kasparian
 
 **Platform:** The Young Turks (co-host)
-**Current Leaning:** Left (heterodox on specific issues)
-**Ideological Coherence:** 0.55 (mixed)
-**Driver:** Mixed
+**Current Leaning:** Heterodox Left (selective reassessment, not drift)
+**Ideological Coherence:** 0.62 (moderate — see Logic System note)
+**Driver:** Philosophy-driven within a meta-framework of evidence-responsive updating
 
 #### Bias Trajectory
 
@@ -479,35 +530,59 @@ Uygur's college-era writings showed positions distinct from his current framewor
 | ~2023 | Left (heterodox) | Public statements on homelessness policy, crime, and gender identity diverged from positions held by progressive movement organizations. Stated she no longer identified with the term "progressive" while maintaining other left positions. |
 | ~2024 | Left (heterodox) | Continued TYT role with documented intra-left disputes over specific positions. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.50 | Moderate Socialist | Stable | 70% |
-| Speech | -0.30 | Leaning Free Speech | Moving left ← | 60% |
-| Progressive | -0.40 | Leaning Progressive | Moving right → | 50% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 65% |
-| Foreign Policy | -0.40 | Leaning Isolationist | Stable | 60% |
+| Economic | +0.50 | Moderate Socialist | **Stable** | 75% |
+| Speech | −0.40 | Leaning Free Speech | Moving left ← (toward principled absolutism) | 60% |
+| Causation Analysis | −0.20 | Mixed (domain-dependent) | Moving toward individual on specific topics | 50% |
+| Equality Model | −0.30 | Leaning Outcome (domain-dependent) | Moving toward opportunity on specific topics | 45% |
+| Liberal/Conservative | −0.40 | Leaning Liberal | Moving right → on specific topics | 55% |
+| Foreign Policy | −0.40 | Leaning Non-Interventionist | **Stable** | 65% |
+| Populism | −0.50 | Populist (inherited TYT frame) | **Stable** | 70% |
+| Nationalism | 0.00 | Near-center | Stable | 40% |
+| Authority — Speech | −0.60 | Libertarian | Moving left (intensifying) | 70% |
+| Authority — Culture/Family | +0.20 | Leaning Authoritarian on specific topics | Moving right → | 55% |
+| Authority — Commerce/Platform | +0.30 | Leaning Authoritarian (regulation-supportive) | Stable | 55% |
 
 #### Axis Justifications
 
-- **Economic (+0.50):** Supports Medicare for All, stronger labor protections, and progressive taxation. Position has been stable across her TYT tenure.
-- **Speech (-0.30):** Has criticized deplatforming and content moderation with increased emphasis since 2022. Has stated she changed position on some speech issues.
-- **Progressive (-0.40):** Position has shifted on specific equity issues (homelessness, gender, public safety). Continues to support progressive economic and racial-justice positions. The split is documented in her own content.
-- **Liberal/Conservative (-0.50):** Advocates for institutional change on healthcare and electoral systems. Position has been stable.
-- **Foreign Policy (-0.40):** Opposed US support for Saudi Arabia, Israeli military action in Gaza, and continued NATO expansion. Position has been stable.
+- **Economic (+0.50):** Medicare for All, stronger labor protections, progressive taxation. Stable across her TYT tenure. Kasparian has explicitly stated her economic framework has not changed; what changed is her application of progressive framing to specific domain questions.
+- **Speech (−0.40):** Has criticized deplatforming and content moderation with increased emphasis since 2022. Has stated she changed position on specific speech issues — this is a move toward more principled free-speech absolutism, not away from it. Trend: leftward (toward the libertarian end of the axis).
+- **Causation Analysis (−0.20):** **The key to her profile.** On economic and foreign-policy topics, structural framing is dominant and stable. On homelessness, crime, and identity-politics, she has moved toward individual-causation framing based on stated empirical updates ("the evidence changed my mind about what works"). This is a **domain-dependent** causation score, not a drift. Most subjects hold the same causation frame across domains; Kasparian is one of the cleaner cases of a per-domain causation assessment that updates on evidence.
+- **Equality Model (−0.30):** Similar pattern — outcome equality on economic domains; opportunity equality on specific public-safety/cultural topics where she has revised her view.
+- **Liberal/Conservative (−0.40):** Still change-oriented on healthcare and electoral systems; less change-oriented on criminal-justice and homelessness policy where she now defends some status-quo approaches. Not a drift to conservatism; a selective re-evaluation.
+- **Foreign Policy (−0.40):** Stable anti-interventionist. Not moving.
+- **Populism (−0.50):** Inherited the TYT populist-left framework (anti-corporate-Dem, anti-institutional-capture) and has not abandoned it. Her intra-left critiques are in the populist-left mode — treats progressive movement organizations as captured by identity-politics orthodoxy in the same way TYT treats the Democratic establishment as captured by corporate donors.
+- **Nationalism (0.00):** Not a primary theme.
+- **Authority (domain-split):** Libertarian on speech, culture/family (increasing), and mildly authoritarian on commerce/platform and some public-safety topics.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Kasparian at 0.40-0.55 ("mixed, in transition"). Under 9-axis, coherence rises to 0.62. **The diagnosis changes fundamentally:** the 5-axis model read her as drifting because several axes were moving, and defaulted to "in transition" as the explanation. The 9-axis model reveals that her movement is **domain-specific, not axis-wide**: she holds the populist-left meta-framework stable (populism, economic, foreign-policy anchoring) while updating specific domain conclusions (causation on homelessness/crime; equality-model on gender/public-safety) based on stated empirical reassessment.
+
+This is the **cleanest case in the dataset of evidence-responsive updating**. It is neither:
+- Audience capture (Pool-style): not tracking a paying audience
+- Institution absorption (Lemon-style): not tracking an institutional employer
+- Drift without framework (Owens-style): has a stable meta-framework
+- Philosophy-driven stasis (Shapiro-style): is actively updating positions
+
+It is a fifth coherence pattern that the current `assessCoherenceType()` function does not recognize: **meta-framework stable, domain-specific update on evidence**. This is arguably the *healthiest* coherence pattern — the subject is treating political positions as updatable hypotheses rather than tribal identity markers. The 5-axis model penalized her for this because it couldn't distinguish evidence-responsive updating from audience-drift. The 9-axis model should promote this pattern as a distinct diagnostic type and potentially as a **ground-truth signal** for what epistemologically healthy political reasoning looks like in practice.
+
+**Epistemological hook:** Kasparian's stated reason for shifting is that progressive positions she held were "tacit understanding presented as known truth" — she believed things about crime, homelessness, and gender-affirming care that she says did not survive examination of the evidence. This is a direct instantiation of the Logic System's core bias definition (tacit understanding as known truth). Whether her new positions are themselves tacit understanding in a different frame is exactly what the epistemological classifier should assess, case by case.
 
 #### Notes
 
-Kasparian's 2022-2024 statements on specific equity-related topics generated documented disputes with other progressive media figures. She has stated that her positions on economic and foreign policy issues have not changed and that her shift is on specific cultural and public-safety issues. The progressive axis confidence is moderate because the score reflects an ongoing position change rather than a stable framework. Her TYT role has continued through this period.
+Her 2022-2024 statements generated documented disputes with other progressive media figures. Her stated position is that economic and foreign-policy positions are unchanged and that her shift is on specific cultural and public-safety issues — **this statement itself is Logic-System-aligned** (explicit about which axes moved and which didn't). Most subjects do not self-report with this granularity. Track as a candidate training example for evidence-responsive updating.
 
 ---
 
 ### Hasan Piker
 
 **Platform:** Twitch, YouTube
-**Current Leaning:** Far-Left
-**Ideological Coherence:** 0.70 (moderate)
+**Current Leaning:** Populist-Left Marxist (Internationalist)
+**Ideological Coherence:** 0.82 (high — see Logic System note)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -519,27 +594,47 @@ Kasparian's 2022-2024 statements on specific equity-related topics generated doc
 | ~2020 | Far-Left | Coverage of 2020 election, COVID, and BLM. Self-identified as democratic socialist. |
 | ~2024 | Far-Left | Coverage of Israel-Hamas war from October 2023 onward generated significant audience growth and intra-left disputes. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.70 | Strong Socialist | Stable | 80% |
-| Speech | -0.30 | Leaning Free Speech | Stable | 55% |
-| Progressive | -0.70 | Strong Progressive | Stable | 80% |
-| Liberal/Conservative | -0.60 | Moderate Liberal | Stable | 70% |
-| Foreign Policy | -0.60 | Moderate Isolationist | Stable | 80% |
+| Economic | +0.85 | Strong Socialist (Marxist) | Stable | 90% |
+| Speech | −0.30 | Leaning Free Speech (inconsistent application) | Unstable | 45% |
+| Causation Analysis | −0.90 | Extreme Structural (Marxist class analysis) | Stable | 90% |
+| Equality Model | −0.80 | Strong Outcome Equality | Stable | 85% |
+| Liberal/Conservative | −0.80 | Strong Liberal (transformation, not reform) | Stable | 85% |
+| Foreign Policy | −0.80 | Strong Non-Interventionist (anti-imperialist) | Stable | 85% |
+| Populism | −0.80 | Strong Populist (anti-corporate-Dem, anti-imperial) | Stable | 85% |
+| Nationalism | +0.50 | Globalist (class-solidarity-across-borders) | Stable | 70% |
+| Authority — Speech | −0.50 | Libertarian in principle, selective in application | Unstable | 40% |
+| Authority — Commerce/Platform | +0.80 | Strong Authoritarian (advocates regulation, nationalization) | Stable | 85% |
+| Authority — Culture/Family | −0.60 | Libertarian | Stable | 65% |
+| Authority — Health/Bodily | −0.60 | Libertarian | Stable | 65% |
 
 #### Axis Justifications
 
-- **Economic (+0.70):** Self-identifies as democratic socialist. Advocates for nationalization in specific sectors, Medicare for All, and worker ownership. Position is consistent across his career.
-- **Speech (-0.30):** Supports speech protections in general. Has supported some platform content moderation. Position is mixed and has been stable.
-- **Progressive (-0.70):** Supports race-, gender-, and class-equity policies across all topics covered. Position is consistent and explicit.
-- **Liberal/Conservative (-0.60):** Advocates for systemic restructuring of US institutions. Has framed incremental reform as insufficient.
-- **Foreign Policy (-0.60):** Opposes US foreign military intervention. Critical of Israeli military action. Critical of US support for Saudi Arabia, Egypt, and other US-aligned governments. Position is consistent.
+- **Economic (+0.85):** Marxist economic framework. Advocates for abolition of the real-estate market, fully government-provided healthcare, strict economic regulation, and fundamental restructuring of capitalist systems. Explicitly read-Marx left, not social-democratic. Furthest-left economic score in the dataset. Personal-wealth / public-positions tension (he is a millionaire who bought a $2.7M house) is an interesting epistemological question but does not invalidate the position score — the axis measures what the content DOES, not the speaker's personal consumption.
+- **Speech (−0.30):** Broadly supports free expression and criticizes platform censorship when targeting the left. But dismisses speech he considers harmful (particularly around Israel/Palestine) and selectively applies speech principles. Position is *"free speech for political dissent, but some positions are morally beyond the pale"* — common left position, contradicts absolutism. Low confidence because stated principles and observed behavior diverge.
+- **Causation Analysis (−0.90):** **Extreme structural.** Marxist class analysis is the dominant analytical frame. Every outcome gets filtered through "who has structural power and who doesn't?" Imperial framework applied to geopolitics, class framework applied to domestic outcomes. Virtually no individual-causation framing. Tied with Fuentes for most structural figure in the dataset (opposite directions on every other axis, identical on causation-frame).
+- **Equality Model (−0.80):** Strong outcome equality. Healthcare, housing, wealth distribution — all framed as outcome-equality questions.
+- **Liberal/Conservative (−0.80):** Strong liberal; wants transformation of existing systems, not reform. Coherent with Marxist economics — not trying to preserve or incrementally improve institutions, wants to replace them.
+- **Foreign Policy (−0.80):** Strong non-interventionist, anti-imperialist framework. Israel/Palestine position flows directly from this axis: views Israel as a US-backed imperial project. October 7 commentary (calling the Hamas attack a "direct consequence" of Israeli/US policy) is the most extreme expression of this axis and the most controversial; it is internally consistent with the anti-interventionist framework, which is what the axis measures.
+- **Populism (−0.80):** Strong populist. Treats Democratic establishment, corporate media, state department, think-tank expertise as captured by class and imperial interests. Refused to endorse Biden in 2020. Form of populism: institutional-capture framework applied through Marxist lens. Both the target (different from Carlson/Uygur) and the theoretical framework (Marxist rather than agrarian/classical-populist) are distinctive, but the axis position is extreme populist.
+- **Nationalism (+0.50):** **Counterintuitive finding.** Piker scores globalist on nationalism, not nationalist. His framework is internationalist class-solidarity — workers of the world, critical of the nation-state as a unit of primary obligation, treats national borders as artifacts of capital. This puts him in the same nationalism-axis quadrant as Shapiro (both globalist-leaning) while they are opposite on every other axis. Illustrates that nationalism is genuinely independent from the left/right cluster assignment.
+- **Authority (domain-split):** Libertarian on speech (in principle; selectively in practice), culture/family, and health/bodily. **Strongly authoritarian on commerce/platform** — his Marxist economic framework advocates for substantial state control over production, property, and markets. This is the strongest single authoritarian sub-domain position in the dataset because the position is explicit and framework-derived.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Piker at 0.60-0.70 ("mixed — provocative presentation amplifies engagement incentives"). Under 9-axis, coherence rises to 0.82. **Same error as Crowder, inverted direction.** The 5-axis model conflated presentational provocation (high-volume, emotionally-intense, clip-generating) with ideological coherence. Piker's actual axis positions are extremely consistent and form a single Marxist rule set that generates every position he takes. Format is engagement-optimized; ideology is philosophy-driven. These are separate measurements and should not be conflated.
+
+**Batch 2 left-symmetry findings summarized:**
+1. **Maddow-vs-Uygur** separate on populism (+0.80 vs −0.70) the same way Shapiro-vs-Carlson do (+0.40 vs −0.80). The populism axis is the single most important 9-axis addition for distinguishing establishment wings from populist wings within the same broader cluster.
+2. **Piker-vs-Uygur** are BOTH populist-left but separate on causation-analysis (−0.90 vs −0.70), economic (+0.85 vs +0.60), and equality-model (−0.80 vs −0.60). Uygur is social-democratic populist; Piker is Marxist populist. The 5-axis model treated both as "left, mixed driver"; the 9-axis model resolves them as distinct sub-clusters.
+3. **Piker-vs-Fuentes** share nearly identical causation-analysis scores (−0.90 / −0.80, both extreme structural) and opposite everything else. Illustrates that structural-causation is a frame, not a tribal marker — the frame is used by both the far-left and the far-right, with different content inside it. This is the cleanest possible demonstration of the causation-analysis axis's independence.
 
 #### Notes
 
-Piker's positions across all five axes have remained internally consistent over a documented period of approximately a decade. His coverage of the Israel-Hamas conflict from October 2023 onward correlated with significant Twitch audience growth (publicly reported subscriber and viewer counts). The lifestyle-vs-stated-politics critique (e.g., personal real estate purchases by a self-described socialist) is documented in public discussion but does not affect axis scores, which reflect stated positions and policy advocacy rather than personal consumption patterns. His coherence score is high because positions are stable and explicit.
+Piker's coverage of the Israel-Hamas conflict from October 2023 onward correlated with significant Twitch audience growth (publicly reported subscriber and viewer counts). The lifestyle-vs-stated-politics critique (e.g., personal real estate purchases by a self-described socialist) is documented in public discussion but does not affect axis scores, which reflect stated positions and policy advocacy rather than personal consumption patterns. **Rhetorical note (preserved from original profile):** Piker's primary technique is "moral certainty at high volume" — high-confidence framings that leave no room for uncertainty. This is an engagement-reward pattern (equivocation doesn't generate clips) and should be tracked by the rule engine as a separate signal from ideological coherence. The gap between his stated confidence and actual epistemic warrant is where the epistemological classifier should do work on his content.
 
 ---
 
