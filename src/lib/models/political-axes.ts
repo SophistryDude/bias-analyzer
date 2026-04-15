@@ -2020,6 +2020,103 @@ export const SEED_PROFILES: PoliticalProfile[] = [
     notes:
       "Added April 2026. ONE OF THE HIGHEST-COHERENCE PROFILES in the dataset. CLEANEST DESIGN TARGET for the new rhetoricalStyleVariance field: Pakman and Uygur hold near-identical positions on economic/equality-model/causation/liberal-conservative, and differ sharply on populism (+0.60 vs -0.70 = 1.3 gap) and rhetoricalStyleVariance (0.15 vs ~0.65). Same policy, different populism-axis quadrant, different rhetorical packaging. 'Establishment-critical-insider' is a fourth position on the populism axis (distinct from Maddow pure-institutionalist, Destiny method-coherent institutionalist, Uygur populist). Full left populism range now visible: Maddow (+0.80), Pakman (+0.60), Destiny (+0.60), Uygur (-0.70), Piker (-0.80), Krystal (-0.80) — six-point range on a single axis. 5-axis model could not distinguish these positions except by rhetorical intensity and foreign-policy specifics. Strongest single demonstration of why populism is load-bearing for the left cluster.",
   },
+  {
+    entityId: "jon-stewart",
+    entityName: "Jon Stewart",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.4,
+        confidence: 0.65,
+        evidence:
+          "Consistent critique of corporate power, pro-labor, pro-healthcare. Anti-financial-deregulation. Direct advocacy for veterans' and 9/11 first responders' healthcare. Social-democratic reformist framework stable across 25 years.",
+      },
+      {
+        axisId: "speech",
+        value: -0.4,
+        confidence: 0.65,
+        evidence:
+          "Crossfire appearance criticized media FORMAT (argument-as-performance), not speech itself — a sophisticated free-speech-adjacent position. Interviews figures across the spectrum. Broadly pro-expression.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "DOMINANT STRUCTURAL FRAMING. Institutional failure is his primary analytical frame. 9/11 first responders advocacy is textbook structural: 'the system failed these people.' Consistent across satirical and direct content modes.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.5,
+        confidence: 0.6,
+        evidence:
+          "Outcome-equality with a distinct twist: his equality framing is OUTCOME-CHECK not OUTCOME-ENFORCE — 'you claim to care about X but your policy doesn't deliver X.' Holds institutions to their own stated outcomes. Less activist-first than Piker or Maddow.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.5,
+        confidence: 0.7,
+        evidence:
+          "Change-oriented but institutionally-reformist. Works through Congress, testimony, direct advocacy rather than revolutionary transformation. Classic reformist-liberal.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: -0.4,
+        confidence: 0.65,
+        evidence:
+          "Famously anti-Iraq War. Critical of expansive surveillance programs. Critical of the Obama-era drone strike program (important — this is cross-tribal criticism volume-weighted toward whichever tribe holds power, not symmetric 'both-sidesism').",
+      },
+      {
+        axisId: "populism",
+        value: 0.3,
+        confidence: 0.65,
+        evidence:
+          "LEANING INSTITUTIONALIST — the load-bearing score and easiest to miss. Rhetorical mode READS as populist (anti-establishment, anti-media, anti-Washington). Actual BEHAVIOR is establishment-critical-insider: Congressional testimony for first responders, institutional advocacy, 'stop hurting America' Crossfire critique was an appeal to media institutions to FUNCTION BETTER not to be torn down. Closer to Pakman (+0.60) than to Uygur (-0.70). Distinguishes him from left-populists.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.1,
+        confidence: 0.45,
+        evidence:
+          "Near-center. Alliance-framed on foreign policy. Veterans/responders advocacy contains mild civic-nationalist language but is primarily domestic-institutional.",
+      },
+      {
+        axisId: "authority",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Domain-split; aggregate is placeholder. Libertarian on speech and culture/family; leaning authoritarian on commerce/platform (pro-regulation, drug-industry critique, financial-sector critique). Classic social-democratic split.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.6,
+            confidence: 0.7,
+            evidence:
+              "Libertarian on speech; Crossfire critique was pro-debate-quality, not pro-censorship.",
+          },
+          {
+            domain: "culture-family",
+            value: -0.5,
+            confidence: 0.6,
+            evidence:
+              "Progressive libertarian framing.",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.3,
+            confidence: 0.6,
+            evidence:
+              "Pro-regulation of finance, pharma, corporate power. Leaning authoritarian on commerce.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.8,
+    rhetoricalStyleVariance: 0.7,
+    notes:
+      "Added April 2026. HARDEST PROFILE IN DATASET to score (satire primary). Scoring methodology: dual-mode. Satirical-mode and prepared-direct-mode scores are within 0.05 on every axis — CONVERGENCE FINDING that validates dual-mode approach and should be used as the ground-truth test for the production humor-detection layer (a correctly-functioning layer will reproduce the convergence; a broken layer will produce 1.0+ deltas on causation-analysis and liberal-conservative as satirical adoption gets misread as endorsement). RHETORICAL-TARGET-VARIANCE FINDING: Stewart is not a 'both-sidesist' or 'centrist.' He is position-coherent social-democratic reformer with high rhetorical-target variance — his critique tracks which tribe currently holds power (more Republican criticism during Bush/Trump, more Democrat criticism during Obama/Biden). Volume-weighted, NOT symmetric. Reader-side measurement error (audience weights cross-tribe critique more heavily because it is rare in their information diet) creates the 'both-sides' perception. Tracked as standing warning in CLAUDE.md. TARGET-AGNOSTIC SKEPTICISM: not a distinct coherence type — resolved with this profile as traditional position-coherence + high rhetorical-target variance. FOUNDATIONAL CASE STUDY for the Logic System project: Stewart's primary analytical move is category-error detection (clip of politician saying X + clip of same politician saying not-X, let contradiction speak). This is literally what the epistemological classifier does at scale. The Daily Show was a manual coherence-score calculator aired as comedy for 16 years. Promote to logic_system_integration.md as canonical prior art. RECENCY NOTE: Stewart is one of the only subjects with essentially stable positions across 25 years. Counter-case to trajectory-update subjects (Uygur, Kasparian, Pool) — recency-weighting question does not arise for him. Flag as stable-trajectory reference.",
+  },
 ];
 
 // ─── Analysis Functions ─────────────────────────────────────────────

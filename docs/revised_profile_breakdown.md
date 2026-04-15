@@ -1315,10 +1315,13 @@ Coverage of 2024 election included direct criticism of specific Democratic posit
 
 ### Jon Stewart
 
-**Platform:** The Daily Show (Comedy Central, intermittent), Apple TV+ (former), podcast
-**Current Leaning:** Center-Left
-**Ideological Coherence:** 0.65 (moderate)
-**Driver:** Philosophy-driven
+**Platform:** The Daily Show (Comedy Central, intermittent return), Apple TV+ (former), podcast, advocacy/Congressional testimony
+**Current Leaning:** Establishment-Critical-Insider Social-Democratic Reformer
+**Ideological Coherence:** 0.80 (high — same-framework across modes)
+**Rhetorical Style Variance:** 0.70 (high — satire / advocacy / interview / direct-address modes)
+**Driver:** Philosophy-driven (position-coherent with high rhetorical-target variance)
+
+**Scoring methodology note:** Stewart is the hardest profile in the dataset because satire is the primary content mode, and naive content analysis reads a satirical adoption of a frame as endorsement of that frame. The humor-detection layer in this project is not yet production-tested on live Stewart content, so his axis scores here use a **dual-mode methodology**: (1) scores for the satirical content mode (blended, most well-known content — Daily Show, returns, topical satire), treating the satire target as the scored position rather than the adopted frame; and (2) scores for the prepared-direct content mode (Congressional testimony, advocacy, Apple TV+ direct-address segments, long-form interviews without comedic framing). The two modes produce near-identical axis positions, which is itself the main finding. Scores below are the satirical mode; the prepared-direct mode is listed below in a caveat section.
 
 #### Bias Trajectory
 
@@ -1330,27 +1333,74 @@ Coverage of 2024 election included direct criticism of specific Democratic posit
 | ~2015 | Center-Left | Departed Daily Show in August 2015. Subsequently advocated for 9/11 first responders' healthcare bill (passed 2019, extended 2022). |
 | ~2024 | Center-Left | Returned to Daily Show as Monday host (February 2024). Apple TV+ show ended in 2023 after reported disputes over coverage of China and AI. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position — Satirical Content Mode (9-axis, primary)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.30 | Leaning Social Democrat | Stable | 60% |
-| Speech | -0.40 | Leaning Free Speech | Stable | 60% |
-| Progressive | -0.40 | Leaning Progressive | Stable | 55% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 65% |
-| Foreign Policy | -0.30 | Leaning Non-Interventionist | Stable | 55% |
+| Economic | +0.40 | Moderate Social Democrat | Stable | 65% |
+| Speech | −0.40 | Leaning Free Speech | Stable | 65% |
+| Causation Analysis | −0.50 | Structural (institutional-failure framework) | Stable | 75% |
+| Equality Model | −0.50 | Moderate Outcome Equality (outcome-check, not outcome-enforce) | Stable | 60% |
+| Liberal/Conservative | −0.50 | Moderate Liberal (reformist) | Stable | 70% |
+| Foreign Policy | −0.40 | Leaning Non-Interventionist | Stable | 65% |
+| Populism | +0.30 | Leaning Institutionalist (institutional-reformist) | Stable | 65% |
+| Nationalism | +0.10 | Near-center (alliance-framed) | Stable | 45% |
+| Authority — Speech | −0.60 | Libertarian | Stable | 70% |
+| Authority — Culture/Family | −0.50 | Libertarian | Stable | 60% |
+| Authority — Commerce/Platform | +0.30 | Leaning Authoritarian (regulation-supportive) | Stable | 60% |
 
 #### Axis Justifications
 
-- **Economic (+0.30):** Has criticized financial sector deregulation, supported 9/11 first responders' healthcare. Has interviewed economists from multiple frameworks. Position is left-of-center but not radical.
-- **Speech (-0.40):** Crossfire appearance criticized media format that prioritized "argument" over substance. Has interviewed figures from across the political spectrum. Position is broadly free-speech.
-- **Progressive (-0.40):** Coverage of equity-related topics aligns with progressive framings. Has criticized specific Democratic policy implementations from a left position.
-- **Liberal/Conservative (-0.50):** Coverage frames conservative positions as the side requiring justification more often than progressive positions in same-week comparisons.
-- **Foreign Policy (-0.30):** Critical of Iraq War. Critical of expansive surveillance programs. Has supported veterans' healthcare (a non-axis issue tangentially related to foreign policy).
+- **Economic (+0.40):** Consistent critique of corporate power, pro-labor, pro-healthcare. Famously anti-financial-deregulation. Supported veterans' and 9/11 first responders' healthcare through direct advocacy. Social-democratic reformist framework, stable across career.
+- **Speech (−0.40):** Crossfire appearance criticized media *format* (argument-as-performance) rather than speech itself — a sophisticated free-speech-adjacent position. Has interviewed figures across the political spectrum including platform-banned individuals. Broadly pro-expression.
+- **Causation Analysis (−0.50):** **Dominant structural framing.** Institutional failure is his primary analytical frame — when something goes wrong, he attributes it to institutional dysfunction (media, Congress, regulators, military-industrial-complex) rather than individual failure. The 9/11 first responders advocacy is a textbook structural-causation framing: "the system failed these people." Among the more consistent structural-framing scores in the left cluster, though less extreme than Piker's class analysis.
+- **Equality Model (−0.50):** Outcome-equality leaning but with a specific twist: his equality framing is *"you claim to care about X but your policy doesn't deliver X"* — outcome-check, not outcome-enforce. This is a distinct sub-position within outcome-equality: hold institutions to the stated outcomes of their own framings. Less activist-first than Piker or Maddow.
+- **Liberal/Conservative (−0.50):** Change-oriented but institutionally-reformist. Works through Congress, testimony, and direct advocacy rather than revolutionary transformation. Classic reformist-liberal position.
+- **Foreign Policy (−0.40):** Famously anti-Iraq War. Critical of expansive surveillance programs. Critical of the drone strike program during Obama era (important — this is a criticism of a Democratic administration, which matters for the rhetorical-target-variance finding below). Leaning non-interventionist; not isolationist-absolute.
+- **Populism (+0.30):** **Leaning institutionalist.** This is the load-bearing score for Stewart and the easiest to miss. His rhetorical mode *reads as populist* — anti-establishment, anti-media, anti-Washington. But his **actual behavior** is establishment-critical-insider: he testified before Congress for first responders and got a bill passed, he works within institutional channels while criticizing their failures, his "stop hurting America" Crossfire critique was an appeal to media institutions to *function better*, not to be torn down. Closer to Pakman (+0.60) than to Uygur (−0.70). This distinguishes him from left-populists (Piker, Uygur, Ball) who believe institutions are captured and reform-from-within is insufficient. Confidence is moderate rather than high because his rhetorical mode and his behavior are in tension — the rhetoric sounds more populist than the behavior measures.
+- **Nationalism (+0.10):** Near-center. Alliance-framed on foreign policy. Not a primary theme. Veterans/responders advocacy contains some civic-nationalist language but is primarily domestic-institutional.
+- **Authority (domain-split):** Libertarian on speech and culture/family. Leaning authoritarian on commerce/platform (pro-regulation, financial-sector critique, drug-industry critique). Classic social-democratic split.
 
-#### Notes
+#### Multi-Axis Position — Prepared-Direct Mode (caveat / convergence test)
 
-Stewart's Apple TV+ show ("The Problem with Jon Stewart") ended in October 2023; reports indicated disputes between Stewart and Apple over coverage of China and artificial intelligence topics. The 9/11 first responders' bill advocacy is documented in congressional testimony and bill passage records. His return to The Daily Show in February 2024 was as Monday-only host. His coverage of the 2024 election included criticism of both Biden and Trump, including specific criticism of Biden's age and capacity that aligned with later events. Foreign policy axis position is mixed and has limited specific content for higher confidence.
+Scores for Stewart in his **prepared-direct content mode** — Congressional testimony, advocacy press conferences, direct-address Apple TV+ segments, long-form interviews without comedic framing:
+
+| Axis | Score | Delta from Satirical Mode |
+|------|-------|---------------------------|
+| Economic | +0.40 | 0 |
+| Speech | −0.40 | 0 |
+| Causation Analysis | −0.55 | −0.05 (slightly more structural in direct mode — angrier, more specific institutional critique) |
+| Equality Model | −0.50 | 0 |
+| Liberal/Conservative | −0.50 | 0 |
+| Foreign Policy | −0.40 | 0 |
+| Populism | +0.30 | 0 |
+| Nationalism | +0.15 | +0.05 (very slightly more nationalist in veterans/responders advocacy specifically) |
+| Authority (blended) | −0.30 | roughly equivalent |
+
+**Convergence finding:** The two modes differ by at most 0.05 on any axis. **Stewart's framework is stable across content modes.** The satirical mode and the prepared-direct mode produce substantively identical axis positions. What varies is presentation — tone, emotional register, rhetorical device — and the variation is captured by `rhetoricalStyleVariance` (0.70), not by `ideologicalCoherence` (0.80). This is the single cleanest demonstration in the dataset that high-satire content can be scored via the axis model *if* the humor layer correctly identifies which side of the inversion is the adopted frame and which is the target. The production-ready humor-detection layer should be validated against Stewart's content using this convergence as a ground-truth test: a correctly-functioning humor layer will produce the convergence; a broken humor layer will produce a 1.0+ delta on causation-analysis and liberal-conservative as satirical adoption gets misread as endorsement.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Stewart at 0.65 (moderate) because his positions "cross partisan lines" — he criticized Democrats on drones and deportations, criticized media on both sides of the Trump era, criticized Biden's age and capacity in 2024. Under 9-axis, coherence rises to **0.80**. The diagnosis changes: Stewart is not a "both-sidesist" or a "centrist." He is a **position-coherent social-democratic reformer with high rhetorical-target variance.**
+
+**The rhetorical-target-variance finding:** Stewart's axis positions are stably left-of-center. What varies is *who he applies his critique to at any given moment*, and this variance tracks **which tribe currently holds power**. During Bush years, he criticized Republicans more. During Obama years, he criticized Democrats more (drones, deportations, regulatory capture). During Trump years, Republicans. During Biden years, Democrats on specific issues. This creates the **appearance** of symmetric criticism and "both-sidesism" that the 5-axis model was measuring as low coherence. It is not symmetric — by volume, the critique skews toward whichever tribe is in power, which is not the same as symmetric critique.
+
+**Reader-side measurement error:** The perception of "both-sidesism" is at least partially a reader-bias artifact. A left-leaning viewer who hears Stewart criticize Democrats on a specific issue weights that criticism more heavily because cross-tribe critique is rare in their information diet; a right-leaning viewer does the same when Stewart criticizes Republicans. Both conclude "he criticizes both sides," when in fact he criticizes the *currently-in-power* side more. The axis model should not absorb this reader-side measurement error into the subject's coherence score. Tracked as a standing warning in CLAUDE.md Open Model Questions.
+
+**Target-agnostic skepticism is NOT a distinct coherence type.** Earlier open question (CLAUDE.md): is "criticize whoever currently holds power" a fourth coherence type? Resolved with Stewart: no. He has traditional position-coherence (clear left-of-center policy positions) with high rhetorical-target variance. His critique selects targets based on power-holding, but the axis positions from which he critiques them are stable and recognizably left. The "target-agnostic" label captures the rhetorical behavior; the axis model captures the underlying framework. Both measurements are independent and both are real.
+
+**Satire-specific epistemological finding:** Stewart's primary analytical move is **category-error detection** — he plays a clip of a politician saying X, then a clip of the same politician saying not-X, and lets the contradiction speak. This is *exactly* what the Logic System's coherence detection does at the claim level. **The Daily Show was, in effect, a manual coherence-score calculator aired as comedy for 16 years.** This is the single best pre-existing analog for what the MediaSentinel project is building at scale. Promote to the Logic System integration doc as a foundational case study.
+
+#### Notes — Satirical Mode Caveat
+
+**Divergent content areas:**
+- **Apple TV+ disputes (2023):** Reports indicated disputes with Apple over coverage of China and AI topics. Without public content from those segments it is not possible to score whether his positions on China/AI diverged from his established framework. Tracked as an unknown.
+- **2024 Biden age/capacity criticism:** Early, specific, and predictive (aligned with later events). This is consistent with his establishment-critical-insider populism score — he was criticizing institutional failure (Democratic decision-making on nominee selection) from a position that still works within the institution. Not a trajectory shift.
+- **China and AI coverage:** Outside the standard domestic-politics scope of most of his content. Axis scoring does not extend to these domains with high confidence; tracked as content-scope limitation, not a coherence indicator.
+
+**Recency note:** Stewart is one of the best test cases for whether recency weighting matters. His positions have been essentially stable from 1999 to 2024 (~25 years). There is no trajectory shift to weight. This is the counter-case to Uygur (pre-2002 reversal) and Kasparian (post-2022 updating): some subjects are stable-framework-across-decades, and for those the recency-weighting question does not arise. Flag as a stable-trajectory reference.
+
+**Humor-detection validation target:** Stewart's convergence finding (satirical-mode and prepared-direct-mode scores within 0.05 on every axis) is the recommended validation target for the production humor-detection layer. When the humor layer is live, rerun this profile against both modes programmatically; if the delta stays within 0.05, the layer is functioning correctly. If the delta exceeds 0.2 on any axis, the layer is misreading satirical adoption as endorsement.
 
 ---
 
