@@ -2117,6 +2117,311 @@ export const SEED_PROFILES: PoliticalProfile[] = [
     notes:
       "Added April 2026. HARDEST PROFILE IN DATASET to score (satire primary). Scoring methodology: dual-mode. Satirical-mode and prepared-direct-mode scores are within 0.05 on every axis — CONVERGENCE FINDING that validates dual-mode approach and should be used as the ground-truth test for the production humor-detection layer (a correctly-functioning layer will reproduce the convergence; a broken layer will produce 1.0+ deltas on causation-analysis and liberal-conservative as satirical adoption gets misread as endorsement). RHETORICAL-TARGET-VARIANCE FINDING: Stewart is not a 'both-sidesist' or 'centrist.' He is position-coherent social-democratic reformer with high rhetorical-target variance — his critique tracks which tribe currently holds power (more Republican criticism during Bush/Trump, more Democrat criticism during Obama/Biden). Volume-weighted, NOT symmetric. Reader-side measurement error (audience weights cross-tribe critique more heavily because it is rare in their information diet) creates the 'both-sides' perception. Tracked as standing warning in CLAUDE.md. TARGET-AGNOSTIC SKEPTICISM: not a distinct coherence type — resolved with this profile as traditional position-coherence + high rhetorical-target variance. FOUNDATIONAL CASE STUDY for the Logic System project: Stewart's primary analytical move is category-error detection (clip of politician saying X + clip of same politician saying not-X, let contradiction speak). This is literally what the epistemological classifier does at scale. The Daily Show was a manual coherence-score calculator aired as comedy for 16 years. Promote to logic_system_integration.md as canonical prior art. RECENCY NOTE: Stewart is one of the only subjects with essentially stable positions across 25 years. Counter-case to trajectory-update subjects (Uygur, Kasparian, Pool) — recency-weighting question does not arise for him. Flag as stable-trajectory reference.",
   },
+  {
+    entityId: "jordan-peterson",
+    entityName: "Jordan Peterson (2016-2020 framework)",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.5,
+        confidence: 0.65,
+        evidence:
+          "Pro-market grounded in complex-systems reasoning. Cites Pareto distributions and Price's Law to argue hierarchy is mathematically inevitable. 'Capitalism is the worst system except all the others' pragmatism. Pragmatic pro-market, not ideological libertarian.",
+      },
+      {
+        axisId: "speech",
+        value: -0.85,
+        confidence: 0.95,
+        evidence:
+          "DEFINING AXIS. Bill C-16 opposition was compelled-speech-specific and rooted in clinical psychology + political philosophy (Solzhenitsyn). Position tested under personal cost (UofT disciplinary proceedings) and did not move. Highest-confidence speech score in the dataset.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: 0.1,
+        confidence: 0.55,
+        evidence:
+          "NEAR-CENTER, DUAL-FRAME. Uses structural framing for ideological/cultural analysis (postmodern-neo-Marxist institutional capture, Jungian archetypal patterns) AND individual framing for clinical/self-help advice ('clean your room', personal responsibility). Both framings co-exist. The 5-axis model collapsed both into a single anti-equity position; under 9-axis his causation score is near-center because both frames are equally represented.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.7,
+        confidence: 0.85,
+        evidence:
+          "Strong opportunity-equality with specific philosophical argument: outcome equality is impossible without tyranny because natural distributions are Pareto-shaped. Principled argument, not reflex.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: 0.4,
+        confidence: 0.65,
+        evidence:
+          "LOAD-BEARING SCORE for 2016-2020 primary period. Peterson was genuinely CHANGE-ORIENTED in this era — challenging nihilism/postmodernism, urging people to confront suffering and responsibility. Classical liberal disposition in service of conservative values. Distinct from status-quo-preservation conservatism (Shapiro) or reactionary rollback (Fuentes).",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.1,
+        confidence: 0.35,
+        evidence:
+          "Near-center. Not a primary topic in 2016-2020 content.",
+      },
+      {
+        axisId: "populism",
+        value: 0.2,
+        confidence: 0.6,
+        evidence:
+          "Near-center, weakly institutionalist. Academic defending academic speech freedoms FROM WITHIN the academy. Critiqued specific institutional captures (postmodern frameworks in humanities) while defending the underlying institution. Mild-institutionalist-critic-of-specific-captures.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.2,
+        confidence: 0.4,
+        evidence:
+          "Near-center. Not a primary theme.",
+      },
+      {
+        axisId: "authority",
+        value: -0.2,
+        confidence: 0.7,
+        evidence:
+          "Domain-split. Extreme libertarian on speech (-0.85, defining). Authoritarian on culture/family (traditionalist). Libertarian on commerce/platform.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.85,
+            confidence: 0.95,
+            evidence:
+              "Extreme libertarian. Bill C-16 framework. Defining position.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.5,
+            confidence: 0.7,
+            evidence:
+              "Traditionalist on gender roles, family structures, religious-traditionalist social arrangements.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.3,
+            confidence: 0.55,
+            evidence:
+              "Libertarian on commerce; not a primary focus.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.78,
+    rhetoricalStyleVariance: 0.45,
+    notes:
+      "Added April 2026. FIRST EXPLICIT PRIMARY-PERIOD SCOPING in the dataset. Score applies to 2016-2020 framework (Bill C-16 through '12 Rules for Life' era) — what Peterson is currently most well known for. Post-2021 content is trajectory-in-progress and tracked in divergent-content caveat section in revised_profile_breakdown.md (Ukraine/Russia commentary moving toward anti-establishment, climate denial as domain-transfer error, religious-traditionalist intensification). 5-axis score (0.55) was blended aggregate; primary-period-scoped coherence is 0.78. Canonical test case for primaryPeriod field on roadmap. DUAL-FRAME CAUSATION: Peterson uses structural framing for ideological/cultural analysis and individual framing for clinical/self-help advice. Not incoherence — legitimate philosophical distinction (different questions need different lenses). Similar pattern to Destiny's method-coherence but less articulated. PARETO CASE STUDY: Peterson and Nicholas Major both cite Pareto distributions as foundational but reach OPPOSITE conclusions (Peterson: inequality natural therefore acceptable; Nicholas: libertarianism indefensible because distribution is mathematically inevitable). Designated training example for the epistemological classifier — same evidence, same methodology, opposite normative conclusions based on framework applied. DOMAIN-TRANSFER FAILURE: Peterson's post-2021 climate denial is a framework-applied-outside-validated-domain error (clinical psychology + Jungian framework does not validate climate science claims). Track as a standing rule-engine pattern for domain-transfer-legitimacy check.",
+  },
+  {
+    entityId: "victor-davis-hanson",
+    entityName: "Victor Davis Hanson",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.4,
+        confidence: 0.75,
+        evidence:
+          "Agrarian-Jeffersonian pro-market. Small-producer/family-farm perspective. Critical of corporate consolidation and globalist trade from a Jeffersonian (not populist-left) angle. San Joaquin Valley personal experience grounds the framework.",
+      },
+      {
+        axisId: "speech",
+        value: -0.75,
+        confidence: 0.9,
+        evidence:
+          "Classical Athenian parrhesia (free speech as civic virtue) is a recurring reference. Critical of academic speech codes, platform moderation, campus restrictions. Frames speech restriction as a marker of civilizational decline.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.2,
+        confidence: 0.7,
+        evidence:
+          "Leaning structural — historical-pattern recognition is his primary analytical mode. Balances structural framing (institutional conditions, demographic pressures, military organization) with civic-virtue individual-responsibility framing. Integrated dual-frame.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.75,
+        confidence: 0.85,
+        evidence:
+          "Strong opportunity equality, framed through civic-shared-obligation. 'The Dying Citizen' thesis centers on how identity-based politics erodes civic virtue and shared citizenship. Explicit philosophical argument.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: 0.8,
+        confidence: 0.95,
+        evidence:
+          "One of the strongest conservative scores in the dataset. Temperamental + intellectual + historical — has studied civilizational decay and genuinely believes accumulated Western wisdom represents a tested framework. Philosophically deeper than Shapiro or Carlson's conservatism.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.4,
+        confidence: 0.8,
+        evidence:
+          "Conditional interventionist. Supports American military strength and strategic engagement (deterrence through strength is his core military-historian principle). Critical of nation-building as historically naive. Hawkish on China. Internally consistent within framework.",
+      },
+      {
+        axisId: "populism",
+        value: 0.0,
+        confidence: 0.6,
+        evidence:
+          "CENTER — load-bearing finding. Hanson is NOT a populist (Hoover Institution fellow, academic, book-author operating within institutional intellectual tradition). But he DEFENDS the Trump populist movement from a classical-history framework ('The Case for Trump' frames Trump as Themistocles/Jacksonian). Institutionalist in practice, sympathetic to populism as historical response to elite failure. Rare position the 5-axis model had no vocabulary for.",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.6,
+        confidence: 0.8,
+        evidence:
+          "Strong nationalist — but CIVIC-CULTURAL, not ethnic. 'Dying Citizen' thesis defends shared American civic identity against globalist-universalist politics. Close to Saagar Enjeti's nationalism; opposite side of Shapiro's alliance-globalism.",
+      },
+      {
+        axisId: "authority",
+        value: -0.1,
+        confidence: 0.65,
+        evidence:
+          "Domain-split. Libertarian on speech and commerce/platform (small-producer framing). Authoritarian on culture/family and immigration (civic-membership framework).",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.75,
+            confidence: 0.85,
+            evidence:
+              "Strong libertarian grounded in classical Athenian parrhesia.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.3,
+            confidence: 0.65,
+            evidence:
+              "Libertarian within small-producer framework.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.5,
+            confidence: 0.7,
+            evidence:
+              "Civic-traditionalist authoritarian.",
+          },
+          {
+            domain: "immigration",
+            value: 0.5,
+            confidence: 0.7,
+            evidence:
+              "Civic-membership framework. Authoritarian on enforcement.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.88,
+    rhetoricalStyleVariance: 0.15,
+    notes:
+      "Added April 2026. TIED WITH OBAMA as highest-coherence profile (0.88). CANONICAL PHILOSOPHY-DRIVEN ESTABLISHMENT PROFILE: Hanson represents one of four distinct epistemological engines producing high coherence — Shapiro (deductive from religious axioms), Maddow (institutional-first inductive), Obama (constitutional-pragmatic), HANSON (inductive from historical evidence). All four score ≥0.82. The 5-axis model bundled them all as 'philosophy-driven'; the 9-axis surfaces the distinctions via populism (Shapiro +0.40, Maddow +0.80, Obama +0.85, Hanson 0.00) and causation-analysis. Hanson is the ONLY one of the four who is NOT strongly institutionalist on populism — intellectual-institutionalist in his own practice, sympathetic to populism as historical response to elite failure. HANSON-OBAMA METHODOLOGY SYMMETRY: both inductive philosophy-driven profiles scoring 0.88, OPPOSITE on every content axis. Cleanest training example in the dataset for independence of methodology from ideology. HISTORICAL-ANALOGY OMISSION TRACKING: Hanson's primary rhetorical technique is historical analogy; the rule engine should track which analogies he draws and which he omits (Rome's fall can be attributed to immigration, inequality, or military overextension depending on evidence selection). Same methodology as story-coverage omission tracking, applied to historical-framework subjects.",
+  },
+  {
+    entityId: "barack-obama",
+    entityName: "Barack Obama",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.3,
+        confidence: 0.8,
+        evidence:
+          "Signed ACA and Dodd-Frank. Supported minimum wage increases. Did not push for single-payer or nationalization. Reformist within mixed-economy framework. Progressive critique ('too corporate, no single-payer') accurate in degree, wrong in direction.",
+      },
+      {
+        axisId: "speech",
+        value: 0.1,
+        confidence: 0.65,
+        evidence:
+          "Did not push for content regulation as policy. Warned Democrats about 'purity tests' and 'call-out culture' (2019 speech). Position slightly free-speech-leaning on net — to the right of the progressive left on speech norms.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "Structural framing dominant but evidence-based. Constitutional-law training produces an institutional-structural frame. Similar to Pakman's evidence-based structural approach with explicit appeal to legal precedent.",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "Outcome-equality in specific domains (healthcare, education, civil rights), opportunity-equality in others (economic mobility, personal-responsibility rhetoric).",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.4,
+        confidence: 0.8,
+        evidence:
+          "Reformist liberal — ACA, marriage equality, Iran deal, Paris accord all pursued through institutional channels. Constitutionalist background: believes in the system and wants to improve it, not replace it. Classical philosophical liberalism.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.4,
+        confidence: 0.75,
+        evidence:
+          "DOCUMENTED INTERVENTIONIST. Drone strike program expanded significantly (DOD/CIA records). Libya intervention. Killed bin Laden. Iran deal, Paris accord. Interventionist within Democratic mainstream. Progressive left critique (drones, deportations, Libya) is fair and measurable on this axis.",
+      },
+      {
+        axisId: "populism",
+        value: 0.85,
+        confidence: 0.9,
+        evidence:
+          "STRONGEST INSTITUTIONALIST SCORE IN THE DATASET. Constitutional law background, community-organizing training, explicit 'no red states no blue states' thesis. Treats institutional process (courts, legislation, election administration) as the legitimate mechanism for political change. Private advocacy for Biden 2024 withdrawal was exercised through institutional channels.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.5,
+        confidence: 0.75,
+        evidence:
+          "Moderate globalist. Iran deal, Paris accord, TPP, international cooperation framing. Not extreme globalist — maintained strong alliance commitments and Asia-Pivot strategy framed in national-interest terms.",
+      },
+      {
+        axisId: "authority",
+        value: -0.15,
+        confidence: 0.7,
+        evidence:
+          "Domain-split. Libertarian on speech, culture/family, health/bodily (strong privacy and bodily-autonomy framing). Leaning authoritarian on commerce/platform (Dodd-Frank, financial regulation). Classic progressive-liberal split.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.5,
+            confidence: 0.7,
+            evidence:
+              "Did not push content regulation; warned against purity tests.",
+          },
+          {
+            domain: "commerce-platform",
+            value: 0.4,
+            confidence: 0.7,
+            evidence:
+              "Dodd-Frank, financial regulation, Big Tech policy framework.",
+          },
+          {
+            domain: "culture-family",
+            value: -0.4,
+            confidence: 0.7,
+            evidence:
+              "Progressive libertarian framing.",
+          },
+          {
+            domain: "health-bodily",
+            value: -0.5,
+            confidence: 0.75,
+            evidence:
+              "Strong privacy and bodily-autonomy framing. ACA individual-mandate notwithstanding, the underlying framework respected personal choice.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.88,
+    rhetoricalStyleVariance: 0.2,
+    notes:
+      "Added April 2026. TIED WITH HANSON as highest-coherence profile (0.88). CANONICAL CONSTITUTIONAL-PRAGMATIC PHILOSOPHY-DRIVEN ESTABLISHMENT PROFILE. OBAMA-MADDOW SYMMETRY: almost identical scores on economic, causation, LC, populism, foreign-policy — they are the two canonical establishment-left philosophy-driven profiles defined empirically. OBAMA-HANSON SYMMETRY: both inductive philosophy-driven profiles scoring 0.88, OPPOSITE on every content axis. Canonical training example for independence of methodology from ideology. Obama-Trump contrast is the dataset's starkest coherence comparison: Obama (0.88, framework-derived, predictable, institutionalist +0.85) vs Trump (low coherence both pre- and post-2015, instinct-derived, populist). Original profile's 'Obama reasons from principles to positions, Trump reasons from situations to responses' is the cleanest pre-9-axis formulation of philosophy-driven-vs-instinct-driven. The perception gap (perceived as far-left by right, center-right by progressive left) is a direct instance of reader-side measurement error — the same phenomenon Stewart's profile identifies. Progressive-left critique (drones, deportations, no single-payer) is now MEASURABLE on specific axes rather than narratively argued: foreign-policy +0.40 (interventionist), populism +0.85 (institutionalist-not-populist), economic +0.30 (reformist-not-transformative).",
+  },
 ];
 
 // ─── Analysis Functions ─────────────────────────────────────────────

@@ -983,9 +983,11 @@ The NYT is owned by The New York Times Company, which has dual-class share struc
 ### Jordan Peterson
 
 **Platform:** YouTube, Daily Wire+, books, lectures
-**Current Leaning:** Right
-**Ideological Coherence:** 0.65 (moderate)
-**Driver:** Philosophy-driven
+**Primary Scoring Period:** 2016–2020 (Bill C-16 through "12 Rules for Life" era — what he is currently most well known for). See divergent-content caveat below for post-2021 content.
+**Current Leaning:** Classical-Liberal Traditionalist (2016–2020 framework)
+**Ideological Coherence:** 0.78 (high — 2016–2020 frame; declining in post-2021 content — see Logic System note)
+**Rhetorical Style Variance:** 0.45 (moderate — academic lecture / debate / interview / clinical modes, all within a stable register)
+**Driver:** Philosophy-driven (2016–2020); mixed in post-2021 content
 
 #### Bias Trajectory
 
@@ -993,41 +995,77 @@ The NYT is owned by The New York Times Company, which has dual-class share struc
 |--------|---------|----------|
 | ~2000 | Center | Clinical psychology professor at University of Toronto. Published academic research on personality and ideology. |
 | ~2016 | Center-Right | Public opposition to Canadian Bill C-16 (compelled-pronoun-use legislation). Viral videos established public profile. |
-| ~2018 | Right | Published "12 Rules for Life." International speaking tour. Topics expanded from gender identity to broader cultural commentary. |
+| ~2018 | Center-Right | Published "12 Rules for Life." International speaking tour. Topics expanded from gender identity to broader cultural commentary. Audience crossed partisan lines. |
 | ~2020 | Right | Health crisis and benzodiazepine dependency. Reduced public output during recovery period. |
 | ~2022 | Right | Returned to public commentary. Joined Daily Wire+. Suspended from Twitter then reinstated after Musk acquisition. |
 | ~2024 | Right | Continued Daily Wire role. Increased focus on religious-traditionalist framings. Public lectures on biblical topics. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position — 2016–2020 Framework (9-axis, primary)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.40 | Leaning Capitalist | Stable | 60% |
-| Speech | -0.80 | Strong Free Speech | Stable | 85% |
-| Progressive | +0.70 | Strong Non-Progressive | Stable | 80% |
-| Liberal/Conservative | +0.60 | Moderate Conservative | Stable | 75% |
-| Foreign Policy | +0.20 | Leaning Interventionist | Stable | 40% |
+| Economic | −0.50 | Moderate Capitalist (Pareto-distributional) | Stable | 65% |
+| Speech | −0.85 | Extreme Free Speech | Stable | 95% |
+| Causation Analysis | +0.10 | Near-center (dual-frame: structural critique + individual-responsibility rhetoric) | Stable | 55% |
+| Equality Model | +0.70 | Strong Opportunity Equality | Stable | 85% |
+| Liberal/Conservative | +0.40 | Leaning Conservative (but genuinely change-oriented) | Stable | 65% |
+| Foreign Policy | +0.10 | Near-center | Stable | 35% |
+| Populism | +0.20 | Near-center (academic-institutionalist defending academic speech) | Stable | 60% |
+| Nationalism | +0.20 | Near-center | Stable | 40% |
+| Authority — Speech | −0.85 | Extreme Libertarian | Stable | 95% |
+| Authority — Culture/Family | +0.50 | Authoritarian (traditionalist) | Stable | 70% |
+| Authority — Commerce/Platform | −0.30 | Libertarian | Stable | 55% |
 
-#### Axis Justifications
+#### Axis Justifications (2016–2020 framework)
 
-- **Economic (-0.40):** Supports market economy. Has criticized "neo-Marxist" frameworks in stated terms. Limited specific economic policy advocacy beyond critique of progressive frameworks.
-- **Speech (-0.80):** Public profile originated in opposition to compelled-speech legislation (Bill C-16). Position is consistent and explicit. Higher confidence reflects the centrality of speech advocacy to his stated framework.
-- **Progressive (+0.70):** Direct opposition to "postmodern neo-Marxism" framing applied to equity policy and gender-identity policy. Position has been consistent since 2016.
-- **Liberal/Conservative (+0.60):** Defends traditional gender roles, traditional family structures, and pre-1960s social arrangements. Religious-traditionalist framings increased in 2023-2024 content.
-- **Foreign Policy (+0.20):** Limited specific foreign policy content. Has expressed support for Ukraine and Israel. Has criticized "globalist" frameworks. Confidence is low because foreign policy is not a major topic in his content.
+- **Economic (−0.50):** Pro-market grounded in complex-systems reasoning rather than ideological libertarianism. Cites Pareto distributions and Price's Law to argue hierarchy is *mathematically inevitable* in any competence-measuring system. "Capitalism is the worst system except all the others" pragmatism. Note: Nicholas's framework cites the same Pareto math to reach the **opposite** conclusion (libertarianism is indefensible because the distribution is mathematically inevitable, not the product of fair competition). Same evidence, opposite conclusions — designate as a case study for the epistemological classifier.
+- **Speech (−0.85):** **Defining axis. His founding position and the most stable, highest-confidence score in his profile.** Bill C-16 opposition was compelled-speech-specific and rooted in (a) clinical psychology (therapeutic importance of articulating difficult truths) and (b) political philosophy (Solzhenitsyn: tyranny begins with compelled speech). Position has been tested under significant personal cost (UofT disciplinary proceedings, professional license challenges) and did not move. Near the floor of the axis.
+- **Causation Analysis (+0.10):** **Near-center, dual-frame.** Peterson is an unusual case: he uses **structural** framing when analyzing ideological/cultural phenomena (postmodern-neo-Marxist capture of institutions, Jungian archetypal patterns, civilizational cycles) and **individual** framing when giving clinical or self-help advice ("clean your room," "take responsibility for your suffering," rule-of-Jungian-hero). Both framings co-exist in the same content and the balance depends on topic. The 5-axis "progressive" score collapsed both into a single anti-equity position and missed the causation-frame complexity. Under 9-axis, his causation score is near-center because both frames are equally represented.
+- **Equality Model (+0.70):** Strong opportunity-equality with a specific philosophical argument: *outcome equality is impossible without tyranny* because natural distributions are Pareto-shaped and forcing equality requires escalating intervention. This is a principled argument, not a reflex. Consistent 2016–2020.
+- **Liberal/Conservative (+0.40):** **The load-bearing score for the 2016–2020 period and the one most different from his current positioning.** During Bill C-16 through "12 Rules for Life" era, Peterson was genuinely **change-oriented** in a specific intellectual direction: challenging the nihilism/postmodernism he saw as dominant in academia, urging people to confront suffering and responsibility rather than retreating into victim narratives. He was defending traditional values *by challenging the prevailing orthodoxy*, which makes him a classical liberal in the sense of "willing to upset the current order in service of deeper principles." This is distinct from status-quo-preservation conservatism (Shapiro) or reactionary rollback (Fuentes). Scored +0.40 because the direction is conservative but the disposition is genuinely change-oriented — he wanted to *shift* the culture, not preserve its current state.
+- **Foreign Policy (+0.10):** Near-center. Not a primary topic in his 2016–2020 content. Low confidence.
+- **Populism (+0.20):** **Near-center, weakly institutionalist.** Peterson was an academic defending academic speech freedoms *from within the academy*. His C-16 opposition was a Toronto-university-based legal and philosophical defense of institutional speech norms; it was not a populist attack on institutions. He critiqued specific institutional capture (post-modern/neo-Marxist frameworks in humanities departments) while defending the underlying institution (the university, clinical psychology, classical liberal philosophy). This is a **mild-institutionalist-critic-of-specific-captures**, not a populist. The 5-axis model had no vocabulary for this.
+- **Nationalism (+0.20):** Near-center. Not a primary theme.
+- **Authority (domain-split):** Extreme libertarian on speech (−0.85 — his defining position). Authoritarian on culture/family (supports traditional gender roles, family structures, religious-traditionalist social arrangements). Libertarian on commerce/platform. Classic social-traditionalist / speech-libertarian split.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Peterson at 0.55–0.65 (moderate, declining). Under 9-axis applied to the **2016–2020 primary framework**, coherence is **0.78** — high and stable. The difference is the scoping: the 5-axis score blended 2016–2020 content (genuinely philosophy-driven) with post-2021 content (trajectory-in-progress), and the blend depressed the coherence score on positions the earlier framework actually held stably. When scoped to the primary period, the philosophy-driven framework is clearly coherent — positions derive from clinical psychology + Jungian archetypes + classical-liberal philosophy + Pareto/complex-systems reasoning, and the positions cohere within that framework.
+
+**Recency-scoping decision:** Per the Stewart rule (score what the subject is most well known for, caveat divergent content), Peterson is scored on his 2016–2020 framework. His post-2021 content is a trajectory-in-progress — the user explicitly flagged that "eventually he might be most well known for his new positions, but until then this is what we want." This is the first profile in the dataset to use **explicit primary-period scoping** as a methodology, and it is the canonical test case for the `primaryPeriod` field currently on the roadmap.
+
+**Dual causation-frame as a recognizable pattern:** Peterson's causation-frame split (structural for cultural/ideological analysis, individual for clinical/self-help advice) is a legitimate philosophical distinction that the 9-axis model should accommodate. The dual-frame pattern is not incoherence — it is the recognition that different questions require different analytical lenses. Track as a distinct observation: subjects who use causation-frame per-topic are more like Destiny's method-coherence than like tribally-aligned structural or individual framers.
+
+#### Divergent Content Caveat (post-2021)
+
+The following content departures are documented and should be tracked separately from the 2016–2020 primary framework:
+
+- **Ukraine/Russia commentary (2022+):** Repeated framings that blame NATO expansion and Western "cultural degeneracy" for Russian aggression. Sharp departure from his earlier framework — a free-speech absolutist defending a regime that imprisons journalists is an internal contradiction. Suggests this axis is now contrarian-anti-establishment rather than framework-derived. **Open question: is this contrarianism-as-coherence (flagged in CLAUDE.md)?** The 2016–2020 Peterson was institutionalist-critic-of-specific-captures; the post-2021 Peterson on Ukraine is reading more like anti-establishment-for-its-own-sake. If this is stable enough to score, it would represent a populism-axis move from +0.20 to something like −0.30 or −0.40.
+- **Climate denial (2022+):** Departure from his earlier deference to scientific consensus in domains outside his expertise. Climate skepticism framing in Daily Wire+ content. Not a framework-derived position — it is outside his stated academic competence (clinical psychology + personality research). Domain-transfer error.
+- **Religious-traditionalist intensification (2023+):** Increased biblical-topic focus in public lectures. This is consistent with his 2016–2020 framework (he always drew on religious-archetypal material) but more emphatic and less hedged. Not a departure in direction, a departure in intensity.
+- **Daily Wire+ engagement signal:** The platform shift to Daily Wire+ and the visible change in content selection (more political, less clinical-psychological) is the audience-capture-ish signal. Whether it is true audience capture or legitimate topic-drift is an open question; the clearest test would be whether his 2016–2020 positions survive examination in prepared content vs. live engagement content.
+
+**Post-2021 divergent-content axis deltas (approximate, low-confidence):**
+- Populism: +0.20 → −0.30 (moving populist on foreign-policy topics)
+- Causation Analysis: +0.10 → −0.30 (more structural framing applied outside its original domain)
+- Foreign Policy: +0.10 → −0.20 (non-interventionist, anti-Ukraine-aid)
+- Liberal/Conservative: +0.40 → +0.60 (more traditional-conservative, less classical-liberal-change-oriented)
+
+These are approximate because the post-2021 content is still in trajectory. Do not substitute for the primary framework scores; track as trajectory-in-progress.
 
 #### Notes
 
-Peterson's documented public profile originated in 2016 with opposition to Bill C-16, a Canadian federal bill that added gender identity and expression to human rights and hate crime legislation. His position was that the bill compelled specific speech (preferred pronouns); supporters of the bill argued it did not. The legal interpretation was contested at the time. His health crisis and recovery (2019-2021) is publicly documented; he has discussed it in interviews. His Daily Wire+ deal includes content production and the Peterson Academy online education project. Foreign policy confidence is low because the visible content focuses on psychological, cultural, and religious topics rather than international affairs.
+The Pareto principle connection to Nicholas's framework (same evidence, opposite conclusions) is a designated epistemological classifier training example. The Bill C-16 legal interpretation was contested at the time — supporters of the bill argued it did not compel specific speech; Peterson argued it did. The contested interpretation is itself a Logic System case: the same statute generates different conclusions depending on which legal framework you apply, and presenting either framework as "the obvious reading" would be category-error. Track as a training example for the model-dependent-interpretation detector.
 
 ---
 
 ### Victor Davis Hanson
 
 **Platform:** Hoover Institution, books, columns, Daily Signal
-**Current Leaning:** Right
-**Ideological Coherence:** 0.85 (high)
-**Driver:** Philosophy-driven
+**Current Leaning:** Classical-Conservative Agrarian-Nationalist Intellectual
+**Ideological Coherence:** 0.88 (high — tied with Maddow/Obama as the highest in the dataset)
+**Rhetorical Style Variance:** 0.15 (very low — academic register stable across columns, books, interviews)
+**Driver:** Philosophy-driven (inductive-from-historical-evidence)
 
 #### Bias Trajectory
 
@@ -1039,27 +1077,51 @@ Peterson's documented public profile originated in 2016 with opposition to Bill 
 | ~2020 | Right | Continued Hoover Institution and column work. Published "The Dying Citizen" (2021) on civic decline themes. |
 | ~2024 | Right | Continued column work. Published "The End of Everything" (2024) on historical civilizational collapse themes. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.50 | Moderate Capitalist | Stable | 70% |
-| Speech | -0.60 | Moderate Free Speech | Stable | 75% |
-| Progressive | +0.70 | Strong Non-Progressive | Stable | 85% |
-| Liberal/Conservative | +0.70 | Strong Conservative | Stable | 90% |
-| Foreign Policy | +0.40 | Leaning Interventionist | Stable | 75% |
+| Economic | −0.40 | Leaning Capitalist (agrarian-Jeffersonian) | Stable | 75% |
+| Speech | −0.75 | Strong Free Speech (parrhesia) | Stable | 90% |
+| Causation Analysis | −0.20 | Leaning Structural (historical-pattern, civic-virtue balance) | Stable | 70% |
+| Equality Model | +0.75 | Strong Opportunity (civic-shared-obligation) | Stable | 85% |
+| Liberal/Conservative | +0.80 | Strong Conservative | Stable | 95% |
+| Foreign Policy | +0.40 | Conditional Interventionist (strength-yes, nation-building-no) | Stable | 80% |
+| Populism | 0.00 | Center (intellectual-institutionalist defending populist movement) | Stable | 60% |
+| Nationalism | −0.60 | Strong Nationalist (civic-cultural) | Stable | 80% |
+| Authority — Speech | −0.75 | Libertarian | Stable | 85% |
+| Authority — Commerce/Platform | −0.30 | Libertarian (small-producer framework) | Stable | 65% |
+| Authority — Culture/Family | +0.50 | Authoritarian (civic-traditionalist) | Stable | 70% |
+| Authority — Immigration | +0.50 | Authoritarian (civic-membership framework) | Stable | 70% |
 
 #### Axis Justifications
 
-- **Economic (-0.50):** Supports market economy with critique of corporate consolidation and "globalist" trade frameworks. Supports agricultural policy from a small-producer perspective. Position is consistent.
-- **Speech (-0.60):** Critical of academic speech codes and platform content moderation. Position is consistent across multiple decades of writing.
-- **Progressive (+0.70):** Direct opposition to equity-based policy and identity politics. "The Dying Citizen" thesis frames identity politics as cause of civic decline. Position is consistent.
-- **Liberal/Conservative (+0.70):** Defends classical Western civilization framework and traditional institutions. Position is rooted in stated classical-history academic framework.
-- **Foreign Policy (+0.40):** Supported Iraq War. Supports Israel. Hawkish on China. Critical of nation-building specifically. Position has internal nuance but is broadly interventionist.
+- **Economic (−0.40):** **Agrarian-Jeffersonian pro-market** — supports private enterprise and markets but from a small-producer/family-farm perspective. Critical of corporate consolidation and globalist trade frameworks from a distinctive angle: not populist-left anti-corporate but Jeffersonian-small-producer. San Joaquin Valley personal experience with immigrant farm communities grounds the framework in lived observation rather than pure theory. Consistent across ~30 years.
+- **Speech (−0.75):** Classical Athenian *parrhesia* (free speech as civic virtue) is a recurring reference. Critical of academic speech codes, platform content moderation, university-campus restrictions. Frames speech restriction as a **marker of civilizational decline**, not a policy disagreement. High confidence — position is rooted in his academic field and stable across decades.
+- **Causation Analysis (−0.20):** **Leaning structural** — historical-pattern recognition is his primary analytical mode, and historical patterns are structural claims (civilizations rise and fall based on institutional conditions, demographic pressures, civic health, military organization). But he balances structural framing with strong **civic-virtue individual-responsibility** framing — the fall of civilizations is also about individual character failure. Dual-frame balance similar to Peterson, but Hanson's dual-frame is tighter and more integrated. Score reflects the structural-leaning net.
+- **Equality Model (+0.75):** Strong opportunity equality, framed through **civic-shared-obligation** — citizens owe each other equal treatment before the law and equal stake in shared civic institutions, not equal outcomes. "The Dying Citizen" thesis centers on how identity-based politics erodes civic virtue and shared citizenship. Explicit philosophical argument, not reflex.
+- **Liberal/Conservative (+0.80):** **One of the strongest conservative scores in the dataset and the most deeply rooted.** Hanson's conservatism is **temperamental + intellectual + historical** — he has studied what happens when civilizations abandon their foundational principles and genuinely believes accumulated Western civilizational wisdom represents a tested framework. Not opposing change because he fears it; opposing it because he has historically pattern-matched against civilizational decay. This is philosophically deeper than Shapiro's religious-conservative framework or Carlson's populist-traditionalist framework.
+- **Foreign Policy (+0.40):** **Conditional interventionist.** Supports American military strength and strategic engagement (deterrence through strength is his core military-historian principle). Critical of nation-building as historically naive — democracy cannot be exported to cultures that have not developed it organically. Supported Iraq War initially, critical of execution and broader neoconservative project in retrospect. Hawkish on China. Internally consistent within a specific framework: strength yes, utopian transformation no.
+- **Populism (0.00):** **Center — the load-bearing finding for Hanson's profile.** Hanson is not a populist — he is a **Hoover Institution fellow, classical scholar, published academic, book-author** operating within institutional intellectual tradition. But he **defends the Trump populist movement** from a classical-history framework ("The Case for Trump" frames Trump as Themistocles / Jacksonian populism / Roman-republic outsider). This produces a **specific rare position**: institutionalist in his own practice, sympathetic to populism as a historical response to elite failure. Under 9-axis this scores at 0.00 — genuine center on the populism axis, with the *grounds* for the near-center being unusual (not average, but a balance between intellectual-institutionalism and populist-movement defense).
+- **Nationalism (−0.60):** **Strong nationalist** — but **civic-cultural**, not ethnic. "The Dying Citizen" thesis is about defending a shared American civic identity against globalist-universalist politics. Treats the nation-state as the primary unit of political obligation and civic identity. Close to Saagar Enjeti's nationalism score, opposite side of Shapiro's alliance-globalism.
+- **Authority (domain-split):** Libertarian on speech (strongly) and commerce/platform (small-producer framing). Authoritarian on culture/family and immigration (civic-membership framework). Classic civic-nationalist split.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Hanson at 0.85 (high — one of the highest). Under 9-axis, coherence rises to **0.88** and makes a previously-implicit finding explicit: **Hanson, Shapiro, Maddow, and Obama are the four canonical philosophy-driven establishment-profile cases in the dataset**, each representing a distinct epistemological approach to the same underlying methodology (deriving positions from a stable framework). The four-way comparison is the strongest joint demonstration of what "philosophy-driven" means operationally:
+
+- **Shapiro (0.85, religious-conservative):** *Deductive from axioms.* Orthodox Jewish first principles → policy positions. Reasons from explicit premises down to conclusions.
+- **Maddow (0.82, progressive-liberal):** *Institutional-first inductive.* Constitutional / rule-of-law / peer-reviewed-expertise frameworks → policy positions. Reasons from institutional premises outward.
+- **Obama (0.88, pragmatic-progressive):** *Constitutional-pragmatic.* Constitutional law + incrementalism + institutional reform → policy positions. Blends Maddow's institutional-first with explicit reasoning from precedent.
+- **Hanson (0.88, classical-conservative):** *Inductive from historical evidence.* Classical-history pattern-recognition → policy positions. Reasons from historical precedent up to contemporary diagnosis.
+
+All four produce high coherence via different epistemological engines. The 5-axis model bundled them all as "philosophy-driven" without distinguishing the engines. The 9-axis model surfaces the distinctions primarily through the **populism axis** (Shapiro +0.40, Maddow +0.80, Obama +0.85, Hanson 0.00) and the **causation-analysis axis** (Shapiro +0.60 individual, Maddow −0.60 structural, Obama −0.50 structural, Hanson −0.20 mixed-leaning-structural). Hanson is the only one of the four who does not score as strongly institutionalist on populism — his center-populism score reflects the intellectual-institutionalist defending populist-movement pattern.
+
+**Shapiro comparison refined:** The original profile notes that Shapiro's coherence comes from "religious-conservative first principles applied deductively" and Hanson's from "historical pattern recognition applied inductively." Under 9-axis, the key structural difference is populism (+0.40 vs 0.00) and nationalism (+0.20 vs −0.60). Shapiro is alliance-globalist-institutionalist; Hanson is civic-nationalist-center-populism. Both are philosophy-driven conservatives; they occupy adjacent but distinct positions in the right cluster.
 
 #### Notes
 
-Hanson's coherence score is high because his stated framework (classical history applied to contemporary events) generates predictable positions across topics and the positions have been consistent across approximately three decades of writing. His foreign policy position has internal nuance: supports military strength and engagement, critical of nation-building. His "The Case for Trump" defended Trump from a classical-republic framework, which is a specific intellectual claim distinct from movement-conservative defenses. His academic background is in classics; his contemporary commentary applies classical historical comparisons consistently.
+"The Case for Trump" is a specific intellectual claim distinct from movement-conservative defenses — it frames Trump through classical-republican outsider-vs-elite historical precedent. This is a *populism-sympathetic* move from an institutionalist position, which is what places Hanson at 0.00 on the populism axis rather than fully institutionalist. Track as a training example for non-obvious populism-axis placements: the subject's own institutional practice does not determine their populism score; what determines it is how they frame legitimate authority. Hanson frames legitimate authority as historically-grounded civic virtue, which can manifest through either institutional or populist channels depending on the health of the institutions in question. His historical-analogy rhetorical technique is powerful when the analogies are apt and misleading when forced — tracked separately by the rule engine as a signal, not folded into the coherence score.
 
 ---
 
@@ -1211,8 +1273,9 @@ Musk's ownership of X creates a structural condition where the platform he owns 
 ### Barack Obama
 
 **Platform:** Speeches, memoirs, podcast (Renegades), public appearances
-**Current Leaning:** Center-Left
-**Ideological Coherence:** 0.75 (moderately high)
+**Current Leaning:** Constitutional-Pragmatic Institutionalist Progressive
+**Ideological Coherence:** 0.88 (high — tied with Hanson as the highest)
+**Rhetorical Style Variance:** 0.20 (low — measured oratorical register stable across contexts)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -1227,27 +1290,52 @@ Musk's ownership of X creates a structural condition where the platform he owns 
 | ~2020 | Center-Left | Public commentary on 2020 election. Memoir "A Promised Land" published November 2020. |
 | ~2024 | Center-Left | Public commentary on 2024 election. Endorsed Harris. Reported to have privately advocated for Biden withdrawal from race. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | +0.20 | Leaning Social Democrat | Stable | 75% |
-| Speech | +0.10 | Centrist | Stable | 60% |
-| Progressive | -0.40 | Leaning Progressive | Stable | 70% |
-| Liberal/Conservative | -0.40 | Leaning Liberal | Stable | 75% |
-| Foreign Policy | +0.30 | Leaning Interventionist | Stable | 70% |
+| Economic | +0.30 | Leaning Social Democrat | Stable | 80% |
+| Speech | +0.10 | Near-center (slightly free-speech-leaning on net) | Stable | 65% |
+| Causation Analysis | −0.50 | Structural (evidence-based) | Stable | 75% |
+| Equality Model | −0.50 | Moderate Outcome Equality | Stable | 75% |
+| Liberal/Conservative | −0.40 | Leaning Liberal (reformist) | Stable | 80% |
+| Foreign Policy | +0.40 | Moderate Interventionist | Stable | 75% |
+| Populism | +0.85 | Strong Institutionalist | Stable | 90% |
+| Nationalism | +0.50 | Moderate Globalist | Stable | 75% |
+| Authority — Speech | −0.50 | Libertarian | Stable | 70% |
+| Authority — Commerce/Platform | +0.40 | Leaning Authoritarian (regulation-supportive) | Stable | 70% |
+| Authority — Culture/Family | −0.40 | Libertarian | Stable | 70% |
+| Authority — Health/Bodily | −0.50 | Libertarian | Stable | 75% |
 
 #### Axis Justifications
 
-- **Economic (+0.20):** Signed ACA, Dodd-Frank. Supported minimum wage increases (federal proposal not passed). Did not push for single-payer healthcare or nationalization. Position is reformist within mixed-economy framework.
-- **Speech (+0.10):** Did not push for content regulation as policy. Warned about "purity tests" and "call-out culture" in 2019 speech. Position is approximately centrist with no major policy interventions on speech.
-- **Progressive (-0.40):** Supported affirmative action defense in court briefs. Supported same-sex marriage from 2012. DREAM Act and DACA. Criminal justice reform initiatives. Equity-supporting positions are consistent.
-- **Liberal/Conservative (-0.40):** Pursued institutional change through ACA, Iran deal, Paris accord. Worked through existing legal and constitutional frameworks rather than advocating restructuring. Position is reformist liberal.
-- **Foreign Policy (+0.30):** Drone strike program expanded significantly during his administration (documented in DOD and CIA records). Libya intervention (2011). Killed bin Laden (2011). Did not invade Syria after "red line" statement on chemical weapons (2013). Iran deal negotiated; Paris accord signed. Position is interventionist within Democratic mainstream.
+- **Economic (+0.30):** Signed ACA and Dodd-Frank. Supported minimum wage increases. Did not push for single-payer healthcare or nationalization. **Reformist within mixed-economy framework.** Progressive critique ("too corporate, didn't push single-payer") is accurate in *degree* but wrong in *direction* — he was center-left, just not as far left as progressive critics wanted.
+- **Speech (+0.10):** Did not push for content regulation as policy. Warned Democrats about "purity tests" and "call-out culture" (2019 speech). Position is slightly free-speech-leaning on net — to the right of the progressive left on speech norms, not in free-speech-absolutist territory.
+- **Causation Analysis (−0.50):** Structural framing dominant but evidence-based. Constitutional-law training produces an institutional-structural frame: outcomes are shaped by laws, incentives, institutional design, demographic conditions. Similar to Pakman's evidence-based structural approach, with an explicit appeal to legal precedent.
+- **Equality Model (−0.50):** Outcome-equality in specific domains (healthcare, education, civil rights), opportunity-equality in others (economic mobility framing, personal-responsibility rhetoric in some speeches). Moderate outcome-equality overall.
+- **Liberal/Conservative (−0.40):** **Reformist liberal** — ACA, marriage equality, Iran deal, Paris accord all pursued through institutional channels rather than restructuring. Constitutionalist background is visible: believes in the system and wants to improve it, not replace it. Classical philosophical liberalism.
+- **Foreign Policy (+0.40):** **Documented interventionist** — drone strike program expanded significantly during his administration (DOD/CIA records). Libya intervention (2011). Killed bin Laden. Did not invade Syria after "red line" statement on chemical weapons (2013) — rare non-intervention decision. Iran deal negotiated; Paris accord signed. **Interventionist within Democratic mainstream.** Progressive left's strongest critique of Obama (deportation record, drone strikes, Libya) all lives on this axis — and the 9-axis model confirms the critique: his foreign-policy score is genuinely to the interventionist side of the Democratic mainstream.
+- **Populism (+0.85):** **Strongest institutionalist score in the dataset.** Constitutional law background, community-organizing training, and explicit "no red states, no blue states" thesis make him the canonical institutionalist — treats institutional process (courts, legislation, election administration, executive authority within legal constraints) as the legitimate mechanism for political change. His private advocacy for Biden's withdrawal from the 2024 race (reported post-withdrawal) was exercised through institutional channels, not public populist pressure. Highest-confidence institutionalist score in the set.
+- **Nationalism (+0.50):** **Moderate globalist.** Iran deal, Paris accord, Trans-Pacific Partnership, international cooperation framing. Not extreme globalist (he did pursue Asia-Pivot strategy framed in national-interest terms and maintained strong alliance commitments based on US strategic positioning) but clearly on the globalist side of the axis.
+- **Authority (domain-split):** Libertarian on speech, culture/family, and health/bodily (strong privacy and bodily-autonomy framing — ACA individual-mandate notwithstanding, the underlying framework respected personal choice). Leaning authoritarian on commerce/platform (Dodd-Frank, financial regulation, Big Tech policy framework). Classic progressive-liberal split.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Obama at 0.75 (moderately high). Under 9-axis, coherence rises to **0.88** — tied with Hanson as the highest in the dataset. The rise reflects two findings:
+
+1. **Obama is the fourth canonical philosophy-driven establishment profile**, alongside Shapiro (religious-deductive), Maddow (institutional-inductive), and Hanson (historical-inductive). Obama is **constitutional-pragmatic** — reasons from constitutional precedent + pragmatic incrementalism + institutional reform. The four-way symmetry of philosophy-driven coherence engines is the strongest finding in the batch and arguably in the entire profile set. See Hanson's profile for the full comparison table.
+
+2. **Obama is the structural mirror of Hanson on populism/nationalism reversed.** Hanson (0.00 populism, −0.60 nationalism); Obama (+0.85 populism, +0.50 nationalism). Both score 0.88 coherence via inductive-reasoning engines (Hanson from history, Obama from constitutional precedent). They are opposite on every cross-cutting axis and methodologically near-identical. The Hanson-Obama comparison is the cleanest philosophy-driven pair in the dataset — same methodology, opposite content — and should be used as a training reference for the independence of methodology from ideology.
+
+**The Obama-Trump comparison** from the original profile is substantively correct and becomes even starker under 9-axis: Obama (0.88, strong institutionalist +0.85) vs Trump-pre-2015 or Trump-post-2015 (both low coherence, strong populist −0.80). The original profile's observation — "Obama reasons from principles to positions, Trump reasons from situations to responses" — is the cleanest pre-9-axis formulation of the philosophy-driven vs. instinct-driven distinction that `assessCoherenceType()` is built to detect.
+
+**The Maddow-Obama symmetry:** Obama (+0.85 populism, −0.50 causation, +0.40 foreign policy, +0.30 economic) and Maddow (+0.80, −0.60, +0.30, +0.30) score almost identically. They are the two canonical establishment-left philosophy-driven profiles in the dataset. The small differences — Obama slightly more globalist, slightly more interventionist, slightly less outcome-equality — are within normal variation for two subjects sharing a framework. This is the establishment-left cluster defined empirically.
+
+**Progressive-left critique of Obama under 9-axis:** The left critique ("he was too moderate, too corporate, didn't push single-payer, drone strikes, deportations, Libya") maps to specific axis scores: populism (+0.85 — he worked within institutions when the progressive-left wanted populist-mobilization), foreign policy (+0.40 — documented interventionism), and equality-model (−0.50 — moderate outcome-equality, not strong). The critique is measurable and fair on the populism and foreign-policy axes; it is less fair on the economic axis (he was reformist-left, which is substantively left even if not as far as progressive-left wants). The 9-axis model lets the critique be **scored** rather than argued.
 
 #### Notes
 
-Obama's coherence score is high because his stated framework (constitutional law, pragmatic incrementalism, institutional reform) generates predictable positions across topics and the positions have been consistent across his presidential and post-presidential periods. The drone strike program is documented in DOD/CIA records and was the subject of multiple public reports during his administration. The deportation enforcement levels during his administration are documented in DHS records. Both are sometimes described as inconsistent with progressive positioning; they are part of the public record. His private advocacy for Biden's withdrawal from the 2024 race was reported in multiple outlets and confirmed by sources close to both Obama and Biden after the withdrawal occurred.
+The drone strike program is documented in DOD/CIA records. Deportation enforcement levels are documented in DHS records. Both are part of the public record and are correctly captured in his foreign-policy and authority-immigration scores. His private advocacy for Biden's withdrawal from the 2024 race was reported in multiple outlets and confirmed post-withdrawal — this is an institutionalist move (exercised through institutional channels), consistent with his +0.85 populism score. Note that "institutionalist" does not mean "never criticizes institutions" — Obama has criticized specific institutional failures consistently. It means treating institutional process as the legitimate mechanism for resolving disputes, which is measured by his behavior (using legal, legislative, and electoral channels) rather than by the content of his critiques.
 
 ---
 
