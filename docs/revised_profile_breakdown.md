@@ -121,9 +121,9 @@ Carlson's economic positions include both pro-market statements and criticism of
 ### Candace Owens
 
 **Platform:** Independent (post-Daily Wire), formerly Daily Wire
-**Current Leaning:** Right
-**Ideological Coherence:** 0.40 (low)
-**Driver:** Mixed
+**Current Leaning:** Populist-Nationalist Right (post-2024 rupture)
+**Ideological Coherence:** 0.58 (moderate — see Logic System note)
+**Driver:** Mixed (philosophy + engagement incentives)
 
 #### Bias Trajectory
 
@@ -135,35 +135,49 @@ Carlson's economic positions include both pro-market statements and criticism of
 | ~2022 | Right | Public statements on Ukraine war framed Russia's actions in less critical terms than mainstream coverage. |
 | ~2024 | Right | Departed Daily Wire in March 2024 after public dispute over statements regarding Israel. Continued independent operation. Statements about Israeli policy and Jewish institutions generated additional public controversy. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.50 | Moderate Capitalist | Stable | 50% |
-| Speech | -0.50 | Moderate Free Speech | Stable | 60% |
-| Progressive | +0.70 | Strong Non-Progressive | Stable | 70% |
-| Liberal/Conservative | +0.60 | Moderate Conservative | Moving right → | 60% |
-| Foreign Policy | -0.30 | Leaning Isolationist | Stable | 40% |
+| Economic | −0.50 | Moderate Capitalist | Stable | 50% |
+| Speech | −0.50 | Moderate Free Speech (instrumental) | Stable | 55% |
+| Causation Analysis | +0.30 | Leaning Individual | Stable | 60% |
+| Equality Model | +0.80 | Strong Opportunity | Stable | 80% |
+| Liberal/Conservative | +0.60 | Moderate Conservative | Moving right → | 65% |
+| Foreign Policy | −0.40 | Leaning Isolationist | Unstable | 40% |
+| Populism | −0.60 | Populist | Intensified post-2024 | 70% |
+| Nationalism | −0.50 | Nationalist | Stable | 60% |
+| Authority — Speech | −0.40 | Leaning Libertarian (selective) | Stable | 50% |
+| Authority — Culture/Family | +0.60 | Authoritarian | Intensified | 75% |
+| Authority — Immigration | +0.50 | Authoritarian | Stable | 65% |
 
 #### Axis Justifications
 
-- **Economic (-0.50):** Supports private markets and entrepreneurship. Limited engagement with specific economic policy on the record. Score reflects general pro-market stance with limited content for higher confidence.
-- **Speech (-0.50):** Has opposed deplatforming on multiple occasions and advocated for free speech principles when applied to her own content and conservative-aligned figures. Has not been a consistent advocate for speech of figures she disagrees with.
-- **Progressive (+0.70):** Direct opposition to BLM, DEI, affirmative action, and equity-based policy. Has stated these positions consistently from 2017 to present.
+- **Economic (−0.50):** Supports private markets and entrepreneurship. Limited specific economic policy advocacy on the record. Pro-market framing without developed framework.
+- **Speech (−0.50):** Opposed deplatforming when applied to her own content and conservative-aligned figures. Application is selective, not principled — she has not consistently defended speech of figures she opposes. The position is instrumentally framed.
+- **Causation Analysis (+0.30):** Dominant framing for racial and social outcomes is individual-causation — the "Blexit" argument frames Black Americans' political alignment as a matter of individual choice and personal responsibility rather than structural conditions. Uses structural framing when attacking "the establishment" (right-media, Daily Wire, Jewish institutions post-2024) but the default frame for social outcomes is individual.
+- **Equality Model (+0.80):** Direct, sustained opposition to BLM, DEI, affirmative action, and equity-based policy. Consistent from 2017 TPUSA era through independent platform. This is her most stable and defining axis.
 - **Liberal/Conservative (+0.60):** Defends traditional family structure, opposes recent social changes on gender and sexuality. Increased emphasis on Christian-traditionalist framing in 2023-2024 content.
-- **Foreign Policy (-0.30):** Opposed Ukraine military aid in public statements (2022 onward). Statements on Israel-Hamas conflict (2023-2024) did not align with mainstream conservative pro-Israel framing. Confidence is moderate due to internal inconsistency in foreign policy positions over time.
+- **Foreign Policy (−0.40):** Opposed Ukraine military aid (2022 onward). Statements on Israel-Hamas conflict (2023-2024) did not align with mainstream conservative pro-Israel framing. Position is moving isolationist but remains internally inconsistent; low confidence reflects that instability.
+- **Populism (−0.60):** Anti-establishment framing present from Blexit era. Intensified after March 2024 Daily Wire departure — post-rupture content explicitly frames right-media organizations, Israel-aligned commentators, and Jewish institutions as captured or illegitimate elites. Note: the populism axis score is about the *form* of the argument (treating named institutions as captured), not the targets or whether the specific claims are accurate.
+- **Nationalism (−0.50):** Nation-state primacy in her framing — "America First" rhetoric, skepticism of foreign aid, framing of policy through national-interest lens. The recent Israel content introduces additional nationalist-globalist-critique angles.
+- **Authority (domain-split):** Libertarian-leaning on speech when it serves allies (Authority—Speech). Authoritarian on culture/family (opposition to recent social changes frames as state-backed restoration of traditional arrangements) and on immigration. Health/bodily and commerce/platform domains have insufficient signal to score.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Owens at 0.40 (low, "engagement-driven"). Under 9-axis, coherence rises to ~0.58. Not dramatic like Carlson — Owens genuinely has more inconsistency than he does — but meaningful. The 5-axis model flagged her as incoherent partly because her trajectory (left → right → populist-anti-establishment-right) looked like churn; under 9-axis, the post-2017 cluster is actually a stable populist-nationalist-traditionalist position, with the post-2024 rupture being intensification on populism rather than a new direction. What keeps her coherence below Carlson's 0.78: (1) genuine foreign-policy instability; (2) selective-not-principled speech application; (3) conspiracy content that is orthogonal to any political axis (see Logic System critique in `profile-breakdowns.md`).
 
 #### Notes
 
-Owens's documented public positions reversed direction between 2015 (Degree180 era) and 2017 (TPUSA). The post-2017 framework has been broadly consistent on domestic equity issues. Her departure from Daily Wire in March 2024 followed a public dispute with Ben Shapiro and Jeremy Boreing over statements regarding Israel; the contractual specifics were partially disclosed in subsequent public statements by both parties. Coverage of her 2023-2024 statements on Jewish institutions generated multiple public denunciations from previous allies on the right. Her foreign policy positions have shown more internal variation than her domestic positions, which is reflected in the lower confidence score for that axis.
+Her departure from Daily Wire in March 2024 followed a public dispute with Ben Shapiro and Jeremy Boreing over statements regarding Israel. The post-rupture trajectory is consistent with the populist-nationalist cluster, not a new direction. Coverage of her 2023-2024 statements on Jewish institutions generated public denunciations from previous allies on the right — this is tracked on the omission/coverage side, not the axis side.
 
 ---
 
 ### Nick Fuentes
 
 **Platform:** Streaming (Cozy.tv), X (restored 2024)
-**Current Leaning:** Far-Right
-**Ideological Coherence:** 0.65 (moderate)
+**Current Leaning:** Ethno-Nationalist Reactionary
+**Ideological Coherence:** 0.82 (high — see Logic System note)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -176,35 +190,51 @@ Owens's documented public positions reversed direction between 2015 (Degree180 e
 | ~2023 | Far-Right | Continued streaming on independent platform. Restored to X following Musk acquisition. |
 | ~2024 | Far-Right | Public statements on women's rights generated additional controversy and intra-right criticism. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.20 | Leaning Capitalist | Stable | 50% |
-| Speech | -0.70 | Strong Free Speech | Stable | 60% |
-| Progressive | +0.90 | Extreme Non-Progressive | Stable | 80% |
-| Liberal/Conservative | +0.80 | Strong Conservative | Stable | 75% |
-| Foreign Policy | -0.60 | Moderate Isolationist | Stable | 65% |
+| Economic | −0.20 | Leaning Capitalist (anti-"globalist capital") | Stable | 50% |
+| Speech | −0.70 | Strong Free Speech (instrumental) | Stable | 60% |
+| Causation Analysis | −0.80 | Strong Structural (elite-capture / ethnic) | Stable | 80% |
+| Equality Model | +0.90 | Extreme Opportunity / Reversal | Stable | 85% |
+| Liberal/Conservative | +0.95 | Reactionary (beyond "conservative") | Stable | 80% |
+| Foreign Policy | −0.70 | Strong Isolationist | Stable | 70% |
+| Populism | −0.90 | Extreme Populist | Stable | 90% |
+| Nationalism | −0.95 | Ethno-Nationalist | Stable | 90% |
+| Authority — Speech | −0.70 | Libertarian (for self and allies) | Stable | 55% |
+| Authority — Culture/Family | +0.85 | Strong Authoritarian | Stable | 85% |
+| Authority — Immigration | +0.90 | Strong Authoritarian | Stable | 90% |
 
 #### Axis Justifications
 
-- **Economic (-0.20):** Limited specific economic policy advocacy on record. Has criticized "globalist" corporate structures but has not articulated a developed economic framework. Score reflects general right-coded positioning with limited content.
-- **Speech (-0.70):** Position is pro-free-speech in principle. Speech advocacy is most prominent when applied to his own deplatformed content. Has not consistently defended speech of figures he opposes.
-- **Progressive (+0.90):** Direct opposition to feminism, civil rights frameworks, and equity policy. Score is at the upper end of the scale based on the explicitness and consistency of stated positions.
-- **Liberal/Conservative (+0.80):** Advocates for reversal of social changes from prior generations beyond what most conservative commentators argue for. Stated goal is restoration of pre-1960s social arrangements in multiple domains.
-- **Foreign Policy (-0.60):** Opposes US foreign military intervention. Opposed Ukraine aid. Criticized US support for Israel. Has framed both as instances of foreign influence on US policy.
+- **Economic (−0.20):** Limited specific economic policy advocacy. Anti-"globalist" corporate framing without developed alternative. No Marxist or socialist framework; position is nominal right-capitalist with ethno-nationalist carve-outs.
+- **Speech (−0.70):** Pro-free-speech in principle; application is instrumental. Primary advocacy is for his own deplatformed content and for allies. Has not consistently defended speech of figures he opposes.
+- **Causation Analysis (−0.80):** Dominant framing is structural — blames outcomes on elite capture, ethnic/demographic influence, globalist coordination. Virtually no individual-causation framing. Among the most structural-framing figures in the dataset; *the direction of the structural claim is different from left-populism, but the axis position is not*.
+- **Equality Model (+0.90):** Direct opposition to feminism, civil rights frameworks, and equity policy. Advocates for reversal of existing equality frameworks, not just preservation.
+- **Liberal/Conservative (+0.95):** Advocates for reversal of social changes from multiple prior generations. The stated goal is restoration of pre-1960s social arrangements across multiple domains — this is beyond the 5-axis definition of "conservative" (preserve the last 1–2 generations) and pushes past the +1 ceiling. Suggests the conservative-liberal axis may need a reactionary extension for figures whose change-tolerance is *negative* — they want rollback, not preservation.
+- **Foreign Policy (−0.70):** Opposes US foreign military intervention. Opposed Ukraine aid. Critical of US support for Israel — frames both as instances of foreign influence on US policy. Stable across career.
+- **Populism (−0.90):** Textbook populist by the 9-axis definition — elite capture is the central analytical frame. Distinguishes this framing by target (media, academia, Jewish institutions, corporate elites) but the form is populist. Among the most-populist figures in the dataset.
+- **Nationalism (−0.95):** "America First" is literally his brand. Nation-state as primary obligation is the defining frame. Unlike Carlson's civic nationalism, Fuentes's framing includes explicit ethnic and religious components — this is the ethno-nationalist end of the axis.
+- **Authority (domain-split):** Libertarian on speech when applied to self/allies (Authority—Speech −0.70). Strong authoritarian on culture/family and immigration (state-enforced restoration of traditional arrangements; immigration restriction framed as civic-cultural defense). Commerce/platform and health/bodily have insufficient signal to score.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Fuentes at 0.65 (moderate, "philosophy-driven") and flagged that his +0.90 liberal-conservative score pushes the definition of "conservative." Under 9-axis, coherence rises to 0.82 — he is internally consistent across every axis with meaningful signal, and the rule set generating his positions is identifiable (ethno-nationalist reactionary: structural-causation upward at "globalist/ethnic elites" + ethno-nationalist frame + rollback-of-post-1960s-changes + isolationism + authoritarian state enforcement of cultural/ethnic cohesion). This is the inverse of the Logic System's Carlson argument: where Carlson's "incoherence" was a measurement artifact, Fuentes's apparent mid-coherence was an artifact of the 5-axis model lacking the axes (nationalism, populism, sub-domain authority) that Fuentes is most extreme on. The 9-axis model correctly identifies him as one of the most internally consistent rule sets in the dataset; whether that rule set is defensible is a separate question the axis model is not built to answer.
+
+**Persona divergence caveat:** Fuentes operates two content modes — a public-facing AFPAC mode with more measured language, and a streaming mode on Cozy.tv with more explicit content. The scores above blend both; the Cozy.tv-only scores would be more extreme on nationalism and authority-immigration/culture. The persona divergence is itself an Overton-window manipulation pattern that should be tracked separately from the axis scores.
 
 #### Notes
 
-Fuentes operates two distinct content modes: a public-facing AFPAC mode with more measured language, and a streaming mode on Cozy.tv with more explicit content. The difference between the two modes is observable in the content itself and has been documented by multiple outside observers. The 2022 Mar-a-Lago dinner with Trump generated broad condemnation across the political spectrum and is the most-discussed event in his profile on X. His coherence score is higher than several other far-right figures because his stated framework remains consistent across topics; the score does not assess whether the framework is correct or whether claims within it are accurate.
+The 2022 Mar-a-Lago dinner with Trump generated broad condemnation across the political spectrum and is the most-discussed event in his profile. The Logic System note on whether his framework is *correct* is explicit: the 9-axis model identifies internal consistency, not truth-value. Claims made within his framework are subject to the separate epistemological classifier and omission-analysis layers.
 
 ---
 
 ### Ben Shapiro
 
 **Platform:** Daily Wire (co-founder), YouTube, Podcast
-**Current Leaning:** Right
-**Ideological Coherence:** 0.80 (high)
+**Current Leaning:** Traditional-Conservative Institutionalist (religious-right cluster)
+**Ideological Coherence:** 0.85 (high — see Logic System note)
 **Driver:** Philosophy-driven
 
 #### Bias Trajectory
@@ -217,27 +247,41 @@ Fuentes operates two distinct content modes: a public-facing AFPAC mode with mor
 | ~2016 | Right | Initially Never-Trump. Voted for McMullin in 2016. Subsequently moved to general support for Trump policies while maintaining personal critique. |
 | ~2024 | Right | Continued Daily Wire role. Public dispute with Candace Owens over Israel coverage in March 2024. Pro-Israel positioning intensified after October 7, 2023. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.70 | Strong Capitalist | Stable | 80% |
-| Speech | -0.60 | Moderate Free Speech | Stable | 70% |
-| Progressive | +0.60 | Moderate Non-Progressive | Stable | 70% |
+| Economic | −0.70 | Strong Capitalist | Stable | 80% |
+| Speech | −0.60 | Moderate Free Speech | Stable | 70% |
+| Causation Analysis | +0.60 | Individual | Stable | 80% |
+| Equality Model | +0.70 | Strong Opportunity | Stable | 80% |
 | Liberal/Conservative | +0.60 | Moderate Conservative | Stable | 80% |
-| Foreign Policy | +0.50 | Moderate Interventionist | Stable | 70% |
+| Foreign Policy | +0.50 | Moderate Interventionist | Stable | 75% |
+| Populism | +0.40 | Leaning Institutionalist | Stable | 70% |
+| Nationalism | +0.20 | Centrist-Globalist (alliance-based) | Stable | 55% |
+| Authority — Speech | −0.60 | Libertarian | Stable | 70% |
+| Authority — Commerce/Platform | −0.60 | Libertarian | Stable | 70% |
+| Authority — Culture/Family | +0.70 | Authoritarian (religious framework) | Stable | 75% |
 
 #### Axis Justifications
 
-- **Economic (-0.70):** Consistent free-market positions across two decades of writing. Opposes minimum wage increases on record. Opposes corporate tax increases. Has written multiple books advocating capitalist economic frameworks.
-- **Speech (-0.60):** Opposes campus speech codes. Has spoken at universities in events organized as free-speech demonstrations. Has criticized social media content moderation.
-- **Progressive (+0.60):** Opposes DEI, affirmative action, and equity-based policy frameworks. "Facts don't care about your feelings" framing applied to debate with progressive interlocutors.
-- **Liberal/Conservative (+0.60):** Religious-conservative framework. Opposes same-sex marriage on religious grounds. Defends traditional gender roles. Position is rooted in stated Orthodox Jewish theological commitments.
-- **Foreign Policy (+0.50):** Strong Israel support, consistent across two decades. Supported Iraq War in 2003 (later modified position on execution but not justification). Supported Ukraine aid. Hawkish on Iran policy.
+- **Economic (−0.70):** Consistent free-market positions across ~two decades of writing. Opposes minimum wage increases and corporate tax increases on record. Has authored books advocating capitalist economic frameworks. Most developed economic framework in the right-cluster dataset.
+- **Speech (−0.60):** Opposes campus speech codes; spoken at universities in events organized as free-speech demonstrations. Critical of social media content moderation. Position is principled (defends speech he disagrees with) more often than Owens or Fuentes.
+- **Causation Analysis (+0.60):** "Facts don't care about your feelings" framing is definitionally an individual-causation argument — personal responsibility, merit, choice, character as primary explanatory variables. This is the canonical right-individual-causation position and the cleanest test case for the axis; Shapiro on causation is as stable as Carlson on foreign policy.
+- **Equality Model (+0.70):** Strong opportunity-equality framework. Opposes DEI, affirmative action, and equity-based policy. Consistent across career.
+- **Liberal/Conservative (+0.60):** Religious-conservative framework rooted in stated Orthodox Jewish theological commitments. Opposes same-sex marriage on religious grounds. Defends traditional gender roles. Position is explicit and principled — not reactionary, preserves the status quo ante of the last 1–2 generations.
+- **Foreign Policy (+0.50):** Strong Israel support, consistent across ~two decades. Supported Iraq War in 2003. Supported Ukraine aid. Hawkish on Iran. One of the few figures in the right-cluster dataset with a stably interventionist position.
+- **Populism (+0.40):** Institutionalist-leaning — defends Constitution, courts, legitimate expertise, rule-of-law framings. Critical of populism from both left (Sanders) and right (Trump's more populist moments). This is the axis where Shapiro and Carlson differ most sharply, and the axis that best distinguishes the religious-conservative right from the populist-nationalist right. Score is moderate rather than extreme because he still frames mainstream media as biased (a partial-populist move).
+- **Nationalism (+0.20):** Globalist-leaning on the nationalism axis because his foreign-policy framework is built around international alliances (US-Israel, NATO, Iran-containment coalitions). Distinct from civic nationalists like Carlson — Shapiro's "America First" moments are subordinated to alliance maintenance. Not a strong globalist (domestic framing is still nationalist on immigration and culture), hence the modest score.
+- **Authority (domain-split):** Libertarian on speech and commerce/platform (consistent small-government framing). Authoritarian on culture/family (religious framework explicitly favors state support for traditional arrangements). Immigration and health/bodily have less consistent signal.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Shapiro at 0.80 (high). Under 9-axis, coherence rises slightly to 0.85 — he is the canonical philosophy-driven case and the 9-axis model confirms rather than revises the assessment. **But** the 9-axis model also reveals something the 5-axis model couldn't see: Shapiro and Carlson are *the same score* on economic, speech, equality-model, and liberal-conservative, and differ by only 0.10 on causation-analysis. In the 5-axis model they were nearly indistinguishable right-conservatives. In the 9-axis model they separate on **populism (+0.40 vs −0.80) and nationalism (+0.20 vs −0.70)** — a 1.9-point gap across two axes. Those two axes are what distinguishes religious-conservative from populist-nationalist, neocon from paleocon, Shapiro from Carlson. Without them, the 5-axis model was flattening a structural distinction in the American right. This is the second key illustration of why the expansion was necessary — not because Shapiro was mis-scored, but because he and Carlson looked the same when they aren't.
 
 #### Notes
 
-Shapiro's positions across all five axes have remained internally consistent over a documented period of approximately two decades. The score for ideological coherence reflects this consistency. The 2016 Never-Trump position was reversed to support Trump policies (while maintaining personal critique) — this is the most visible position change in his record. His Daily Wire role gives him institutional editorial control; the company's content reflects his stated priorities. The dispute with Candace Owens in March 2024 followed her statements on Israel and Jewish institutions; both Shapiro and Jeremy Boreing made public statements describing the dispute.
+Shapiro's positions across the core axes have remained internally consistent over ~two decades. The 2016 Never-Trump position was reversed to support Trump policies while maintaining personal critique — this is the most visible position change in his record and is a nationalism-axis adjustment, not a liberal-conservative one. The March 2024 dispute with Candace Owens is a populism/nationalism-axis divergence within the right, not a fracture on the shared domestic-axis positions.
 
 ---
 
@@ -324,9 +368,9 @@ Lemon's CNN departure in April 2023 followed multiple documented internal incide
 ### Tim Pool
 
 **Platform:** Timcast IRL (independent), YouTube, X
-**Current Leaning:** Right
-**Ideological Coherence:** 0.35 (low)
-**Driver:** Mixed
+**Current Leaning:** Populist Right (with stable-axis / shifting-axis divergence)
+**Ideological Coherence:** 0.55 (moderate — see Logic System note)
+**Driver:** Mixed (stable anchors + engagement/funding-influenced drift)
 
 #### Bias Trajectory
 
@@ -338,27 +382,43 @@ Lemon's CNN departure in April 2023 followed multiple documented internal incide
 | ~2022 | Right | Daily streaming show featured predominantly conservative guests. Coverage framed Democratic positions critically; Republican positions sympathetically. |
 | ~2024 | Right | Tenet Media indictment (September 2024) alleged that Tenet Media, which contracted with Pool and other commentators, received funding from Russian state media (RT) without disclosure. Pool stated publicly that he was unaware of the funding source and considered himself a victim of misrepresentation. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.20 | Leaning Capitalist | Moving right → | 40% |
-| Speech | -0.60 | Moderate Free Speech | Stable | 70% |
-| Progressive | +0.60 | Moderate Non-Progressive | Moving right → | 60% |
+| Economic | −0.30 | Leaning Capitalist | Stable | 40% |
+| Speech | −0.60 | Strong Free Speech | **Stable across entire trajectory** | 75% |
+| Causation Analysis | 0.00 | Mixed (domain-dependent) | Stable | 35% |
+| Equality Model | +0.60 | Opportunity | Moving right → | 60% |
 | Liberal/Conservative | +0.40 | Leaning Conservative | Moving right → | 50% |
-| Foreign Policy | -0.40 | Leaning Isolationist | Stable | 50% |
+| Foreign Policy | −0.50 | Isolationist | **Stable across entire trajectory** | 70% |
+| Populism | −0.70 | Strong Populist (anti-media) | **Stable across entire trajectory** | 80% |
+| Nationalism | −0.50 | Nationalist | Moving right → | 55% |
+| Authority — Speech | −0.70 | Libertarian | Stable | 75% |
+| Authority — Commerce/Platform | −0.40 | Libertarian | Stable | 55% |
+| Authority — Immigration | +0.50 | Authoritarian | Moving right → | 60% |
 
 #### Axis Justifications
 
-- **Economic (-0.20):** Has expressed support for both pro-market positions and populist economic critique. Limited specific economic policy advocacy on record. Score reflects general pro-market positioning with low confidence due to inconsistency.
-- **Speech (-0.60):** Consistent free-speech position from Occupy era to present. Has opposed deplatforming and content moderation across his career. Position has been stable across his political trajectory.
-- **Progressive (+0.60):** Opposes DEI, gender-identity policy changes, and equity frameworks in current content. This is a documented change from his pre-2018 positions, which were less explicit on these topics.
-- **Liberal/Conservative (+0.40):** Position has shifted from change-oriented (Occupy era) to status-quo-oriented (current). Shift is documented in content over time.
-- **Foreign Policy (-0.40):** Opposes US foreign military intervention. Opposed Ukraine aid in public statements. Position has been stable across his political trajectory.
+- **Economic (−0.30):** Mixed pro-market and populist economic critique. Limited specific economic policy on record. Low confidence due to format inconsistency.
+- **Speech (−0.60):** Consistent free-speech position from Occupy era to present. Opposed deplatforming and content moderation across his entire career. The position itself did not move; the partisan coding of the position did.
+- **Causation Analysis (0.00):** Split. Uses structural framing against "mainstream media," "the narrative," "the establishment." Uses individual-causation framing on protest violence, crime coverage, and progressive activism. Dominant frame depends on topic; not stable enough to score cleanly. Low confidence.
+- **Equality Model (+0.60):** Opposes DEI, gender-identity policy changes, and equity frameworks in current content. Documented change from pre-2018 positions.
+- **Liberal/Conservative (+0.40):** Shifted from change-oriented (Occupy era) to status-quo-oriented (current). One of the documented axis-moves.
+- **Foreign Policy (−0.50):** Opposes US foreign military intervention. Opposed Ukraine aid. Position has been stable across his entire political trajectory — this is an anchor, not a drift.
+- **Populism (−0.70):** Anti-mainstream-media framing is his single most consistent content theme from 2011 to present. He frames institutional media, government agencies, and coordinating expertise as captured or dishonest. The populism axis is effectively invariant across his career — what changed is *which* elites he treated as the captured ones (left-media in 2019+, not Wall Street as in 2011). Score is based on form, not target.
+- **Nationalism (−0.50):** Nationalist-leaning framing on immigration and sovereignty, intensified post-2018. Less ethnic and more civic than Fuentes.
+- **Authority (domain-split):** Libertarian on speech and commerce/platform (anchoring positions). Authoritarian on immigration (more recent shift). Culture/family and health/bodily have mixed signal.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Pool at 0.35 (very low, "audience capture"). Under 9-axis, coherence rises to ~0.55 — still below average, but not a collapse. The 9-axis model reveals something the 5-axis model couldn't: **Pool has stable axes and moving axes.** His speech, foreign-policy, and populism positions are invariant across his 2011–2024 trajectory. What changed is his equality-model score (moved right), his liberal-conservative score (moved right), and his nationalism score (moved right). The 5-axis model read his trajectory as whole-person drift and scored him as incoherent; the 9-axis model identifies three anchoring positions and three drifting ones, which is a structurally different pattern than "audience capture across the board."
+
+This matters for the audience-capture thesis itself. Genuine audience capture would move every axis toward the paying audience; Pool's stable anchors (anti-interventionist, anti-media, free-speech) were plausibly shared with his 2011 left-progressive audience and continue to define him. The moving axes are the ones a post-2018 right-coded audience rewards. The right diagnosis is not "audience capture" (too strong) or "philosophy-driven" (too weak) but **partial principled drift on the cross-cutting axes while holding cluster-anchoring positions**. The Tenet Media funding revelation is a separate motive concern, not an ideology concern, and belongs in omission-analysis.
 
 #### Notes
 
-Pool's recorded positions on multiple axes have changed observably between his 2011-2015 and 2019-2024 periods. The shift is documented in his own content. The Tenet Media indictment (US v. Kostiantyn Kalashnikov and Elena Afanasyeva, September 2024) named the company that contracted with Pool but did not name him as a defendant; the indictment alleges the company received approximately $10 million from Russian state media. Pool has publicly stated he was not aware of the funding source. The legal situation as of April 2026 remains under DOJ investigation. Foreign policy and speech axes have been stable across his career; progressive and liberal/conservative axes show the largest documented changes.
+The Tenet Media indictment (US v. Kostiantyn Kalashnikov and Elena Afanasyeva, September 2024) named the contracting company but not Pool; the indictment alleges ~$10M from Russian state media. Pool stated publicly he was unaware. As of April 2026 the legal situation remains under DOJ investigation. The funding question is tracked separately from axis scoring. His self-labeling behavior ("centrist liberal") is a content-label-vs-content-position gap worth tracking as a motte-and-bailey pattern in the omission layer.
 
 ---
 
@@ -840,9 +900,9 @@ Hanson's coherence score is high because his stated framework (classical history
 ### Steven Crowder
 
 **Platform:** Louder with Crowder / Mug Club (independent), Rumble
-**Current Leaning:** Right
-**Ideological Coherence:** 0.50 (mixed)
-**Driver:** Mixed
+**Current Leaning:** Traditional-Conservative with Populist-Anti-Conservative-Media Edge
+**Ideological Coherence:** 0.65 (moderate — see Logic System note)
+**Driver:** Philosophy-driven on positions, engagement-driven on format
 
 #### Bias Trajectory
 
@@ -853,27 +913,43 @@ Hanson's coherence score is high because his stated framework (classical history
 | ~2023 | Right | Public dispute with Daily Wire over contract terms (March 2023). Stated that Daily Wire offered $50 million contract with terms tied to platform monetization status; rejected the deal. Launched "Stop Big Con" campaign criticizing other conservative media companies. |
 | ~2024 | Right | Continued independent operation. Divorce proceedings with publicly disclosed allegations about workplace conduct. Continued daily show. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.50 | Moderate Capitalist | Stable | 65% |
-| Speech | -0.70 | Strong Free Speech | Stable | 75% |
-| Progressive | +0.70 | Strong Non-Progressive | Stable | 75% |
+| Economic | −0.50 | Moderate Capitalist | Stable | 65% |
+| Speech | −0.70 | Strong Free Speech | Stable | 80% |
+| Causation Analysis | +0.50 | Individual | Stable | 65% |
+| Equality Model | +0.70 | Strong Opportunity | Stable | 75% |
 | Liberal/Conservative | +0.60 | Moderate Conservative | Stable | 70% |
 | Foreign Policy | +0.20 | Leaning Interventionist | Stable | 45% |
+| Populism | −0.30 | Leaning Populist (intra-right) | Intensified 2023 | 60% |
+| Nationalism | −0.20 | Mild Nationalist | Stable | 45% |
+| Authority — Speech | −0.70 | Libertarian | Stable | 80% |
+| Authority — Commerce/Platform | −0.50 | Libertarian | Stable | 65% |
+| Authority — Culture/Family | +0.60 | Authoritarian | Stable | 65% |
 
 #### Axis Justifications
 
-- **Economic (-0.50):** Supports market economy and lower taxes. Standard movement-conservative economic positions. Limited specific policy advocacy beyond general framing.
-- **Speech (-0.70):** Free-speech advocacy is central to his stated framework. The 2023 Daily Wire dispute was framed publicly as a free-speech issue (rejected contract terms tying compensation to platform-monetization-status). Has been demonetized on YouTube multiple times.
-- **Progressive (+0.70):** Opposes DEI, gender-identity policy, and equity frameworks. "Change My Mind" segments featured these as primary topics.
-- **Liberal/Conservative (+0.60):** Defends traditional cultural arrangements. Position is consistent.
-- **Foreign Policy (+0.20):** Limited specific foreign policy content. Has supported some interventionist positions and opposed others. Confidence is low because foreign policy is not a major topic.
+- **Economic (−0.50):** Standard movement-conservative pro-market, anti-tax, anti-regulation framing. Limited engagement with economic policy specifics — economics supports his cultural positions rather than driving them.
+- **Speech (−0.70):** His single most anchoring position. The 2023 Daily Wire dispute was framed explicitly as a free-speech issue (rejection of contract terms tying compensation to YouTube monetization status). Multiple YouTube demonetizations; treats each as validation.
+- **Causation Analysis (+0.50):** Individual-causation is the default frame in both "Change My Mind" debate content and daily-show commentary — personal responsibility, merit, individual choice as primary explanatory variables. Less rigorous than Shapiro on this axis but clearly individual-frame.
+- **Equality Model (+0.70):** "Change My Mind" segments on gender, gun control, and race were his highest-performing content and operated on strong opportunity-equality framing. Anti-DEI, anti-identity-politics.
+- **Liberal/Conservative (+0.60):** Defends traditional cultural arrangements. Conservative-by-the-definition (preserve last 1–2 generations); not reactionary.
+- **Foreign Policy (+0.20):** Limited specific foreign-policy content. Has supported some interventionist positions and opposed others. Foreign policy is not a major topic — low confidence.
+- **Populism (−0.30):** Generally traditional-conservative rather than populist on most topics — but the 2023 "Stop Big Con" campaign is an explicitly populist move against the conservative media establishment (Daily Wire, Salem, PragerU). It frames these organizations as captured by platform-monetization incentives. This intra-right populism is distinctive and doesn't fit the Shapiro-institutionalist or Carlson-broad-populist patterns — it's a third position: populist *within* the right cluster.
+- **Nationalism (−0.20):** Mildly nationalist; not a primary theme.
+- **Authority (domain-split):** Libertarian on speech (strongly) and commerce/platform. Authoritarian on culture/family. Pattern is similar to Shapiro but less philosophically grounded — Crowder arrives at the same positions through movement-conservative priors rather than a stated religious framework.
+
+#### Logic System Note on Coherence
+
+The 5-axis model scored Crowder at 0.50 (mixed), attributing the mid-score to a "presentation coherence problem" — the gap between structured Change-My-Mind debate content and engagement-optimized daily-show content. Under 9-axis, coherence rises to ~0.65, and the diagnosis shifts: **the 5-axis model conflated format consistency with ideological coherence.** Crowder's actual axis positions are stable across both formats — the "Change My Mind" segments and the daily show take the same positions on the same axes. What varies across formats is tone, rhetoric, and audience-targeting, not position. Format-consistency is a separate measurement (rhetorical-style variance) and should not depress the ideological-coherence score.
+
+The 9-axis model also surfaces a genuinely novel feature: Crowder's **intra-right populism**. The Stop Big Con campaign is populist in form (treats named right-media institutions as captured/illegitimate), but the target is other conservatives. This is a pattern the 5-axis model had no vocabulary for — it could see "right-wing" and "mixed coherence" but not "populist-against-right-establishment." Carlson, Crowder, and Owens (post-2024) all share a version of this intra-right populism, and it is one of the most significant emergent patterns in current right-media content.
 
 #### Notes
 
-Crowder's 2023 dispute with Daily Wire generated public statements from both parties about the terms of the rejected contract. His "Change My Mind" segments operate in a structured-debate format with documented interlocutors. His 2024 divorce proceedings included publicly disclosed allegations from his ex-wife regarding workplace and personal conduct; Crowder made public statements responding to the allegations. The allegations are documented in public legal filings but are not adjudicated. The progressive and speech axis scores are based on stated positions in published content; the personal conduct allegations are noted as part of the public record but are not part of the axis scoring.
+The 2023 Daily Wire contract dispute generated public statements from both parties about the rejected terms. "Change My Mind" segments operate in a structured-debate format with documented interlocutors. The 2024 divorce proceedings included publicly disclosed allegations from his ex-wife regarding workplace and personal conduct; the allegations are documented in public legal filings but are not adjudicated. Axis scores are based on stated positions in published content; personal-conduct allegations are tracked in the public record but are not part of axis scoring.
 
 ---
 

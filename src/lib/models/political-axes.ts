@@ -701,15 +701,38 @@ export const SEED_PROFILES: PoliticalProfile[] = [
       },
       {
         axisId: "authority",
-        value: 0.0,
-        confidence: 0.3,
+        value: 0.2,
+        confidence: 0.35,
         evidence:
-          "Insufficient signal. Libertarian on speech and bodily autonomy; authoritarian on cultural conformity and in-group discipline.",
+          "Domain-split. Libertarian-leaning on speech (selective). Authoritarian on culture/family and immigration. Aggregate is placeholder; read subDomains.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.4,
+            confidence: 0.5,
+            evidence:
+              "Instrumentally pro-free-speech; applied selectively to allies.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.6,
+            confidence: 0.75,
+            evidence:
+              "Christian-traditionalist framing intensified 2023-2024. Explicit opposition to recent social changes on gender and sexuality.",
+          },
+          {
+            domain: "immigration",
+            value: 0.5,
+            confidence: 0.65,
+            evidence:
+              "Immigration restriction framing consistent with Blexit-era America-First positioning.",
+          },
+        ],
       },
     ],
-    ideologicalCoherence: 0.4,
+    ideologicalCoherence: 0.58,
     notes:
-      "Started as a coherent conservative voice. Ideological coherence has declined as positions increasingly driven by engagement/controversy rather than consistent philosophy. Conspiracy content doesn't map to any axis — it's orthogonal to political ideology. Low populism confidence reflects inconsistency, not absence.",
+      "Updated April 2026: 9-axis view raises coherence from 0.40 to 0.58. The 5-axis model read her trajectory (left → right → populist-anti-establishment) as collapse; under 9-axis, post-2017 positions form a coherent populist-nationalist-traditionalist cluster with the 2024 Daily Wire rupture being intensification on populism rather than a new direction. Genuine instability remains on foreign policy and in the selective-not-principled speech application. Conspiracy content is orthogonal to the political axes and belongs in the epistemological classifier, not the coherence score (5-axis model conflated them).",
   },
   {
     entityId: "nick-fuentes",
@@ -774,15 +797,38 @@ export const SEED_PROFILES: PoliticalProfile[] = [
       },
       {
         axisId: "authority",
-        value: 0.7,
+        value: 0.5,
         confidence: 0.7,
         evidence:
-          "Authoritarian-leaning. Explicitly favors hierarchical social order, centralized enforcement of cultural norms, and punishment of out-groups. Libertarian only on speech for the in-group.",
+          "Domain-split; aggregate is placeholder. Strong authoritarian on culture/family and immigration; libertarian on speech for self and in-group.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.7,
+            confidence: 0.55,
+            evidence:
+              "Pro-speech when applied to own content and allies; not principled across targets.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.85,
+            confidence: 0.85,
+            evidence:
+              "Explicit advocacy for state-backed restoration of traditional family and gender arrangements.",
+          },
+          {
+            domain: "immigration",
+            value: 0.9,
+            confidence: 0.9,
+            evidence:
+              "Immigration restriction is a defining feature. Ethno-cultural framing; strongest authoritarian signal in the right-cluster dataset.",
+          },
+        ],
       },
     ],
-    ideologicalCoherence: 0.8,
+    ideologicalCoherence: 0.82,
     notes:
-      "CRITICAL: This profile has a known PERSONA DIVERGENCE. Public-facing content is moderated; personal streaming content is significantly more extreme. Scores here represent the blended assessment. The private persona would score more extreme on every axis. Coherence is higher in the expanded model — reactionary + populist + nationalist + authoritarian is a textbook integralist-right profile.",
+      "Updated April 2026: 9-axis coherence 0.82 (up from 5-axis 0.65/0.80 depending on version). Textbook ethno-nationalist reactionary cluster: structural-causation upward at 'globalist/ethnic elites' + ethno-nationalist frame + rollback-of-post-1960s-changes + isolationism + authoritarian state enforcement of cultural/ethnic cohesion. This is internally one of the most consistent rule sets in the dataset; axis model identifies framework consistency, not correctness. PERSONA DIVERGENCE CAVEAT: Public-facing (AFPAC) mode is more measured than Cozy.tv streaming mode. Scores blend both; Cozy.tv-only scores would be more extreme on nationalism and authority-immigration/culture. Persona divergence is itself an Overton-window manipulation pattern, tracked separately. The liberal-conservative score pushes past the axis ceiling — the conservative-liberal axis may need a reactionary extension for figures whose change-tolerance is negative (rollback, not preservation).",
   },
   {
     entityId: "ben-shapiro",
@@ -847,15 +893,237 @@ export const SEED_PROFILES: PoliticalProfile[] = [
       },
       {
         axisId: "authority",
-        value: 0.1,
+        value: 0.0,
         confidence: 0.5,
         evidence:
-          "Mild authoritarian-leaning on cultural questions (favors institutional enforcement of traditional norms); libertarian on economics. Net position sits near center.",
+          "Domain-split; aggregate is placeholder. Libertarian on speech and commerce/platform (consistent small-government framing); authoritarian on culture/family (religious framework explicitly favors state support for traditional arrangements).",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.6,
+            confidence: 0.7,
+            evidence:
+              "Opposes campus speech codes, platform content moderation. Defends speech across tribal lines more often than Owens/Fuentes.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.6,
+            confidence: 0.7,
+            evidence:
+              "Consistent small-government framing on commerce. Opposes regulation and intervention.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.7,
+            confidence: 0.75,
+            evidence:
+              "Orthodox-Jewish religious framework; explicit state-backed traditional family/gender arrangement advocacy.",
+          },
+        ],
       },
     ],
     ideologicalCoherence: 0.85,
     notes:
-      "Highly coherent ideological profile — positions are internally consistent and predictable across the expanded axis set. Traditional conservative + opportunity-equality + institutionalist + interventionist. Uses rapid debate style that can itself be a vector for fallacies (particularly gish gallop). Coherence doesn't mean correctness, but it does mean positions are philosophy-driven rather than engagement-driven.",
+      "Updated April 2026: 9-axis confirms rather than revises (5-axis was already 0.80-0.85). Canonical philosophy-driven profile: traditional-conservative institutionalist (religious-right cluster). KEY FINDING from 9-axis: Shapiro and Carlson are virtually identical on the five axes the old model measured (economic, speech, liberal-conservative, equality-model, causation). They separate on populism (+0.40 vs −0.80) and nationalism (+0.20 vs −0.70) — a 1.9-point gap across two axes. Without populism/nationalism as independent axes, the 5-axis model flattened the structural distinction between religious-conservative and populist-nationalist right. This is arguably the single strongest argument for the 9-axis expansion. Uses rapid debate style (gish gallop vector) — rhetorical, not axial.",
+  },
+  {
+    entityId: "tim-pool",
+    entityName: "Tim Pool",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.3,
+        confidence: 0.4,
+        evidence:
+          "Mixed pro-market and populist economic critique. Limited specific policy on record.",
+      },
+      {
+        axisId: "speech",
+        value: -0.6,
+        confidence: 0.75,
+        evidence:
+          "Consistent free-speech position from Occupy era (2011) to present. Position did not move across his trajectory; the partisan coding of the position did. This is his most stable axis.",
+        trend: "stable",
+      },
+      {
+        axisId: "causation-analysis",
+        value: 0.0,
+        confidence: 0.35,
+        evidence:
+          "Domain-dependent. Structural framing on media/establishment; individual framing on protest/crime. No dominant frame.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.6,
+        confidence: 0.6,
+        evidence:
+          "Opposes DEI, gender-identity policy, and equity frameworks. Documented shift from less-explicit pre-2018 positions.",
+        trend: "moving-right",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: 0.4,
+        confidence: 0.5,
+        evidence:
+          "Moved from change-oriented (Occupy era) to status-quo-oriented (current). Shift is documented in own content.",
+        trend: "moving-right",
+      },
+      {
+        axisId: "foreign-policy",
+        value: -0.5,
+        confidence: 0.7,
+        evidence:
+          "Opposes US foreign military intervention. Opposed Ukraine aid. Stable across entire political trajectory.",
+        trend: "stable",
+      },
+      {
+        axisId: "populism",
+        value: -0.7,
+        confidence: 0.8,
+        evidence:
+          "Anti-mainstream-media framing is his single most consistent content theme from 2011 to present. The form (treat institutional media as captured) is invariant; only the TARGET changed (left-media after 2018). Populism score is effectively stable across 13 years.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.5,
+        confidence: 0.55,
+        evidence:
+          "Nationalist-leaning framing on immigration and sovereignty, intensified post-2018. Civic rather than ethnic.",
+        trend: "moving-right",
+      },
+      {
+        axisId: "authority",
+        value: -0.2,
+        confidence: 0.45,
+        evidence:
+          "Domain-split; aggregate is placeholder. Libertarian on speech and commerce/platform (anchoring positions); authoritarian on immigration (more recent shift).",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.7,
+            confidence: 0.75,
+            evidence:
+              "Anchor position. Opposes deplatforming consistently across career.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.4,
+            confidence: 0.55,
+            evidence:
+              "General anti-regulation framing on platforms and commerce.",
+          },
+          {
+            domain: "immigration",
+            value: 0.5,
+            confidence: 0.6,
+            evidence:
+              "Post-2018 drift toward immigration restriction and enforcement framing.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.55,
+    notes:
+      "Added April 2026. 9-axis view replaces 5-axis 'audience capture' diagnosis (0.35) with 'partial principled drift' (0.55). Pool has STABLE axes (speech, foreign-policy, populism — invariant across 2011-2024) and MOVING axes (equality-model, liberal-conservative, nationalism — all right-drifting). The 5-axis model read this as whole-person audience capture; the 9-axis model identifies it as a structurally different pattern: three anchoring positions + three drifting ones. Genuine audience capture would move every axis toward the paying audience. The Tenet Media funding revelation (Sept 2024) is a separate motive concern and belongs in omission-analysis, not axis scoring. Self-labeling ('centrist liberal') is a motte-and-bailey pattern — should be promoted to a standing rule-engine detection.",
+  },
+  {
+    entityId: "steven-crowder",
+    entityName: "Steven Crowder",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.5,
+        confidence: 0.65,
+        evidence:
+          "Standard movement-conservative pro-market, anti-tax, anti-regulation. Economics supports cultural positions, not vice versa.",
+      },
+      {
+        axisId: "speech",
+        value: -0.7,
+        confidence: 0.8,
+        evidence:
+          "Anchoring position. 2023 Daily Wire dispute was framed explicitly as a free-speech issue (rejected contract terms tying compensation to YouTube monetization status). Multiple demonetizations treated as validation.",
+      },
+      {
+        axisId: "causation-analysis",
+        value: 0.5,
+        confidence: 0.65,
+        evidence:
+          "Individual-causation default in both Change-My-Mind segments and daily-show commentary. Personal responsibility, merit, individual choice as primary explanatory variables.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.7,
+        confidence: 0.75,
+        evidence:
+          "Change-My-Mind segments on gender/gun-control/race operated on strong opportunity-equality framing. Anti-DEI, anti-identity-politics.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: 0.6,
+        confidence: 0.7,
+        evidence:
+          "Defends traditional cultural arrangements. Conservative-by-definition (preserve last 1-2 generations), not reactionary.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.2,
+        confidence: 0.45,
+        evidence:
+          "Limited specific foreign-policy content. Mixed interventionist/non-interventionist signals. Not a major topic.",
+      },
+      {
+        axisId: "populism",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Generally traditional-conservative, but the 2023 'Stop Big Con' campaign is an explicitly populist move against the conservative media establishment (Daily Wire, Salem, PragerU). Intra-right populism: populist in form, conservative-cluster in substance. Distinctive pattern — doesn't fit Shapiro-institutionalist or Carlson-broad-populist models.",
+        trend: "moving-left",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.2,
+        confidence: 0.45,
+        evidence:
+          "Mildly nationalist; not a primary theme.",
+      },
+      {
+        axisId: "authority",
+        value: -0.1,
+        confidence: 0.55,
+        evidence:
+          "Domain-split; aggregate is placeholder. Similar to Shapiro but less philosophically grounded — arrives at same positions through movement-conservative priors rather than a stated religious framework.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.7,
+            confidence: 0.8,
+            evidence:
+              "Strongest authority sub-domain position. Free-speech anchoring.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.5,
+            confidence: 0.65,
+            evidence:
+              "General small-government framing on commerce and platforms.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.6,
+            confidence: 0.65,
+            evidence:
+              "Favors traditional cultural arrangements; less explicitly religious than Shapiro.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.65,
+    notes:
+      "Added April 2026. 9-axis revises 5-axis 0.50 ('presentation coherence problem') to 0.65. The 5-axis model conflated FORMAT consistency (structured Change-My-Mind vs engagement-optimized daily show) with IDEOLOGICAL coherence. Crowder's actual axis positions are stable across both formats — the format varies, the positions don't. Format-consistency is a separate measurement (rhetorical-style variance) and should not depress ideological coherence. NOVEL FEATURE: intra-right populism (Stop Big Con campaign). Populist in form, conservative-cluster in substance — a pattern the 5-axis model has no vocabulary for. Carlson, Crowder, and Owens (post-2024) all share versions of this.",
   },
 ];
 

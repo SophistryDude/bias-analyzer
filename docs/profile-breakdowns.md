@@ -126,6 +126,24 @@ Her conspiracy content is particularly notable because conspiracy thinking doesn
 
 Her free-speech position is instrumentally framed — she primarily advocates for free speech in terms of conservative speech being censored, rather than a principled defense of speech she disagrees with.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.40 (low) → 0.58 (moderate). The original "engagement-driven" diagnosis is partially but not fully supported by the 9-axis view. Owens has real instability on some axes (foreign policy), selective-not-principled speech application, and a dominant individual-causation frame on social outcomes that sits awkwardly next to her populist-structural framing of the right-media establishment — but the post-2017 cluster is coherent enough to score as populist-nationalist-traditionalist, with the 2024 Daily Wire rupture being intensification rather than whole-new-direction.
+
+**Category errors in the original profile:**
+- *"Conspiracy thinking doesn't map to any political axis"* — true statement, wrong conclusion. The original uses this to argue that "the multi-axis model loses predictive power." The correct Logic System reading is that conspiracy content is an **epistemological** variable (model-dependent claims presented as known truths), not a political one. It should be tracked by the epistemological classifier, not folded into the political-axis model. The fact that the political model doesn't capture conspiracy content is a feature; the epistemological layer is where it belongs.
+- *"Collapse of ideological coherence"* — over-diagnosed. What the 5-axis model read as collapse was partly a trajectory across axes the model couldn't see (populism intensifying, nationalism becoming explicit). The 9-axis view shows movement along specific axes, not a general scatter.
+
+**Epistemological flags:**
+- *"Her free-speech position is instrumentally framed"* — this is the right observation but should be scored rather than narrated. The speech axis should carry a separate *principled-vs-instrumental* confidence flag (applies to Fuentes, Pool, Crowder, and many others). Until we add that flag, the axis score conflates "position" with "how the position is applied," which is a category error.
+- *"Her conspiracy content…"* — the original treats conspiracy content as a coherence-depressant without naming specific claims. Logic System principle: if a specific claim is the problem, classify it (model-dependent? category-error? tacit-consensus-as-known?); if it's a pattern, name the pattern. "Conspiracy content" as an aggregate label is itself under-specified.
+
+**Omissions in the profile's own frame:**
+- No trajectory analysis. Owens went from Degree180 (center-left) to TPUSA (right) to post-Daily-Wire (populist-anti-establishment). The 5-axis model lacks the populism axis that would capture the through-line of the last two phases.
+- No distinction between her individual-causation framing (applied to social outcomes within the Black community in the Blexit era) and structural framing (applied to right-media and Jewish institutions post-2024). Both exist in her content; the 5-axis model bundles them as "non-progressive" and misses the interesting feature that her causation-frame is **domain-dependent**.
+
+**Logic System verdict:** Revise, don't replace. The original profile's observation about engagement incentives is genuine — she is meaningfully less coherent than Shapiro or Carlson. But the magnitude of "collapse" is overstated and the diagnosis conflates conspiracy-content issues (epistemological) with political-position issues (axial). Use the 9-axis rewrite in `revised_profile_breakdown.md` and move the conspiracy observation to the epistemological classifier's purview.
+
 ---
 
 ### Nick Fuentes
@@ -161,6 +179,24 @@ His liberal/conservative score of +0.90 actually exceeds our definition of "cons
 
 His free-speech advocacy is primarily instrumental — he advocates free speech as protection for his own expression rather than as a principled position defending speech he disagrees with.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.70 (high, "philosophy-driven with caveat") → 0.82 (high). This is the inverse of the Carlson case. Where Carlson's apparent incoherence was a measurement artifact, Fuentes's *mid-range* coherence was an artifact of the 5-axis model lacking the axes he is most extreme on: nationalism, populism, and sub-domain authority (immigration, culture). Under 9 axes he is one of the most internally consistent rule sets in the dataset — the axis model identifies framework consistency, not correctness.
+
+**Category errors in the original profile:**
+- *"His liberal/conservative score of +0.90 actually exceeds our definition of 'conservative'. We may need a sixth degree beyond conservative."* — this is the original profile correctly identifying a model limitation, but the proposed fix (a "sixth degree") is not quite right. Conservative is about *change tolerance*; Fuentes wants rollback, which is a *negative* change-tolerance position (reactionary). The right fix is either extending the axis past +1 into a reactionary region, or treating "reactionary" as a distinct axial extension. The 9-axis model still doesn't solve this fully — flagged as a real gap that requires a later axis-model refinement, not a scoring change.
+- *"The persona divergence is itself a significant data point"* — correct and valuable observation, but miscategorized as a coherence issue. Persona divergence is an Overton-window manipulation pattern, not an axial inconsistency. It should be tracked as a separate signal (presentational-mode variance) that runs in parallel to the axis scores, not folded into them.
+
+**Epistemological flags:**
+- The original profile does not commit explicit epistemological errors on Fuentes. The "scores represent a blended assessment" note is methodologically honest. The main issue is scope rather than category error: the 5-axis model can't distinguish ethno-nationalism from civic nationalism, and so his defining feature (the ethnic-cultural frame on nationalism and immigration) lives in the "notes" section rather than in the axis scores.
+
+**Omissions in the profile's own frame:**
+- **Nationalism as a separate axis.** Fuentes's brand is literally "America First" and the 5-axis model cannot score this. It disappears into foreign-policy (isolationism) and liberal-conservative (strong conservative), neither of which captures the ethno-nationalist core of his content.
+- **Populism as a separate axis.** Elite-capture is his dominant analytical frame and the 5-axis model cannot score it. Again, it disappears into other axes and gets lost.
+- **Causation framework.** Fuentes's structural-causation framing (blaming outcomes on identified groups and institutions) is definitionally a structural-causation position, but the 5-axis model has no axis for this — it conflates "how the content explains outcomes" with "which tribe the content belongs to."
+
+**Logic System verdict:** Replace. The original profile correctly identifies persona divergence and the change-tolerance ceiling as real observations, but the axis vocabulary is too thin to represent what Fuentes actually is. The 9-axis rewrite in `revised_profile_breakdown.md` captures the structural and nationalist features that define him; keep the persona-divergence and change-tolerance-ceiling notes as separate tracked observations.
+
 ---
 
 ### Ben Shapiro
@@ -195,6 +231,23 @@ Important caveat: coherence doesn't mean correctness. A person can be consistent
 His debate style — rapid-fire argumentation — is itself a potential vector for logical fallacies, particularly gish gallop (flooding an opponent with arguments faster than they can be addressed). This is a technique issue, not necessarily a logic issue, but it's worth tracking in content analysis.
 
 Foreign policy is his biggest divergence from the populist right. His interventionist stance (particularly regarding Israel and Middle East policy) puts him at odds with the isolationist trend in right-wing media (Carlson, Fuentes, etc.).
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.80 (high) → 0.85 (high). Shapiro is the canonical philosophy-driven case and the 9-axis model confirms rather than revises the assessment. But the 9-axis model surfaces something far more important than the small coherence delta: **Shapiro and Carlson are virtually identical on the five axes the old model measured** (economic, speech, liberal-conservative, equality-model, and near-identical on causation-analysis). Without populism and nationalism as independent axes, the 5-axis model had no way to distinguish the religious-conservative right from the populist-nationalist right — the two clusters scored the same to within measurement noise. This is arguably the single strongest argument for the 9-axis expansion.
+
+**Category errors in the original profile:**
+- None of consequence. The original profile's primary thesis (Shapiro is framework-derived, coherent, predictable) is correct and reproducible under the 9-axis lens.
+- *"Coherence doesn't mean correctness"* — this is a Logic System-aligned observation and should be preserved as a standing principle across the profile set. It is the cleanest statement of the distinction the axis model relies on: internal consistency of a rule set is separable from the truth-value of the claims the rule set produces. Migrate to the shared documentation.
+
+**Epistemological flags:**
+- *"Rapid-fire argumentation is itself a potential vector for gish gallop"* — correct observation, but this is a **rhetorical technique** observation (belongs in the fallacy detector layer) rather than an axial one. No category error, but it illustrates that presentation-style observations about Shapiro should live in the rule-engine output, not the political-axis output.
+
+**Omissions in the profile's own frame:**
+- **Populism as an axis.** Shapiro is an institutionalist — he defends Constitution, courts, legitimate expertise. This is distinct from Carlson's populism and is arguably the single most important feature distinguishing the religious-conservative right from the populist-right. The 5-axis model cannot score it, so the profile's framing says he "diverges from the populist right on foreign policy" when the more accurate statement is that **he diverges from the populist right on populism itself**, not on foreign policy (foreign policy is downstream of the institutionalist framework).
+- **Nationalism as an axis.** Shapiro's foreign-policy hawkishness is embedded in an alliance-based, coalition-maintaining framework — a globalist-leaning position on the nationalism axis. This is the source of his differences with paleoconservatives, and it lives at the nationalism/foreign-policy intersection that the 5-axis model could not represent.
+
+**Logic System verdict:** Keep, augment. The original Shapiro profile is one of the most accurate in the dataset and should be preserved as the canonical philosophy-driven profile. The 9-axis rewrite in `revised_profile_breakdown.md` adds the populism and nationalism axes to surface what makes him structurally different from Carlson — but the underlying assessment is substantively the same. Use this profile as a training reference for how philosophy-driven content presents.
 
 ---
 
@@ -328,6 +381,24 @@ One of the most dramatic trajectory shifts in the dataset. Pool went from coveri
 **Key analytical note:** The Tenet Media / Russian funding revelation is the elephant in this profile. In 2023, the DOJ indicted two Russian nationals for funneling money through Tenet Media to Pool and other right-leaning commentators. Pool claimed he was unaware of the funding source. Whether or not Pool knowingly participated, the revelation means that his content trajectory from ~2019 onward must be analyzed with the possibility that financial incentives (beyond just audience capture) were shaping content direction. This doesn't invalidate all of his positions, but it does mean confidence scores on every axis should be discounted. The most important analytical question for Pool going forward: does his content change now that the Russian funding pipeline is exposed? If it doesn't, that suggests the positions are at least partially genuine or that audience incentives alone are sufficient to maintain them. If it does, that tells you exactly how much the funding was driving the content.
 
 Pool's self-labeling behavior ("I'm a centrist liberal who just happens to agree with the right on everything") is itself a useful analytical signal. It's a form of **motte-and-bailey** — the "centrist" label is the motte (defensible, moderate-sounding position), while the actual content is the bailey (consistently right-leaning). Tracking the gap between self-label and content position is one of the most useful things this profile can do.
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.35 (low, "audience capture") → 0.55 (moderate). The 9-axis view significantly changes the diagnosis. Pool has **stable axes and moving axes**: speech, foreign-policy, and populism are invariant across his entire 2011–2024 trajectory; equality-model, liberal-conservative, and nationalism have moved right. The 5-axis model read this as whole-person drift and scored him as deeply incoherent; the 9-axis model identifies three anchoring positions and three drifting ones, which is a structurally different pattern than "audience capture across the board." The right diagnosis is not "audience capture" (too strong — his anchors are stable) or "philosophy-driven" (too weak — the cross-cutting axes have drifted) but **partial principled drift on the cross-cutting axes while holding cluster-anchoring positions**.
+
+**Category errors in the original profile:**
+- *"Audience capture"* as a whole-person diagnosis — over-generalized. Audience capture would move every axis toward the paying audience; Pool's stable anchors (anti-interventionist, anti-media, free-speech) were plausibly shared with his 2011 left-progressive audience and continue to define him. The 5-axis model could not see that he had anchors because it lacked the populism axis that captures his most stable position.
+- *"Anti-progressive positioning is the engine of his content"* — correct about current content, but framed as the prime mover when populism/anti-establishment is the deeper invariant. His anti-progressive intensification (post-2018) is downstream of his populism interacting with a left-coded progressive establishment, not an independent position shift.
+
+**Epistemological flags:**
+- *"The Russian funding revelation means that his content trajectory from ~2019 onward must be analyzed with the possibility that financial incentives were shaping content direction"* — this is the right methodological flag but should be separated from axis scoring. Financial motive is a **motive/omission-layer** concern, not an ideology-layer concern. The original profile correctly says confidence should be discounted but does so by folding the funding concern into the axis assessment. The Logic System correction: keep axis scores and funding concerns on separate ledgers so we can ask the predictive question the original profile flagged ("does his content change now that the pipeline is exposed?") without the axis scores already being contaminated by the hypothesis.
+- *"Motte-and-bailey on self-label vs content"* — correct observation and the right named pattern. Should be promoted to a standing detection pattern in the rule engine, not left as a profile-specific narrative.
+
+**Omissions in the profile's own frame:**
+- **Populism as the stable anchor.** The original profile treats Pool's anti-establishment framing as an output of the shift rather than the invariant underlying it. Under 9-axis, his populism score is one of the most stable features of his content across 13 years.
+- **Distinction between stable and moving axes.** The 5-axis model scores the whole person as incoherent. The 9-axis model identifies which axes moved and which did not, which is diagnostically much more useful — and plausibly a template for how to detect audience capture in other subjects (true audience capture = all axes move; partial drift = some axes anchor while others move).
+
+**Logic System verdict:** Revise, not replace. The original profile's core observations (motte-and-bailey, self-label gap, trajectory change) are valuable and should be preserved. The diagnosis ("audience capture") is partially wrong and should be replaced with the 9-axis "stable-vs-moving axes" framing in `revised_profile_breakdown.md`. The Tenet Media funding concern should be separated from axis scoring entirely and tracked in the omission/motive layer.
 
 ---
 
@@ -781,6 +852,24 @@ Crowder's profile is interesting because the coherence issue isn't about *positi
 **Key analytical note:** Crowder's primary rhetorical technique is **comedy-wrapped argumentation** — presenting conservative arguments through comedic sketches, characters, and provocative setups. The humor detection system needs to handle this: his content frequently uses observational humor and satire to package political positions. The question is whether the comedy is serving the argument (using humor to make a point accessible) or the argument is serving the comedy (using politics to generate entertainment). His coherence score (0.50) reflects this ambiguity — when he's doing "Change My Mind," he's philosophy-driven; when he's doing daily show bits, he's engagement-driven.
 
 The Crowder-Shapiro comparison is useful: both started at the Daily Wire ecosystem, both are right-wing, both use rapid-fire argumentation. But Shapiro's coherence (0.80) dwarfs Crowder's (0.50) because Shapiro's positions are framework-derived even when they're wrong, while Crowder's are increasingly content-format-derived.
+
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.50 (mixed, "presentation coherence problem") → 0.65 (moderate). The 5-axis model conflated format consistency with ideological coherence. Crowder's actual axis positions are stable across both his "Change My Mind" debate content and his daily-show commentary — the format varies (structured vs. engagement-optimized), but the positions inside each format take the same values on the same axes. Format-consistency is a separate measurement (rhetorical-style variance) and should not depress the ideological-coherence score.
+
+**Category errors in the original profile:**
+- *"Presentation coherence problem"* framed as a coherence deficit — this is a category error. Ideological coherence is about whether positions form a consistent rule set; rhetorical coherence is about whether the presentation style is stable. The original profile correctly observes the format/tone gap but then scores it on the wrong ledger. Fix: add a separate rhetorical-style variance signal; stop depressing ideological coherence based on it.
+- *"When he's doing 'Change My Mind,' he's philosophy-driven; when he's doing daily show bits, he's engagement-driven"* — elegant framing but technically wrong. He's philosophy-driven in both (same positions, same axis values). The engagement-driven part is format selection and audience-targeting, not position selection.
+
+**Epistemological flags:**
+- *"Is the comedy serving the argument or the argument serving the comedy?"* — great question, but it's a **motive** question (what drives content choice), not an epistemological or axial one. Belongs in the separate motive-layer analysis, alongside Pool's funding concern and Carlson's post-Fox interest-alignment question.
+- *"Humor detection system needs to handle this"* — correct technical flag and actionable. This should be a linked issue on the humor-detection component, not a narrative note in the profile.
+
+**Omissions in the profile's own frame:**
+- **Intra-right populism.** The "Stop Big Con" campaign is a populist move against conservative media institutions — populist in form (treats named institutions as captured), conservative-cluster in substance. The 5-axis model has no way to represent "populist against your own cluster." This is the most genuinely novel feature of Crowder's profile and the 5-axis version can't see it.
+- **Format-stability vs position-stability.** The original profile does not separate these measurements. The 9-axis rewrite separates them and assigns the moderate coherence score to the position side only.
+
+**Logic System verdict:** Revise. The original profile correctly identifies the format-variance observation but assigns it to the wrong measurement (ideological coherence). The 9-axis rewrite preserves the format observation as a separate signal, raises the ideological-coherence score to reflect the actual stability of his axis positions, and surfaces the intra-right populism pattern. Use the rewrite in `revised_profile_breakdown.md`; preserve the Shapiro-comparison framing but note that the comparison should now run across populism and nationalism axes, which is where the real divergence lives.
 
 ---
 
