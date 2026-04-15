@@ -1187,86 +1187,281 @@ The 2023 Daily Wire contract dispute generated public statements from both parti
 
 ### Donald Trump
 
-**Platform:** Truth Social, rallies, Fox News interviews, X (since restoration)
-**Current Leaning:** Right (populist)
-**Ideological Coherence:** 0.35 (low)
-**Driver:** Engagement-driven
+**Scoring Methodology: Dual Profile + Predictive Analysis.** Per user direction (Batch 4), Trump is scored as two distinct profiles: a **pre-2015 framework** (his political positions as expressed through ~35 years of public life prior to the birther moment and 2015 campaign announcement) and a **2016–2024 framework** (his populist-nationalist right political brand established across the first campaign, first term, out-of-office campaigning period, and 2024 victory). The two profiles are substantively different enough that blending them produces the low-coherence score the 5-axis model generated. Scored separately, each profile has its own internal coherence. A final section then uses the 2016–2024 profile to evaluate whether 2025/26 second-term actions fit the established framework — a predictive-validation exercise rather than an additional profile.
+
+**Platform:** Truth Social, rallies, Fox News interviews, X (since restoration), plus (pre-2015) Howard Stern Show, Larry King Live, NYC tabloid interviews, The Apprentice, book co-authorship
 
 #### Bias Trajectory
 
 | Period | Leaning | Evidence |
 |--------|---------|----------|
-| ~1999 | Center | Considered Reform Party presidential run in 2000. Donated to candidates of both parties through 1990s and 2000s. Stated pro-choice and pro-universal-healthcare positions in published interviews. |
-| ~2011 | Center-Right | "Birther" claims about Obama's birth certificate. Began public political profile aligned with Tea Party movement. |
-| ~2016 | Right | "America First" presidential campaign. Anti-immigration, anti-trade, anti-establishment framing. Won election. |
-| ~2017 | Right | First-term policy: tax cuts (Tax Cuts and Jobs Act 2017), Supreme Court appointments (Gorsuch, Kavanaugh, Barrett), tariffs on China, USMCA renegotiation, pulled out of Paris climate accord and Iran deal. |
-| ~2020 | Right | Lost 2020 election to Biden. Disputed result; legal challenges in multiple states were rejected by courts. January 6, 2021: supporters entered the US Capitol during electoral count. Twice impeached by House (acquitted by Senate both times). |
-| ~2024 | Right | Convicted of 34 felony counts in NY state trial (May 2024). Won 2024 presidential election. Took office January 20, 2025. |
-| ~2025 | Right | Second-term policy: tariffs at higher levels (averaging ~47% in implemented categories), DOGE government restructuring, NATO funding demands, Iran posture, deportation operations. |
+| ~1987 | Mixed-Center | Full-page ad in NYT, Washington Post, Boston Globe criticizing US foreign policy (trade imbalances with Japan, NATO funding). First major public political intervention. Anti-trade-deficit, anti-NATO-free-riders framing. |
+| ~1988–1999 | Mixed-Center | NYC business figure. Donated to both parties. Publicly pro-choice (1999 Meet the Press), pro-single-payer-healthcare (The America We Deserve, 2000), pro-assault-weapons-ban (same book). Considered Reform Party run in 2000. |
+| ~2000–2010 | Mixed-Center | Celebrity era. The Apprentice. Continued bipartisan donations. Birtherism began mid-2000s in private, surfaced publicly 2011. |
+| ~2011 | Center-Right | "Birther" claims about Obama's birth certificate. First sustained right-coded political brand. |
+| ~2015 | Right | Campaign announcement (June 2015) with immigration-restriction framing. Shift to explicit populist-nationalist-right positioning. |
+| ~2016 | Right | "America First" campaign. Anti-immigration, anti-trade, anti-establishment. Won election. |
+| ~2017–2020 | Right | First-term policy: tax cuts (TCJA 2017), Supreme Court appointments (Gorsuch, Kavanaugh, Barrett), tariffs on China/EU/Mexico/Canada, USMCA renegotiation, Paris exit, Iran deal exit. |
+| ~2020–2021 | Right | Lost 2020 election to Biden. Disputed result; legal challenges rejected. January 6, 2021: supporters entered Capitol during electoral count. Twice impeached by House (acquitted by Senate). |
+| ~2021–2024 | Right | Out-of-office campaigning. 34-count felony conviction NY state (May 2024). Won 2024 presidential election. |
+| ~2025 | Right | Second-term policy: tariffs at higher levels (~47% average implemented), DOGE government restructuring (Musk-led), NATO 5% GDP funding demand, Iran posture, mass deportation operations. |
 
-#### Multi-Axis Position
+---
+
+#### PROFILE A: Pre-2015 Trump (9-axis, ~1987–2010)
+
+This profile covers Trump's political expressions through ~35 years of public life before the birther era and 2015 campaign. It is scored based on stated positions in published interviews, his 2000 book *The America We Deserve*, public donation records, and the 1987 NYT advertisement — not on the 2016+ populist-nationalist brand.
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.30 | Leaning Capitalist (protectionist) | Unstable | 40% |
-| Speech | -0.50 | Moderate Free Speech | Unstable | 35% |
-| Progressive | +0.60 | Moderate Non-Progressive | Stable | 65% |
-| Liberal/Conservative | +0.30 | Leaning Conservative | Unstable | 35% |
-| Foreign Policy | -0.20 | Leaning Isolationist | Unstable | 30% |
+| Economic | +0.10 | Near-center (mixed-market, pro-safety-net) | Stable | 55% |
+| Speech | −0.30 | Leaning Free Speech (celebrity tabloid normal) | Stable | 40% |
+| Causation Analysis | +0.40 | Leaning Individual (deal-maker framework) | Stable | 55% |
+| Equality Model | +0.20 | Near-center | Stable | 40% |
+| Liberal/Conservative | 0.00 | Center (mixed positions) | Stable | 45% |
+| Foreign Policy | −0.40 | Leaning Non-Interventionist (anti-NATO-free-riders, anti-Iraq-War circa 2003 per Stern interviews) | Stable | 55% |
+| Populism | −0.40 | Leaning Populist (anti-establishment outsider framing goes back decades) | Stable | 65% |
+| Nationalism | −0.60 | Nationalist (anti-trade-deficit, America-first economic framing from 1987) | Stable | 75% |
+| Authority | −0.10 | Near-center (no strong domain-split pattern in the record) | Stable | 35% |
 
-#### Axis Justifications
+**Pre-2015 Axis Justifications:**
 
-- **Economic (-0.30):** Cut corporate tax rate (TCJA 2017). Imposed tariffs on China, EU, Mexico, Canada in both terms. Position combines pro-corporate (tax cuts) and protectionist (tariffs) elements that do not align on a single point on the axis. Confidence is reduced.
-- **Speech (-0.50):** Has criticized social media deplatforming when applied to himself and allies. Has called for revoking broadcast licenses of critical outlets. Has filed lawsuits against media companies. Stated positions on speech vary depending on whether the speech is supportive or critical. Confidence is reduced due to internal inconsistency.
-- **Progressive (+0.60):** Opposes DEI, affirmative action, and equity-based policy. Position has been consistent since 2015. Executive orders in second term targeted DEI programs in federal agencies and contractors.
-- **Liberal/Conservative (+0.30):** Position varies by topic. Defends specific traditional cultural arrangements; supports rapid change in other domains (federal agency restructuring). Confidence is reduced.
-- **Foreign Policy (-0.20):** Stated isolationist framing ("end endless wars"). Killed Soleimani in 2020. In second term, demanded NATO funding increases, imposed tariffs, confronted Iran. Position has both isolationist and interventionist elements depending on context. Confidence is reduced.
+- **Economic (+0.10):** Pro-single-payer-healthcare (The America We Deserve, 2000). Pro-mixed-market capitalism. Donated to both parties. Pro-tariff/anti-trade-deficit from 1987 NYT ad onward (a position stable across both profiles — tariffs are not a right-coded position for him, they are a through-line). Position is center-with-protectionist-edge.
+- **Speech (−0.30):** Leaning free-speech within celebrity tabloid norms. Frequent libel threats and litigation against unfavorable coverage predate 2015, indicating the directional speech pattern ("free speech for me, lawsuits for you") is not new. Lower confidence because the pattern is directional, not principled.
+- **Causation Analysis (+0.40):** Leaning individual — deal-maker framework treats outcomes as products of individual skill, personal character, will, negotiation. "The Art of the Deal" (1987) is a book-length individual-causation argument. Consistent pattern.
+- **Equality Model (+0.20):** Near-center. No strong equity framework either direction. "Treat people based on their individual merit" rhetoric which reads as opportunity-equality but without strong policy advocacy.
+- **Liberal/Conservative (0.00):** Center. Pro-choice, pro-single-payer, pro-assault-weapons-ban (all left-coded on social/regulatory), plus pro-tariff / anti-NATO / pro-border-enforcement instincts (right-coded). Genuinely mixed in this period.
+- **Foreign Policy (−0.40):** Anti-intervention instincts visible from 1987 (NATO free-riders framing) through early-2000s Stern interviews (reportedly skeptical of Iraq War run-up, though the record is contested — he has cited this as a principled position and critics have cited contradicting on-the-record statements). Anti-trade-deficit framing is also a foreign-policy-adjacent pattern. Leans isolationist on military, not on commerce. **This axis is more stable across pre-2015 and 2016–2024 than any other axis in the profile.**
+- **Populism (−0.40):** Leaning populist. Anti-establishment outsider framing was a celebrity-era pattern (the 1987 NYT ad is a populist-style public intervention — "the political establishment won't say what's obvious"). But weaker than the 2016+ framework because pre-2015 Trump operated within institutional channels (political donations, Reform Party consideration, NYC civic participation, book publishing) while criticizing them.
+- **Nationalism (−0.60):** **Nationalist. Through-line.** America-first economic framing is visible from 1987 onward (Japan trade imbalances, NATO free-riders). Nation-state as primary unit of obligation is not a 2015 conversion — it is the single most stable axis position across his entire 35-year public record, and it is the axis the pre-2015 profile most clearly shares with the 2016–2024 profile.
+- **Authority:** Too little consistent signal to sub-domain-split. Celebrity tabloid era does not produce axial clarity on state-power questions.
+
+**Pre-2015 coherence:** 0.50 (moderate). The pre-2015 framework is **not incoherent** — it has clear positions (anti-trade-deficit, anti-NATO-free-riders, nationalist, leaning populist, deal-maker individual-causation) but the positions are held weakly and inconsistently applied. This is a **celebrity-businessman-with-political-instincts** profile, not a **political-movement-leader** profile. Moderate coherence reflects the fact that the positions are real but not rigorously framework-derived.
+
+---
+
+#### PROFILE B: 2016–2024 Trump (9-axis)
+
+This profile covers the populist-nationalist-right political brand established across first campaign, first term, out-of-office campaigning, and 2024 victory.
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | −0.10 | Near-center (protectionist-populist) | Stable | 55% |
+| Speech | −0.20 | Near-center (directional, not principled) | Stable | 35% |
+| Causation Analysis | +0.30 | Leaning Individual (with structural-enemies rhetoric) | Stable | 50% |
+| Equality Model | +0.70 | Strong Opportunity (anti-DEI reflex) | Stable | 70% |
+| Liberal/Conservative | +0.40 | Leaning Conservative (cultural-aesthetic, not temperamental) | Stable | 55% |
+| Foreign Policy | −0.40 | Leaning Non-Interventionist (rhetoric; action mixed) | Stable | 50% |
+| Populism | −0.90 | Extreme Populist | Stable | 90% |
+| Nationalism | −0.85 | Extreme Nationalist (America First) | Stable | 90% |
+| Authority — Speech | −0.40 | Libertarian in rhetoric, directional in practice | Stable | 40% |
+| Authority — Immigration | +0.80 | Strong Authoritarian | Stable | 90% |
+| Authority — Commerce/Platform | +0.30 | Leaning Authoritarian (tariffs, industrial policy, targeted enforcement) | Stable | 60% |
+| Authority — Culture/Family | +0.50 | Authoritarian (cultural-aesthetic traditionalism) | Stable | 55% |
+
+**2016–2024 Axis Justifications:**
+
+- **Economic (−0.10):** **Near-center, protectionist-populist.** TCJA tax cuts (right-coded) plus highest tariffs in a century (historically left-coded). Non-doctrinaire economic position similar to Saagar Enjeti's, though less intellectually articulated. Protectionism is the consistent through-line from pre-2015; the right-coded tax-cutting is new.
+- **Speech (−0.20):** **Directional, not principled.** Champions speech when it benefits him (social media deplatforming, campus speech), threatens it when it doesn't (broadcast license revocation threats, media lawsuits). The pattern is the same as pre-2015 (libel-threats-as-pattern) but at larger scale. Scored near-center because the axis measures stated position and his stated position varies case-by-case; behavioral score would be lower.
+- **Causation Analysis (+0.30):** **Leaning individual** (deal-maker, personal-responsibility rhetoric) **with intermittent structural-enemies framing** ("the deep state," "the swamp," "radical left takeover of institutions"). Not fully structural like Carlson or Fuentes — the structural framing is applied opportunistically to enemies, while default framing for his own successes is individual. Mixed-leaning-individual.
+- **Equality Model (+0.70):** **Strong opportunity** — anti-DEI, anti-affirmative-action, anti-identity-politics. Consistent since 2015. Second-term executive orders targeted DEI in federal agencies and contractors.
+- **Liberal/Conservative (+0.40):** **Leaning conservative** but **cultural-aesthetic rather than temperamental-philosophical.** He invokes strength, winning, loyalty, national symbols, traditional gender roles, military displays — not Burkean caution, not accumulated wisdom, not constitutional precedent. Conservative-by-association rather than conservative-by-framework.
+- **Foreign Policy (−0.40):** **Leaning non-interventionist in rhetoric, mixed in action.** "End endless wars" / anti-NATO-free-riders / anti-Iraq / anti-Afghanistan in rhetoric. But: killed Soleimani 2020, nearly struck Iran in first term, confronted North Korea with "fire and fury," second term NATO pressure and Iran posture. His foreign policy is **transactional** — relationships with nations are personal relationships with their leaders, which produces unpredictable results that rhetoric alone cannot predict.
+- **Populism (−0.90):** **Extreme populist.** Definitional populist — treats Washington establishment, career civil service, academic expertise, legacy media, international bodies, corporate globalists all as captured/illegitimate. "Drain the swamp" is the purest populism-axis framing in the dataset. Highest-confidence populism score alongside Fuentes.
+- **Nationalism (−0.85):** **Extreme nationalist.** "America First" is the campaign slogan. Nation-state as primary unit of political/economic/moral obligation. Immigration restriction, tariff-nationalism, skepticism of international institutions (WHO, Paris, Iran deal, NATO in current form). Highest-confidence nationalism score alongside Fuentes, with different content inside the frame (Trump is civic-nationalist, Fuentes is ethno-nationalist).
+- **Authority (domain-split):** Directional-libertarian on speech (libertarian for allies, authoritarian for critics). Strong authoritarian on immigration. Leaning authoritarian on commerce/platform (tariffs + targeted enforcement). Authoritarian on culture/family (cultural-aesthetic). No pure-libertarian sub-domain — the entire authority profile is **leader-centered state capacity** rather than principled libertarianism or principled authoritarianism.
+
+**2016–2024 coherence:** 0.65 (moderate). Higher than the 5-axis aggregate score (0.35) because the 9-axis view scopes out the incoherence that came from blending with pre-2015 positions. The 2016–2024 framework is internally **more coherent** than the 5-axis model captured — populist + nationalist + opportunity-equality + cultural-aesthetic-conservative + non-interventionist-rhetoric + leader-centered-authority forms a recognizable (if non-traditional) rule set. The coherence is moderate rather than high because specific positions remain inconsistent (foreign-policy rhetoric vs action, speech principles vs application, economic tax-cuts vs tariffs) and because the framework is not explicitly philosophical — it is loyalty-dynamic + crowd-feedback + deal-logic generated positions that happen to cluster into a recognizable pattern.
+
+---
+
+#### The Pre-2015 → 2016–2024 Trajectory: What Moved and What Didn't
+
+| Axis | Pre-2015 | 2016–2024 | Delta |
+|------|----------|-----------|-------|
+| Economic | +0.10 | −0.10 | −0.20 (slightly more populist) |
+| Speech | −0.30 | −0.20 | +0.10 (directional pattern persists, slightly less rhetorically absolutist) |
+| Causation Analysis | +0.40 | +0.30 | −0.10 (structural-enemies rhetoric adds marginally) |
+| Equality Model | +0.20 | +0.70 | **+0.50 (LARGE — anti-DEI reflex is a 2015+ development)** |
+| Liberal/Conservative | 0.00 | +0.40 | **+0.40 (LARGE — conservative positioning is new)** |
+| Foreign Policy | −0.40 | −0.40 | **0 (STABLE — foreign-policy non-interventionism rhetoric is the oldest through-line)** |
+| Populism | −0.40 | −0.90 | **−0.50 (LARGE — the single biggest trajectory shift)** |
+| Nationalism | −0.60 | −0.85 | −0.25 (was already strongest through-line; intensified) |
+| Authority | −0.10 | mixed domain-split | complex (pre-2015 had no clear pattern) |
+
+**Trajectory reading:** The biggest axis moves are **populism** (−0.40 → −0.90, extreme intensification), **equality-model** (+0.20 → +0.70, anti-DEI-reflex development), and **liberal-conservative** (0.00 → +0.40, cultural-aesthetic conservative positioning). The smallest moves are **foreign-policy** (stable at −0.40 through both profiles) and **nationalism** (stable-strong through both profiles, intensified slightly). The pattern is: **Trump's nationalism and non-interventionism are the through-lines; his populism-intensity, anti-DEI-reflex, and cultural-conservative-positioning are the 2015+ developments.** The 2015 shift was not a whole-person conversion — it was an intensification of existing nationalism + non-intervention, plus the grafting of populist-intensity, anti-DEI, and cultural-conservatism on top.
+
+This is important for the **trajectory-update pattern catalog**: Trump is not like Uygur (whole-framework reversal) or Pool (audience-capture partial drift) or Kasparian (evidence-responsive domain-specific updating). He is closer to **a pre-existing nationalist-non-interventionist who added populist intensity and conservative cultural positioning as a political vehicle** — not a new framework, but an amplification of existing latent axis positions combined with new positions on previously-latent axes.
+
+---
+
+#### 2025/26 Second-Term Predictive Analysis (using the 2016–2024 profile)
+
+The user's methodology question: do 2025/26 second-term actions fit the 2016–2024 profile, or do they represent a new framework? This section uses the 2016–2024 profile as a prediction model and evaluates each major 2025/26 action against it.
+
+**Actions that FIT the 2016–2024 profile (predicted):**
+
+- **Tariffs at ~47% implemented levels.** Predicted by economic (−0.10, protectionist-populist) + nationalism (−0.85) combination. Higher levels than first term; direction is continuous. **Fit confirmed.**
+- **Mass deportation operations.** Predicted by authority-immigration (+0.80) + nationalism (−0.85). Campaign pledges explicit. **Fit confirmed.**
+- **DOGE government restructuring.** Predicted by populism (−0.90) + authority-commerce/platform (+0.30, leader-centered state capacity). "Drain the swamp" is the canonical framing. **Fit confirmed, with the additional feature that DOGE is Musk-operated — introduces an externality the 2016–2024 profile does not predict. See Musk profile for the business-interest structural concern.**
+- **NATO 5% GDP funding demand.** Predicted by foreign-policy (−0.40, non-interventionist) + nationalism (−0.85) + the 1987 NYT ad (NATO free-riders framing is ~38 years old as a Trump position). **Fit confirmed; in fact this action is predicted by the pre-2015 profile as well, which makes NATO pressure a near-unique case of full-profile stability across ~38 years.**
+- **Anti-DEI federal executive orders.** Predicted by equality-model (+0.70). **Fit confirmed.**
+- **Lawsuits against critical media and broadcast license threats.** Predicted by speech (−0.20, directional). **Fit confirmed (continues pre-2015 pattern at scale).**
+
+**Actions that are AMBIGUOUS under the profile:**
+
+- **Iran posture / military confrontation.** The 2016–2024 profile predicts rhetorical non-interventionism + transactional action. Second-term Iran confrontation is more aggressive than rhetoric predicts but consistent with the first-term Soleimani strike pattern. **Ambiguous: predicted-by-action-record, contradicted-by-rhetoric.** This is the structural contradiction in Trump's foreign-policy axis that the 9-axis model cannot resolve — the rhetoric and the behavior point in different directions, and predicting which will dominate in a given case requires reference to deal-logic and personal-leader-relationships rather than framework.
+- **Ukraine policy shift.** Second-term shift toward Russia-negotiation pressure / reducing Ukraine aid. Predicted by foreign-policy (−0.40) + populism (−0.90, anti-institutional-consensus on Ukraine) + nationalism (−0.85, anti-globalist-framework). **Fit confirmed** once we account for the specific populism-direction (treating Washington bipartisan Ukraine-support consensus as captured).
+
+**Actions that DON'T FIT the profile (require explanation outside the framework):**
+
+- **Specific personnel appointments and firings.** Loyalty-dynamic and personal-grievance driven rather than framework-driven. The 2016–2024 profile predicts *that* loyalty-dynamic is a driver, not *which specific people* will be favored. The framework predicts pattern, not content.
+- **Specific tariff countries/rates.** Similar — the framework predicts that tariffs will happen and will be framed nationally, but does not predict which countries get which rates. Those are transactional-deal decisions.
+
+**Predictive coherence verdict:** The 2016–2024 framework **predicts the direction and general pattern** of 2025/26 actions with high accuracy (nationalism, populism, anti-DEI, protectionism, immigration-restriction, directional-speech) **but does not predict specific content** (which people, which countries, which rates, which enemies). This matches the Batch 1 Carlson finding in a counterintuitive way: Trump's framework **is** coherent enough at the axis level to predict direction, even though it is not philosophy-driven. The low coherence score (0.65 in the 2016–2024 profile, versus 0.85+ for Shapiro/Maddow/Obama/Hanson) captures the gap between *directional predictability* and *specific-content predictability*. Framework-driven coherence (0.85+) predicts both direction and content. Trump's coherence (0.65) predicts direction; specific content is generated by a different process (loyalty, deal-logic, crowd feedback).
+
+This is the cleanest case in the dataset for the **two-level coherence** distinction: **axial coherence** (does the subject's rule set produce consistent positions on the 9 axes?) is separable from **content coherence** (does the subject produce consistent specific claims within those positions?). Trump has moderate axial coherence and low content coherence. Philosophy-driven profiles have both. Engagement-driven profiles have neither. This is a distinction the current model does not formally track and should be added to the Open Model Questions list.
+
+---
 
 #### Notes
 
-Trump's coherence score is among the lowest in the dataset. The score reflects observable inconsistency on multiple axes between stated positions and policy outcomes, and between positions across different topics and time periods. The disputed 2020 election result and the events of January 6, 2021, are part of the documented public record. The 34-count felony conviction in NY state (May 2024) is documented in court records; appeals are ongoing as of April 2026. The classification engine would tag claims using "everyone knows," "many people are saying," and "believe me" as common framings; these are tacit-consensus framings used in his stated content. Second-term policy implementation is ongoing as of April 2026 and may change axis scores as more data accumulates.
+- The disputed 2020 election result and events of January 6, 2021 are documented in the public record.
+- The 34-count felony conviction in NY state (May 2024) is documented in court records; appeals ongoing as of April 2026.
+- The epistemological classifier would tag "everyone knows," "many people are saying," and "believe me" as common framings — these are tacit-consensus framings used in his stated content and are a consistent feature of his epistemological mode across both pre-2015 and 2016–2024 profiles.
+- Second-term policy implementation is ongoing as of April 2026; this profile may be revisited after more data accumulates. The dual-profile + predictive-analysis methodology is the canonical approach for subjects with significant pre-political public records.
 
 ---
 
 ### Elon Musk
 
-**Platform:** X (owner), Tesla, SpaceX, xAI, DOGE (government role 2025)
-**Current Leaning:** Right (techno-libertarian populist)
-**Ideological Coherence:** 0.35 (low)
-**Driver:** Mixed
+**Scoring Methodology: Tenet-Extraction + Variant Analysis.** Per user direction (Batch 4), Musk is scored using a different approach than the other profiles: first identify the **stable underlying tenets** that have not moved across his ~20-year public record, then analyze his apparent political drift (2008 Obama-donor → 2025 Trump-administration-adjacent) as **applications of, or departures from, those tenets** rather than as whole-person axis movement. The tenet approach predicts his most-discussed positions better than the 5-axis trajectory model did and correctly predicts some counterintuitive stable positions (e.g., his continued support for skilled immigration even under MAGA alignment pressure).
+
+**Platform:** X (owner), Tesla, SpaceX, xAI, Neuralink, Boring Company, DOGE (government role 2025)
 
 #### Bias Trajectory
 
 | Period | Leaning | Evidence |
 |--------|---------|----------|
-| ~2008 | Center-Left | Tesla and SpaceX early-stage operations. Donated to Obama 2008 campaign. Met with Obama administration on clean energy and space policy. |
+| ~2003 | Center-Left | Co-founded Tesla Motors. SpaceX founded 2002. Engineer-CEO identity. |
+| ~2008 | Center-Left | Donated to Obama 2008 campaign. Met with Obama administration on clean energy and space policy. Tesla roadster launch. |
+| ~2013 | Center | NYT Model S range-test dispute (February 2013). First named-enemies-in-legacy-media moment — Musk publicly contested the review using vehicle telemetry data. Marked the beginning of ongoing anti-legacy-media pattern. |
 | ~2018 | Center | SEC settlement over "funding secured" tweet (September 2018). Joe Rogan podcast appearance. Limited explicit political positioning. |
 | ~2020 | Center | Opposed California COVID lockdowns. Reopened Fremont Tesla factory against state order. Moved Tesla HQ to Texas. "Take the red pill" tweet (May 2020). |
 | ~2022 | Right | Acquired Twitter for $44 billion (October 2022). Renamed to X. Restored previously banned accounts including Trump. Endorsed voting Republican in 2022 midterms. |
-| ~2024 | Right | Endorsed Trump after July 2024 assassination attempt. Created America PAC; reported total spending in support of Trump exceeded $250 million. Appeared at Trump rallies. |
+| ~2024 | Right | Endorsed Trump after July 2024 assassination attempt. Created America PAC; reported spending in support of Trump exceeded $250 million. Appeared at Trump rallies. |
 | ~2025 | Right | Appointed to lead DOGE (Department of Government Efficiency) in second Trump administration. Operational role in federal agency review and restructuring. |
 
-#### Multi-Axis Position
+---
 
-| Axis | Score | Label | Trend | Confidence |
-|------|-------|-------|-------|------------|
-| Economic | -0.60 | Moderate Capitalist | Stable | 75% |
-| Speech | -0.70 | Strong Free Speech | Unstable | 50% |
-| Progressive | +0.50 | Moderate Non-Progressive | Moving right → | 60% |
-| Liberal/Conservative | +0.20 | Leaning Conservative | Moving right → | 45% |
-| Foreign Policy | -0.20 | Leaning Isolationist | Unstable | 35% |
+#### Stable Tenets (The Through-Lines)
 
-#### Axis Justifications
+These are the underlying rules that have not moved across Musk's public record. They are the genuine "framework" of his profile — what changed is not these tenets but which political coalition is currently aligned with them.
 
-- **Economic (-0.60):** Tesla and SpaceX received government loans and contracts; Musk has supported government as customer/funder of innovation. Has opposed government regulation of his companies. Has criticized corporate tax increases. Position is pro-market with government-customer exceptions.
-- **Speech (-0.70):** Stated "free speech absolutist" position (April 2022). Restored previously banned accounts at X. Behavioral data: suspended journalists tracking his private jet (December 2022); X complied with government takedown requests in India, Turkey, Brazil at rates documented in transparency reports; has personally intervened in individual account decisions. Stated position and behavioral data point in different directions on specific cases. Confidence is reduced.
-- **Progressive (+0.50):** Opposes DEI programs in stated content. Has criticized "woke mind virus." Has discussed his trans daughter publicly in the context of his political reorientation. Position has moved more explicit since 2022.
-- **Liberal/Conservative (+0.20):** Supports rapid restructuring of federal agencies through DOGE role. Supports preservation of specific cultural arrangements. Position is mixed across topics.
-- **Foreign Policy (-0.20):** Has stated positions favoring negotiated settlement of Russia-Ukraine war. Tesla has Shanghai factory and significant China business; public statements on Taiwan and Chinese government have not aligned with US foreign policy consensus. Starlink for Ukraine: provided service but reportedly declined to enable service over Crimea during a Ukrainian operation against Russian Black Sea Fleet (September 2022). Confidence is reduced because business interests and stated positions are not separable in this domain.
+**Tenet 1: Techno-optimism / engineering acceleration.**
+The belief that engineering and technology are the primary mechanisms for solving large-scale problems (climate, interplanetary civilization, communication, transportation, AI, neural interfaces). Stable from Zip2 (1995) through Tesla, SpaceX, SolarCity, Boring Company, Neuralink, xAI. This is the **single most stable position in his entire public record** — every company he has started is a technical-acceleration bet, and his political positions consistently favor unblocking technical progress.
+
+**Tenet 2: Government as customer and funder of innovation, not regulator of innovation.**
+Tesla received government loans, EV subsidies, ZEV credits; SpaceX depends on NASA and DOD contracts; SolarCity depended on solar ITC. Musk has **never** opposed government-as-customer or government-as-innovation-funder — he has consistently opposed government-as-regulator of his industries (SEC disputes, California lockdown resistance, NHTSA tussles over Autopilot, FAA disputes over SpaceX launch approvals). This is a specific position: pro-government-support, anti-government-regulation. It is *not* ideological libertarianism (a true libertarian would reject the subsidies), and it is not pro-big-government (he actively opposes regulatory expansion). It is **government-as-customer-of-innovation**. DOGE is the 2025 application of this tenet at institutional scale.
+
+**Tenet 3: Speech-libertarianism in principle, directional in application.**
+Anti-content-moderation rhetoric predates the 2022 Twitter acquisition by a decade — he publicly complained about Twitter moderation decisions starting in the mid-2010s. The principle (free speech as platform default) is stable. The application is directional and personal-grievance-inflected (suspending journalists tracking his jet, complying with government takedown requests at high rates in India/Turkey/Brazil, personal interventions in individual account decisions). The tenet is **stable**; the application is **constrained by personal grievance and platform-power incentives**. The directional pattern is not a post-2022 development — it is the tenet applied to a context where Musk now has power over speech enforcement, and the directional pattern reveals that the principle is held *as a rhetorical stance* but applied *as a case-by-case discretion*.
+
+**Tenet 4: Anti-legacy-media personal grievance as a through-line.**
+The 2013 NYT Model S range-test dispute is the first named-enemies-in-legacy-media moment, not a 2020 development. Ongoing pattern of contesting unfavorable coverage from NYT, LA Times, The Verge, WaPo going back ~12 years. The 2022 Twitter acquisition and the subsequent editorial decisions at X are the tenet-as-platform-action version of the same pre-existing anti-legacy-media tenet.
+
+**Tenet 5: Pro-skilled-immigration (for himself, his companies, and "talent").**
+**One of the cleanest tests of the tenet-extraction approach.** Musk is a legal immigrant (South Africa → Canada → US). Tesla, SpaceX, and xAI all depend heavily on H1B and O-1 visa-holders. Musk has publicly supported H1B expansion and skilled-worker immigration *consistently* from his earliest public statements through the present — including during the 2024–2025 period when his MAGA base was vocally anti-immigration. He is not pro-restriction like Trump/Carlson/Saagar; he is pro-skilled-immigration and has held this position against significant audience pressure. The tenet is stable; it is *not* the MAGA position; and this is strong confirmation that the tenet-extraction approach produces better predictions than the 5-axis trajectory model on this specific question.
+
+**Tenet 6: Anti-bureaucracy / anti-regulatory-state.**
+Stable since the earliest Tesla/SpaceX regulatory disputes. SEC, NHTSA, FAA, California CARB, OSHA — all have had public conflicts with Musk. This is distinct from Tenet 2 (which is about government-as-customer) and combines with it to produce the specific Musk position: **government should fund innovation and get out of the way of innovation, and the measure of good governance is how much it accelerates rather than blocks progress.** This is the intellectual source of DOGE as both institution and personal project.
+
+**Tenet 7: Engineering-first / first-principles epistemology (rhetorical).**
+Musk claims to value first-principles-physics reasoning (reducing problems to physical constraints and reasoning up from there). Stated consistently across interviews, books, biographies. Application is inconsistent (many of his political claims do not follow first-principles reasoning and are instead reactive to audience feedback or personal grievances), but the **stated** epistemology is stable. Flag for the epistemological classifier: the gap between stated first-principles epistemology and observed claim-level reasoning is itself a measurable category-error pattern.
+
+**Tenet 8: Personal contrarianism / attention-seeking as operating mode.**
+Stable since at least the early 2010s. Willingness to stake provocative positions, reactive to criticism, high volume of public commentary. This is a **presentation-mode tenet**, not an axial-content tenet — it describes how he operates, not what he believes. It is captured in `rhetoricalStyleVariance`, not `ideologicalCoherence`.
+
+---
+
+#### Variant Positions (What Moved and Why)
+
+These are the positions that have changed across Musk's trajectory. The tenet framework predicts most of them as **applications of the stable tenets to changing political contexts**, not as independent whole-person moves.
+
+**Variant 1: Party alignment (Obama donor → Trump endorser).**
+Predicted by: the Democratic Party moved away from Tenet 2 (government as customer of innovation) and Tenet 6 (anti-bureaucracy) during the 2018–2024 period — more regulatory framing on tech, Big Tech antitrust, EV mandates that complicated Tesla competitive position, AI regulation framing that would constrain xAI. The Republican Party moved toward positions aligned with Tenet 2 and Tenet 6 under Trump (anti-regulatory framing, DOGE as concept). **Musk did not move; the parties moved around him.** This is a strong claim and it is partially — not fully — supported by the record: Musk's cultural-issue positions (Variant 3 below) moved in ways that tenets alone do not predict, so *party alignment is predicted by tenets + cultural-issue drift*, not by tenets alone.
+
+**Variant 2: Populism score (near-center → strong populist).**
+Predicted by: Tenet 6 (anti-bureaucracy) applied at political-rhetoric scale produces anti-Washington-establishment framing. Tenet 4 (anti-legacy-media) applied at X-ownership scale produces anti-mainstream-media framing. The combination is recognizably populist in the axis-model sense (treating institutions as captured/illegitimate custodians of expertise). **Mostly predicted by tenets.** The 2008–2018 near-center populism score did not reflect a different underlying framework; it reflected the fact that Musk was operating within institutional channels because those channels were (partially) aligned with his tenets. When they diverged, the tenet-as-applied produced the populist position.
+
+**Variant 3: Cultural-issue positions (near-center → anti-woke / anti-DEI / anti-trans-affirmation).**
+**The least-well-predicted variant.** The tenet framework does not cleanly generate anti-DEI or anti-trans-affirmation positions. These positions emerged after 2020 and correlate with (a) personal narrative about his trans daughter's transition ("woke mind virus" framing), (b) X-audience feedback dynamics after the acquisition, and (c) general conservative-coalition alignment. The tenets predict that Musk would have *some* cultural-issue position (he is not apolitical), but they do not predict that it would be strongly anti-DEI rather than moderately-liberal-by-tech-industry-default. This variant is **framework-under-predicted + audience-and-personal-narrative-driven**. It is the clearest case in his profile where axial content is generated by non-tenet processes.
+
+**Variant 4: Nationalism (near-center globalist → moderate nationalist).**
+Partially predicted by Tenet 5 collision with coalition politics: Musk remains pro-skilled-immigration (nationalism-axis near-center) but has endorsed broader anti-illegal-immigration framing that is nationalist-coded. The nationalism score's moderate movement is the tenet being pulled by coalition pressure while the core pro-skilled-immigration tenet holds.
+
+**Variant 5: Foreign policy entanglements (China, Ukraine).**
+Predicted by: Tenet 2 + Tesla Shanghai factory dependency produces China-accommodating positions. Starlink for Ukraine is predicted by Tenet 1 (techno-optimism solving problems); the Crimea restriction is **not cleanly predicted by any tenet** and is the clearest case in the profile where business-interest + personal-judgment override the stated tenet framework. Foreign policy axis is contaminated by business-interest constraints and should be flagged as low-confidence regardless of score.
+
+---
+
+#### Current 9-axis Position (2022–2026 framework, tenet-applied)
+
+| Axis | Score | Label | Source (tenet-derived or variant) |
+|------|-------|-------|-----------------------------------|
+| Economic | −0.30 | Near-center (government-as-customer capitalist) | Tenet 2 |
+| Speech | −0.50 | Leaning Free Speech (principled rhetoric, directional application) | Tenet 3 |
+| Causation Analysis | +0.10 | Near-center (engineering first-principles, sometimes structural on institutional-capture) | Tenet 7 (stated) |
+| Equality Model | +0.60 | Opportunity | Variant 3 (partially tenet-derived via meritocracy framing) |
+| Liberal/Conservative | +0.20 | Leaning Conservative | Variant 1 + Variant 3 |
+| Foreign Policy | −0.10 | Near-center (business-interest contaminated) | Variant 5 |
+| Populism | −0.70 | Strong Populist | Tenet 6 + Tenet 4 applied at scale |
+| Nationalism | −0.40 | Leaning Nationalist (partial; tenet-5 holds pro-immigration) | Variant 4 |
+| Authority — Speech | −0.60 | Libertarian (rhetoric); directional (behavior) | Tenet 3 |
+| Authority — Commerce/Platform | −0.70 | Strong Libertarian (anti-regulatory-bureaucracy) | Tenet 6 |
+| Authority — Immigration | **−0.20** | **Leaning Libertarian (NOT authoritarian)** | Tenet 5 (preserved under MAGA pressure) |
+| Authority — Culture/Family | +0.40 | Leaning Authoritarian | Variant 3 |
+
+**Note the Authority—Immigration score:** Musk scores **libertarian-leaning on immigration** even in the 2022–2026 framework. This is the clearest tenet-vs-variant distinction in the profile. Every other subject in the right-coalition cluster scores authoritarian on immigration (Carlson +0.60, Fuentes +0.90, Trump +0.80, Saagar +0.50, Owens +0.50, Pool +0.50). Musk is the outlier because Tenet 5 (pro-skilled-immigration) holds under coalition pressure. **This is a strong predictive test of the tenet-extraction approach:** the 5-axis trajectory model would score Musk as right-coalition-authoritarian-on-immigration by inference from his party alignment, and would be wrong.
+
+---
+
+#### Predictive Tests (tenet framework applied to 2024–2026 actions)
+
+**Actions predicted by tenets:**
+- **DOGE role.** Predicted by Tenet 2 (government-as-customer) + Tenet 6 (anti-bureaucracy) at institutional scale. ✓
+- **America PAC funding of Trump.** Predicted by Variant 1 (party alignment following tenet-alignment). ✓
+- **X platform decisions (restoration of banned accounts, free-speech branding).** Predicted by Tenet 3 rhetoric. ✓
+- **Continued support for skilled immigration under MAGA base pressure.** Predicted by Tenet 5. ✓ **This is the strongest single predictive test — the tenet framework predicts a politically-inconvenient position that Musk actually holds, confirming the tenets are real rules rather than rationalizations.**
+- **Tesla Shanghai accommodation positions on Taiwan/China.** Predicted by Tenet 2 + Shanghai Gigafactory dependency. ✓
+- **Starlink for Ukraine.** Predicted by Tenet 1 (techno-optimism solving problems). ✓
+- **DOGE-era hostility to federal regulatory agencies.** Predicted by Tenet 6. ✓
+
+**Actions not cleanly predicted by tenets:**
+- **Specific "woke mind virus" framings and anti-trans-affirmation positions.** Personal-narrative-driven (Variant 3). Not tenet-derived.
+- **Starlink Crimea restriction during Ukrainian operation.** Not cleanly predicted by any tenet; possibly personal judgment + business-risk assessment. Track as a single-event counter-example to the tenet framework.
+- **Specific personal grievances amplified on X.** Tenet 4 predicts anti-legacy-media pattern; it does not predict which specific individual conflicts will be amplified.
+- **X suspensions of individual journalists over specific incidents.** Tenet 3-directional + personal-grievance, not principled-enforcement.
+
+**Predictive verdict:** The tenet framework predicts Musk's most-discussed political positions with **substantially higher accuracy than the 5-axis trajectory model**. The 5-axis model treated his Obama-to-Trump trajectory as whole-person drift and scored him at 0.35 coherence. The tenet framework reveals that ~70–80% of his positions are tenet-derived applications of a stable underlying rule set, and the remaining ~20–30% (cultural issues, specific grievances, business-interest-contaminated foreign policy) are variant positions that the tenets do not fully generate. Tenet-adjusted coherence is **0.70** — not as high as philosophy-driven establishment profiles, but substantially higher than the 5-axis 0.35 and above Trump's 2016–2024 score.
+
+**The Musk finding is structurally similar to the Pool finding:** both have **stable axes and moving axes**, but Musk's stable positions are more numerous and more load-bearing than Pool's. Pool has three anchors (speech, foreign policy, populism form); Musk has eight tenets, with more of his observed positions predictable from them. Both illustrate that "audience capture" or "whole-person drift" is the wrong diagnosis for subjects whose apparent political movement is tenet-framework-applied to changing political contexts.
+
+---
+
+#### Ideological Coherence: 0.70 (tenet-adjusted) | Rhetorical Style Variance: 0.85 (high)
+
+#### Logic System Note
+
+**The observer-effect finding (preserved from original profile):** Musk owns X. X is the primary site of public discussion about Musk. Any measurement of discourse about Musk on X is downstream of decisions by Musk (algorithm, moderation, staffing). This is not a neutral observation environment. The Logic System principle: when the observer also controls the measurement apparatus, the measurement cannot be treated as independent. This is the strongest claim about Musk's profile and survives the tenet-extraction rewrite unchanged.
+
+**The DOGE structural-conflict finding:** Musk's 2025 DOGE role is historically unusual — a sitting head of multiple private companies with major government contracts exercising operational authority over federal agencies that regulate and purchase from those companies. The system cannot score his political positions during the DOGE period as independent of this structural conflict. Any position he takes on agency budgets, regulatory enforcement, or federal contracting is simultaneously a policy position and a business-interest position. Framework + interest are aligned on most DOGE-era actions, which means we cannot determine causation from correlation. Label: **framework + interest aligned, causation undetermined.** This is the strongest structural contamination in any subject's profile in the dataset.
+
+**The tenet-extraction methodology produces testable predictions the 5-axis model cannot.** Musk's continued pro-skilled-immigration position is the cleanest test, and it passes. The 5-axis model would predict he is authoritarian on immigration by inference from party alignment; the tenet framework predicts he is libertarian on immigration because Tenet 5 is older and more load-bearing than his 2022+ coalition alignment. The observed behavior confirms the tenet framework. **Consider adding tenet-extraction as a scoring methodology for other subjects with significant pre-political public records and ideologically-reversed-or-drifted-over-time trajectories** (Nicholas Major, Owens pre-2017, Uygur pre-2002, Pool pre-2018). It may produce more accurate coherence scores than whole-period blended scoring for this class of subject. Flag for Open Model Questions list.
 
 #### Notes
 
-Musk's ownership of X creates a structural condition where the platform he owns is the primary site of public discussion about him. The transparency reports for X document compliance with government takedown requests; the rates are publicly available and can be compared to pre-acquisition Twitter rates. The 2022 journalist suspensions over jet-tracking are documented in public statements and media coverage. The Starlink-Ukraine situation is documented in Walter Isaacson's biography of Musk and in subsequent statements by Musk. The DOGE role places him in operational federal authority while simultaneously running companies (Tesla, SpaceX, xAI) with significant federal contracts, regulatory exposure, and government customer relationships; this is documented in government contract records and SEC filings. The progressive and foreign policy axes have the most observable change over time and the lowest current confidence. Coherence score reflects observable variation in stated positions across topics and time periods.
+The transparency reports for X document compliance with government takedown requests; rates are publicly available and can be compared to pre-acquisition Twitter rates. The 2022 journalist suspensions over jet-tracking are documented in public statements and media coverage. The Starlink-Ukraine situation is documented in Walter Isaacson's biography and in subsequent Musk statements. The DOGE role is documented in government contract records and SEC filings. Trans-daughter statements and "woke mind virus" framings are documented in Musk's own public content. **The tenet-extraction rewrite is the canonical test case for applying this methodology to the profile set; it should be the first profile referenced when extending the methodology to other subjects with long pre-political records.**
 
 ---
 
