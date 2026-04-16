@@ -65,51 +65,57 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 - No auth on admin (easy win #23)
 
 **Profile Breakdowns (~31 profiles):**
-- Individuals: DeFranco, Carlson, Owens, Fuentes, Shapiro, Maddow, Lemon, Pool, Cenk Uygur, Ana Kasparian, Hasan Piker, Destiny, Krystal Ball, Saagar Enjeti, Crowder, Pakman, Jon Stewart, Jordan Peterson, Victor Davis Hanson, Trump, Musk, Obama, Nicholas
-- Organizations: CNN, Fox News, MSNBC, NYT
-- Profiles are unvalidated initial hypotheses — must be replaced by system-generated assessments
-- **Profile docs still use 5-axis format as of 2026-04-15.** 9-axis rewrite of `docs/revised_profile_breakdown.md` is in progress; `SEED_PROFILES` in `political-axes.ts` has 2/31 profiles populated with 9-axis scores (DeFranco, Carlson).
+- Individuals (32): DeFranco, Carlson, Owens, Fuentes, Shapiro, Maddow, Lemon, Pool, Cenk Uygur, Ana Kasparian, Hasan Piker, Destiny, Krystal Ball, Saagar Enjeti, Crowder, Pakman, Jon Stewart, Jordan Peterson, Victor Davis Hanson, Trump (dual-profile: pre-2015 + 2016-2024), Musk (tenet-extraction), Obama, Nicholas (tenet-extraction + questionnaire-validated), Marco Rubio
+- Organizations (4): CNN, Fox News, MSNBC, NYT
+- **All profiles scored on 9 axes as of April 2026.** `SEED_PROFILES` in `political-axes.ts` has 25 individual entries (organizations not yet in seed). Profile docs in `revised_profile_breakdown.md` are the canonical 9-axis source. `profile-breakdowns.md` retains the original 5-axis profiles with Logic System Analysis critiques added under each.
+- **Six coherence types identified:** position-coherence (Shapiro), institution-absorbed (Lemon), method-coherence (Destiny), evidence-responsive-domain-update (Kasparian), tenet-extraction-stable-anchors (Musk), framework-updatable-philosophy-driven (Nicholas)
+- **Five scoring methodologies named:** standard, primary-period scoping (Peterson, Stewart), dual-profile (Trump), tenet-extraction (Musk, Nicholas), structural-editorial (organizations)
+- **Nicholas tenet-extraction questionnaire** at `docs/nicholas-tenet-questionnaire.md` — 20-question validation producing 13/14 prediction accuracy
 
 **Ownership tracking:** Schema fields added (corporateParent, ownershipType, financialInterests, fundingSources, country). Not yet populated.
 
 ### In Progress
-- **9-axis profile rewrite** — `docs/revised_profile_breakdown.md` being upgraded from 5 to 9 axes with Logic System coherence notes and event-sourced justifications. Carlson template approved 2026-04-15; batch of remaining 30 profiles pending. After markdown rewrite, backfill `SEED_PROFILES` in `political-axes.ts`.
 - Bulk historical ingestion running (NYT Archive sweep via Wayback Machine)
 - Progress saved to `scripts/.ingest-progress.json` — resumes with `npm run ingest:bulk`
 
 ### Not Yet Implemented
+- Organization SEED_PROFILES entries (CNN, Fox, MSNBC, NYT not yet in `political-axes.ts`)
+- DeFranco `profile-breakdowns.md` Logic System critique
+- `primaryPeriod` field on `PoliticalProfile` (on roadmap, documented in Open Model Questions)
+- `assessCoherenceType()` update to recognize all six coherence types
+- UI display of 9-axis profiles (`PunditRadarChart` currently renders 5 axes)
+- Axis-mapping prompt updates for misconception list additions (intra-right populism, framing-not-target classification, deliberate-vs-unknowing category errors)
+- Tenet-extraction retrofit for Owens, Uygur, Pool (candidate subjects)
+- Post-rewrite review of all profiles for axial-vs-content coherence pattern
 - Human-in-the-loop training UI
 - YouTube API key (slot exists in `.env.local`, real key still pending)
 - Ownership data not yet APPLIED to DB (script written, needs `npm run db:seed-ownership`)
-- UI display of 9-axis profiles (radar chart currently renders 5 axes)
 - Phase 5: Production deployment (GKE Autopilot) — see `docs/infrastructure.md`
 - Phase 6: YouTube video pipeline, training loop, fine-tuning
 
-### Completed April 12-13, 2026 (uncommitted)
-- **`docs/x-political-figures-500.md`** — 500 profiles of most-discussed political figures on X, organized in 15 batches, ~12,894 lines. Same format as `profile-breakdowns.md`.
+### Completed April 12-13, 2026 (some items now committed)
+- **`docs/x-political-figures-500.md`** — 500 profiles of most-discussed political figures on X, organized in 15 batches, ~12,894 lines.
 - **`docs/x-500-continuation-plan.md`** — progress tracker and resume instructions for the 500-profile work.
-- **`docs/revised_profile_breakdown.md`** — methodological revision of `profile-breakdowns.md`. All 26 profiles rewritten clinically with cited verifiable events for each axis score (no fabricated sample sizes; lower confidence rather than guess).
-- **Elon Musk** added to `docs/profile-breakdowns.md` between Trump and Obama (full deep-format profile).
-- **Easy wins #2, 4, 5, 6, 7, 8, 9, 10, 11** completed:
-  - #2: `YOUTUBE_API_KEY` slot added to `.env.local`
-  - #4: 7 new RSS feeds added to `seed.ts` (WaPo, Breitbart, Politico, The Hill, AP, Reuters, Daily Wire); Breitbart org added to `seed-200.ts`
-  - #5: **No migration drift** — verified via column-name diff of `schema.ts` vs combined migrations 0000+0001. Schema is in sync. Cannot run `drizzle-kit generate` from WSL (Windows binary issue) — run from PowerShell if future schema changes are needed.
-  - #6: New npm scripts: `db:seed-remaining`, `db:seed-ownership`, `test:youtube-channels`, `ingest:yt-transcripts`
-  - #7: Landing/analysis/pundit pages now use shared `<Header />` component
-  - #8: `scripts/test-youtube-channels.ts` (smoke-test 4 seeded channels; `--deep` fetches transcripts)
-  - #9: `scripts/ingest-youtube-transcripts.ts` (18 channel targets, 25 videos/channel, resumable via `.yt-transcript-progress.json`)
-  - #10/#11: `scripts/seed-ownership.ts` populates 35 organizations + 42 pundits with corporate parent, ownership type, financial interests, funding sources
+- **Easy wins #2, 4, 5, 6, 7, 8, 9, 10, 11** completed (see git history for details).
+
+### Completed April 15, 2026
+- **9-axis profile rewrite (Batches 1-5 + Rubio)** — all 32 individual profiles + 4 organizations rewritten from 5-axis to 9-axis in `revised_profile_breakdown.md`. Logic System critiques added to every profile in `profile-breakdowns.md`. SEED_PROFILES backfilled for 25 individual profiles.
+- **Type system extended** — `SubDomainPosition` (authority sub-domains), `axialCoherence` / `contentCoherence`, `rhetoricalStyleVariance` fields added to `PoliticalProfile`
+- **LLM prompt updated** — `axis-mapping.ts` now emits 9 axes + optional authority sub-domains
+- **Logic System integration doc expanded** — 6 standing principles (observer-effect, Stewart principle, Kasparian evidence-responsive pattern, four philosophy-driven engines, axial-vs-content coherence, tenet-extraction methodology) + scoring methodology taxonomy
+- **CLAUDE.md updated** — 9-axis references throughout, Open Model Questions section (reactionary axis, contrarian coherence, persona divergence, principled-vs-instrumental speech, intra-right populism, stable-vs-moving axes, recency weighting, target-agnostic skepticism, tenet-extraction methodology, two-level coherence)
+- **Nicholas Major questionnaire** — 20-question tenet-extraction validation at `docs/nicholas-tenet-questionnaire.md`
 
 ### Next Session Priorities
-1. Finish 9-axis rewrite of `docs/revised_profile_breakdown.md` (Carlson template approved; batch remaining 30)
-2. Backfill `SEED_PROFILES` in `src/lib/models/political-axes.ts` from rewritten markdown
-3. Update `PunditRadarChart` to render 9 axes
-4. Commit and push accumulated April work
-5. Get real YouTube API key into `.env.local` (Google Cloud Console)
-6. Run `npm run db:seed-200` → `npm run db:seed` → `npm run db:seed-ownership`
-7. Smoke test: `npm run test:youtube-channels --deep`
-8. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
-9. Tune epistemological classifier rules (target 60%+ from current 27%)
+1. Update `PunditRadarChart` to render 9 axes
+2. Add organization SEED_PROFILES entries (CNN, Fox, MSNBC, NYT)
+3. Get real YouTube API key into `.env.local` (Google Cloud Console)
+4. Run `npm run db:seed-200` → `npm run db:seed` → `npm run db:seed-ownership`
+5. Smoke test: `npm run test:youtube-channels --deep`
+6. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
+7. Tune epistemological classifier rules (target 60%+ from current 27%)
+8. Implement `primaryPeriod` field on `PoliticalProfile`
+9. Update `assessCoherenceType()` to recognize all six coherence types
 
 ## Key Design Decisions
 
