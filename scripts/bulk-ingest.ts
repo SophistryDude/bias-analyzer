@@ -19,10 +19,13 @@ import { Readability } from "@mozilla/readability";
 import { JSDOM } from "jsdom";
 import * as fs from "fs";
 import * as path from "path";
+import { fileURLToPath } from "url";
 
 // ─── Progress Tracking ──────────────────────────────────────────────
 
-const PROGRESS_FILE = path.join(__dirname, ".ingest-progress.json");
+const __filename_esm = fileURLToPath(import.meta.url);
+const __dirname_esm = path.dirname(__filename_esm);
+const PROGRESS_FILE = path.join(__dirname_esm, ".ingest-progress.json");
 
 interface Progress {
   lastRun: string;

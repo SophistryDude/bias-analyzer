@@ -28,7 +28,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
 
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, unlinkSync } from "fs";
 import { resolve } from "path";
 
 import { drizzle } from "drizzle-orm/postgres-js";
@@ -88,20 +88,25 @@ interface ProgressState {
 const PROGRESS_PATH = resolve("scripts/.yt-transcript-progress.json");
 
 function loadProgress(): ProgressState {
-  if (!existsSync(PROGRESS_PATH)) {
-    return {
-      processedVideoIds: {},
-      stats: {
-        videosAttempted: 0,
-        videosIngested: 0,
-        videosSkipped: 0,
-        videosFailed: 0,
-        startedAt: new Date().toISOString(),
-        lastRunAt: new Date().toISOString(),
-      },
-    };
+  const fresh: ProgressState = {
+    processedVideoIds: {},
+    stats: {
+      videosAttempted: 0,
+      videosIngested: 0,
+      videosSkipped: 0,
+      videosFailed: 0,
+      startedAt: new Date().toISOString(),
+      lastRunAt: new Date().toISOString(),
+    },
+  };
+  if (!existsSync(PROGRESS_PATH)) return fresh;
+  try {
+    const raw = readFileSync(PROGRESS_PATH, "utf-8").trim();
+    if (!raw) return fresh;
+    return JSON.parse(raw);
+  } catch {
+    return fresh;
   }
-  return JSON.parse(readFileSync(PROGRESS_PATH, "utf-8"));
 }
 
 function saveProgress(state: ProgressState): void {
@@ -115,8 +120,10 @@ async function main() {
   const args = process.argv.slice(2);
   if (args.includes("--reset")) {
     if (existsSync(PROGRESS_PATH)) {
-      writeFileSync(PROGRESS_PATH, "");
-      console.log("Progress file reset.");
+      unlinkSync(PROGRESS_PATH);
+      console.log("Progress file deleted.");
+    } else {
+      console.log("No progress file to reset.");
     }
     process.exit(0);
   }

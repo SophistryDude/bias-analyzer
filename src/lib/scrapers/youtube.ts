@@ -61,7 +61,10 @@ export async function fetchTranscript(
 ): Promise<TranscriptSegment[]> {
   // Dynamic import — this dependency is optional
   try {
-    const { YoutubeTranscript } = await import("youtube-transcript");
+    // Import the ESM build directly — the package's "main" points to a CJS
+    // file that breaks under Node 24's strict ESM mode ("type": "module" in
+    // package.json + .js extension = Node treats CJS file as ESM and crashes).
+    const { YoutubeTranscript } = await import("youtube-transcript/dist/youtube-transcript.esm.js");
     const segments = await YoutubeTranscript.fetchTranscript(videoId);
     return segments.map((seg: { text: string; offset: number; duration: number }) => ({
       text: seg.text,
