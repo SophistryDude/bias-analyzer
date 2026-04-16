@@ -73,7 +73,7 @@ async function seed() {
       title: "Donald Trump Rejects 'False Song of Globalism' in Nationalist 'America First' Foreign Policy Speech",
       url: "https://www.breitbart.com/politics/2016/04/27/donald-trump-rejects-false-song-globalism-nationalist-foreign-policy-speech-2/",
       contentType: "article",
-      sourceId: null,
+      sourceId: "breitbart",
       sourceName: "Breitbart",
       publishedAt: new Date("2016-04-27T00:00:00Z"),
       rawText: "Breitbart article amplifying Trump foreign policy speech.",
@@ -164,7 +164,7 @@ async function seed() {
     id: "coverage-breitbart-aleppo-2016",
     storyId: "aleppo-hospital-april-2016",
     contentId: "manual-breitbart-trump-speech",
-    sourceId: null,
+    sourceId: "breitbart",
     keyTerms: ["America First", "false song of globalism", "nationalist", "foreign policy speech", "Mayflower Hotel", "Center for the National Interest", "Western democracies"],
     headline: "Donald Trump Rejects 'False Song of Globalism' in Nationalist 'America First' Foreign Policy Speech",
     toneScore: 0.7, // strongly favorable toward Trump

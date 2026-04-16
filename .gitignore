@@ -47,3 +47,4 @@ scripts/.yt-transcript-progress.json
 
 # MS Office lock files
 ~$*
+logs/

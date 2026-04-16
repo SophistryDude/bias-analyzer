@@ -28,7 +28,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
 
-import { readFileSync, writeFileSync, existsSync, unlinkSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, unlinkSync, mkdirSync, appendFileSync } from "fs";
 import { resolve } from "path";
 
 import { drizzle } from "drizzle-orm/postgres-js";
@@ -163,14 +163,30 @@ async function main() {
     process.exit(1);
   }
 
+  // ─── Log file setup ──────────────────────────────────────────────
+  const logDir = resolve("logs/youtube_ingestion");
+  mkdirSync(logDir, { recursive: true });
+  const dateStr = new Date().toISOString().slice(0, 10);
+  const logPath = resolve(logDir, `${dateStr}.log`);
+  const logLine = (line: string) => {
+    appendFileSync(logPath, line + "\n");
+  };
+  logLine(`\n${"=".repeat(60)}`);
+  logLine(`YouTube Transcript Ingestion — ${new Date().toISOString()}`);
+  logLine(`Channels: ${targets.length}, Videos/channel: ${videosPerChannel}`);
+  logLine(`${"=".repeat(60)}\n`);
+
   console.log(
-    `Ingesting up to ${videosPerChannel} videos from each of ${targets.length} channel(s).\n`,
+    `Ingesting up to ${videosPerChannel} videos from each of ${targets.length} channel(s).`,
   );
+  console.log(`Log file: ${logPath}\n`);
 
   const progress = loadProgress();
 
   for (const target of targets) {
-    console.log(`─── ${target.displayName} (${target.punditId}) ───`);
+    const channelHeader = `─── ${target.displayName} (${target.punditId}) ───`;
+    console.log(channelHeader);
+    logLine(channelHeader);
 
     // Fetch recent video list
     let videos: Awaited<ReturnType<typeof fetchChannelVideos>>;
@@ -178,7 +194,9 @@ async function main() {
       videos = await fetchChannelVideos(target.channelUrl, videosPerChannel);
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      console.log(`  Channel lookup FAILED: ${msg}`);
+      const failMsg = `  Channel lookup FAILED: ${msg}`;
+      console.log(failMsg);
+      logLine(failMsg);
       continue;
     }
 
@@ -224,15 +242,18 @@ async function main() {
         progress.processedVideoIds[target.punditId] = Array.from(alreadySeen);
         progress.stats.videosIngested++;
 
-        console.log(
-          `  OK   [${v.publishedAt.slice(0, 10)}] ${item.wordCount.toString().padStart(5)} words — ${v.title.slice(0, 70)}`,
-        );
+        const okMsg = `  OK   [${v.publishedAt.slice(0, 10)}] ${item.wordCount.toString().padStart(5)} words — ${v.title.slice(0, 70)}`;
+        console.log(okMsg);
+        logLine(okMsg);
       } catch (err) {
         progress.stats.videosFailed++;
         const msg = err instanceof Error ? err.message : String(err);
+        const failMsg = `  FAIL [${v.publishedAt.slice(0, 10)}] ${v.title} — ${msg}`;
         console.log(
           `  FAIL [${v.publishedAt.slice(0, 10)}] ${v.title.slice(0, 60)} — ${msg.slice(0, 100)}`,
         );
+        // Log the full error (not truncated) so we can diagnose
+        logLine(failMsg);
       }
 
       // Save progress after every successful video so interrupts don't lose work.
@@ -242,12 +263,19 @@ async function main() {
     console.log();
   }
 
-  console.log("─── Summary ───");
-  console.log(`  Attempted: ${progress.stats.videosAttempted}`);
-  console.log(`  Ingested:  ${progress.stats.videosIngested}`);
-  console.log(`  Skipped:   ${progress.stats.videosSkipped} (already seen)`);
-  console.log(`  Failed:    ${progress.stats.videosFailed}`);
-  console.log(`  Progress:  ${PROGRESS_PATH}`);
+  const summary = [
+    "─── Summary ───",
+    `  Attempted: ${progress.stats.videosAttempted}`,
+    `  Ingested:  ${progress.stats.videosIngested}`,
+    `  Skipped:   ${progress.stats.videosSkipped} (already seen)`,
+    `  Failed:    ${progress.stats.videosFailed}`,
+    `  Progress:  ${PROGRESS_PATH}`,
+    `  Log:       ${logPath}`,
+  ];
+  for (const line of summary) {
+    console.log(line);
+    logLine(line);
+  }
 
   await client.end();
   process.exit(0);
