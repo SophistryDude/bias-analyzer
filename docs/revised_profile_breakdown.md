@@ -1628,6 +1628,87 @@ The drone strike program is documented in DOD/CIA records. Deportation enforceme
 
 ---
 
+### Marco Rubio
+
+**Platform:** US Secretary of State (January 2025–present), formerly US Senate (Florida, 2011–2025)
+**Current Leaning:** Nationalist-Conservative Interventionist (shifted from Tea Party free-market to "common-good capitalism" populist-nationalist)
+**Ideological Coherence:** 0.65 (moderate — stable foreign-policy and cultural axes + documented shifts on economic, populism, and immigration axes)
+**Driver:** Mixed (philosophy-driven on foreign policy and cultural axes; strategic-repositioning on economic and populism axes — see Logic System note)
+
+#### Bias Trajectory
+
+| Period | Leaning | Evidence |
+|--------|---------|----------|
+| ~2010 | Right (Tea Party) | Elected to US Senate from Florida in the 2010 Tea Party wave. Standard small-government, free-market conservative positioning. |
+| ~2013 | Right (reformist) | Co-authored the Gang of Eight comprehensive immigration reform bill (S.744, passed Senate June 2013 with 68 votes). Positioned as a bipartisan reformer on immigration. Subsequently backed away from the bill under conservative backlash; the bill was not brought to a vote in the House. |
+| ~2016 | Right | Ran for president in the 2016 Republican primary. Attacked Trump during the primary campaign ("con man," personal insults). Lost Florida primary to Trump. Subsequently endorsed Trump. Re-elected to Senate 2016. |
+| ~2020 | Right (nationalist shift) | Publicly articulated "common-good capitalism" framework in speeches and writings, moving away from Tea Party free-market orthodoxy toward industrial policy and economic nationalism. Associated with the American Compass / Oren Cass intellectual framework on the right. Sponsored the Uyghur Human Rights Policy Act (signed into law June 2020). |
+| ~2024 | Right (Trump-aligned) | Re-elected to Senate 2022. Strong China-hawkishness continued (supported CHIPS and Science Act, advocated TikTok ban on national-security grounds). Nominated as Secretary of State by Trump, confirmed January 2025. |
+| ~2025 | Right (SecState) | Serving as Secretary of State. Operating within institutional channels as a cabinet official while aligned with Trump's populist-nationalist framework. Hawkish on Iran, aligned with Trump's foreign-policy direction. |
+
+#### Multi-Axis Position (9-axis)
+
+| Axis | Score | Label | Trend | Confidence |
+|------|-------|-------|-------|------------|
+| Economic | −0.25 | Near-center (common-good capitalism — industrial-policy populist) | Shifted from −0.60 (Tea Party free-market) | 65% |
+| Speech | −0.20 | Leaning Free Speech (with national-security exceptions) | Stable | 55% |
+| Causation Analysis | +0.10 | Near-center (structural on foreign-threat framing, individual on domestic social policy) | Stable | 55% |
+| Equality Model | +0.60 | Strong Opportunity | Stable | 75% |
+| Liberal/Conservative | +0.50 | Moderate Conservative (Catholic framework) | Stable | 75% |
+| Foreign Policy | +0.60 | Strong Interventionist (Cuba, Venezuela, China, Iran, Israel, NATO) | Stable across entire career | 85% |
+| Populism | −0.40 | Leaning Populist (rhetoric); operational-institutionalist (SecState behavior) | Shifted from +0.30 (Gang of Eight institutionalist) | 55% |
+| Nationalism | −0.60 | Strong Nationalist (anti-communist, America-first trade, China-security) | Intensified from −0.40 (Tea Party era) | 80% |
+| Authority — Speech | −0.10 | Near-center (supports TikTok ban on national-security grounds, FOSTA-SESTA) | Stable | 50% |
+| Authority — Immigration | +0.60 | Authoritarian (restrictionist, post-Gang-of-Eight reversal) | Shifted from −0.20 (Gang of Eight reformist) | 75% |
+| Authority — Commerce/Platform | +0.30 | Leaning Authoritarian (CHIPS Act industrial policy, TikTok ban, targeted trade interventions) | Shifted from −0.40 (Tea Party anti-regulation) | 60% |
+| Authority — Culture/Family | +0.60 | Authoritarian (Catholic traditionalist on marriage, abortion) | Stable | 80% |
+
+#### Axis Justifications
+
+- **Economic (−0.25, shifted from −0.60):** **The most documented axis shift in the profile.** Started as standard Tea Party free-market conservative (elected in 2010 wave). Publicly articulated "common-good capitalism" framework in speeches and writings circa 2019–2020, explicitly breaking from libertarian-right economics toward industrial policy, worker protections, and economic nationalism. Associated with the American Compass / Oren Cass intellectual framework. Supported the CHIPS and Science Act (industrial policy for semiconductor manufacturing). Current position is near-center: pro-market default with strategic government interventions for national-interest and worker-protection goals. Similar to Saagar Enjeti's economic position (−0.10) but from a more articulated intellectual framework. **The shift is publicly documented and explicitly argued** — not a silent drift like Pool's.
+- **Speech (−0.20):** Leaning free-speech with specific national-security exceptions. Supported the TikTok ban framed as a national-security measure (foreign-adversary-controlled platform), not as a content-moderation measure. Supported FOSTA-SESTA (sex-trafficking-online-platform liability). Has not been a prominent voice on platform-speech-absolutism or content-moderation debates generally. Near-center because the position is pragmatic-case-by-case rather than principled in either direction.
+- **Causation Analysis (+0.10):** Near-center, domain-dependent. Uses **structural framing** on foreign-threat and geopolitical topics (China as a systemic/institutional threat to US industrial base; Cuba/Venezuela as structural-communist-governance problems). Uses **individual framing** on domestic social policy (personal-responsibility rhetoric consistent with conservative framework). The domain-dependence is similar to Peterson's dual-frame pattern but less articulated.
+- **Equality Model (+0.60):** Strong opportunity-equality. Consistent anti-DEI, anti-affirmative-action positioning across entire career. No documented shift on this axis.
+- **Liberal/Conservative (+0.50):** Moderate conservative grounded in Catholic framework. Defends traditional marriage and family structures. Pro-life. Cultural conservatism has been stable across all career phases; it did not shift with the economic or populism axes. One of the more stably conservative figures in the right cluster on this axis specifically.
+- **Foreign Policy (+0.60):** **Most stable axis and highest-confidence score in the profile.** Cuba/Venezuela hawkishness goes back to his earliest political career (Cuban-American anti-communist family background). China hawkishness is the dominant theme of his Senate tenure — Uyghur Human Rights Policy Act (signed June 2020), CHIPS and Science Act support, TikTok ban advocacy, consistent framing of the US-China relationship as the defining geopolitical contest. Pro-Israel consistently. Pro-NATO (before Trump alignment softened some NATO rhetoric). As Secretary of State, aligned with Trump's foreign-policy direction including Iran hawkishness. **The interventionist position is stable across all career phases** including the Tea Party era, the Gang of Eight era, the Trump-primary era, and the SecState era. It is the axis least affected by any of his other shifts.
+- **Populism (−0.40, shifted from +0.30):** **The second most significant axis shift** after economic. During the Gang of Eight era (2013), Rubio was working within bipartisan institutional channels on comprehensive immigration reform — a textbook institutionalist move. After the backlash and the 2016 primary loss to Trump, he progressively aligned with Trump's populist-anti-establishment framing. The "common-good capitalism" framework is a populist-coded economic position (treats free-market orthodoxy as an establishment-captured consensus that fails working Americans). As SecState, however, he is **operationally institutionalist** — he exercises state power through institutional channels (diplomacy, international-law frameworks, alliance management). This produces a tension: **populist in rhetoric, institutionalist in operation**. The score (−0.40) reflects the rhetorical positioning; the confidence is low (55%) because the operational behavior points in the opposite direction. This tension is similar to Trump's foreign-policy rhetoric/action gap but manifests on the populism axis rather than the foreign-policy axis.
+- **Nationalism (−0.60):** Strong nationalist. Cuban-American anti-communist framework treats the nation-state as the primary unit of political obligation. America-first trade framing (CHIPS Act as national-industrial-policy, TikTok ban as national-security, tariffs as national-economic-defense). Immigration restrictionism (post-Gang-of-Eight) is nationalist-coded. China-as-geopolitical-competitor framing is explicitly national-interest-first. **The nationalism score has intensified across his career** (from −0.40 Tea Party economic-nationalism to −0.60 Trump-era full-spectrum nationalism) but was never absent — the Cuban-American anti-communist through-line predates his political career.
+- **Authority (domain-split):** Near-center on speech (national-security-exception pragmatist). Strong authoritarian on immigration (restrictionist, post-Gang-of-Eight reversal — the single most visible position change in his career). Leaning authoritarian on commerce/platform (industrial-policy interventions, CHIPS Act, TikTok ban — shifted from Tea Party anti-regulation). Strong authoritarian on culture/family (Catholic traditionalist — the most stable authority sub-domain across his career).
+
+#### Logic System Note on Coherence
+
+Rubio's 9-axis coherence is **0.65** (moderate). Under 9-axis, his profile resolves into **three stable axes and three shifted axes**:
+
+**Stable axes (unchanged across career phases):**
+- Foreign policy (+0.60 interventionist — Cuba/Venezuela/China/Iran/Israel hawkishness from earliest career to present)
+- Equality model (+0.60 opportunity — consistent anti-DEI, anti-affirmative-action)
+- Liberal/Conservative (+0.50 conservative — Catholic framework on cultural questions)
+
+**Shifted axes (documented moves across career phases):**
+- Economic (−0.60 Tea Party free-market → −0.25 common-good-capitalism industrial-policy populist)
+- Populism (+0.30 institutionalist Gang-of-Eight reformer → −0.40 populist-rhetoric Trump-aligned)
+- Authority — Immigration (−0.20 reformist → +0.60 restrictionist — the Gang-of-Eight-to-restrictionist reversal)
+
+**The stable-vs-shifted pattern is similar to Tim Pool's** (Pool has three stable axes and three shifting ones), but the mechanism is different. Pool's shifts are attributable to audience-capture-plus-partial-principled-drift on cross-cutting axes. Rubio's shifts are more articulated — the "common-good capitalism" framework is an explicit intellectual argument (associated with Oren Cass / American Compass), not a silent drift. **Whether the articulated framework is a genuine intellectual update or a post-hoc rationalization of strategic repositioning is the open question.** The Logic System cannot determine motive from observation; it can note that the economic shift is articulated (which is more like Kasparian's evidence-responsive updating than like Pool's audience-drift) while the immigration shift is a direct reversal with minimal articulated framework (which is more like strategic repositioning).
+
+**The Rubio-Shapiro comparison is analytically useful.** Both are Cuban-American Republican Senators with strong foreign-policy interventionism, strong cultural conservatism, and high equality-model opportunity scores. They differ on:
+- **Economic**: Shapiro (−0.70 strong capitalist) vs Rubio (−0.25 common-good-capitalism). Shapiro held the free-market position; Rubio moved toward industrial policy.
+- **Populism**: Shapiro (+0.40 institutionalist) vs Rubio (−0.40 populist-rhetoric). Shapiro remained institutionalist; Rubio aligned with Trump's populism.
+- **Nationalism**: Shapiro (+0.20 alliance-globalist) vs Rubio (−0.60 nationalist). Both are interventionist but from different nationalism-axis positions (Shapiro alliance-maintenance globalist; Rubio national-interest-first nationalist).
+
+This comparison illustrates that the economic-populism-nationalism triplet is what distinguishes the traditional-conservative-institutionalist right (Shapiro) from the national-conservative-populist right (Rubio, Saagar, Carlson) — the same structural distinction the 9-axis expansion was built to surface, now confirmed with a US Senator / Secretary of State.
+
+**The SecState tension on populism.** Rubio is now operating institutional state power (as Secretary of State) while rhetorically aligned with a populist-anti-establishment administration. This is structurally analogous to Hanson's position on populism (0.00 — intellectual-institutionalist defending populist-movement), but Rubio is more extreme on both sides: more populist in rhetoric (−0.40 vs 0.00) and more institutionalist in operational behavior (cabinet-level state power). The tension may resolve over time — either his operational institutionalism will pull his rhetoric toward center, or his populist-rhetoric will constrain his institutional operations. Track as an active tension, not a resolved position.
+
+#### Notes
+
+- The Gang of Eight immigration bill (S.744, passed Senate June 2013 with 68 votes, never brought to House floor) is the most publicly documented position change in Rubio's record. He co-authored the bill, advocated for it, and then backed away under conservative backlash. The reversal on immigration is the single axis-shift that most clearly tracks strategic-repositioning rather than evidence-responsive-updating, because the stated framework for the reversal (enforcement-first, pathway-later) is essentially the opposite of the bill he co-authored, without a documented evidence-based reason for the change beyond political viability.
+- The "common-good capitalism" framework is documented in Rubio's public speeches and writings circa 2019–2020 and is associated with the American Compass think tank (Oren Cass, founder). This is a more articulated intellectual framework than most right-populist economic positions in the dataset — it makes explicit arguments about why free-market orthodoxy fails working Americans and why industrial policy serves national interests. Whether the intellectual framework preceded the political repositioning or followed it is not determinable from the public record.
+- Rubio's Cuban-American family background (parents fled Cuba) is a load-bearing biographical fact for his foreign-policy and nationalism axes. Anti-communist foreign-policy hawkishness and nation-state-as-primary-obligation nationalism are both grounded in a family-history frame that predates his political career. These are the two axes least affected by his other position shifts, which is consistent with biography-grounded positions being more stable than intellectually-adopted positions.
+- Secretary of State confirmation (January 2025) was among the least contested Trump cabinet nominations, passing the Senate with bipartisan support. His foreign-policy interventionism and China-hawkishness specifically were cited by both Republican and Democratic senators as qualifications.
+
+---
+
 ### David Pakman
 
 **Platform:** The David Pakman Show, YouTube, podcast
