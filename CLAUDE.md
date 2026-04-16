@@ -106,16 +106,33 @@ MediaSentinel is the Logic System's epistemological framework applied to media a
 - **CLAUDE.md updated** — 9-axis references throughout, Open Model Questions section (reactionary axis, contrarian coherence, persona divergence, principled-vs-instrumental speech, intra-right populism, stable-vs-moving axes, recency weighting, target-agnostic skepticism, tenet-extraction methodology, two-level coherence)
 - **Nicholas Major questionnaire** — 20-question tenet-extraction validation at `docs/nicholas-tenet-questionnaire.md`
 
+### Completed April 16, 2026
+- **PunditRadarChart** updated to render 9 axes (was 5)
+- **Organization SEED_PROFILES** added: CNN, Fox News, MSNBC, NYT (4 entries, all verified against revised_profile_breakdown.md)
+- **YouTube API key** configured and tested (4/4 channels passing)
+- **Seed scripts all run**: seed-200 (134 pundits), seed (13 pundits + 9 extra SEED_PROFILES deps + 28 profiles + 13 Overton + 14 sources), seed-ownership (70 updated)
+- **YouTube transcript ingestion**: 390 videos ingested across 18 channels (96.8% success rate, 13 failures = transcripts disabled)
+- **Epistemological classifier expanded**: ~52 → ~84 patterns, 8 rules (was 7). Tested on Aleppo: 15/15 classified correctly (was 4/15 = 27%). New reported-allegation rule added.
+- **primaryPeriod field** added to PoliticalProfile
+- **assessCoherenceType** expanded from 3 to 8 types: position-coherence, institution-absorbed, method-coherence, evidence-responsive-domain-update, tenet-extraction-stable-anchors, framework-updatable-philosophy-driven, engagement-driven, mixed. False positive on DeFranco fixed (format-driven low confidence vs employer-tracking).
+- **Aleppo story seeded** and end-to-end tested: blindspot detection, coverage timeline, story comparison, epistemological classification all working
+- **"unstable" trend type** added to AxisPosition union
+- **Pundit slug page** fixed stale progressive axis reference
+- **Fine-tuning roadmap** saved to `docs/futurism/70b_fine_tuning.md` (deferred to 2027-2028)
+- **CLAUDE.md** corrected "Masters in Philosophy" hallucination → autodidact
+- **Logging** added to YouTube transcript ingestion → `logs/youtube_ingestion/YYYY-MM-DD.log`
+- **ESM/CJS fixes**: youtube-transcript ESM import, bulk-ingest __dirname, esbuild cross-platform binaries
+
 ### Next Session Priorities
-1. Update `PunditRadarChart` to render 9 axes
-2. Add organization SEED_PROFILES entries (CNN, Fox, MSNBC, NYT)
-3. Get real YouTube API key into `.env.local` (Google Cloud Console)
-4. Run `npm run db:seed-200` → `npm run db:seed` → `npm run db:seed-ownership`
-5. Smoke test: `npm run test:youtube-channels --deep`
-6. Bulk ingest: `npm run ingest:yt-transcripts` (runs in background, resumable)
-7. Tune epistemological classifier rules (target 60%+ from current 27%)
-8. Implement `primaryPeriod` field on `PoliticalProfile`
-9. Update `assessCoherenceType()` to recognize all six coherence types
+1. Rotate NYT API key (shared in chat — security concern)
+2. Run bulk historical ingest (`bulk-ingest.ts --from 2006 --to 2025`) — was started but needs monitoring
+3. Re-seed Aleppo story to fix Breitbart sourceId (currently "Unknown" in timeline from pre-fix data)
+4. Generate first blog post draft (#18) — story comparison template on Aleppo
+5. Generate first omission report (#19) — claim extraction + cross-source on Aleppo
+6. Add markdown renderer to blog post pages (#22)
+7. Add basic admin auth (#23)
+8. Align SEED_PROFILES entityIds with pundits table IDs (9 mismatches resolved via extra-pundits workaround but should be cleaned up)
+9. Fix `smoke-llm-pipeline.ts` pre-existing TS error (`ingestSource` not on `ContentMetadata`)
 
 ## Key Design Decisions
 
