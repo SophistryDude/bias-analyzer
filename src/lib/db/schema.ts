@@ -344,12 +344,18 @@ export const storyCoverages = pgTable("story_coverages", {
   framingType: text("framing_type"), // e.g., "crisis", "scandal", "progress", "neutral-report", "opinion"
 
   // ─── Political values per-story ─────────────────────────────────
-  /** 5-axis scores for THIS specific coverage (not the source's overall profile) */
+  /** 9-axis scores for THIS specific coverage (not the source's overall profile) */
   axisEconomic: real("axis_economic"),
   axisSpeech: real("axis_speech"),
+  /** @deprecated — replaced by causation-analysis + equality-model in April 2026. Kept nullable for backfill. */
   axisProgressive: real("axis_progressive"),
+  axisCausationAnalysis: real("axis_causation_analysis"),
+  axisEqualityModel: real("axis_equality_model"),
   axisLiberalConservative: real("axis_liberal_conservative"),
   axisForeignPolicy: real("axis_foreign_policy"),
+  axisPopulism: real("axis_populism"),
+  axisNationalism: real("axis_nationalism"),
+  axisAuthority: real("axis_authority"),
 
   // ─── Timing ────────────────────────────────────────────────────
   /** When this source first published their coverage */

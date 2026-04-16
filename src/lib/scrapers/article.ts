@@ -56,16 +56,39 @@ function extractMetadata(
 /**
  * Fetches and extracts an article from a URL using Readability
  */
+// Real browser UA — many news sites 403 or serve empty pages to bot-style UAs.
+const BROWSER_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
 export async function scrapeArticle(url: string): Promise<ScrapedArticle> {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (compatible; MediaSentinel/1.0; +https://github.com/Arkanisbot/MediaSentinel)",
-    },
-  });
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      headers: {
+        "User-Agent": BROWSER_UA,
+        Accept:
+          "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+      },
+      redirect: "follow",
+    });
+  } catch (err) {
+    throw new Error(
+      `Network error fetching ${url}: ${(err as Error).message}`
+    );
+  }
 
   if (!res.ok) {
-    throw new Error(`Failed to fetch article: ${res.status} ${res.statusText}`);
+    throw new Error(
+      `Upstream returned ${res.status} ${res.statusText} for ${url}`
+    );
+  }
+
+  const contentType = res.headers.get("content-type") ?? "";
+  if (!contentType.includes("text/html") && !contentType.includes("xml")) {
+    throw new Error(
+      `Unsupported content-type "${contentType}" from ${url} (expected HTML)`
+    );
   }
 
   const html = await res.text();
@@ -76,9 +99,15 @@ export async function scrapeArticle(url: string): Promise<ScrapedArticle> {
   const reader = new Readability(dom.window.document);
   const article = reader.parse();
 
-  const content = article?.textContent || "";
+  const content = article?.textContent?.trim() ?? "";
   const title = article?.title || metadata.title || url;
   const excerpt = article?.excerpt || metadata.excerpt || content.slice(0, 200);
+
+  if (!content || content.length < 200) {
+    throw new Error(
+      `Readability extracted only ${content.length} characters from ${url} — likely paywalled, bot-blocked, or a non-article page`
+    );
+  }
 
   return {
     title,

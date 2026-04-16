@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * 5-Axis Radar Chart
+ * 9-Axis Radar Chart
  *
  * Renders a pundit's political profile as a radar/spider chart
- * showing all 5 axes. Pure SVG, no chart library dependency.
+ * showing all 9 axes. Pure SVG, no chart library dependency.
  */
 
 interface AxisScore {
@@ -23,19 +23,23 @@ interface PunditRadarChartProps {
 const AXIS_LABELS: Record<string, string> = {
   economic: "Economic",
   speech: "Speech",
-  progressive: "Progressive",
+  "causation-analysis": "Causation",
+  "equality-model": "Equality",
   "liberal-conservative": "Lib/Con",
-  "foreign-policy": "Foreign Policy",
+  "foreign-policy": "Foreign Pol",
+  populism: "Populism",
+  nationalism: "Nationalism",
+  authority: "Authority",
 };
 
 export default function PunditRadarChart({
   axes,
-  size = 300,
+  size = 350,
   label,
 }: PunditRadarChartProps) {
   const center = size / 2;
   const radius = size * 0.35;
-  const angleStep = (2 * Math.PI) / 5;
+  const angleStep = (2 * Math.PI) / 9;
   // Start from top (-90 degrees)
   const startAngle = -Math.PI / 2;
 
@@ -43,9 +47,13 @@ export default function PunditRadarChart({
   const orderedAxes = [
     "economic",
     "speech",
-    "progressive",
+    "causation-analysis",
+    "equality-model",
     "liberal-conservative",
     "foreign-policy",
+    "populism",
+    "nationalism",
+    "authority",
   ];
   const points = orderedAxes.map((axisId, i) => {
     const axis = axes.find((a) => a.axisId === axisId);
@@ -54,8 +62,8 @@ export default function PunditRadarChart({
     return {
       x: center + Math.cos(angle) * radius * normalized,
       y: center + Math.sin(angle) * radius * normalized,
-      labelX: center + Math.cos(angle) * (radius + 30),
-      labelY: center + Math.sin(angle) * (radius + 30),
+      labelX: center + Math.cos(angle) * (radius + 35),
+      labelY: center + Math.sin(angle) * (radius + 35),
       axisEndX: center + Math.cos(angle) * radius,
       axisEndY: center + Math.sin(angle) * radius,
       label: axis?.label || AXIS_LABELS[axisId] || axisId,

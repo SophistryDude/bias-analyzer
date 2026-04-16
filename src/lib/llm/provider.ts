@@ -35,10 +35,17 @@ export interface LLMProvider {
 export function parseJSONResponse<T>(raw: string): T {
   let cleaned = raw.trim();
 
-  // Strip markdown code fences
-  const fenceMatch = cleaned.match(/```(?:json)?\s*\n?([\s\S]*?)\n?\s*```/);
-  if (fenceMatch) {
-    cleaned = fenceMatch[1].trim();
+  // Strip markdown code fences. Handle three cases:
+  //   1) Fully fenced: ```json ... ```
+  //   2) Opening fence only (response was truncated by max_tokens)
+  //   3) No fences at all
+  const fullFence = cleaned.match(/```(?:json)?\s*\n?([\s\S]*?)\n?\s*```/);
+  if (fullFence) {
+    cleaned = fullFence[1].trim();
+  } else {
+    cleaned = cleaned.replace(/^```(?:json)?\s*\n?/, "");
+    cleaned = cleaned.replace(/\n?```\s*$/, "");
+    cleaned = cleaned.trim();
   }
 
   return JSON.parse(cleaned) as T;

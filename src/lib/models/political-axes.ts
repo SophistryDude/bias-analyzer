@@ -257,7 +257,7 @@ export interface SubDomainPosition {
   value: number;
   confidence: number;
   evidence: string;
-  trend?: "moving-left" | "stable" | "moving-right";
+  trend?: "moving-left" | "stable" | "moving-right" | "unstable";
 }
 
 export interface AxisPosition {
@@ -273,7 +273,7 @@ export interface AxisPosition {
   /** Evidence/reasoning for this placement */
   evidence: string;
   /** Has this position shifted over time? */
-  trend?: "moving-left" | "stable" | "moving-right";
+  trend?: "moving-left" | "stable" | "moving-right" | "unstable";
   /**
    * Sub-domain breakdown. Currently only meaningful for the authority axis,
    * where it is the primary representation — the aggregate `value` is a
@@ -365,6 +365,16 @@ export interface PoliticalProfile {
    * assessed or if there is no meaningful variation to score.
    */
   rhetoricalStyleVariance?: number;
+  /**
+   * When set, the axis scores apply to this specific time period rather
+   * than the subject's entire public record. Used for subjects whose
+   * recent trajectory diverges from their best-known framework (e.g.,
+   * Peterson 2016-2020, Stewart 1999-2024) or whose career spans
+   * distinct ideological phases (e.g., Trump pre-2015 vs 2016-2024).
+   *
+   * Subjects WITHOUT primaryPeriod are scored on their aggregate record.
+   */
+  primaryPeriod?: { start: string; end?: string };
   /** Notes on notable contradictions or surprising combinations */
   notes: string;
 }
@@ -2870,6 +2880,337 @@ export const SEED_PROFILES: PoliticalProfile[] = [
     notes:
       "Added April 2026. QUESTIONNAIRE-VALIDATED TENET-EXTRACTION PROFILE. Project author. Seven tenets formally identified: (1) evidence-responsive framework updating, (2) first-principles reasoning with dimensional preservation, (3) auditability/transparency as epistemological integrity, (4) pragmatic empiricism over ideological purity, (5) non-performative integrity, (6) self-application, (7) skepticism of institutional competence without ideological anti-institutionalism. 20-question questionnaire (docs/nicholas-tenet-questionnaire.md) tested whether tenets predict object-level positions on 14 policy domains + 3 edge-case + 2 calibration + 1 meta. Result: 13/14 clean predictions + 1 partial (anti-death-penalty, not cleanly tenet-generated). HIGHEST TENET-PREDICTION ACCURACY IN DATASET (Musk ~70-80%). NOVEL SIXTH COHERENCE TYPE: framework-updatable philosophy-driven. Distinct from position-coherence (Shapiro), institution-absorbed (Lemon), method-coherence (Destiny), meta-framework-stable domain-specific update (Kasparian), and tenet-extraction stable-anchors (Musk). Goes one level deeper than Kasparian: Kasparian updates domain conclusions while holding meta-framework stable; Nicholas updates the meta-framework itself on evidence while holding seven tenets stable as meta-meta-commitments. 5-to-9 axis expansion in the project is the cleanest real-time demonstration. Currently the only identified instance of this type — watch for others in future profiles. BIGGEST CORRECTION from self-report: foreign-policy -0.30 → +0.15 (alliance-based interventionist when strategically/morally justified, not non-interventionist). Q16 updates: secular-liberal critique of feminist-movement policy advocacy (empirical effects on women) and secular-liberal critique of Islamic theocratic governance (separation-of-church-and-state grounded). SCORING CORRECTION (April 2026): these Q16 positions were initially mis-characterized as 'traditionalist-leaning' and 'moving right' due to tribal-label pattern-matching error. They are secular-liberal critiques that happen to overlap with some conservative framings but are not conservative-coded. Culture-family authority sub-domain corrected from +0.10 to -0.30 accordingly. Q17 is strongest Tenet 1 confirmation: 'I don't hold strong positions where either empirical evidence or my own intuition isn't already conclusive' — continuous tracking rather than discrete updates. FOREIGN-POLICY CORRECTION CONFIRMED BY SUBJECT (April 2026): shift to alliance-based interventionism is real and driven by historical research; self-assessed -0.30 was mistaken. ECONOMIC CORRECTION CONFIRMED: -0.50 is more accurate than self-reported -0.70; subject explicitly notes acceptance of pragmatic interventions despite ideological preference against them ('I don't like it'). ANTI-DEATH-PENALTY CONFIRMED as Tenet 4 application (pragmatism extended to high-stakes moral domains) rather than an eighth tenet. HALLUCINATION INCIDENT: during questionnaire creation, assistant initially populated answer fields with fabricated content in Nicholas's voice. Caught, file overwritten with blank template, incident disclosed. Documented as test case for why rule-based-first architecture (Tenet 3) is load-bearing for LLM-based content generation.",
   },
+
+  // ─── Organization Profiles ────────────────────────────────────────────
+
+  {
+    entityId: "cnn",
+    entityName: "CNN",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.1,
+        confidence: 0.5,
+        evidence:
+          "Near-center with mild capitalist lean. Covers economic policy without strong editorial direction.",
+        trend: "stable",
+      },
+      {
+        axisId: "speech",
+        value: 0.2,
+        confidence: 0.5,
+        evidence:
+          "Mild moderation-supportive. Defers to platform and institutional speech governance.",
+        trend: "stable",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.3,
+        confidence: 0.55,
+        evidence:
+          "Leans structural-causation in framing of social issues (systemic racism, healthcare access, inequality).",
+        trend: "stable",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.2,
+        confidence: 0.5,
+        evidence:
+          "Mild outcome-equality lean. DEI-supportive editorial framing.",
+        trend: "stable",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Center-left. Frames change as generally positive, status quo as insufficient on social issues.",
+        trend: "stable",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.3,
+        confidence: 0.6,
+        evidence:
+          "Interventionist lean. Frames US engagement and alliance-maintenance as default good.",
+        trend: "stable",
+      },
+      {
+        axisId: "populism",
+        value: 0.6,
+        confidence: 0.8,
+        evidence:
+          "Strongest finding: CNN treats populist appeals from both left and right as threats to institutional order. Institutionalist framing is the editorial default.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.3,
+        confidence: 0.6,
+        evidence:
+          "Mild globalist lean. International cooperation framed as default good.",
+        trend: "stable",
+      },
+      {
+        axisId: "authority",
+        value: 0.2,
+        confidence: 0.5,
+        evidence:
+          "Mild authoritarian lean — defers to institutional authority on most regulatory questions.",
+        trend: "stable",
+      },
+    ],
+    ideologicalCoherence: 0.65,
+    notes:
+      "Center-left institutionalist. Strongest finding: populism axis +0.60 — CNN treats populist appeals from both left and right as threats to institutional order. Shared institutionalist blind spot with Fox, MSNBC, NYT despite opposite content-axis positions. Owner: Warner Bros. Discovery.",
+  },
+  {
+    entityId: "fox-news",
+    entityName: "Fox News",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.5,
+        confidence: 0.7,
+        evidence:
+          "Pro-market, anti-regulation editorial line. Tax cuts and deregulation framed as default good.",
+        trend: "stable",
+      },
+      {
+        axisId: "speech",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Free-speech-leaning on cultural speech issues; frames platform moderation as censorship.",
+        trend: "stable",
+      },
+      {
+        axisId: "causation-analysis",
+        value: 0.4,
+        confidence: 0.6,
+        evidence:
+          "Individual-responsibility framing dominant. Social problems attributed to personal choices and cultural factors.",
+        trend: "stable",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.6,
+        confidence: 0.75,
+        evidence:
+          "Strong opportunity-equality framing. Outcome-equality measures (DEI, affirmative action) framed as reverse discrimination.",
+        trend: "stable",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: 0.6,
+        confidence: 0.75,
+        evidence:
+          "Conservative editorial line. Change framed as risky; existing institutions and traditions defended.",
+        trend: "stable",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.4,
+        confidence: 0.5,
+        evidence:
+          "Interventionist lean but unstable — shifts with Republican coalition positioning. Post-2022 isolationist voices gaining airtime.",
+        trend: "unstable",
+      },
+      {
+        axisId: "populism",
+        value: 0.2,
+        confidence: 0.55,
+        evidence:
+          "NET score masks structural split. News division is institutionalist (+0.50 if scored alone), opinion division is populist-leaning (-0.30 post-Carlson). The split is the defining structural feature.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: -0.2,
+        confidence: 0.55,
+        evidence:
+          "Mild nationalist lean. America-first framing common but not dominant across all programming.",
+        trend: "stable",
+      },
+      {
+        axisId: "authority",
+        value: 0.3,
+        confidence: 0.55,
+        evidence:
+          "Authoritarian lean on immigration and law enforcement. Libertarian lean on economic regulation. Net authoritarian.",
+        trend: "stable",
+      },
+    ],
+    ideologicalCoherence: 0.55,
+    notes:
+      "Right institutionalist with structural news/opinion split. Populism +0.20 is NET — news division is institutionalist (+0.50 if scored alone), opinion division is populist-leaning (-0.30 post-Carlson). The split is the defining structural feature. Owner: Fox Corporation (Murdoch family). Dominion settlement $787.5M April 2023.",
+  },
+  {
+    entityId: "msnbc",
+    entityName: "MSNBC",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.2,
+        confidence: 0.65,
+        evidence:
+          "Mild redistributive lean. Supports expanded social programs, progressive taxation, worker protections.",
+        trend: "stable",
+      },
+      {
+        axisId: "speech",
+        value: 0.2,
+        confidence: 0.5,
+        evidence:
+          "Mild moderation-supportive. Frames hate speech and misinformation as requiring institutional response.",
+        trend: "stable",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.5,
+        confidence: 0.7,
+        evidence:
+          "Strong structural-causation framing. Systemic racism, institutional bias, structural inequality are default explanatory frameworks.",
+        trend: "stable",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.4,
+        confidence: 0.65,
+        evidence:
+          "Outcome-equality lean. DEI, affirmative action, and equity measures framed as necessary corrections.",
+        trend: "stable",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "Left editorial line. Progressive change framed as moral imperative; conservative positions as obstruction.",
+        trend: "stable",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.3,
+        confidence: 0.6,
+        evidence:
+          "Interventionist lean. Alliance-maintenance and multilateral engagement framed as default good.",
+        trend: "stable",
+      },
+      {
+        axisId: "populism",
+        value: 0.6,
+        confidence: 0.8,
+        evidence:
+          "Matches CNN — defends institutional legitimacy from the left. Populist challenges to institutions framed as threats to democracy.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.3,
+        confidence: 0.6,
+        evidence:
+          "Mild globalist lean. International cooperation and multilateralism framed positively.",
+        trend: "stable",
+      },
+      {
+        axisId: "authority",
+        value: 0.1,
+        confidence: 0.45,
+        evidence:
+          "Near-center. Libertarian on personal/social issues, authoritarian on economic regulation and speech governance. Net mild authoritarian.",
+        trend: "stable",
+      },
+    ],
+    ideologicalCoherence: 0.68,
+    notes:
+      "Left institutionalist. Populism +0.60 matches CNN — defends institutional legitimacy from the left. Being spun off from NBCUniversal to Versant entity (announced Nov 2024, ongoing). Joy Reid show cancelled Feb 2025.",
+  },
+  {
+    entityId: "nyt",
+    entityName: "The New York Times",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: 0.1,
+        confidence: 0.55,
+        evidence:
+          "Mild redistributive lean. Editorial board supports progressive taxation, social programs, but within market-economy framework.",
+        trend: "stable",
+      },
+      {
+        axisId: "speech",
+        value: 0.2,
+        confidence: 0.55,
+        evidence:
+          "Mild moderation-supportive. Cotton op-ed dispute 2020 is the canonical example of institutional gatekeeping on speech.",
+        trend: "stable",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.4,
+        confidence: 0.65,
+        evidence:
+          "Structural-causation framing dominant in news coverage. 1619 Project is the highest-profile example.",
+        trend: "stable",
+      },
+      {
+        axisId: "equality-model",
+        value: -0.3,
+        confidence: 0.6,
+        evidence:
+          "Outcome-equality lean. Equity framing in coverage of education, housing, criminal justice.",
+        trend: "stable",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.4,
+        confidence: 0.7,
+        evidence:
+          "Center-left editorial line. Change framed as progress; conservative resistance framed as obstruction or backlash.",
+        trend: "stable",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.3,
+        confidence: 0.65,
+        evidence:
+          "Interventionist lean. Alliance-maintenance and rules-based international order framed as default good.",
+        trend: "stable",
+      },
+      {
+        axisId: "populism",
+        value: 0.8,
+        confidence: 0.9,
+        evidence:
+          "Strongest institutionalist in the dataset. The paper-of-record self-conception IS the institutionalist position — gatekeeping is literally its editorial function.",
+        trend: "stable",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.3,
+        confidence: 0.65,
+        evidence:
+          "Globalist lean. International cooperation, multilateralism, and cosmopolitan values framed positively.",
+        trend: "stable",
+      },
+      {
+        axisId: "authority",
+        value: 0.2,
+        confidence: 0.55,
+        evidence:
+          "Mild authoritarian lean. Defers to institutional expertise on regulation, public health, speech governance.",
+        trend: "stable",
+      },
+    ],
+    ideologicalCoherence: 0.7,
+    notes:
+      "Strongest institutionalist in the dataset (+0.80 populism). The paper-of-record self-conception IS the institutionalist position — gatekeeping is literally its editorial function. Owner: NYT Company (Sulzberger family dual-class voting control). Cotton op-ed dispute 2020 is a micro-example of institutional gatekeeping reasserted.",
+  },
 ];
 
 // ─── Analysis Functions ─────────────────────────────────────────────
@@ -2955,18 +3296,46 @@ export function compareProfiles(
 }
 
 /**
- * Detect if a profile shows signs of being engagement-driven vs. philosophy-driven
+ * Six coherence types identified during the April 2026 9-axis profile rewrite,
+ * plus the legacy "engagement-driven" and "mixed" fallbacks.
  *
- * Engagement-driven: positions shift frequently, low coherence, positions
- * align with whatever generates attention.
+ * 1. position-coherence (Shapiro) — high coherence, low shift, framework generates consistent positions
+ * 2. institution-absorbed (Lemon) — moderate coherence, low confidence across many axes
+ * 3. method-coherence (Destiny) — high coherence, positions don't cluster into one tribe, high rhetoricalStyleVariance
+ * 4. evidence-responsive-domain-update (Kasparian) — moderate coherence, some axes moving but stable meta-framework anchors
+ * 5. tenet-extraction-stable-anchors (Musk) — moderate-to-high coherence, profile notes reference stable tenets
+ * 6. framework-updatable-philosophy-driven (Nicholas) — highest coherence, explicit updatable meta-framework
+ * 7. engagement-driven — low coherence and/or high whole-person drift
+ * 8. mixed — doesn't clearly fit any of the above
+ */
+export type CoherenceType =
+  | "position-coherence"
+  | "institution-absorbed"
+  | "method-coherence"
+  | "evidence-responsive-domain-update"
+  | "tenet-extraction-stable-anchors"
+  | "framework-updatable-philosophy-driven"
+  | "engagement-driven"
+  | "mixed";
+
+/**
+ * Assess which of the 6 coherence types (+ engagement-driven + mixed) best
+ * describes a profile. This is a best-effort heuristic using available signals
+ * on PoliticalProfile. It will correctly classify the canonical cases; edge
+ * cases may fall through to "mixed".
  *
- * Philosophy-driven: positions are stable, internally consistent, predictable
- * from first principles.
+ * Signal summary:
+ * - ideologicalCoherence: overall score
+ * - axialCoherence / contentCoherence: axial-vs-content split (if present)
+ * - rhetoricalStyleVariance: high (>0.5) + high coherence → method-coherence
+ * - axes[].trend: count of moving axes and shift ratio
+ * - axes[].confidence: many low-confidence axes → institution-absorbed
+ * - notes: keyword signals ("tenet", "framework-updatable", "evidence-responsive")
  */
 export function assessCoherenceType(
   profile: PoliticalProfile
 ): {
-  type: "philosophy-driven" | "engagement-driven" | "mixed";
+  type: CoherenceType;
   confidence: number;
   reasoning: string;
 } {
@@ -2976,27 +3345,158 @@ export function assessCoherenceType(
   ).length;
   const totalAxes = profile.axes.length;
   const shiftRatio = totalAxes > 0 ? shiftingAxes / totalAxes : 0;
+  const stableAxes = profile.axes.filter((a) => a.trend === "stable").length;
 
-  if (coherence >= 0.7 && shiftRatio < 0.3) {
+  const lowConfidenceAxes = profile.axes.filter(
+    (a) => a.confidence < 0.4
+  ).length;
+  const lowConfidenceRatio = totalAxes > 0 ? lowConfidenceAxes / totalAxes : 0;
+
+  const notesLower = (profile.notes ?? "").toLowerCase();
+  const hasRhetoricalVariance = profile.rhetoricalStyleVariance !== undefined;
+  const rhetoricalVariance = profile.rhetoricalStyleVariance ?? 0;
+
+  // ── Engagement-driven (check first — low coherence is a strong signal) ──
+  // Low coherence + high whole-person drift = positions track engagement, not principles.
+  if (coherence < 0.4 && shiftRatio > 0.5) {
     return {
-      type: "philosophy-driven",
-      confidence: coherence,
-      reasoning: `${profile.entityName}'s positions are internally consistent (coherence: ${coherence.toFixed(2)}) with minimal drift. Positions appear driven by a consistent underlying philosophy.`,
+      type: "engagement-driven",
+      confidence: Math.min(0.9, 1 - coherence),
+      reasoning: `${profile.entityName}'s positions show low internal consistency (coherence: ${coherence.toFixed(2)}) with significant whole-person drift (${shiftingAxes}/${totalAxes} axes shifting). Positions appear driven by audience engagement rather than consistent philosophy.`,
     };
   }
 
+  // ── Institution-absorbed (canonical: Lemon) ──
+  // Moderate coherence but many axes have LOW CONFIDENCE — the subject doesn't
+  // produce differentiable domain positions. They track their employer's line
+  // rather than generating positions from an internal framework.
+  if (lowConfidenceRatio >= 0.4 && coherence >= 0.4 && coherence < 0.75) {
+    return {
+      type: "institution-absorbed",
+      confidence: 0.6 + lowConfidenceRatio * 0.3,
+      reasoning: `${profile.entityName} shows moderate coherence (${coherence.toFixed(2)}) but ${lowConfidenceAxes}/${totalAxes} axes have low confidence (<0.4), suggesting positions track an institutional employer rather than an internal framework. The subject doesn't produce differentiable domain positions.`,
+    };
+  }
+
+  // ── Framework-updatable-philosophy-driven (canonical: Nicholas) ──
+  // Highest coherence + notes explicitly reference "framework-updatable" or
+  // the subject has documented willingness to update the framework itself.
+  // Distinguished from position-coherence by the meta-level: the framework
+  // is itself a subject of revision, not just the positions within it.
+  if (
+    coherence >= 0.8 &&
+    (notesLower.includes("framework-updatable") ||
+      notesLower.includes("updatable framework") ||
+      notesLower.includes("meta-framework"))
+  ) {
+    return {
+      type: "framework-updatable-philosophy-driven",
+      confidence: coherence,
+      reasoning: `${profile.entityName} exhibits the highest coherence (${coherence.toFixed(2)}) with an explicit meta-framework that is itself updatable. Distinguished from position-coherence by the subject's documented willingness to update the framework itself, not just positions within it.`,
+    };
+  }
+
+  // ── Tenet-extraction-stable-anchors (canonical: Musk) ──
+  // Moderate-to-high coherence with profile notes referencing "tenet" —
+  // indicates the scoring used tenet-extraction methodology. Stable tenets
+  // anchor the profile while variant positions explain apparent drift.
+  if (
+    coherence >= 0.55 &&
+    (notesLower.includes("tenet") || notesLower.includes("tenet-extraction"))
+  ) {
+    return {
+      type: "tenet-extraction-stable-anchors",
+      confidence: 0.6 + coherence * 0.3,
+      reasoning: `${profile.entityName} shows moderate-to-high coherence (${coherence.toFixed(2)}) with identifiable stable tenets anchoring the profile. Apparent political drift is better explained by stable tenets applied to changing political contexts than by whole-person axis movement.`,
+    };
+  }
+
+  // ── Method-coherence (canonical: Destiny) ──
+  // High coherence but positions don't cluster into a single political tribe.
+  // High rhetoricalStyleVariance signals the subject applies a meta-methodology
+  // (e.g., "research each topic independently") rather than a political framework.
+  // The positions are internally consistent per-topic but cross tribal lines.
+  if (
+    coherence >= 0.65 &&
+    hasRhetoricalVariance &&
+    rhetoricalVariance > 0.5 &&
+    shiftRatio < 0.4
+  ) {
+    return {
+      type: "method-coherence",
+      confidence: 0.5 + rhetoricalVariance * 0.4,
+      reasoning: `${profile.entityName} shows high coherence (${coherence.toFixed(2)}) with high rhetorical style variance (${rhetoricalVariance.toFixed(2)}), suggesting a meta-methodology applied topic-by-topic rather than a single political framework. Positions are internally consistent but don't cluster into one tribal grouping.`,
+    };
+  }
+
+  // ── Evidence-responsive-domain-update (canonical: Kasparian) ──
+  // Moderate coherence with SOME axes moving but not whole-person drift.
+  // The key distinction from engagement-driven: moving axes are specific domains
+  // while stable axes (populism, economic, foreign-policy) form a meta-framework
+  // anchor. Also triggered by explicit notes references.
+  if (
+    coherence >= 0.5 &&
+    coherence < 0.8 &&
+    shiftRatio > 0.15 &&
+    shiftRatio <= 0.5 &&
+    stableAxes >= 3 &&
+    (notesLower.includes("evidence-responsive") ||
+      notesLower.includes("domain-update") ||
+      notesLower.includes("domain update"))
+  ) {
+    return {
+      type: "evidence-responsive-domain-update",
+      confidence: 0.5 + (1 - shiftRatio) * 0.4,
+      reasoning: `${profile.entityName} shows moderate coherence (${coherence.toFixed(2)}) with ${shiftingAxes}/${totalAxes} axes shifting — specific domain updates rather than whole-person drift. ${stableAxes} axes remain stable, forming meta-framework anchors. This is evidence-responsive updating, not engagement-driven drift.`,
+    };
+  }
+
+  // Also catch evidence-responsive without notes keywords if the pattern is clear:
+  // moderate coherence, partial shift, strong stable anchor set
+  if (
+    coherence >= 0.5 &&
+    coherence < 0.8 &&
+    shiftingAxes >= 2 &&
+    shiftRatio > 0.15 &&
+    shiftRatio <= 0.45 &&
+    stableAxes >= Math.ceil(totalAxes * 0.5)
+  ) {
+    return {
+      type: "evidence-responsive-domain-update",
+      confidence: 0.45 + (1 - shiftRatio) * 0.35,
+      reasoning: `${profile.entityName} shows moderate coherence (${coherence.toFixed(2)}) with domain-specific axis movement (${shiftingAxes}/${totalAxes} shifting) while ${stableAxes} axes remain stable as framework anchors. Pattern is consistent with evidence-responsive domain updating rather than whole-person drift.`,
+    };
+  }
+
+  // ── Position-coherence (canonical: Shapiro) ──
+  // High coherence, low shift ratio, no axial/content split signal.
+  // The framework generates consistent, predictable positions across all axes.
+  // This is the "classic" philosophy-driven profile — renamed to distinguish
+  // from framework-updatable-philosophy-driven and method-coherence.
+  if (coherence >= 0.7 && shiftRatio < 0.3) {
+    return {
+      type: "position-coherence",
+      confidence: coherence,
+      reasoning: `${profile.entityName}'s positions are internally consistent (coherence: ${coherence.toFixed(2)}) with minimal drift (${shiftingAxes}/${totalAxes} axes shifting). The framework generates consistent, predictable positions — classic position-coherence.`,
+    };
+  }
+
+  // ── Engagement-driven (broader catch) ──
+  // Lower coherence or higher shift that didn't match any specific type above.
   if (coherence < 0.5 || shiftRatio > 0.5) {
     return {
       type: "engagement-driven",
-      confidence: 1 - coherence,
+      confidence: Math.min(0.8, 1 - coherence),
       reasoning: `${profile.entityName}'s positions show low internal consistency (coherence: ${coherence.toFixed(2)}) and/or significant drift (${shiftingAxes}/${totalAxes} axes shifting). Positions may be driven by audience engagement rather than consistent philosophy.`,
     };
   }
 
+  // ── Mixed (fallback) ──
+  // Doesn't clearly fit any of the 6 named types or engagement-driven.
   return {
     type: "mixed",
     confidence: 0.5,
-    reasoning: `${profile.entityName} shows a mix of consistent and shifting positions. Some axes are stable while others are in flux.`,
+    reasoning: `${profile.entityName} shows a mix of consistent and shifting positions (coherence: ${coherence.toFixed(2)}, ${shiftingAxes}/${totalAxes} axes shifting). Does not clearly match any single coherence type.`,
   };
 }
 

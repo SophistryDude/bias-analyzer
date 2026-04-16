@@ -1,6 +1,67 @@
 import Link from "next/link";
+import ReactMarkdown, { type Components } from "react-markdown";
+import remarkGfm from "remark-gfm";
 import Header from "../../../components/Header";
 import { getPostBySlug } from "../../../lib/db/repositories/posts";
+
+const markdownComponents: Components = {
+  h1: ({ children }) => <h1 className="text-2xl font-bold mt-8 mb-4">{children}</h1>,
+  h2: ({ children }) => <h2 className="text-xl font-semibold mt-6 mb-3">{children}</h2>,
+  h3: ({ children }) => <h3 className="text-lg font-medium mt-4 mb-2">{children}</h3>,
+  h4: ({ children }) => <h4 className="text-base font-medium mt-4 mb-2">{children}</h4>,
+  p: ({ children }) => <p className="text-gray-300 mb-3 leading-relaxed">{children}</p>,
+  a: ({ href, children }) => (
+    <a
+      href={href}
+      className="text-red-400 hover:underline"
+      target={href?.startsWith("http") ? "_blank" : undefined}
+      rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+    >
+      {children}
+    </a>
+  ),
+  ul: ({ children }) => <ul className="list-disc pl-6 mb-3 text-gray-300 space-y-1">{children}</ul>,
+  ol: ({ children }) => <ol className="list-decimal pl-6 mb-3 text-gray-300 space-y-1">{children}</ol>,
+  li: ({ children }) => <li className="text-gray-300">{children}</li>,
+  blockquote: ({ children }) => (
+    <blockquote className="border-l-2 border-gray-600 pl-4 text-gray-400 italic my-3">
+      {children}
+    </blockquote>
+  ),
+  strong: ({ children }) => <strong className="font-semibold text-gray-100">{children}</strong>,
+  em: ({ children }) => <em className="italic">{children}</em>,
+  hr: () => <hr className="border-gray-800 my-6" />,
+  code: ({ className, children }) => {
+    const isBlock = /language-/.test(className ?? "");
+    if (isBlock) {
+      return (
+        <code className={`${className ?? ""} block`}>{children}</code>
+      );
+    }
+    return (
+      <code className="bg-gray-800 text-red-300 px-1.5 py-0.5 rounded text-sm">
+        {children}
+      </code>
+    );
+  },
+  pre: ({ children }) => (
+    <pre className="bg-gray-900 border border-gray-800 rounded p-4 overflow-x-auto text-sm text-gray-200 mb-3">
+      {children}
+    </pre>
+  ),
+  table: ({ children }) => (
+    <div className="overflow-x-auto my-4">
+      <table className="w-full text-sm border-collapse">{children}</table>
+    </div>
+  ),
+  thead: ({ children }) => <thead className="border-b border-gray-700">{children}</thead>,
+  tbody: ({ children }) => <tbody className="divide-y divide-gray-800">{children}</tbody>,
+  tr: ({ children }) => <tr>{children}</tr>,
+  th: ({ children }) => (
+    <th className="text-left font-semibold text-gray-200 px-3 py-2">{children}</th>
+  ),
+  td: ({ children }) => <td className="text-gray-300 px-3 py-2 align-top">{children}</td>,
+};
 
 export default async function BlogPostPage({
   params,
@@ -54,50 +115,10 @@ export default async function BlogPostPage({
 
         <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
 
-        {/* Render markdown as HTML — for now, just whitespace-preserving text */}
-        {/* TODO: Add a markdown renderer (remark/rehype) in a future pass */}
-        <article className="prose prose-invert prose-sm max-w-none">
-          {post.content.split("\n").map((line, i) => {
-            if (line.startsWith("# "))
-              return (
-                <h1 key={i} className="text-2xl font-bold mt-8 mb-4">
-                  {line.slice(2)}
-                </h1>
-              );
-            if (line.startsWith("## "))
-              return (
-                <h2 key={i} className="text-xl font-semibold mt-6 mb-3">
-                  {line.slice(3)}
-                </h2>
-              );
-            if (line.startsWith("### "))
-              return (
-                <h3 key={i} className="text-lg font-medium mt-4 mb-2">
-                  {line.slice(4)}
-                </h3>
-              );
-            if (line.startsWith("- "))
-              return (
-                <li key={i} className="text-gray-300 ml-4">
-                  {line.slice(2)}
-                </li>
-              );
-            if (line.startsWith("> "))
-              return (
-                <blockquote
-                  key={i}
-                  className="border-l-2 border-gray-600 pl-4 text-gray-400 italic my-2"
-                >
-                  {line.slice(2)}
-                </blockquote>
-              );
-            if (line.trim() === "") return <br key={i} />;
-            return (
-              <p key={i} className="text-gray-300 mb-3">
-                {line}
-              </p>
-            );
-          })}
+        <article className="max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+            {post.content}
+          </ReactMarkdown>
         </article>
       </main>
     </div>

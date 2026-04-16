@@ -46,9 +46,13 @@ export async function POST(req: NextRequest) {
           const article = await scrapeArticle(content);
           textToAnalyze = article.content;
           title = article.title || "Untitled article";
-        } catch {
+        } catch (err) {
+          const msg = err instanceof Error ? err.message : String(err);
+          console.error("Article scrape failed:", msg);
           return NextResponse.json(
-            { error: "Could not fetch article content from the provided URL." },
+            {
+              error: `Could not fetch article content: ${msg}`,
+            },
             { status: 422 }
           );
         }

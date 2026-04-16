@@ -25,6 +25,39 @@ async function seed() {
 
   console.log("Seeding database...\n");
 
+  // ─── Extra pundits not in PUNDIT_REGISTRY or seed-200 ───────────
+  // These are referenced by SEED_PROFILES but missing from other seed
+  // scripts. Insert them first so the profile FK constraint is satisfied.
+  const EXTRA_PUNDITS = [
+    { id: "krystal-ball", name: "Krystal Ball", slug: "krystal-ball", platforms: ["youtube", "podcast"], currentLeaning: "left", description: "Breaking Points co-host. Populist-left commentator.", knownFor: ["Breaking Points", "Rising"], tags: ["youtube", "podcast", "populist-left"] },
+    { id: "saagar-enjeti", name: "Saagar Enjeti", slug: "saagar-enjeti", platforms: ["youtube", "podcast"], currentLeaning: "right", description: "Breaking Points co-host. National-conservative commentator.", knownFor: ["Breaking Points", "Rising"], tags: ["youtube", "podcast", "populist-right"] },
+    { id: "victor-davis-hanson", name: "Victor Davis Hanson", slug: "victor-davis-hanson", platforms: ["other", "youtube"], currentLeaning: "right", description: "Hoover Institution fellow, classicist, author. Historical-inductive conservative intellectual.", knownFor: ["The Case for Trump", "The Dying Citizen"], tags: ["academic", "conservative", "hoover-institution"] },
+    { id: "barack-obama", name: "Barack Obama", slug: "barack-obama", platforms: ["other"], currentLeaning: "center-left", description: "44th President of the United States. Constitutional-pragmatic institutionalist progressive.", knownFor: ["Presidency", "A Promised Land"], tags: ["politician", "president"] },
+    { id: "elon-musk", name: "Elon Musk", slug: "elon-musk", platforms: ["other"], currentLeaning: "right", description: "CEO of Tesla, SpaceX, xAI. Owner of X. Head of DOGE.", knownFor: ["Tesla", "SpaceX", "X", "DOGE"], tags: ["tech", "billionaire", "platform-owner"] },
+    { id: "nicholas-major", name: "Nicholas Major", slug: "nicholas-major", platforms: ["other"], currentLeaning: "center", description: "MediaSentinel project author. Classical-liberal pragmatist.", knownFor: ["MediaSentinel"], tags: ["project-author"] },
+    { id: "donald-trump-pre-2015", name: "Donald Trump (pre-2015)", slug: "donald-trump-pre-2015", platforms: ["other"], currentLeaning: "center", description: "Donald Trump's political positions as expressed through ~35 years of public life before the 2015 campaign.", knownFor: ["The Apprentice", "The Art of the Deal"], tags: ["politician", "dual-profile"] },
+    { id: "donald-trump-2016-2024", name: "Donald Trump (2016-2024)", slug: "donald-trump-2016-2024", platforms: ["other"], currentLeaning: "right", description: "Donald Trump's populist-nationalist-right political brand from the 2016 campaign through the 2024 victory.", knownFor: ["Presidency", "MAGA", "America First"], tags: ["politician", "dual-profile"] },
+    { id: "destiny-bonnell", name: "Destiny (Steven Bonnell II)", slug: "destiny-bonnell", platforms: ["youtube", "streaming"], currentLeaning: "center-left", description: "Political streamer and debater. Method-coherent institutionalist center-left.", knownFor: ["Political debates", "Kick", "YouTube"], tags: ["streaming", "debate"] },
+  ];
+
+  console.log(`Seeding ${EXTRA_PUNDITS.length} extra pundits (SEED_PROFILES deps)...`);
+  for (const p of EXTRA_PUNDITS) {
+    await db
+      .insert(schema.pundits)
+      .values({
+        id: p.id,
+        name: p.name,
+        slug: p.slug,
+        platforms: p.platforms,
+        currentLeaning: p.currentLeaning,
+        description: p.description,
+        knownFor: p.knownFor,
+        tags: p.tags,
+      })
+      .onConflictDoNothing();
+  }
+  console.log("  Done.\n");
+
   // ─── Pundits ────────────────────────────────────────────────────
   console.log(`Seeding ${PUNDIT_REGISTRY.length} pundits...`);
   for (const pundit of PUNDIT_REGISTRY) {
@@ -60,8 +93,28 @@ async function seed() {
   console.log("  Done.\n");
 
   // ─── Political Profiles ─────────────────────────────────────────
+  // SEED_PROFILES entityIds don't always match pundits table IDs exactly
+  // (e.g., "destiny-bonnell" vs "destiny", "donald-trump-pre-2015" vs
+  // "donald-trump"). Skip profiles whose entityId has no matching pundit
+  // row rather than crashing on the FK constraint.
+  const allPunditIds = new Set(
+    (await db.select({ id: schema.pundits.id }).from(schema.pundits)).map(
+      (r) => r.id
+    )
+  );
+
   console.log(`Seeding ${SEED_PROFILES.length} political profiles...`);
+  let profilesInserted = 0;
+  let profilesSkipped = 0;
   for (const profile of SEED_PROFILES) {
+    if (!allPunditIds.has(profile.entityId)) {
+      console.log(
+        `  SKIP profile "${profile.entityId}" — no matching pundit ID in DB`
+      );
+      profilesSkipped++;
+      continue;
+    }
+
     const profileId = `seed-${profile.entityId}`;
     await db
       .insert(schema.politicalProfiles)
@@ -88,8 +141,11 @@ async function seed() {
         })
         .onConflictDoNothing();
     }
+    profilesInserted++;
   }
-  console.log("  Done.\n");
+  console.log(
+    `  Done. Inserted ${profilesInserted}, skipped ${profilesSkipped}.\n`
+  );
 
   // ─── Overton Window Snapshots ───────────────────────────────────
   console.log(`Seeding ${WINDOW_HISTORY.length} Overton window snapshots...`);
@@ -217,7 +273,25 @@ async function seed() {
   ];
 
   console.log(`Seeding ${MONITORED_SOURCES.length} monitored sources...`);
+  // Only insert sources whose owning pundit is actually present in the DB.
+  // Some sources reference pundits that are seeded by db:seed-200, so if
+  // seed-200 hasn't run yet those rows would fail a foreign key check and
+  // abort the whole seed. We pre-filter and skip with a note instead.
+  const existingPundits = new Set(
+    (await db.select({ id: schema.pundits.id }).from(schema.pundits)).map(
+      (r) => r.id
+    )
+  );
+  let inserted = 0;
+  let skipped = 0;
   for (const source of MONITORED_SOURCES) {
+    if (!existingPundits.has(source.punditId)) {
+      console.log(
+        `  SKIP ${source.id} — pundit "${source.punditId}" not in DB. Run \`npm run db:seed-200\` first.`
+      );
+      skipped++;
+      continue;
+    }
     await db
       .insert(schema.monitoredSources)
       .values({
@@ -231,8 +305,9 @@ async function seed() {
         metadata: {},
       })
       .onConflictDoNothing();
+    inserted++;
   }
-  console.log("  Done.\n");
+  console.log(`  Done. Inserted ${inserted}, skipped ${skipped}.\n`);
 
   console.log("Seed complete.");
   await client.end();

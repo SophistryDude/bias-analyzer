@@ -57,16 +57,7 @@ export default async function PunditDetailPage({
   const axisScores = profile
     ? profile.axes.map((a) => ({
         axisId: a.axisId,
-        label:
-          a.axisId === "economic"
-            ? "Economic"
-            : a.axisId === "speech"
-              ? "Speech"
-              : a.axisId === "progressive"
-                ? "Progressive"
-                : a.axisId === "liberal-conservative"
-                  ? "Lib/Con"
-                  : "Foreign Policy",
+        label: a.axisId,
         value: a.value,
         confidence: a.confidence,
       }))

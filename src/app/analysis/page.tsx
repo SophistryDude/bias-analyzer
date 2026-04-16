@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Header from "../../components/Header";
 
 interface FallacyResult {
@@ -28,13 +29,19 @@ interface AnalysisResponse {
 }
 
 export default function AnalysisPage() {
+  const searchParams = useSearchParams();
   const [input, setInput] = useState("");
   const [inputType, setInputType] = useState<"url" | "text">("url");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<AnalysisResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const autoRan = useRef(false);
 
-  const handleAnalyze = async () => {
+  const handleAnalyze = async (overrideInput?: string, overrideType?: "url" | "text") => {
+    const content = (overrideInput ?? input).trim();
+    const type = overrideType ?? inputType;
+    if (!content) return;
+
     setLoading(true);
     setError(null);
     setResult(null);
@@ -43,10 +50,7 @@ export default function AnalysisPage() {
       const res = await fetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          type: inputType,
-          content: input,
-        }),
+        body: JSON.stringify({ type, content }),
       });
 
       if (!res.ok) {
@@ -62,6 +66,30 @@ export default function AnalysisPage() {
       setLoading(false);
     }
   };
+
+  // Hydrate from ?url= / ?text= / ?run=1 query params (home-page form redirect)
+  useEffect(() => {
+    if (autoRan.current) return;
+    const urlParam = searchParams.get("url");
+    const textParam = searchParams.get("text");
+    const run = searchParams.get("run") === "1";
+    if (urlParam) {
+      setInput(urlParam);
+      setInputType("url");
+      if (run) {
+        autoRan.current = true;
+        void handleAnalyze(urlParam, "url");
+      }
+    } else if (textParam) {
+      setInput(textParam);
+      setInputType("text");
+      if (run) {
+        autoRan.current = true;
+        void handleAnalyze(textParam, "text");
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
@@ -114,7 +142,7 @@ export default function AnalysisPage() {
           )}
 
           <button
-            onClick={handleAnalyze}
+            onClick={() => handleAnalyze()}
             disabled={!input.trim() || loading}
             className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 disabled:bg-gray-700 disabled:text-gray-500 text-white font-semibold rounded-lg transition w-full"
           >

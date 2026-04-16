@@ -14,6 +14,7 @@
 
 import type { LLMProvider } from "./provider";
 import { parseJSONResponse } from "./provider";
+import { AnthropicProvider } from "./providers/anthropic";
 import { getCached, setCache } from "./cache";
 import { buildToneAnalysisMessages } from "./prompts/tone-analysis";
 import { buildStructuralFallacyMessages } from "./prompts/structural-fallacy";
@@ -54,6 +55,31 @@ export function configureLLM(p: LLMProvider): void {
 
 export function isLLMConfigured(): boolean {
   return provider !== null;
+}
+
+/**
+ * Auto-configure from environment variables. Idempotent — safe to call
+ * multiple times. Returns true if a provider is now configured.
+ *
+ * Recognised vars:
+ *   ANTHROPIC_API_KEY   — required for the Anthropic provider
+ *   LLM_MODEL           — optional override (default: claude-sonnet-4-6)
+ *   LLM_MAX_TOKENS      — optional override (default: 4096)
+ */
+export function configureLLMFromEnv(): boolean {
+  if (provider) return true;
+  const anthropicKey = process.env.ANTHROPIC_API_KEY;
+  if (anthropicKey) {
+    provider = new AnthropicProvider({
+      apiKey: anthropicKey,
+      model: process.env.LLM_MODEL,
+      maxTokens: process.env.LLM_MAX_TOKENS
+        ? Number(process.env.LLM_MAX_TOKENS)
+        : undefined,
+    });
+    return true;
+  }
+  return false;
 }
 
 // ─── Tone/Sentiment Analysis ────────────────────────────────────────

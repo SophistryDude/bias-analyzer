@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "../components/Header";
+import HomeAnalyzeForm from "../components/HomeAnalyzeForm";
 
 export default function HomePage() {
   return (
@@ -21,27 +22,7 @@ export default function HomePage() {
 
           {/* Analysis Input */}
           <div className="max-w-2xl mx-auto">
-            <form className="flex flex-col gap-4">
-              <input
-                type="text"
-                placeholder="Paste a YouTube URL, article link, or text to analyze..."
-                className="w-full px-6 py-4 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-500 transition text-lg"
-              />
-              <div className="flex gap-3">
-                <button
-                  type="submit"
-                  className="flex-1 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition"
-                >
-                  Analyze Content
-                </button>
-                <button
-                  type="button"
-                  className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold rounded-lg transition border border-gray-700"
-                >
-                  Paste Text Instead
-                </button>
-              </div>
-            </form>
+            <HomeAnalyzeForm />
           </div>
         </section>
 

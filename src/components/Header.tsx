@@ -26,6 +26,12 @@ export default function Header() {
           >
             Blog
           </Link>
+          <Link
+            href="/about"
+            className="text-gray-400 hover:text-white transition"
+          >
+            About
+          </Link>
         </nav>
       </div>
     </header>

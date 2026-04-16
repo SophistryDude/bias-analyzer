@@ -272,6 +272,6 @@ These are known gaps surfaced during the profile rewrite. Not blockers for the r
 ## Project Context
 
 - **Product**: Free blog-style website + YouTube monetization. Analysis is the content, YouTube is the revenue.
-- **Owner**: Nicholas Major, studying Communications at WGU. Has EBSCO + ProQuest through WGU library (API access not yet obtained). Masters in Philosophy, works as data scientist.
+- **Owner**: Nicholas Major, studying Communications at WGU. Has EBSCO + ProQuest through WGU library (API access not yet obtained). Autodidact in philosophy of science (pursuing masters, in progress). Works as data scientist.
 - **Other projects**: Alphabreak (standalone), PokerForge (app + shared k8s cluster), poker content videos (local → YouTube), Theory of Everything (local → YouTube)
 - **Primary differentiators**: Multi-axis model (no competitor does this), transparent rule engine (auditable), cross-source omission tracking (measures what's missing, not what's wrong), epistemological classification (no competitor classifies claims by truth-status type)

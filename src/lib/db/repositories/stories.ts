@@ -25,9 +25,15 @@ export interface StoryCoverage {
   framingType: string | null;
   axisEconomic: number | null;
   axisSpeech: number | null;
+  /** @deprecated Replaced by axisCausationAnalysis + axisEqualityModel. Kept for historical rows. */
   axisProgressive: number | null;
+  axisCausationAnalysis: number | null;
+  axisEqualityModel: number | null;
   axisLiberalConservative: number | null;
   axisForeignPolicy: number | null;
+  axisPopulism: number | null;
+  axisNationalism: number | null;
+  axisAuthority: number | null;
   comparisonNotes: string | null;
 }
 
@@ -78,9 +84,15 @@ export async function addCoverage(coverage: {
   framingType?: string;
   axisEconomic?: number;
   axisSpeech?: number;
+  /** @deprecated — pass axisCausationAnalysis / axisEqualityModel instead. */
   axisProgressive?: number;
+  axisCausationAnalysis?: number;
+  axisEqualityModel?: number;
   axisLiberalConservative?: number;
   axisForeignPolicy?: number;
+  axisPopulism?: number;
+  axisNationalism?: number;
+  axisAuthority?: number;
 }): Promise<void> {
   await db
     .insert(storyCoverages)
@@ -96,8 +108,13 @@ export async function addCoverage(coverage: {
       axisEconomic: coverage.axisEconomic,
       axisSpeech: coverage.axisSpeech,
       axisProgressive: coverage.axisProgressive,
+      axisCausationAnalysis: coverage.axisCausationAnalysis,
+      axisEqualityModel: coverage.axisEqualityModel,
       axisLiberalConservative: coverage.axisLiberalConservative,
       axisForeignPolicy: coverage.axisForeignPolicy,
+      axisPopulism: coverage.axisPopulism,
+      axisNationalism: coverage.axisNationalism,
+      axisAuthority: coverage.axisAuthority,
     })
     .onConflictDoNothing();
 }
@@ -153,8 +170,13 @@ export async function getStoryCoverages(
     axisEconomic: r.axisEconomic,
     axisSpeech: r.axisSpeech,
     axisProgressive: r.axisProgressive,
+    axisCausationAnalysis: r.axisCausationAnalysis,
+    axisEqualityModel: r.axisEqualityModel,
     axisLiberalConservative: r.axisLiberalConservative,
     axisForeignPolicy: r.axisForeignPolicy,
+    axisPopulism: r.axisPopulism,
+    axisNationalism: r.axisNationalism,
+    axisAuthority: r.axisAuthority,
     comparisonNotes: r.comparisonNotes,
   }));
 }
@@ -213,13 +235,19 @@ export async function buildStoryComparison(
         }
       : null;
 
-  // Compute axis ranges
+  // Compute axis ranges across the active 9-axis model. axisProgressive is
+  // deliberately excluded — it's kept on the row for historical rows but
+  // is not part of new analysis.
   const axisKeys = [
     "axisEconomic",
     "axisSpeech",
-    "axisProgressive",
+    "axisCausationAnalysis",
+    "axisEqualityModel",
     "axisLiberalConservative",
     "axisForeignPolicy",
+    "axisPopulism",
+    "axisNationalism",
+    "axisAuthority",
   ] as const;
 
   const axisRanges: Record<string, { min: number; max: number; spread: number }> = {};
@@ -257,8 +285,13 @@ export async function buildStoryComparison(
       axisEconomic: c.axisEconomic,
       axisSpeech: c.axisSpeech,
       axisProgressive: c.axisProgressive,
+      axisCausationAnalysis: c.axisCausationAnalysis,
+      axisEqualityModel: c.axisEqualityModel,
       axisLiberalConservative: c.axisLiberalConservative,
       axisForeignPolicy: c.axisForeignPolicy,
+      axisPopulism: c.axisPopulism,
+      axisNationalism: c.axisNationalism,
+      axisAuthority: c.axisAuthority,
       comparisonNotes: c.comparisonNotes,
       sourceName: (c.source as { name: string } | null)?.name ?? "Unknown",
     })),
