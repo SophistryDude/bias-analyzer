@@ -1706,11 +1706,11 @@ The 5-axis model scored Stewart at 0.65 (moderate) because his positions "cross 
 
 | Period | Leaning | Evidence |
 |--------|---------|----------|
-| ~2010s | Conservative (Baptist) | Previously held conservative positions within a Christian religious framework. |
-| ~2015 | Libertarian | Shifted to libertarianism after disagreeing with specific conservative positions. |
-| ~2018 | Agnostic / Classical-Liberal | Moved away from Baptist Christianity to agnosticism based on evidentiary framework — insufficient evidence for a consistent, demonstrable deity. Retained moral code without religious grounding. |
-| ~2020 | Classical-Liberal Pragmatist | Moved away from pure libertarianism after studying the Pareto principle — concluded unequal distributions are emergent properties of complex systems, not failures to correct, which makes pure libertarian positions mathematically indefensible. Adopted classical-liberal framework with pragmatic exceptions where empirical evidence supports intervention. |
-| 2025 | Classical-Liberal Pragmatist | Position updates continue — per Q17 of the questionnaire, "if empirical evidence counters my current position I just adopt the position the empirical evidence supports." Recent explicit updates: immigration (open-borders → tight-border-security-plus-opening-legal-immigration), intersex/gender dynamics (more traditionalist on specific questions about policy incentives for traditional family structures), Islam (research-driven shift to viewing Islamic theocratic-governance doctrine as incompatible with secular constitutional systems). |
+| Childhood | Atheist | Atheist since approximately age 12 (user-stated, April 2026). Religious framework is not part of the trajectory at any point in the documented record. |
+| ~2015 (approximate) | Conservative | Per Q16: held conservative positions "but I disagreed with some of them, which was why I moved from conservative to libertarian in the first place." Exact dates not specified. |
+| Intermediate | Libertarian | Shifted to libertarianism after disagreeing with specific conservative positions. Duration not specified. |
+| Current | Classical-Liberal Pragmatist | Moved away from pure libertarianism after studying the Pareto principle — concluded unequal distributions are emergent properties of complex systems, not failures to correct, which makes pure libertarian positions mathematically indefensible. Adopted classical-liberal framework with pragmatic exceptions where empirical evidence supports intervention. Documented in existing project materials. |
+| Ongoing | Classical-Liberal Pragmatist | Position updates continue — per Q17, "if empirical evidence counters my current position I just adopt the position the empirical evidence supports." Recent explicit updates (per Q16/Q17): immigration (open-borders → tight-border-security-plus-expanded-legal-immigration), intersex/gender dynamics (more traditionalist on specific policy questions about incentives for traditional family structures), Islam (research-driven shift to viewing Islamic theocratic-governance doctrine as incompatible with secular constitutional systems). |
 
 ---
 
