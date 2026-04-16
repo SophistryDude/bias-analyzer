@@ -37,23 +37,31 @@ This document is intended to be **auditable**: every axis score can be checked a
 | ~2021 | Left | Coverage of January 6th, COVID policy, and trans-rights stories consistently aligned with progressive framing. Reduced direct quotation of conservative sources. |
 | ~2024 | Center-Left | Returned to more even coverage of 2024 election. Criticized both Trump and Biden administrations on specific policy decisions. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.30 | Leaning Capitalist | Stable | 50% |
-| Speech | +0.30 | Leaning Reasonable Censorship | Moving right → | 55% |
-| Progressive | -0.50 | Moderate Progressive (Equity) | Moving left ← | 60% |
-| Liberal/Conservative | -0.50 | Moderate Liberal | Moving left ← | 65% |
+| Economic | −0.30 | Leaning Capitalist | Stable | 50% |
+| Speech | +0.30 | Leaning Pro-Moderation | Moving right → | 60% |
+| Causation Analysis | −0.50 | Moderate Structural | Moving left ← | 50% |
+| Equality Model | −0.40 | Leaning Outcome | Stable | 50% |
+| Liberal/Conservative | −0.50 | Moderate Liberal | Moving left ← | 65% |
 | Foreign Policy | 0.00 | Centrist | Stable | 30% |
+| Populism | +0.10 | Near-center | Stable | 30% |
+| Nationalism | +0.30 | Leaning Globalist | Stable | 30% |
+| Authority | −0.10 | Near-center | Stable | 30% |
 
 #### Axis Justifications
 
-- **Economic (-0.30):** Supports market economy in stated positions. Has not advocated nationalization or restructuring of property rights. Has supported targeted social programs (paid leave, healthcare access). No advocacy for socialism on record.
+- **Economic (−0.30):** Supports market economy in stated positions. Has not advocated nationalization or restructuring of property rights. Has supported targeted social programs (paid leave, healthcare access).
 - **Speech (+0.30):** Has defended platform moderation decisions including the 2021 Trump deplatforming. Has criticized "free speech absolutism" framing. Has not opposed major content moderation policies on principle.
-- **Progressive (-0.50):** Coverage of equity-related stories (police reform, trans rights, DEI) consistently favors progressive framings. Has used the term "marginalized communities" in policy advocacy contexts.
-- **Liberal/Conservative (-0.50):** Coverage favors institutional change on cultural issues. Treats conservative positions as the "side requiring justification" more often than progressive positions in same-week comparisons.
-- **Foreign Policy (0.00):** Foreign policy is a small percentage of coverage. Insufficient material to assign high confidence. Positions taken (e.g., Ukraine aid) align with mainstream Democratic consensus when expressed.
+- **Causation Analysis (−0.50):** Tends toward structural framing of social issues (police reform, healthcare access, income inequality). Individual-responsibility framing appears primarily in stories about public figures, not systemic topics.
+- **Equality Model (−0.40):** Mixed. Usually invokes opportunity language explicitly but segments on identity-based representation and outcome disparities lean toward outcome-equality framing.
+- **Liberal/Conservative (−0.50):** Coverage favors institutional change on cultural issues. Treats conservative positions as the "side requiring justification" more often than progressive positions in same-week comparisons.
+- **Foreign Policy (0.00):** Foreign policy is a small percentage of coverage. Insufficient material for high confidence. Positions taken (e.g., Ukraine aid) align with mainstream Democratic consensus when expressed.
+- **Populism (+0.10):** Neither strongly anti-establishment nor a defender of institutions. Criticizes specific institutions case-by-case rather than from a consistent populist or institutionalist stance. DeFranco's news-recap format doesn't foreground the populism question.
+- **Nationalism (+0.30):** Mild globalist lean — treats international cooperation as default good, but doesn't make it a theme. Low confidence.
+- **Authority (−0.10):** Insufficient signal. Defers to platform decisions on speech (mild authoritarian), defers to individual choice on personal matters (mild libertarian). Format doesn't produce clear signal on state-power questions.
 
 #### Notes
 
@@ -814,8 +822,9 @@ Both hosts worked previously at The Hill's "Rising" before launching the indepen
 ### CNN
 
 **Platform:** Cable news, CNN.com, streaming
-**Current Leaning:** Center-Left
-**Ideological Coherence:** 0.60 (moderate)
+**Owner:** Warner Bros. Discovery
+**Current Leaning:** Center-Left Institutionalist
+**Ideological Coherence:** 0.65 (moderate — 9-axis reveals institutional consistency previously read as ideological drift)
 **Driver:** Mixed (institutional)
 
 #### Bias Trajectory
@@ -828,36 +837,55 @@ Both hosts worked previously at The Hill's "Rising" before launching the indepen
 | ~2022 | Center-Left | Chris Licht era (April 2022 - June 2023) attempted to moderate political framing; Licht departed after publicly reported internal disputes. Mark Thompson assumed CEO role. |
 | ~2024 | Center-Left | Coverage of 2024 election. Hosted June 2024 Biden-Trump debate (Tapper and Bash moderated). |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | -0.10 | Centrist | Stable | 50% |
 | Speech | +0.20 | Leaning Reasonable Censorship | Stable | 50% |
-| Progressive | -0.30 | Leaning Progressive | Stable | 60% |
+| Causation Analysis | -0.30 | Leaning Structural | Stable | 55% |
+| Equality Model | -0.20 | Leaning Outcome | Stable | 50% |
 | Liberal/Conservative | -0.30 | Leaning Liberal | Stable | 60% |
 | Foreign Policy | +0.30 | Leaning Interventionist | Stable | 60% |
+| Populism | +0.60 | Strong Institutionalist | Stable | 80% |
+| Nationalism | +0.30 | Leaning Globalist | Stable | 60% |
+| Authority | +0.20 | Leaning Authoritarian (editorially: frames institutional authority as legitimate) | Stable | 50% |
 
 #### Axis Justifications
 
-- **Economic (-0.10):** Coverage treats both parties' economic frameworks as legitimate. Editorial coverage of corporate stories shows no consistent ideological pattern. Network is owned by Warner Bros. Discovery, a corporation with standard corporate governance.
-- **Speech (+0.20):** Editorial coverage has supported specific platform content moderation decisions. Network policies on guest selection have excluded specific figures (e.g., did not platform some 2020 election-fraud claimants in same way as some right-leaning networks).
-- **Progressive (-0.30):** Coverage of equity-related stories more often aligns with progressive framings than non-progressive framings. The pattern is documented across multiple topic areas.
+- **Economic (-0.10):** Coverage treats both parties' economic frameworks as legitimate. Editorial coverage of corporate stories shows no consistent ideological pattern. Network is owned by Warner Bros. Discovery, a corporation with standard corporate governance. Advertising base is corporate-mainstream.
+- **Speech (+0.20):** Editorial coverage has supported specific platform content moderation decisions. Network policies on guest selection have excluded specific figures (e.g., did not platform some 2020 election-fraud claimants in same way as some right-leaning networks). Position reflects institutional-gatekeeping default rather than principled speech theory.
+- **Causation Analysis (-0.30):** Default framing on social issues (policing, healthcare, inequality) emphasizes institutional and systemic causes. Economic coverage uses market-centered framing. The structural lean is present but moderate — CNN more often frames problems as institutional failures than as individual failures, but does not consistently advocate structural solutions.
+- **Equality Model (-0.20):** Coverage of DEI and equity-related policy leans toward outcome-equality framing but without the consistency of MSNBC. Corporate ownership creates structural tension: DEI coverage is sympathetic editorially while the parent company operates under standard corporate efficiency logic.
 - **Liberal/Conservative (-0.30):** Coverage frames Republican policies as the side requiring justification more often than Democratic policies in same-week comparisons. Pattern documented in third-party media analysis.
-- **Foreign Policy (+0.30):** Coverage of NATO, Ukraine, and Israel aligns with US bipartisan foreign policy consensus, which is interventionist on the axis scale.
+- **Foreign Policy (+0.30):** Coverage of NATO, Ukraine, and Israel aligns with US bipartisan foreign policy consensus, which is interventionist on the axis scale. CNN International operates as a separate editorial product with broader institutional framing.
+- **Populism (+0.60):** CNN's coverage consistently treats populist appeals — from both left and right — as threats to institutional order. Coverage of Trump-era populism framed it as an assault on democratic norms and institutional legitimacy. Coverage of left-populism (Sanders campaigns, progressive wing) similarly framed those movements through an institutional-stability lens. The network defends institutional norms, journalism-as-institution, and expertise-as-legitimate authority. This is structurally self-interested: CNN benefits from a paradigm where institutional media is the legitimate information authority.
+- **Nationalism (+0.30):** Coverage defaults to multilateral-institutional framing: NATO support, UN coverage, international-cooperation framing on climate and trade. Not strongly globalist — coverage retains US-national-interest framing as baseline — but leans toward international institutions as legitimate.
+- **Authority (+0.20):** Editorially frames state and institutional authority as generally legitimate when exercised through established channels. Coverage of government overreach focuses on procedural violations (process), not on whether the state should have the authority in the first place (scope). This is an institutionalist position on authority, not a partisan one.
+
+#### Structural Constraints
+
+- **Ownership:** Warner Bros. Discovery — publicly traded media conglomerate. Corporate parent has no ideological mission statement; editorial direction is shaped by audience/advertiser dynamics rather than ownership mandate.
+- **Advertiser base:** Corporate-mainstream (pharmaceuticals, financial services, automotive). Advertiser sensitivity constrains coverage of advertiser industries and creates structural pressure toward centrist-institutional framing.
+- **Structural conflicts:** Corporate parent's business interests (streaming, entertainment) create potential editorial conflicts on media-industry coverage, antitrust, and tech-regulation stories.
+
+#### Logic System Note
+
+The 9-axis model's most significant finding for CNN is the populism axis. CNN is center-left on content axes but **strongly institutionalist** on the populism axis — a structural position it shares with Fox News, MSNBC, and the NYT despite being on opposite sides of those content axes. The 5-axis model could not see this shared blind spot. CNN's coverage of both Trump-populism and Sanders-populism used the same institutional-defense framing, which is analytically significant: the network's opposition to populism is structural (self-interested defense of institutional media authority), not merely a consequence of its center-left content positioning. The Licht era's attempt to moderate content-axis positioning did not change the populism-axis positioning at all — the network remained institutionalist throughout, suggesting the populism axis is more structurally determined than the content axes.
 
 #### Notes
 
-CNN's institutional ownership is Warner Bros. Discovery (formerly WarnerMedia). Internal editorial decisions have changed across multiple management transitions (Jeff Zucker through 2022, Chris Licht 2022-2023, Mark Thompson 2023-present). Coverage tone toward Trump-era political conflict varied across these periods in ways documented in network coverage itself. Foreign policy positioning is interventionist within US mainstream, not within any particular partisan framing. The progressive and liberal/conservative axes are scored based on observable coverage patterns; the network's stated editorial position is "neutral journalism."
+CNN's institutional ownership is Warner Bros. Discovery (formerly WarnerMedia). Internal editorial decisions have changed across multiple management transitions (Jeff Zucker through 2022, Chris Licht 2022-2023, Mark Thompson 2023-present). Coverage tone toward Trump-era political conflict varied across these periods in ways documented in network coverage itself. Foreign policy positioning is interventionist within US mainstream, not within any particular partisan framing. The progressive axis from the 5-axis model has been decomposed into causation-analysis and equality-model in the 9-axis model; scores reflect the component positions. The network's stated editorial position is "neutral journalism."
 
 ---
 
 ### Fox News
 
 **Platform:** Cable news, Fox News Digital, streaming
-**Current Leaning:** Right
-**Ideological Coherence:** 0.65 (moderate)
-**Driver:** Mixed (institutional)
+**Owner:** Fox Corporation (Murdoch family)
+**Current Leaning:** Right Institutionalist (structurally split: news division institutionalist, opinion division populist-leaning)
+**Ideological Coherence:** 0.55 (moderate-low — the news/opinion split is the defining structural feature)
+**Driver:** Mixed (institutional + engagement-driven in opinion programming)
 
 #### Bias Trajectory
 
@@ -870,35 +898,58 @@ CNN's institutional ownership is Warner Bros. Discovery (formerly WarnerMedia). 
 | ~2023 | Right | Carlson fired (April 2023). Watters moved to primetime. |
 | ~2024 | Right | Coverage of 2024 election aligned with Trump campaign positions in opinion programming; news division coverage was less explicit. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | -0.50 | Moderate Capitalist | Stable | 70% |
 | Speech | -0.30 | Leaning Free Speech | Stable | 60% |
-| Progressive | +0.60 | Moderate Non-Progressive | Stable | 75% |
+| Causation Analysis | +0.40 | Leaning Individual (opinion); mixed (news) | Stable | 60% |
+| Equality Model | +0.60 | Strong Opportunity | Stable | 75% |
 | Liberal/Conservative | +0.60 | Moderate Conservative | Stable | 75% |
-| Foreign Policy | +0.40 | Leaning Interventionist | Unstable | 50% |
+| Foreign Policy | +0.40 | Leaning Interventionist | Unstable (post-Carlson less contested) | 50% |
+| Populism | +0.20 | Leaning Institutionalist (net); SPLIT — see justification | Unstable | 55% |
+| Nationalism | -0.20 | Leaning Nationalist (opinion edge) | Stable | 55% |
+| Authority | +0.30 | Leaning Authoritarian (law-and-order framing in opinion programming) | Stable | 55% |
 
 #### Axis Justifications
 
-- **Economic (-0.50):** Editorial coverage consistently favors lower taxes, reduced regulation, and free-market frameworks. Pattern is documented across multiple decades of coverage.
-- **Speech (-0.30):** Opposes content moderation and platform deplatforming in editorial coverage. Has not always defended speech of figures opposed to its editorial line.
-- **Progressive (+0.60):** Coverage of equity-related topics (DEI, affirmative action, gender identity) consistently aligns with non-progressive framings.
+- **Economic (-0.50):** Editorial coverage consistently favors lower taxes, reduced regulation, and free-market frameworks. Pattern is documented across multiple decades of coverage. News division covers economic policy neutrally; opinion programming is explicitly pro-market.
+- **Speech (-0.30):** Opposes content moderation and platform deplatforming in editorial coverage. Application is selective — the network has not consistently defended speech of figures opposed to its editorial line. The speech-axis position is partly engagement-driven (opposition to Big Tech moderation aligns with audience preferences) rather than principled.
+- **Causation Analysis (+0.40):** Opinion programming's dominant framing is individual-causation: personal responsibility, character, individual choices as explanatory variables for social outcomes. News division uses mixed framing. The net score reflects opinion programming's dominance of total airtime and audience. Note: Carlson's tenure was an exception — his content was structural-causation (right-structural), which pulled the net score closer to center before April 2023.
+- **Equality Model (+0.60):** Direct and consistent opposition to DEI, affirmative action, and equity-based policy frameworks across both news and opinion programming. Opportunity-equality framing is one of the most stable axes for the network.
 - **Liberal/Conservative (+0.60):** Coverage frames Democratic positions as the side requiring justification more often than Republican positions. Pattern documented in third-party media analysis.
-- **Foreign Policy (+0.40):** Coverage was historically interventionist (Iraq War support, hawkish on Iran). Post-2022 coverage of Ukraine has become mixed, with some primetime hosts (Carlson before departure) opposing Ukraine aid and others (Bret Baier, news division) covering it neutrally. Current position is mixed; confidence is reduced.
+- **Foreign Policy (+0.40):** Coverage was historically interventionist (Iraq War support, hawkish on Iran). Post-2022 coverage of Ukraine became mixed, with Carlson opposing Ukraine aid and news division covering it neutrally. Post-Carlson departure (April 2023), opinion programming is less explicitly anti-interventionist but the axis remains unstable. Confidence is reduced.
+- **Populism (+0.20):** **This is the most analytically significant axis for Fox News.** The network is structurally split: the news division is institutionalist (defends institutional journalism norms, defers to established expertise, frames coverage through institutional channels). The opinion division has been increasingly populist — Carlson was the most populist voice (-0.80 individually), and his departure shifted the opinion division's net position toward center. Post-Carlson opinion programming retains anti-establishment rhetoric but is less systematically populist. The net score of +0.20 (leaning institutionalist) reflects the structural reality that the news division and institutional infrastructure remain institutionalist even when opinion programming uses populist framing. Fox Corporation is a publicly traded media conglomerate with institutional self-interest in defending institutional media authority — the same structural incentive that makes CNN, MSNBC, and the NYT institutionalist. The populism axis is where Fox's opinion/news split is most visible and most analytically important.
+- **Nationalism (-0.20):** Opinion programming leans nationalist (America First rhetoric, skepticism of international institutions, national-interest framing on trade and immigration). News division covers NATO and international institutions more neutrally. Net score reflects the moderate nationalist lean in opinion programming tempered by neutral news coverage.
+- **Authority (+0.30):** Opinion programming frames state authority as legitimate in law-enforcement and immigration contexts (law-and-order framing). Less consistently authoritarian on health/bodily autonomy (COVID vaccine mandate opposition). The authority position is domain-specific but net-positive — the network more often frames authority expansion as justified than unjustified.
+
+#### Structural Constraints
+
+- **Ownership:** Fox Corporation, controlled by the Murdoch family through dual-class share structure. Ownership has documented editorial influence: internal communications from the Dominion discovery showed coordination between ownership and editorial decisions.
+- **Advertiser base:** Initially mainstream corporate; has shifted toward direct-response and niche advertisers for some opinion programming. The advertiser base shift for opinion programming reduces one constraint on content positioning.
+- **Structural conflicts:** The news/opinion structural split is the defining editorial feature. The two divisions operate under different editorial standards, which produces the axis-score splits documented above. The corporate structure benefits from opinion programming's audience engagement while maintaining news-division credibility.
+
+#### Logic System Note
+
+Fox News provides two critical findings for the 9-axis model.
+
+**Finding 1: The populism split.** Fox is the only organization in the dataset where the news/opinion division split produces a measurably different populism-axis score. The news division is institutionalist (+0.50 if scored independently); the opinion division is populist-leaning (-0.30 post-Carlson, -0.60 during Carlson's tenure). The net score (+0.20) obscures this structural reality. For analytical purposes, Fox should be understood as two overlapping editorial operations with different populism-axis positions sharing a single brand.
+
+**Finding 2: The Dominion evidence and the Logic System's epistemological taxonomy.** The Dominion lawsuit discovery produced internal communications showing hosts privately doubted election-fraud claims they covered on air. This is the cleanest empirical evidence in the dataset for what the Logic System's epistemological classifier targets — but it is NOT a "category error" in the Logic System's technical sense. A category error is *unknowing* — presenting a model-dependent interpretation as known truth because the speaker does not recognize the distinction. The Dominion evidence shows hosts who *knew* the claims were doubtful and presented them as credible anyway. This is deliberate, not a classification mistake. The distinction matters: the epistemological classifier is designed to catch unknowing category errors (which are correctable through better epistemological hygiene); the Dominion pattern is a credibility and integrity finding, not an epistemological one.
 
 #### Notes
 
-Fox News is owned by Fox Corporation, controlled by the Murdoch family. The Dominion lawsuit (filed March 2021, settled April 2023) produced documented internal communications during discovery. The settlement of $787.5 million is the largest publicly disclosed defamation settlement in US media history. The Carlson firing in April 2023 occurred days after the settlement; Fox has not publicly stated whether the two events were connected. Coverage of the 2024 election in opinion programming aligned with Trump campaign positions; the news division operated under different editorial standards. The foreign policy axis confidence is reduced because internal positions on Ukraine diverged across hosts during the documented period.
+Fox News is owned by Fox Corporation, controlled by the Murdoch family. The Dominion lawsuit (filed March 2021, settled April 2023) produced documented internal communications during discovery. The settlement of $787.5 million is the largest publicly disclosed defamation settlement in US media history. The Carlson firing in April 2023 occurred days after the settlement; Fox has not publicly stated whether the two events were connected. Coverage of the 2024 election in opinion programming aligned with Trump campaign positions; the news division operated under different editorial standards. The foreign policy axis confidence is reduced because internal positions on Ukraine diverged across hosts during the documented period. The progressive axis from the 5-axis model has been decomposed into causation-analysis and equality-model; the equality-model score carries over directly while causation-analysis captures the individual-responsibility framing previously bundled into the progressive axis.
 
 ---
 
 ### MSNBC
 
 **Platform:** Cable news, MSNBC.com, streaming
-**Current Leaning:** Left
-**Ideological Coherence:** 0.65 (moderate)
+**Owner:** NBCUniversal (being spun off to "Versant" entity as of November 2024)
+**Current Leaning:** Left Institutionalist
+**Ideological Coherence:** 0.68 (moderate — 9-axis reveals consistent institutional-left positioning)
 **Driver:** Mixed (institutional)
 
 #### Bias Trajectory
@@ -909,25 +960,45 @@ Fox News is owned by Fox Corporation, controlled by the Murdoch family. The Domi
 | ~2008 | Center-Left | Hired Rachel Maddow, Keith Olbermann. Positioning shifted to progressive opinion programming alongside news. |
 | ~2017 | Left | Coverage of Trump administration emphasized investigation and accountability framings. |
 | ~2024 | Left | Coverage of 2024 election. Joy Reid show cancelled in February 2025 as part of programming changes during NBCUniversal spinoff to Versant. |
-| ~2025 | Left | NBCUniversal cable spinoff to "Versant" entity announced in November 2024; ongoing in 2025. Maddow contract renegotiated as part of transition. |
+| ~2025 | Left | NBCUniversal cable spinoff to "Versant" entity announced in November 2024; ongoing as of April 2026. Maddow contract renegotiated as part of transition. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | +0.20 | Leaning Social Democrat | Stable | 65% |
 | Speech | +0.20 | Leaning Reasonable Censorship | Stable | 50% |
-| Progressive | -0.50 | Moderate Progressive | Stable | 75% |
+| Causation Analysis | -0.50 | Structural | Stable | 70% |
+| Equality Model | -0.40 | Leaning Outcome | Stable | 65% |
 | Liberal/Conservative | -0.50 | Moderate Liberal | Stable | 75% |
 | Foreign Policy | +0.30 | Leaning Interventionist | Stable | 60% |
+| Populism | +0.60 | Strong Institutionalist | Stable | 80% |
+| Nationalism | +0.30 | Leaning Globalist | Stable | 60% |
+| Authority | +0.10 | Centrist (frames institutional authority as legitimate when exercised by aligned institutions) | Stable | 45% |
 
 #### Axis Justifications
 
-- **Economic (+0.20):** Editorial coverage of economic policy favors expansion of social programs and progressive taxation. Position aligns with Democratic Party center-left consensus.
-- **Speech (+0.20):** Has supported specific content moderation decisions. Has not articulated a general principle on speech regulation.
-- **Progressive (-0.50):** Coverage of equity-related topics consistently aligns with progressive framings across multiple shows and topic areas.
-- **Liberal/Conservative (-0.50):** Coverage frames Republican positions as the side requiring justification more often than Democratic positions.
-- **Foreign Policy (+0.30):** Coverage of NATO, Ukraine, and Israel aligns with mainstream Democratic foreign policy consensus, which is interventionist on the axis scale.
+- **Economic (+0.20):** Editorial coverage of economic policy favors expansion of social programs and progressive taxation. Position aligns with Democratic Party center-left consensus. Does not advocate systemic restructuring — the position is social-democratic, not socialist.
+- **Speech (+0.20):** Has supported specific content moderation decisions. Has not articulated a general principle on speech regulation. Coverage frames deplatforming of far-right figures as justified. The position is moderate — network does not advocate broad censorship but treats editorial gatekeeping as a legitimate institutional function.
+- **Causation Analysis (-0.50):** Dominant framing across programming emphasizes systemic and institutional causes for social outcomes: systemic inequality, institutional racism, structural barriers to opportunity. Individual-causation framing is rare in editorial coverage. This is the network's most consistent analytical frame and is more pronounced than CNN's structural lean.
+- **Equality Model (-0.40):** Coverage of equity-related topics consistently frames outcome disparities as evidence of systemic problems requiring structural correction. DEI, affirmative action, and equity-based policy are covered sympathetically. The position is less absolute than individual progressive commentators — the network's institutional framing moderates toward policy solutions rather than revolutionary restructuring.
+- **Liberal/Conservative (-0.50):** Coverage frames Republican positions as the side requiring justification more often than Democratic positions. Pattern is consistent across multiple shows and hosts.
+- **Foreign Policy (+0.30):** Coverage of NATO, Ukraine, and Israel aligns with mainstream Democratic foreign policy consensus, which is interventionist on the axis scale. Coverage of Middle East conflicts has shown internal tension (some hosts more critical of Israel policy than the editorial default).
+- **Populism (+0.60):** MSNBC's coverage is strongly institutionalist from the left-establishment position. Coverage defends Democratic institutional norms, DOJ, courts, election administration, and the legitimacy of institutional expertise. Trump-era coverage was explicitly framed as defense of institutions against populist assault. Coverage of left-populism (Sanders campaigns) was more ambivalent than hostile but consistently framed progressive goals through institutional channels rather than anti-institutional ones. Maddow's individual profile is the clearest expression of this position: her coverage is structurally about defending institutional legitimacy. The network benefits from a paradigm where institutional media and institutional governance are legitimate — the same structural self-interest that makes CNN and Fox institutionalist.
+- **Nationalism (+0.30):** Coverage defaults to multilateral-institutional framing: support for international institutions, NATO, multilateral climate agreements. Similar to CNN's positioning. Not strongly globalist — retains US-interest framing as baseline.
+- **Authority (+0.10):** Coverage frames state authority as legitimate when exercised through established institutional channels by aligned administrations. More skeptical of authority when exercised by Republican administrations or law-enforcement agencies in civil-rights contexts. The domain-dependency makes a confident net score difficult. The position is not principled-libertarian or principled-authoritarian — it is institutional-alignment-dependent.
+
+#### Structural Constraints
+
+- **Ownership:** NBCUniversal, currently being spun off to Versant entity (announced November 2024, ongoing as of April 2026). The spinoff introduces uncertainty about future editorial direction.
+- **Advertiser base:** Corporate-mainstream, similar to CNN. Progressive-leaning audience creates advertiser selection effects.
+- **Structural conflicts:** The spinoff to Versant is the primary current structural constraint. Contract renegotiations and programming changes (Joy Reid cancellation February 2025, Maddow schedule changes) are occurring during this transition. Post-spinoff editorial positioning is uncertain.
+
+#### Logic System Note
+
+MSNBC's 9-axis profile reveals the same structural finding as CNN: strong institutionalism on the populism axis despite opposite-side content-axis positioning from Fox News. MSNBC defends institutional legitimacy from the left (DOJ, courts, election administration, expert consensus) just as Fox's news division defends it from the right. The 5-axis model saw MSNBC and Fox as mirror opposites; the 9-axis model reveals they share the populism-axis position (+0.60 institutionalist for both MSNBC and CNN, +0.20 net for Fox). This shared institutionalism is a structural bias created by legacy media's institutional self-interest: all four outlets benefit from a paradigm where institutional authority and expertise-based gatekeeping are legitimate. Independent media (Carlson's TCN, Breaking Points, etc.) separates from legacy media primarily on the populism axis, not the content axes. The populism axis is where legacy-vs-independent is most clearly measured.
+
+The causation-analysis axis provides additional precision that the old progressive axis could not. MSNBC's progressive score (-0.50) was a bundled measurement of two distinct positions: structural causation (-0.50) and outcome-equality (-0.40). These are related but separable — one can believe causes are structural without believing outcomes should be equalized (and vice versa). The decomposition enables more precise comparative analysis.
 
 #### Notes
 
@@ -938,8 +1009,9 @@ MSNBC operates within the NBCUniversal cable portfolio currently being spun off 
 ### The New York Times
 
 **Platform:** Newspaper, NYT.com, podcasts (The Daily, others)
-**Current Leaning:** Center-Left
-**Ideological Coherence:** 0.65 (moderate)
+**Owner:** NYT Company (Sulzberger family dual-class voting control)
+**Current Leaning:** Center-Left Institutionalist
+**Ideological Coherence:** 0.70 (moderate-high — 9-axis reveals the paper-of-record self-conception as a coherent institutional position)
 **Driver:** Mixed (institutional)
 
 #### Bias Trajectory
@@ -952,27 +1024,49 @@ MSNBC operates within the NBCUniversal cable portfolio currently being spun off 
 | ~2020 | Center-Left | Tom Cotton "Send in the Troops" op-ed published June 2020; James Bennet (editorial page editor) departed after internal staff dispute over publication. |
 | ~2024 | Center-Left | Coverage of 2024 election. Editorial board endorsed Harris. Internal disputes documented over coverage of Israel-Hamas war and trans-rights coverage. |
 
-#### Multi-Axis Position
+#### Multi-Axis Position (9-axis)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
 | Economic | +0.10 | Centrist | Stable | 55% |
 | Speech | +0.20 | Leaning Reasonable Censorship | Stable | 55% |
-| Progressive | -0.40 | Leaning Progressive | Stable | 70% |
+| Causation Analysis | -0.40 | Leaning Structural | Stable | 65% |
+| Equality Model | -0.30 | Leaning Outcome | Stable | 60% |
 | Liberal/Conservative | -0.40 | Leaning Liberal | Stable | 70% |
 | Foreign Policy | +0.30 | Leaning Interventionist | Stable | 65% |
+| Populism | +0.80 | Strong Institutionalist | Stable | 90% |
+| Nationalism | +0.30 | Leaning Globalist | Stable | 65% |
+| Authority | +0.20 | Leaning Authoritarian (editorially: treats institutional authority as legitimate default) | Stable | 55% |
 
 #### Axis Justifications
 
-- **Economic (+0.10):** Editorial board has supported some progressive economic policies (minimum wage increases, healthcare expansion). News coverage covers business and finance with corporate-mainstream framing. Combined position is approximately centrist.
-- **Speech (+0.20):** The 2020 Cotton op-ed dispute resulted in internal policy changes regarding op-ed publication standards. Coverage has supported some content moderation decisions. Position is leaning toward acceptance of editorial gatekeeping.
-- **Progressive (-0.40):** Coverage of equity-related topics more often aligns with progressive framings. Internal disputes have been documented about coverage of trans rights specifically (Pamela Paul column dispute, 2023-2024).
+- **Economic (+0.10):** Editorial board has supported some progressive economic policies (minimum wage increases, healthcare expansion). News coverage covers business and finance with corporate-mainstream framing. Combined position is approximately centrist. The paper's subscriber base is affluent-professional, which constrains economic coverage toward market-accepting framing.
+- **Speech (+0.20):** The 2020 Cotton op-ed dispute resulted in internal policy changes regarding op-ed publication standards. The outcome — editorial page editor departed, standards tightened — is itself an expression of the paper's institutionalist position: the institution's editorial judgment was reasserted over open-platform principles. Coverage has supported some content moderation decisions. Position reflects acceptance of editorial gatekeeping as a legitimate institutional function.
+- **Causation Analysis (-0.40):** Investigative journalism's default analytical frame is institutional and systemic: who in the system failed, what structural incentives produced the outcome, which institutional checks broke down. This is not an ideological choice — it is a methodological one inherent to long-form investigative reporting. Coverage of individual accountability exists but is framed within institutional context (individual actors failed within systems that should have caught them). The structural lean is moderate because the paper's opinion section includes individualist perspectives.
+- **Equality Model (-0.30):** Coverage of equity-related topics more often aligns with outcome-equality framing. Internal disputes have been documented about coverage of trans rights specifically (Pamela Paul columns 2023-2024), indicating the position is contested internally. The net score reflects the editorial default, not unanimity.
 - **Liberal/Conservative (-0.40):** Coverage frames Republican positions as the side requiring justification more often than Democratic positions. Pattern documented in third-party media analysis.
-- **Foreign Policy (+0.30):** Coverage aligns with US foreign policy consensus on NATO, Ukraine, and Israel. Editorial board has supported continued military aid to Ukraine and Israel.
+- **Foreign Policy (+0.30):** Coverage aligns with US foreign policy consensus on NATO, Ukraine, and Israel. Editorial board has supported continued military aid to Ukraine and Israel. The paper's international bureau network creates structural alignment with multilateral-institutional framing.
+- **Populism (+0.80):** **The NYT is the strongest institutionalist in the dataset.** The paper-of-record self-conception IS the institutionalist position: the NYT's editorial identity is predicated on the legitimacy of institutional expertise, editorial gatekeeping, and credentialed authority. Gatekeeping is literally its editorial function — the paper decides what is newsworthy, which sources are credible, and which claims merit publication. Coverage of populist movements (Trump, Sanders, grassroots media) consistently frames them through institutional lenses: are they a threat to institutional norms? Do they respect institutional processes? The Cotton op-ed dispute is a perfect micro-example: the institution reasserted editorial gatekeeping authority against open-platform principles. The 90% confidence reflects the fact that this is not merely a coverage pattern — it is the structural identity of the organization. The NYT cannot become populist without ceasing to be the NYT.
+- **Nationalism (+0.30):** Coverage defaults to multilateral-institutional framing: support for NATO, international institutions, multilateral agreements. The paper's international bureau network and global subscriber base create structural alignment with globalist-institutional framing. Not strongly globalist — US-interest framing remains baseline.
+- **Authority (+0.20):** Editorially treats institutional authority as the legitimate default. Coverage of government overreach focuses on procedural violations and institutional-norm breaches rather than questioning whether institutions should have the authority. The 2003 Iraq War coverage — reliance on institutional sources (government intelligence claims) that proved incorrect — is a documented case of this institutional-authority default producing coverage failure.
+
+#### Structural Constraints
+
+- **Ownership:** NYT Company, dual-class share structure giving the Sulzberger family voting control. Ownership structure insulates editorial decisions from shareholder pressure but concentrates editorial direction in a single family.
+- **Subscriber base:** Affluent-professional, overwhelmingly college-educated, concentrated in coastal metropolitan areas. Subscriber demographics create audience-alignment pressure on content-axis positioning (center-left) independent of editorial intent.
+- **Structural conflicts:** The paper-of-record identity creates a specific structural conflict: the institution's credibility depends on perceived neutrality, but its subscriber base and internal staff demographics create pressure toward progressive-coded content positioning. The Cotton op-ed dispute and trans-rights coverage disputes are documented instances of this structural tension.
+
+#### Logic System Note
+
+The NYT provides the strongest single-case evidence for the 9-axis model's central organizational finding: **all four legacy outlets score institutionalist on populism despite being on opposite sides of every content axis.** The NYT scores +0.80 institutionalist — the highest in the dataset — because the paper-of-record self-conception is the institutionalist position in its purest form. Gatekeeping, credentialed expertise, and institutional authority are not just the NYT's editorial preferences; they are its organizational identity and business model.
+
+This shared institutionalism across all four legacy outlets is a structural bias created by institutional self-interest: legacy media benefits from a paradigm where institutional authority is legitimate, expert gatekeeping is necessary, and populist challenges to institutional credibility are threats. The 5-axis model could not see this shared blind spot because it lacked the populism axis. The 9-axis model reveals that **legacy-media-vs-independent-media is a populism-axis distinction that cuts across the left-right content axes**, just as populist-vs-establishment cuts across left-right for individual commentators. This is the organizational equivalent of the Shapiro-Maddow finding (structurally different individuals collapsing to similar 5-axis scores) and the Breaking Points cross-partisan-populism finding (left and right populists sharing a populism-axis position that separates them from their same-side establishment counterparts).
+
+The practical implication: any analysis system that measures only content-axis positioning (left-right, progressive-conservative) will systematically miss the structural bias shared by all legacy outlets. The populism axis is where legacy media's blind spot lives, and it is invisible to the 5-axis model.
 
 #### Notes
 
-The NYT is owned by The New York Times Company, which has dual-class share structure giving the Sulzberger family voting control. Internal editorial disputes have been documented in multiple recent periods (Cotton op-ed 2020, trans-rights coverage 2023-2024, Israel-Hamas war coverage 2023-2024). The 2003 Iraq War coverage included documented errors that were later subject to internal review. The progressive and liberal/conservative axes are scored based on observable coverage patterns; the institution's stated editorial position is "neutral journalism with separate opinion pages."
+The NYT is owned by The New York Times Company, which has dual-class share structure giving the Sulzberger family voting control. Internal editorial disputes have been documented in multiple recent periods (Cotton op-ed 2020, trans-rights coverage 2023-2024, Israel-Hamas war coverage 2023-2024). The 2003 Iraq War coverage included documented errors that were later subject to internal review. The progressive axis from the 5-axis model has been decomposed into causation-analysis and equality-model; the decomposition reveals that the paper's "progressive" score was a composite of structural-causation analysis (the investigative journalism default) and moderate outcome-equality framing. The institution's stated editorial position is "neutral journalism with separate opinion pages."
 
 ---
 
@@ -1833,31 +1927,47 @@ The 13/14 rate is the **highest prediction accuracy achieved by the tenet-extrac
 
 ---
 
-## Axis Definitions
+## Axis Definitions (9-axis model)
 
 These axes are **independent** — a person's position on one axis does not determine their position on another.
 
-### Economic System: Capitalist (-1) ←→ Communist (+1)
+### 1. Economic System: Capitalist (-1) ←→ Communist (+1)
 
 How should economic resources be owned and allocated? Private markets vs. collective/state control. Most people fall somewhere in between (mixed economy, regulated capitalism, social democracy).
 
-### Speech: Free Speech Absolutist (-1) ←→ Reasonable Censorship (+1)
+### 2. Speech: Free Speech Absolutist (-1) ←→ Reasonable Censorship (+1)
 
 Should institutions restrict expression to prevent harm, or is unrestricted expression the safeguard? This axis has flipped its partisan alignment in the last decade — the left used to be the free-speech side (ACLU), the right used to favor censorship (obscenity laws). The current alignment is reversed in many cases.
 
-### Progressive: Progressive/Equity (-1) ←→ Non-Progressive/Efficiency (+1)
+### 3. Causation Analysis: Structural (-1) ←→ Individual (+1)
 
-**This is NOT the same as liberal/conservative.** Rooted in the Progressive Era (1890s-1920s). Progressives believe society should provide targeted equity — differential support calibrated to individual disadvantage — to produce more equal outcomes. Non-progressives argue that equity interventions introduce friction and perverse incentives that reduce overall system output.
+When explaining social outcomes (poverty, crime, health disparities), does the content frame causes as systemic/institutional or as individual choices/character? This axis was previously bundled into the "Progressive" axis but is analytically separable. Structural causation is not inherently left-coded — right-structural analysis exists (e.g., Carlson's "elite capture" framing).
 
-### Liberal/Conservative: Liberal (-1) ←→ Conservative (+1)
+### 4. Equality Model: Outcome Equality (-1) ←→ Opportunity Equality (+1)
+
+Should policy aim to equalize outcomes (redistribution, equity-based intervention) or equalize starting conditions and let outcomes vary (meritocratic, opportunity-focused)? This axis was previously bundled into the "Progressive" axis. The decomposition enables distinguishing between "causes are structural" (causation-analysis) and "outcomes should be equalized" (equality-model) — positions that are correlated but separable.
+
+### 5. Liberal/Conservative: Liberal (-1) ←→ Conservative (+1)
 
 **This is about pace and risk tolerance for change, not direction.** Liberal: willing to change the status quo because equality and freedom are worth the risk. Conservative: the status quo of the previous 1-2 generations represents accumulated wisdom; the burden of proof is on those proposing change.
 
 A liberal might want change through deregulation (change, but non-progressive). A progressive might want existing equity programs preserved (which is conservative about those programs).
 
-### Foreign Policy: Isolationist (-1) ←→ Interventionist/War Hawk (+1)
+### 6. Foreign Policy: Isolationist (-1) ←→ Interventionist/War Hawk (+1)
 
 Should the nation focus domestically and avoid military entanglements, or actively project power internationally? This axis cuts across all others — there are isolationists and hawks on both the left and the right.
+
+### 7. Populism: Populist (-1) ←→ Institutionalist (+1)
+
+Does the content treat established institutions (government agencies, media, academia, international bodies) as legitimate custodians of expertise and authority, or as captured/illegitimate entities that "the people" should bypass or dismantle? This axis cuts across left-right: left-populists (Sanders) and right-populists (Carlson) share the populist position; left-institutionalists (Maddow) and right-institutionalists (Shapiro) share the institutionalist position. **For organizations:** all legacy media outlets score institutionalist because they have structural self-interest in defending institutional authority, expertise, and gatekeeping — this shared bias exists across ideological lines.
+
+### 8. Nationalism: Nationalist (-1) ←→ Globalist (+1)
+
+Is the nation-state the primary unit of political obligation (national interest, sovereignty, border control), or should supranational institutions and multilateral frameworks take precedence (international law, global governance, open borders)? Distinct from foreign policy — one can be nationalist+interventionist (neoconservative) or nationalist+isolationist (paleoconservative).
+
+### 9. Authority: Libertarian (-1) ←→ Authoritarian (+1)
+
+Should state power be minimized to protect individual liberty, or expanded to enforce social order? **For individuals**, this axis is domain-split: speech, health/bodily autonomy, commerce/platform, immigration, and culture/family are scored separately because most people hold different authority positions across domains. **For organizations**, the authority axis captures how the organization frames state/institutional power editorially — whether coverage treats authority expansion as justified or as overreach.
 
 ---
 

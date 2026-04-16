@@ -815,6 +815,18 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 
 **Key analytical note:** CNN's low coherence score reflects the fact that it's an institution in identity crisis. It tried to be the neutral network, then became the anti-Trump network, then tried to be neutral again, and is now somewhere in between. The most useful analytical question for CNN is not "what is their bias?" but "whose bias?" — CNN's output is the aggregate of many individual journalists with different positions, filtered through editorial leadership that has changed its strategic direction multiple times. Tracking CNN at the anchor/show level would be more analytically useful than tracking it as a monolith.
 
+#### Logic System Analysis
+
+**Coherence recalculation:** 0.40 (low, "identity crisis") → 0.65 (moderate). The 9-axis view reveals that CNN's apparent incoherence was partially a measurement artifact — the populism axis (+0.60, strong institutionalist) has been **stable across all leadership eras** (Zucker, Licht, Thompson). What changed across eras was the content-axis positioning (how far left vs center on progressive, LC, equality-model); what didn't change was the structural-institutional framing. The Licht-era "recentering" attempted to move content axes toward center but did not touch the populism axis at all — the network remained institutionalist throughout. This suggests the populism axis is more structurally determined (by institutional self-interest) than the content axes (which track leadership and market pressure).
+
+**The key organizational finding:** CNN, Fox News, MSNBC, and the NYT **all score institutionalist on populism** despite being on opposite sides of every content axis. The 5-axis model could not see this shared blind spot because it lacked the populism axis. The 9-axis model reveals that **legacy-media-vs-independent-media is primarily a populism-axis distinction**, not a content-axis distinction — the same finding that emerged for individual commentators (Shapiro and Maddow are both institutionalist; Carlson and Piker are both populist). The organizational version is stronger because the institutional self-interest mechanism is explicit: legacy media benefits from a paradigm where institutional authority is the legitimate information standard.
+
+**Category errors in the original profile:**
+- *"Institution in identity crisis"* — partially wrong. CNN's **content-axis positioning** has been in flux, but its **populism-axis positioning** (institutionalist) and **foreign-policy positioning** (interventionist) have been stable for decades. "Identity crisis" describes the content axes accurately and the structural axes inaccurately. The 9-axis model separates these two types of stability for the first time.
+- *"Tracking CNN at the anchor/show level would be more analytically useful than tracking it as a monolith"* — correct observation that the 9-axis model now vindicates. The content axes vary by anchor/show; the structural axes (populism, foreign-policy, nationalism) are institutional-level and don't vary by anchor. Tracking at both levels simultaneously is the right approach: structural axes at institutional level, content axes at anchor/show level.
+
+**Logic System verdict:** Revise. The original profile correctly identifies the content-axis instability and the "whose bias?" question. The 9-axis rewrite in `revised_profile_breakdown.md` preserves both observations and adds the populism-axis finding (stable institutionalism across leadership eras) and the structural-constraints section (ownership, advertiser base, corporate conflicts). Use CNN as the canonical illustration of the legacy-media-institutionalist structural bias.
+
 ---
 
 ### Fox News
@@ -827,6 +839,10 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 | ~1996 | Center-Right | Launched as alternative to perceived liberal media bias. |
 | ~2015 | Right | Solidified as the primary right-leaning cable news network. |
 
+#### Logic System Analysis (stub — original profile had minimal content)
+
+**9-axis key finding:** Fox News has the most analytically significant **populism split** of any organization in the dataset: news division is institutionalist, opinion division has been increasingly populist. Pre-Carlson-departure, the opinion division (Carlson, Hannity, Ingraham) was among the most populist content in cable news; the news division (Baier, news desk) operated under different standards closer to the legacy-media-institutionalist default. The Dominion lawsuit internal communications are the **cleanest empirical evidence in the dataset for what the Logic System calls "presenting tacit understanding as known truth"** — hosts KNEW the election-fraud claims were doubtful and presented them as known truth anyway. The Logic System's standard category error is *unknowing* (the speaker doesn't realize they're presenting a model-dependent claim as known truth). The Dominion evidence documents *deliberate* category error — a distinction the epistemological classifier should formally track. Full 9-axis rewrite is in `revised_profile_breakdown.md`. Fox foreign-policy axis is unstable post-Carlson departure (Carlson was the most isolationist voice in primetime; without him the foreign-policy consensus has shifted toward bipartisan-interventionist).
+
 ---
 
 ### MSNBC
@@ -837,6 +853,10 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 | Period | Leaning | Evidence |
 |--------|---------|----------|
 | ~2008 | Left | Positioned as progressive counterpart to Fox News. |
+
+#### Logic System Analysis (stub — original profile had minimal content)
+
+**9-axis key finding:** MSNBC scores strong institutionalist on populism (+0.60) despite being the most left-coded of the three cable networks on content axes. Its institutional-defense framing (DOJ, courts, election administration, rule-of-law norms) maps directly onto Maddow's individual profile populism score (+0.80), which makes structural sense — Maddow was MSNBC's defining voice for over a decade, and her institutionalist framing shaped the network's editorial culture. The Versant spinoff (NBCUniversal cable-properties separation, announced November 2024) introduces structural uncertainty — new ownership/governance may shift editorial direction. Current scores reflect pre-spinoff editorial state and should be revisited after the transition stabilizes. Full 9-axis rewrite is in `revised_profile_breakdown.md`.
 
 ---
 
@@ -849,6 +869,10 @@ The most structurally interesting format in the dataset. By explicitly pairing a
 |--------|---------|----------|
 | ~2000 | Center-Left | Considered paper of record with moderate liberal editorial lean. |
 | ~2016 | Left | Editorial and news coverage shifted further left during 2016+ era. |
+
+#### Logic System Analysis (stub — original profile had minimal content)
+
+**9-axis key finding:** The NYT is the **strongest institutionalist in the organizational dataset** (populism +0.80, 90% confidence). The paper-of-record self-conception IS the institutionalist position — the gatekeeping function is literally its editorial identity. The 2020 Cotton op-ed dispute is the cleanest internal test case: the dispute was between editorial-gatekeeping norms (should an elected Senator's policy argument be published in the opinion section?) and staff-activist norms (the piece was harmful and should not have been platformed). The gatekeeping side lost in practice (Bennet departed) but the gatekeeping framing won in stated policy (the op-ed was later annotated with editorial notes rather than retracted, and publication standards were tightened rather than delegated to staff consensus). This is institutionalism under pressure, and it survived. The News / Opinion structural distinction is the most significant at the NYT because the two sections operate under formally distinct editorial frameworks — the News section's stated standard is evidentiary; the Opinion section's stated standard is argumentation. Scoring them separately is more analytically useful than blending, and the 9-axis rewrite in `revised_profile_breakdown.md` provides the blended score with a note recommending the split. Full 9-axis rewrite is in `revised_profile_breakdown.md`.
 
 ---
 
