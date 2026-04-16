@@ -3370,7 +3370,22 @@ export function assessCoherenceType(
   // Moderate coherence but many axes have LOW CONFIDENCE — the subject doesn't
   // produce differentiable domain positions. They track their employer's line
   // rather than generating positions from an internal framework.
-  if (lowConfidenceRatio >= 0.4 && coherence >= 0.4 && coherence < 0.75) {
+  // IMPORTANT: Low confidence can also come from FORMAT limitations (e.g.,
+  // DeFranco's news-recap format doesn't address populism/nationalism/authority).
+  // To distinguish format-driven low confidence from employer-tracking low
+  // confidence, require EITHER (a) explicit "institution-absorbed" in the notes,
+  // OR (b) coherence below 0.55 (Lemon range) with the low-confidence pattern.
+  const hasInstitutionAbsorbedSignal =
+    notesLower.includes("institution-absorbed") ||
+    notesLower.includes("institution absorbed") ||
+    notesLower.includes("tracks employer") ||
+    notesLower.includes("tracks institutional");
+  if (
+    lowConfidenceRatio >= 0.4 &&
+    coherence >= 0.4 &&
+    coherence < 0.75 &&
+    (hasInstitutionAbsorbedSignal || coherence < 0.55)
+  ) {
     return {
       type: "institution-absorbed",
       confidence: 0.6 + lowConfidenceRatio * 0.3,
