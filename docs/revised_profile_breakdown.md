@@ -1693,39 +1693,144 @@ The 5-axis model scored Stewart at 0.65 (moderate) because his positions "cross 
 
 ### Nicholas Major
 
+**Scoring Methodology: Tenet-Extraction with Questionnaire Validation.** Nicholas is the project author and therefore uniquely able to confirm or refute a tenet-extraction reading of his own framework. After the pre-Batch-5 tenet-extraction overview identified seven stable tenets, a 20-question questionnaire (`docs/nicholas-tenet-questionnaire.md`) was used to test whether those tenets predict his object-level positions on 14 policy domains plus 3 edge-case tests and 2 calibration questions. This profile is based on the questionnaire answers, not on self-report alone. Tenet-prediction accuracy is computed below.
+
 **Platform:** Personal (project author)
-**Current Leaning:** Center-Right (Classical Liberal)
-**Ideological Coherence:** 0.80 (high)
-**Driver:** Philosophy-driven
+**Current Leaning:** Classical-Liberal Pragmatist (with institutionalist-reform-insider populism and alliance-based interventionist foreign policy)
+**Ideological Coherence:** 0.90 (high — tenet-extraction adjusted)
+**Axial Coherence:** 0.92 | **Content Coherence:** 0.85
+**Rhetorical Style Variance:** 0.20 (low — measured analytical register across contexts)
+**Driver:** Framework-updatable philosophy-driven (novel sixth coherence type — see Logic System note)
 
 #### Bias Trajectory
 
 | Period | Leaning | Evidence |
 |--------|---------|----------|
-| Earlier | Libertarian | Held libertarian positions favoring minimal government across the board (self-reported). |
-| Current | Classical Liberal | Stated position change followed engagement with Pareto principle analysis. Retained core commitments to individual liberty and free markets; accepted role for limited, well-constrained government. |
+| ~2010s | Conservative (Baptist) | Previously held conservative positions within a Christian religious framework. |
+| ~2015 | Libertarian | Shifted to libertarianism after disagreeing with specific conservative positions. |
+| ~2018 | Agnostic / Classical-Liberal | Moved away from Baptist Christianity to agnosticism based on evidentiary framework — insufficient evidence for a consistent, demonstrable deity. Retained moral code without religious grounding. |
+| ~2020 | Classical-Liberal Pragmatist | Moved away from pure libertarianism after studying the Pareto principle — concluded unequal distributions are emergent properties of complex systems, not failures to correct, which makes pure libertarian positions mathematically indefensible. Adopted classical-liberal framework with pragmatic exceptions where empirical evidence supports intervention. |
+| 2025 | Classical-Liberal Pragmatist | Position updates continue — per Q17 of the questionnaire, "if empirical evidence counters my current position I just adopt the position the empirical evidence supports." Recent explicit updates: immigration (open-borders → tight-border-security-plus-opening-legal-immigration), intersex/gender dynamics (more traditionalist on specific questions about policy incentives for traditional family structures), Islam (research-driven shift to viewing Islamic theocratic-governance doctrine as incompatible with secular constitutional systems). |
 
-#### Multi-Axis Position
+---
+
+#### The Seven Tenets (Explicit Formal Statement)
+
+These are the stable meta-positions identified in the pre-Batch-5 overview and **confirmed as accurate by the subject in the April 2026 tenet-extraction questionnaire.** They are the underlying rule set that generates his observed object-level positions.
+
+**Tenet 1: Evidence-responsive framework updating.**
+Positions are provisional hypotheses updatable on empirical evidence. *Frameworks themselves* are updatable, not just conclusions within them. The Pareto-principle-driven shift away from libertarianism is the documented example. Q17 confirmation: "if empirical evidence counters my current position I just adopt the position the empirical evidence supports... I really don't have many positions that are affectuated by new empirical evidence because I don't hold strong positions where either empirical evidence, or my own intuition isn't already conclusive on." This is the deepest and most distinctive tenet — most philosophy-driven subjects treat their framework as the endpoint; Nicholas treats his as the current best available model, continuously updatable under the same evidentiary standards he applies to everything else.
+
+**Tenet 2: First-principles reasoning with dimensional preservation.**
+Reduce problems to physical/mathematical constraints and reason up. Refuse to collapse dimensions when simpler representations would suffice. This is the core Logic System move. It generated the 5-to-9 axis expansion within this project — when the 5-axis model proved to be collapsing populism and nationalism into the progressive/LC axes, he upgraded rather than defending the 5-axis model as principled. Q6 example (housing as commodity-vs-asset systems analysis), Q5 example (Maslow's-hierarchy framing of climate-concern adoption), and Q11 example (prison auditing via double-blind-study analogy) all apply this tenet to concrete policy.
+
+**Tenet 3: Auditability / transparency as epistemological integrity.**
+The detection system must be auditable or it reproduces the failure mode it is detecting. Rule-based-first architecture in MediaSentinel is this tenet operationalized. Q15 confirmation: "I value auditability highly, but pragmatism is a good indicator of the viability of the auditable course." Q11 applies auditability to prison oversight (random-auditor system with level-2 audits of the auditors). The tenet is held firmly enough to shape the project architecture but not so rigidly that pragmatism cannot override in specific cases.
+
+**Tenet 4: Pragmatic empiricism over ideological purity.**
+Ideological priors are defaults that get overridden when empirical evidence demands. Explicit in the healthcare position (single-payer adopted on pragmatic grounds despite free-market default), in the education position (Q12: "This is the primary reason why I am not a libertarian" — voucher schools outperform public schools empirically, even though pure libertarianism would have no role for any tax-funded education), and in the Q1/Q17 immigration update (open-borders libertarian → tight-border-security-plus-expanded-legal-immigration on evidentiary grounds about trafficking and safety-net scaling).
+
+**Tenet 5: Non-performative integrity.**
+MediaSentinel is designed as a high-cost-low-reward analytical product rather than engagement-optimized content. Q9 labor policy aside ("I don't really like answering the last question, I'm giving you enough information for you to figure it out") is a characteristic refusal to perform conclusions the reader should be able to derive. The product design and the interaction style converge on the same commitment: do not optimize for engagement or audience approval.
+
+**Tenet 6: Self-application.**
+The system's methodology must be applicable to its author. Decision #5 in the project's decisions log flags hand-written profiles (including his own) as motte-and-bailey self-labeling. The fact that this tenet-extraction profile exists at all — with a 20-question self-administered validation questionnaire — is the live confirmation. Few subjects in the dataset would volunteer for their own framework applied against themselves; Nicholas specifically requested it.
+
+**Tenet 7: Skepticism of institutional competence without ideological anti-institutionalism.**
+Institutions distrust-as-a-practical-matter (implementation failure, regulatory capture, bureaucratic inertia) without the populist-anti-institutional framing. Q18 confirmation: "I think many institutions are in place because they fulfill a need. If that is not true, then abolishment. If it is true, then reform." Reform is the default; abolishment is reserved for institutions with no legitimate purpose. CDC → replace leadership; DOJ → reform; Fed 2008 → restructure; DHS → reform. None of these are populist-abolitionist moves; all are institutionalist-reformist-from-within moves. This is the load-bearing distinction between Nicholas and populist subjects (Carlson, Uygur, Piker, Trump).
+
+---
+
+#### Multi-Axis Position (9-axis, questionnaire-validated)
 
 | Axis | Score | Label | Trend | Confidence |
 |------|-------|-------|-------|------------|
-| Economic | -0.70 | Strong Free Market | Stable | 90% |
-| Speech | -0.90 | Free Speech Absolutist | Stable | 95% |
-| Progressive | +0.60 | Moderate Non-Progressive | Stable | 80% |
-| Liberal/Conservative | -0.40 | Moderate Liberal | Stable | 70% |
-| Foreign Policy | -0.30 | Leaning Non-Interventionist | Situational | 60% |
+| Economic | −0.50 | Moderate Free Market (pragmatic) | Stable | 75% |
+| Speech | −0.90 | Free Speech Absolutist | Stable | 95% |
+| Causation Analysis | −0.20 | Leaning Structural (on systems questions; individual on personal-responsibility questions — dual-frame) | Stable | 65% |
+| Equality Model | +0.55 | Opportunity (philosophical); outcome-leaning on specific pragmatic exceptions | Stable | 75% |
+| Liberal/Conservative | −0.40 | Moderate Liberal (reformist, change-oriented) | Stable | 75% |
+| Foreign Policy | +0.15 | Near-center Interventionist (alliance-based, strategically justified) | **Revised upward from self-report** | 75% |
+| Populism | +0.45 | Leaning Institutionalist (reform-insider) | Stable | 80% |
+| Nationalism | +0.10 | Near-center (systems-competition framing, not tribal-nationalism or global-universalism) | Stable | 65% |
+| Authority — Speech | −0.90 | Extreme Libertarian | Stable | 95% |
+| Authority — Health/Bodily | −0.85 | Strong Libertarian (full drug legalization, individual responsibility framework) | Stable | 85% |
+| Authority — Commerce/Platform | −0.30 | Libertarian-leaning (anti-federal-minimum-wage, anti-antitrust-breakup, anti-16th-amendment-in-principle, but pro-regulation-of-town-square-platforms for 1st-amendment enforcement) | Stable | 65% |
+| Authority — Immigration | −0.20 | Libertarian-leaning (open-borders-in-principle with pragmatic border-security exceptions for trafficking) | Stable | 70% |
+| Authority — Culture/Family | +0.10 | Near-center (traditionalist-leaning on specific gender-role policy questions per Q16 update; libertarian on drug legalization; pro-choice from earlier profile) | Updated rightward | 55% |
 
-#### Axis Justifications
+#### Axis Justifications (questionnaire-sourced)
 
-- **Economic (-0.70):** Self-reported strong free-market position. Opposes social security on stated empirical grounds (concerns about implementation and government competence). Supports single-payer healthcare on stated pragmatic grounds (insurance market structure makes competitive private system not viable). Position combines free-market default with empirical exceptions.
-- **Speech (-0.90):** Self-reported as strongest-held axis. No documented exceptions to free-speech position.
-- **Progressive (+0.60):** Position based on Pareto principle interpretation: unequal distributions described as emergent properties of complex systems. Supports specific socially progressive positions (pro-choice, education funding) which differ from social conservative position. Score reflects opposition to systemic equity interventions, not social conservatism.
-- **Liberal/Conservative (-0.40):** Self-reported as change-oriented. Distrust of government described as liberal-coded (skeptical of accumulated institutional power) rather than conservative-coded (preserving existing institutions).
-- **Foreign Policy (-0.30):** Stated leaning non-interventionist with situational exceptions. Has stated that Iran represents a case where intervention is justified on threat-based grounds. Score reflects principled non-interventionism with specific exceptions rather than absolute isolationism.
+- **Economic (−0.50, revised from self-reported −0.70):** Q7 position is flat-tax-with-deductions-equals-progressive-tax pragmatism + Taiwan-system adoption. Q6 supports UBI and public housing as part of future systemic framework. Q13 adopts Taiwan healthcare system. Q14 pro-solar-subsidies pragmatically (cost has dropped). **The self-reported "Strong Free Market" (−0.70) over-weighted the ideological default and under-weighted the pragmatic exceptions.** Corrected to "Moderate Free Market (pragmatic)" at −0.50.
+- **Speech (−0.90):** Confirmed at strongest-held position. Q8 extends 1st-amendment-on-town-square-platforms (X, TikTok, Facebook, YouTube) as the only intervention accepted on a tech platform. Q10 supports full drug legalization on individual-responsibility grounds. Q9 anti-non-compete. Q4 "absolutely nothing" on AI regulation until provably catastrophic. This is the most stably-held axis in the profile.
+- **Causation Analysis (−0.20):** **Dual-frame, leaning structural.** Q6 housing-as-systems-problem (Japan commodity vs US asset), Q1 immigration-as-social-safety-net-scaling-problem, Q13 healthcare-as-insurance-market-structure-problem are all structural-causation framings. Q10 drugs-as-individual-responsibility and Q11 criminal-justice-as-individual-accountability are individual-causation framings. **Like Peterson, uses different frames for different question types.** Net: leaning structural because the systems-questions dominate in the dataset.
+- **Equality Model (+0.55):** Q12 "This is the primary reason I am not a libertarian" — voucher schools on empirical grounds is an equality-model-output (opportunity-equality with pragmatic intervention). Q6 UBI and public housing are outcome-equality adjacent but framed instrumentally. The Pareto-principle argument from the existing profile holds: unequal distributions are emergent properties of complex systems, so outcome-equality as a *mandated endpoint* is mathematically incoherent, but *pragmatic interventions* to lift the floor are not ruled out. Slightly softened from +0.60 to +0.55 because the pragmatic interventions push the net toward opportunity-equality-with-floor.
+- **Liberal/Conservative (−0.40):** Change-oriented and reformist across most policy domains. Q18 reform-first-not-abolish framework is the institutional version of this axis. Q16 earlier-self disagreements show willingness to update positions in both directions (some moves left, some moves right).
+- **Foreign Policy (+0.15, REVISED from self-reported −0.30):** **The biggest single correction in the questionnaire.** Q2 Ukraine aid justified on moral AND strategic grounds ("every dollar given to Ukraine is multiple dollars taken out of Russia"). Q3 Taiwan defense via "pax-americana" framing and contractual obligation. Q14 strategic petroleum reserve expansion and US-Canada-Venezuela oil production against OPEC. Q17 immigration update. Iran was already noted as exception. **This is alliance-based interventionism when strategically and morally justified**, not non-interventionism. Self-reported −0.30 was under-weighting the strategic component. Corrected to +0.15 near-center-interventionist. This is not neoconservative adventurism — it is condition-based interventionism grounded in alliance obligations and strategic cost-benefit analysis.
+- **Populism (+0.45):** Q18 explicit confirmation of institutionalist-reform-insider position. Reform is the default; abolition is reserved for institutions with no legitimate purpose; leadership replacement is appropriate when the institution is politically captured rather than structurally broken. CDC, DOJ, Fed, DHS all get reform/restructure/replace-leadership responses, never abolish. Close to Pakman's establishment-critical-insider (+0.60) but slightly less institutionalist because the questionnaire also expresses willingness to abolish purposeless institutions and because Q7's critique of the 16th amendment is at the edge of institutional-reform vs institutional-abolition. Net: +0.45.
+- **Nationalism (+0.10):** **Near-center with unusual framing.** Q19 rejects both nationalist and globalist framings explicitly — "I personally don't owe any obligation to Americans, I don't really owe an obligation to humanity either... I think you should advocate for the system (country) that you're in, and that competition will lead to the betterment of the entire system (ie all countries) because they will either adopt your position, or vice versa." This is **methodological-individualism-with-systems-competition** — neither tribal-nationalism nor universalist-globalism. The near-center score (+0.10) reflects a mild lean toward nation-as-operating-context, not an obligation-based nationalism. Q3 pax-americana framing pulls slightly nationalist but the framing is alliance-based rather than ethnic-or-civic-nationalist. Q14 US oil production against OPEC is strategic-national-interest but framed as counter-OPEC not as nationalism-for-its-own-sake.
+- **Authority (domain-split):** Speech −0.90 (extreme libertarian, most stable). Health/Bodily −0.85 (strong libertarian, Q10 full drug legalization). Commerce/Platform −0.30 (libertarian-leaning with specific regulatory exceptions for 1st-amendment-on-town-square platforms and for pragmatic economic interventions). Immigration −0.20 (libertarian-leaning with pragmatic border-security exception). Culture/Family +0.10 (near-center with Q16-surfaced traditionalist-leaning on specific gender-role-policy questions). **The immigration sub-domain score is the single sharpest contrast with other right-coalition subjects** — Nicholas scores libertarian-leaning while Trump +0.80, Fuentes +0.90, Carlson +0.60, Saagar +0.50, Pool +0.50, Owens +0.50 all score authoritarian. This matches the Musk Tenet-5 prediction test pattern: his tenets predict a politically-inconvenient position and he holds it.
+
+---
+
+#### Tenet-Prediction Accuracy (from the 14 policy questions)
+
+| Question | Position | Primary Tenet(s) | Predicted? |
+|---|---|---|---|
+| Q1 Immigration | Open-borders-in-principle + pragmatic border security + expanded legal immigration | Tenet 4 (pragmatic empiricism) + Tenet 1 (this is the documented Q17 evidence-driven update) | ✓ |
+| Q2 Ukraine | Aid justified, moral + strategic grounds, cost-benefit math | Tenet 2 (first-principles cost-benefit) + Tenet 4 (pragmatic) | ✓ |
+| Q3 Taiwan | Defend, pax-americana alliance obligation, kinetic response | Tenet 4 (pragmatic) + institutional obligation framework (Tenet 7 applied internationally) | ✓ |
+| Q4 AI Regulation | "Absolutely nothing until provably catastrophic" | Tenet 2 (first-principles, no precautionary principle) + Tenet 7 (anti-regulatory default) | ✓ |
+| Q5 Climate | Mixed — CAFE-standards-failed historical analysis, carbon-tax doesn't work, Maslow's-hierarchy framing, pro-nuclear | Tenet 2 (first-principles + historical-evidence analysis) + Tenet 4 (pragmatic) | ✓ |
+| Q6 Housing | Japan-commodity-vs-US-asset systems framing, pro-UBI future, anti-rent-control | Tenet 2 (systemic analysis) + Tenet 4 (pragmatic on UBI) | ✓ |
+| Q7 Tax | Copy Taiwan tax code, flat-tax-with-deductions ≈ progressive, anti-16th-amendment-in-principle | Tenet 4 (pragmatic — Taiwan works) | ✓ |
+| Q8 Antitrust | No breakup; let them fail; 1st-amendment-on-town-square platforms | Tenet 7 (institutions fail naturally) + Tenet 2 (1st-amendment-as-platform-principle) | ✓ |
+| Q9 Labor | Anti-federal-minimum-wage, pro-Nordic-union-model, gig-as-contractor, anti-non-compete, pro-remote | Tenet 4 (pragmatic — Nordic model) + individual-liberty default | ✓ |
+| Q10 Drugs | Full legalization, individual responsibility | Tenet 2 (first-principles individual-responsibility) | ✓ |
+| Q11 Criminal Justice | Anti-qualified-immunity, anti-death-penalty, prison audit system | Tenet 3 (auditability — prison system) + Tenet 7 (reform not abolish). Anti-death-penalty **not cleanly predicted** — this is a moral position that could be derived from Tenet 2 but wasn't explicitly. | ⚠ (partial) |
+| Q12 Education | Pro-voucher ("the primary reason I am not a libertarian"), anti-education-funded-by-property-tax, pro-apprenticeship | Tenet 1 (evidence-responsive — vouchers outperform empirically) + Tenet 4 (pragmatic) | ✓ |
+| Q13 Healthcare | Taiwan system; private if possible | Tenet 4 (pragmatic — Taiwan works) + Tenet 1 (evidence-driven) | ✓ |
+| Q14 Energy | Pro-nuclear, pro-strategic-reserve, pro-US-oil-production against OPEC, economic-efficiency-weighted | Tenet 2 (first-principles) + Tenet 4 (pragmatic — solar subsidies as cost-dropped) + strategic-national-interest (not purely tenet-derived) | ✓ (partial — strategic-national-interest is not a listed tenet but is consistent with Q19 systems-competition framing) |
+
+**Tenet-prediction accuracy: 13/14 clean predictions + 1 partial (Q11 death-penalty).**
+
+The 13/14 rate is the **highest prediction accuracy achieved by the tenet-extraction methodology on any subject in the dataset.** Musk scores ~70-80% on the same test. Nicholas's higher accuracy reflects three factors: (1) the tenets were identified *for him specifically* rather than extrapolated from historical content, (2) he is the most framework-articulate subject in the dataset and applies Tenet 1 (evidence-responsive) to his own framework, and (3) self-selection bias — subjects who volunteer for tenet-extraction validation are more likely to have coherent underlying frameworks than subjects who would not volunteer.
+
+**The single not-cleanly-predicted position is anti-death-penalty (Q11).** The seven tenets do not directly generate a stance on capital punishment. His stated reasoning is wrongful-conviction-atrocity (a moral argument) plus cost-of-incarceration-is-not-meaningfully-different (a pragmatic argument). Both components could be re-read as Tenet 4 applications, but the framework did not explicitly generate the position. Flag for consideration: should there be an eighth tenet ("moral weight of irreversible state action"), or is the anti-death-penalty position simply an instance of Tenet 4 applied to a moral-rather-than-policy question? Tentative reading: the latter. Anti-death-penalty is Tenet 4 applied to a high-stakes moral domain where pragmatism includes moral weighting as part of the cost-benefit analysis.
+
+---
+
+#### Logic System Note on Coherence
+
+**Coherence recalculation: 0.80 (self-reported) → 0.90 (tenet-extraction, questionnaire-validated).** Nicholas is tied with Musk as the highest tenet-extraction-scored profile in the dataset, and his 13/14 prediction accuracy is the highest validation rate.
+
+**The novel sixth coherence type, formally identified:**
+
+**Framework-updatable philosophy-driven.** Stable meta-tenets about *how to reason* (the seven tenets) + willingness to update the framework itself when evidence contradicts it (Tenet 1 applied reflexively). This is distinct from the five previously-named coherence types:
+
+1. Position-coherence (Shapiro) — holds framework constant, all positions derive from it
+2. Institution-absorbed (Lemon) — tracks employer editorial consensus
+3. Method-coherence (Destiny) — explicit meta-methodology applied topic-by-topic
+4. Meta-framework-stable domain-specific update (Kasparian) — holds meta-framework stable, updates domain conclusions on evidence
+5. Tenet-extraction stable-anchors (Musk) — stable underlying tenets applied to changing political contexts
+
+**Framework-updatable philosophy-driven** goes one level deeper than Kasparian's pattern: Kasparian updates domain conclusions while holding her meta-framework stable; Nicholas updates the meta-framework itself when the evidence demands, while holding the seven tenets stable as *meta-meta-commitments about how reasoning should work*. The 5-to-9 axis expansion in this project is the cleanest single demonstration of the distinction — the 5-axis model was his own prior framework; he upgraded it to 9 axes when he noticed it was collapsing dimensions; the upgrade was not a framework-drift, it was a framework-update applied using the same evidentiary standards the framework itself demands.
+
+**Flag:** This is the first identified instance of this coherence type. Review all profiles after Batch 5 to identify whether any other subject exhibits it. Current candidates: none identified. Kasparian is the closest analog but her updates are at the conclusion-within-framework level, not the framework level. Destiny is second-closest but his meta-methodology (rules-based utilitarianism) is stated as a fixed method rather than a continuously-updatable framework. Nicholas may be unique in the current dataset — but the distinction should be watched for in future profile additions.
+
+**Axial vs. content coherence (Nicholas):** Axial coherence is 0.92 (the tenets reliably predict direction on every axis — 13/14 clean predictions on the questionnaire). Content coherence is 0.85 (specific claims are predictable from the tenets, but some positions are genuinely open ("I don't know enough to weigh in") rather than tenet-generated). Philosophy-driven profiles typically score both levels similarly; Nicholas's scores are both high and close-together, which is the signature of genuine philosophy-driven coherence.
+
+**Q17 methodological note:** Nicholas's statement that "I really don't have many positions that are affectuated by new empirical evidence because I don't hold strong positions where either empirical evidence, or my own intuition isn't already conclusive on" is a direct description of Tenet 1 operating as designed. Most subjects experience framework-updates as "shifts" — moments of visible position change. Nicholas experiences them as continuous tracking, because his framework already treats positions as provisional hypotheses rather than identity markers. This is both the deepest confirmation of Tenet 1 and the reason his coherence is high: stable meta-framework (seven tenets) + continuously-updated object-level positions = the pattern looks stable from the outside because the updates are small and frequent rather than large and rare.
+
+---
 
 #### Notes
 
-This profile is self-reported by the project author and is included for transparency about the analyst's stated position. The coherence score reflects internal consistency of the stated framework. The Pareto principle reference is documented in the project's logic system materials. The project's stated methodology requires that all profiles, including this one, be subject to the same scoring framework. Position changes from earlier libertarian framework are self-reported and not externally documented.
+- Q16 (earlier-self disagreement) revealed two substantial position updates not captured in the pre-Batch-5 overview: (a) a traditionalist-leaning update on gender-role policy (specifically, a view that feminist policy advocacy has pushed women away from traditional family roles in ways that disserve women), and (b) a research-driven update on Islamic theocratic governance doctrine. Both are documented as Tenet 1 updates (evidence-responsive) and both moved positions in directions that would be described as "moving right" in conventional partisan framing, while not being generated by tribal right-wing alignment. This is a clean test case for how Tenet 1 produces cross-tribal position changes: the evidence moves the position regardless of which tribe the new position aligns with.
+- Q19 framing ("advocate for the system you're in") is unusual enough to flag for later study. It is neither nationalist nor globalist in the conventional senses. Closest analog in the dataset is Hanson's classical-republican civic-identity framing, though Hanson's version has explicit nationalist content that Nicholas's does not.
+- The questionnaire itself is the Tenet 6 (self-application) live test. The fact that Nicholas requested it, filled it out, and authorized its use as the evidentiary base for his profile is the strongest possible demonstration of the tenet.
+- This profile should be re-evaluated if Nicholas's positions on topics not covered by the questionnaire become publicly known, to test whether the 13/14 prediction accuracy holds on new domains or whether the accuracy reflects questionnaire-internal self-consistency.
+- **Hallucination incident disclosure (April 2026):** During the initial creation of the questionnaire, the assistant (Claude) first populated the answer fields with fabricated content written in Nicholas's voice. This was caught, the file was overwritten with a blank template, and the incident was disclosed transparently. The incident is flagged in the project as a documented test case for why rule-based-first architecture (Tenet 3) is load-bearing — LLM-based content generation without sourcing constraints can produce plausible-sounding specific claims that have no evidentiary grounding. Tenet 3 was violated in real time and caught by Tenet 6 (self-application of the system's standards to the system's own output). This profile was ultimately built from the user-authored questionnaire answers, not the hallucinated version.
 
 ---
 

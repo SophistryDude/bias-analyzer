@@ -2755,7 +2755,120 @@ export const SEED_PROFILES: PoliticalProfile[] = [
     ideologicalCoherence: 0.7,
     rhetoricalStyleVariance: 0.85,
     notes:
-      "Added April 2026. TENET-EXTRACTION METHODOLOGY — canonical test case. Instead of whole-period trajectory blending, identified 8 stable underlying tenets that have not moved across ~20-year public record, then analyzed apparent political drift as applications of those tenets to changing political contexts. Tenets: (1) techno-optimism / engineering acceleration, (2) government as customer/funder of innovation not regulator, (3) speech-libertarianism in principle directional in application, (4) anti-legacy-media grievance (stable since 2013 NYT Model S dispute), (5) pro-skilled-immigration (stable even under MAGA pressure — strongest predictive test), (6) anti-bureaucracy / anti-regulatory-state, (7) engineering-first / first-principles epistemology (stated; applied inconsistently), (8) personal contrarianism / attention-seeking operating mode. ~70-80% of positions are tenet-derived; ~20-30% are variant positions (cultural issues post-2020, specific grievances, business-interest-contaminated foreign policy) that tenets do not fully generate. Tenet-adjusted coherence 0.70 vs 5-axis 0.35. STRONGEST PREDICTIVE TEST: Musk is libertarian-leaning on immigration (-0.20) while every other right-coalition subject scores authoritarian (Trump +0.80, Fuentes +0.90, Carlson +0.60). 5-axis model would predict him as authoritarian-on-immigration by inference from party alignment and would be WRONG. Tenet 5 predicts his actual position correctly. OBSERVER-EFFECT FINDING (preserved): Musk owns X; X is primary site of discussion about Musk; measurement is not independent of measured. DOGE STRUCTURAL CONFLICT: framework + interest aligned, causation undetermined — label as standing flag. RECOMMENDATION: extend tenet-extraction methodology to other subjects with significant pre-political records and ideologically-reversed-or-drifted trajectories (Nicholas Major, Owens pre-2017, Uygur pre-2002, Pool pre-2018). May produce more accurate coherence scores than whole-period blending. Flag for Open Model Questions list as candidate scoring methodology.",
+      "Added April 2026. TENET-EXTRACTION METHODOLOGY — first external test case (Nicholas Major is the questionnaire-validated test case). Instead of whole-period trajectory blending, identified 8 stable underlying tenets that have not moved across ~20-year public record, then analyzed apparent political drift as applications of those tenets to changing political contexts. Tenets: (1) techno-optimism / engineering acceleration, (2) government as customer/funder of innovation not regulator, (3) speech-libertarianism in principle directional in application, (4) anti-legacy-media grievance (stable since 2013 NYT Model S dispute), (5) pro-skilled-immigration (stable even under MAGA pressure — strongest predictive test), (6) anti-bureaucracy / anti-regulatory-state, (7) engineering-first / first-principles epistemology (stated; applied inconsistently), (8) personal contrarianism / attention-seeking operating mode. ~70-80% of positions are tenet-derived; ~20-30% are variant positions (cultural issues post-2020, specific grievances, business-interest-contaminated foreign policy) that tenets do not fully generate. Tenet-adjusted coherence 0.70 vs 5-axis 0.35. STRONGEST PREDICTIVE TEST: Musk is libertarian-leaning on immigration (-0.20) while every other right-coalition subject scores authoritarian (Trump +0.80, Fuentes +0.90, Carlson +0.60). 5-axis model would predict him as authoritarian-on-immigration by inference from party alignment and would be WRONG. Tenet 5 predicts his actual position correctly. OBSERVER-EFFECT FINDING (preserved): Musk owns X; X is primary site of discussion about Musk; measurement is not independent of measured. DOGE STRUCTURAL CONFLICT: framework + interest aligned, causation undetermined — label as standing flag. RECOMMENDATION: extend tenet-extraction methodology to other subjects with significant pre-political records and ideologically-reversed-or-drifted trajectories (Nicholas Major, Owens pre-2017, Uygur pre-2002, Pool pre-2018). May produce more accurate coherence scores than whole-period blending. Flag for Open Model Questions list as candidate scoring methodology.",
+  },
+  {
+    entityId: "nicholas-major",
+    entityName: "Nicholas Major",
+    assessedAt: "2026-04-15",
+    axes: [
+      {
+        axisId: "economic",
+        value: -0.5,
+        confidence: 0.75,
+        evidence:
+          "Moderate Free Market (pragmatic). REVISED from self-reported -0.70 after tenet-extraction questionnaire. Q7 adopts Taiwan tax code wholesale (pragmatic); Q6 supports UBI and public housing as part of future systemic framework; Q13 adopts Taiwan healthcare system; Q14 pro-solar-subsidies pragmatically. Self-reported score over-weighted ideological default and under-weighted pragmatic exceptions. Tenet 4 (pragmatic empiricism) operating.",
+      },
+      {
+        axisId: "speech",
+        value: -0.9,
+        confidence: 0.95,
+        evidence:
+          "Free Speech Absolutist. Most stably-held position. Q8 extends 1st-amendment-on-town-square-platforms (X, TikTok, Facebook, YouTube). Q10 supports full drug legalization on individual-responsibility grounds. Q4 'absolutely nothing' on AI regulation until provably catastrophic. Tenet 2 + Tenet 3 operating (speech is load-bearing for auditability commitment).",
+      },
+      {
+        axisId: "causation-analysis",
+        value: -0.2,
+        confidence: 0.65,
+        evidence:
+          "Leaning Structural (dual-frame). Q6 housing-as-commodity-vs-asset systems framing, Q1 immigration-as-social-safety-net-scaling-problem, Q13 healthcare-as-insurance-market-structure-problem are structural-causation framings. Q10 drugs-as-individual-responsibility and Q11 criminal-justice-as-individual-accountability are individual-causation framings. Like Peterson and Destiny, uses different frames for different question types.",
+      },
+      {
+        axisId: "equality-model",
+        value: 0.55,
+        confidence: 0.75,
+        evidence:
+          "Opportunity (philosophical) with pragmatic outcome-equality interventions where empirically supported. Q12 vouchers-outperform-public-schools ('the primary reason I am not a libertarian'). Pareto-principle argument: unequal distributions are emergent properties of complex systems, so outcome-equality as mandated endpoint is mathematically incoherent, but pragmatic interventions to lift the floor are not ruled out. Softened from self-reported +0.60 to +0.55.",
+      },
+      {
+        axisId: "liberal-conservative",
+        value: -0.4,
+        confidence: 0.75,
+        evidence:
+          "Moderate Liberal (reformist). Change-oriented and reformist across most policy domains. Q18 reform-first-not-abolish framework is the institutional version of this axis. Q16 earlier-self disagreements show willingness to update positions in both directions.",
+      },
+      {
+        axisId: "foreign-policy",
+        value: 0.15,
+        confidence: 0.75,
+        evidence:
+          "Near-center Interventionist (alliance-based). BIGGEST CORRECTION from self-report. Q2 Ukraine aid justified on moral AND strategic grounds. Q3 Taiwan defense via pax-americana framing and contractual obligation. Q14 strategic petroleum reserve expansion and US-Canada-Venezuela oil production against OPEC. Iran was already noted as exception. Pattern is alliance-based interventionism when strategically and morally justified, not non-interventionism. Self-reported -0.30 was under-weighting the strategic component.",
+      },
+      {
+        axisId: "populism",
+        value: 0.45,
+        confidence: 0.8,
+        evidence:
+          "Leaning Institutionalist (reform-insider). Q18 explicit confirmation: 'I think many institutions are in place because they fulfill a need. If that is not true, then abolishment. If it is true, then reform.' CDC, DOJ, Fed, DHS all get reform/restructure/replace-leadership responses, never abolish. Close to Pakman's establishment-critical-insider (+0.60) but slightly less institutionalist because Q7 critiques the 16th amendment at the edge of institutional-reform vs institutional-abolition. Tenet 7 operating.",
+      },
+      {
+        axisId: "nationalism",
+        value: 0.1,
+        confidence: 0.65,
+        evidence:
+          "Near-center with unusual framing. Q19 rejects both nationalist and globalist framings explicitly — advocates for 'the system you're in' with competition leading to betterment of the entire system. This is methodological-individualism-with-systems-competition, neither tribal-nationalism nor universalist-globalism. Q3 pax-americana framing pulls slightly nationalist; Q14 US oil production against OPEC is strategic-national-interest but framed as counter-OPEC not nationalism-for-its-own-sake.",
+      },
+      {
+        axisId: "authority",
+        value: -0.4,
+        confidence: 0.75,
+        evidence:
+          "Domain-split with clean libertarian lean across most domains. STRONGEST TENET-PREDICTION TEST: Nicholas scores libertarian-leaning on immigration (-0.20) while every other right-coalition subject scores authoritarian (Trump +0.80, Fuentes +0.90, Carlson +0.60, Saagar +0.50, Pool +0.50, Owens +0.50). Matches the Musk Tenet-5 pattern.",
+        subDomains: [
+          {
+            domain: "speech",
+            value: -0.9,
+            confidence: 0.95,
+            evidence:
+              "Extreme libertarian. Most stable position in the profile.",
+          },
+          {
+            domain: "health-bodily",
+            value: -0.85,
+            confidence: 0.85,
+            evidence:
+              "Strong libertarian. Q10 full drug legalization on individual-responsibility grounds.",
+          },
+          {
+            domain: "commerce-platform",
+            value: -0.3,
+            confidence: 0.65,
+            evidence:
+              "Libertarian-leaning with specific regulatory exceptions. Anti-federal-minimum-wage, anti-antitrust-breakup, anti-16th-amendment-in-principle. But pro-regulation-of-town-square-platforms for 1st-amendment enforcement (Q8).",
+          },
+          {
+            domain: "immigration",
+            value: -0.2,
+            confidence: 0.7,
+            evidence:
+              "Libertarian-leaning. Q1 open-borders-in-principle with pragmatic border-security exceptions for trafficking. STRONGEST PREDICTIVE TEST vs right-coalition subjects.",
+          },
+          {
+            domain: "culture-family",
+            value: 0.1,
+            confidence: 0.55,
+            evidence:
+              "Near-center with Q16-surfaced traditionalist-leaning on specific gender-role policy questions. Also pro-drug-legalization (libertarian) and pro-choice (libertarian from earlier profile). Mixed within the sub-domain.",
+          },
+        ],
+      },
+    ],
+    ideologicalCoherence: 0.9,
+    axialCoherence: 0.92,
+    contentCoherence: 0.85,
+    rhetoricalStyleVariance: 0.2,
+    notes:
+      "Added April 2026. QUESTIONNAIRE-VALIDATED TENET-EXTRACTION PROFILE. Project author. Seven tenets formally identified: (1) evidence-responsive framework updating, (2) first-principles reasoning with dimensional preservation, (3) auditability/transparency as epistemological integrity, (4) pragmatic empiricism over ideological purity, (5) non-performative integrity, (6) self-application, (7) skepticism of institutional competence without ideological anti-institutionalism. 20-question questionnaire (docs/nicholas-tenet-questionnaire.md) tested whether tenets predict object-level positions on 14 policy domains + 3 edge-case + 2 calibration + 1 meta. Result: 13/14 clean predictions + 1 partial (anti-death-penalty, not cleanly tenet-generated). HIGHEST TENET-PREDICTION ACCURACY IN DATASET (Musk ~70-80%). NOVEL SIXTH COHERENCE TYPE: framework-updatable philosophy-driven. Distinct from position-coherence (Shapiro), institution-absorbed (Lemon), method-coherence (Destiny), meta-framework-stable domain-specific update (Kasparian), and tenet-extraction stable-anchors (Musk). Goes one level deeper than Kasparian: Kasparian updates domain conclusions while holding meta-framework stable; Nicholas updates the meta-framework itself on evidence while holding seven tenets stable as meta-meta-commitments. 5-to-9 axis expansion in the project is the cleanest real-time demonstration. Currently the only identified instance of this type — watch for others in future profiles. BIGGEST CORRECTION from self-report: foreign-policy -0.30 → +0.15 (alliance-based interventionist when strategically/morally justified, not non-interventionist). Q16 updates: traditionalist-leaning on specific gender-role policy; research-driven update on Islamic theocratic governance. Q17 is strongest Tenet 1 confirmation: 'I don't hold strong positions where either empirical evidence or my own intuition isn't already conclusive' — continuous tracking rather than discrete updates. HALLUCINATION INCIDENT: during questionnaire creation, assistant initially populated answer fields with fabricated content in Nicholas's voice. Caught, file overwritten with blank template, incident disclosed. Documented as test case for why rule-based-first architecture (Tenet 3) is load-bearing for LLM-based content generation.",
   },
 ];
 
